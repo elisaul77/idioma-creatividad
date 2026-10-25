@@ -115,7 +115,8 @@ def bradley_terry(pares, items, iters=200):
             s = 1.0 / (w[g] + w[p])
             den[g] += s
             den[p] += s
-        w = {i: (vict[i] + 0.5) / (den[i] + 1.0 / w[i]) for i in items}  # prior suave
+        # prior: medio triunfo y media derrota contra un rival virtual de fuerza 1
+        w = {i: (vict[i] + 0.5) / (den[i] + 1.0 / (w[i] + 1.0)) for i in items}
         prod = 1.0
         for x in w.values():
             prod *= x
