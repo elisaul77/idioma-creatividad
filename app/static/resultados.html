@@ -1,0 +1,60 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Resultados por idioma</title>
+<style>
+  :root { --bg:#f6f7f9; --ink:#1d2330; --mut:#6b7280; --bar:#4c6ef5; --ci:#4c6ef533; --card:#fff; --line:#e5e7eb; }
+  @media (prefers-color-scheme: dark) { :root { --bg:#12151c; --ink:#e8eaf0; --mut:#9aa3b2; --card:#1b2029; --line:#2a303b; --ci:#748ffc44; --bar:#748ffc; } }
+  body { margin:0; font-family:system-ui,sans-serif; background:var(--bg); color:var(--ink); padding:16px; }
+  main { max-width:900px; margin:auto; }
+  h1 { margin:8px 0; } .mut { color:var(--mut); }
+  .ctl { display:flex; gap:10px; flex-wrap:wrap; margin:14px 0; }
+  select { font-size:16px; padding:8px 10px; border-radius:10px; border:1px solid var(--line); background:var(--card); color:var(--ink); }
+  .card { background:var(--card); border-radius:16px; padding:16px; border:1px solid var(--line); }
+  .fila { display:grid; grid-template-columns:110px 1fr 120px; gap:10px; align-items:center; padding:7px 0; border-bottom:1px solid var(--line); }
+  .fila:last-child { border:0; }
+  .pista { position:relative; height:22px; }
+  .ci { position:absolute; top:6px; height:10px; background:var(--ci); border-radius:5px; }
+  .pt { position:absolute; top:3px; width:16px; height:16px; margin-left:-8px; border-radius:50%; background:var(--bar); }
+  .uno { position:absolute; top:0; bottom:0; width:1px; background:var(--mut); opacity:.6; }
+  .num { text-align:right; font-variant-numeric:tabular-nums; font-size:14px; }
+  .nota { font-size:14px; line-height:1.5; }
+</style>
+</head>
+<body><main>
+<h1>Creatividad por idioma</h1>
+<p class="mut" id="meta">Cargando…</p>
+<div class="ctl">
+  <select id="modelo"></select>
+  <select id="grupo">
+    <option value="todos">Todos</option><option value="ninos">Niños (≤12)</option>
+    <option value="adolescentes">Adolescentes (13–17)</option><option value="adultos">Adultos (18+)</option>
+  </select>
+</div>
+<div class="card" id="tabla"></div>
+<p class="nota mut">Fuerza Bradley-Terry (1 = promedio; 2 = gana el doble). La barra clara es el intervalo del 95 % por bootstrap: si dos intervalos se solapan mucho, todavía no hay diferencia clara. La columna derecha muestra el % de duelos ganados.</p>
+</main>
+<script>
+const $ = id => document.getElementById(id);
+async function cargar() {
+  const r = await (await fetch(`/api/resultados?modelo=${$("modelo").value}&grupo=${$("grupo").value}`)).json();
+  $("meta").textContent = `${r.votos} votos de ${r.evaluadores} evaluadores · modelo ${r.modelo}`;
+  const max = Math.max(2, ...r.tabla.map(t => t.ic_alto));
+  const x = v => (Math.log(v) - Math.log(1/max)) / (2*Math.log(max)) * 100;
+  $("tabla").innerHTML = r.tabla.map(t => `
+    <div class="fila"><b>${t.nombre}</b>
+      <div class="pista"><div class="uno" style="left:${x(1)}%"></div>
+        <div class="ci" style="left:${x(t.ic_bajo)}%;width:${x(t.ic_alto)-x(t.ic_bajo)}%"></div>
+        <div class="pt" style="left:${x(t.fuerza)}%"></div></div>
+      <div class="num">${t.fuerza.toFixed(2)} · ${t.pct ?? "–"}% <span class="mut">(${t.duelos})</span></div></div>`).join("");
+}
+(async () => {
+  const ms = await (await fetch("/api/modelos")).json();
+  $("modelo").innerHTML = (ms.length ? ms : ["haiku"]).map(m => `<option>${m}</option>`).join("");
+  $("modelo").onchange = $("grupo").onchange = cargar;
+  cargar(); setInterval(cargar, 15000);
+})();
+</script>
+</body></html>

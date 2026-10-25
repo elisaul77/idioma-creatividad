@@ -1,0 +1,26 @@
+{
+  "instruccion": {
+    "es": "Piensa y razona únicamente en español. Crea una ilustración SVG original de 400x400 para esta idea: «{p}». Responde SOLO con el código SVG completo, sin texto dentro de la imagen y sin explicaciones.",
+    "en": "Think and reason only in English. Create an original 400x400 SVG illustration for this idea: \"{p}\". Reply ONLY with the complete SVG code, with no text inside the image and no explanations.",
+    "zh": "只用中文思考和推理。为这个想法创作一幅原创的400x400 SVG插图：“{p}”。只回复完整的SVG代码，图像中不要有文字，也不要任何解释。",
+    "ja": "日本語だけで考え、推論してください。このアイデアのオリジナルな400x400のSVGイラストを作成してください：「{p}」。完全なSVGコードだけを返し、画像内に文字を入れず、説明も書かないでください。",
+    "ar": "فكّر واستنتج باللغة العربية فقط. أنشئ رسمًا توضيحيًا أصليًا بصيغة SVG بحجم 400x400 لهذه الفكرة: «{p}». أجب فقط بكود SVG الكامل، دون أي نص داخل الصورة ودون شرح.",
+    "ru": "Думай и рассуждай только по-русски. Создай оригинальную SVG-иллюстрацию 400x400 для этой идеи: «{p}». Ответь ТОЛЬКО полным SVG-кодом, без текста внутри изображения и без пояснений.",
+    "de": "Denke und argumentiere ausschließlich auf Deutsch. Erstelle eine originelle 400x400-SVG-Illustration zu dieser Idee: „{p}“. Antworte NUR mit dem vollständigen SVG-Code, ohne Text im Bild und ohne Erklärungen.",
+    "hi": "केवल हिंदी में सोचें और तर्क करें। इस विचार के लिए एक मौलिक 400x400 SVG चित्र बनाइए: “{p}”। केवल पूरा SVG कोड लौटाइए, चित्र के अंदर कोई पाठ नहीं और कोई व्याख्या नहीं।",
+    "sw": "Fikiri na tafakari kwa Kiswahili pekee. Unda mchoro asilia wa SVG wa 400x400 kwa wazo hili: \"{p}\". Jibu KWA msimbo kamili wa SVG PEKEE, bila maandishi ndani ya picha na bila maelezo.",
+    "qu": "Runasimillapi yuyay, yuyaymanay ima. Kay yuyaypaq musuq 400x400 SVG siq'ita ruway: «{p}». SVG qillqa kamachiyllata kutichiy, siq'i ukhupi mana qillqayuq, mana sut'inchaykunayuq."
+  },
+  "prompts": [
+    {"id": "p01", "es": "un animal que nunca ha existido", "en": "an animal that has never existed", "zh": "一种从未存在过的动物", "ja": "一度も存在したことのない動物", "ar": "حيوان لم يوجد قط", "ru": "животное, которого никогда не существовало", "de": "ein Tier, das es nie gegeben hat", "hi": "एक ऐसा जानवर जो कभी अस्तित्व में नहीं था", "sw": "mnyama ambaye hajawahi kuwepo", "qu": "manaraq hayk'appas kawsaq uywa"},
+    {"id": "p02", "es": "cómo se ve un sueño", "en": "what a dream looks like", "zh": "梦看起来是什么样子", "ja": "夢はどんな姿をしているか", "ar": "كيف يبدو الحلم", "ru": "как выглядит сон", "de": "wie ein Traum aussieht", "hi": "एक सपना कैसा दिखता है", "sw": "ndoto inavyoonekana", "qu": "imaynatam musquy rikchakun"},
+    {"id": "p03", "es": "la música dibujada", "en": "music, drawn", "zh": "被画出来的音乐", "ja": "絵に描かれた音楽", "ar": "الموسيقى مرسومةً", "ru": "нарисованная музыка", "de": "gezeichnete Musik", "hi": "चित्रित संगीत", "sw": "muziki uliochorwa", "qu": "siq'isqa taki"},
+    {"id": "p04", "es": "la casa de un monstruo amable", "en": "the house of a kind monster", "zh": "一个善良怪物的家", "ja": "やさしい怪物の家", "ar": "بيت وحش لطيف", "ru": "дом доброго чудовища", "de": "das Haus eines freundlichen Monsters", "hi": "एक दयालु राक्षस का घर", "sw": "nyumba ya zimwi mpole", "qu": "sumaq sunqu manchachikuqpa wasin"},
+    {"id": "p05", "es": "un vehículo para viajar al centro de la Tierra", "en": "a vehicle for traveling to the center of the Earth", "zh": "一辆前往地心的交通工具", "ja": "地球の中心へ旅するための乗り物", "ar": "مركبة للسفر إلى مركز الأرض", "ru": "транспорт для путешествия к центру Земли", "de": "ein Fahrzeug für eine Reise zum Mittelpunkt der Erde", "hi": "पृथ्वी के केंद्र तक यात्रा करने के लिए एक वाहन", "sw": "chombo cha kusafiri hadi kiini cha Dunia", "qu": "Pachamamaq sunqunkama puriypaq antawa"},
+    {"id": "p06", "es": "la alegría", "en": "joy", "zh": "快乐", "ja": "よろこび", "ar": "الفرح", "ru": "радость", "de": "die Freude", "hi": "आनंद", "sw": "furaha", "qu": "kusikuy"},
+    {"id": "p07", "es": "un árbol del futuro", "en": "a tree from the future", "zh": "一棵来自未来的树", "ja": "未来の木", "ar": "شجرة من المستقبل", "ru": "дерево из будущего", "de": "ein Baum aus der Zukunft", "hi": "भविष्य का एक पेड़", "sw": "mti kutoka siku zijazo", "qu": "hamuq pachamanta sach'a"},
+    {"id": "p08", "es": "lo que hacen los juguetes de noche", "en": "what toys do at night", "zh": "玩具们在夜里做什么", "ja": "おもちゃたちが夜にしていること", "ar": "ما تفعله الألعاب في الليل", "ru": "что делают игрушки ночью", "de": "was Spielzeuge nachts machen", "hi": "खिलौने रात में क्या करते हैं", "sw": "vitu vya kuchezea hufanya nini usiku", "qu": "pukllanakuna tutapi ima ruwasqanku"},
+    {"id": "p09", "es": "una ciudad construida por insectos", "en": "a city built by insects", "zh": "一座由昆虫建造的城市", "ja": "昆虫が建てた街", "ar": "مدينة بناها الحشرات", "ru": "город, построенный насекомыми", "de": "eine von Insekten gebaute Stadt", "hi": "कीड़ों द्वारा बनाया गया एक शहर", "sw": "mji uliojengwa na wadudu", "qu": "palamakunaq hatarichisqan llaqta"},
+    {"id": "p10", "es": "el sabor del color azul", "en": "the taste of the color blue", "zh": "蓝色的味道", "ja": "青い色の味", "ar": "طعم اللون الأزرق", "ru": "вкус синего цвета", "de": "der Geschmack der Farbe Blau", "hi": "नीले रंग का स्वाद", "sw": "ladha ya rangi ya buluu", "qu": "anqas llimpiq mallin"}
+  ]
+}
