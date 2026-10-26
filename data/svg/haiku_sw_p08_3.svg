@@ -1,0 +1,112 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="400" height="400" viewBox="0 0 400 400">
+  <defs>
+    <linearGradient id="sky" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#0b1030"/>
+      <stop offset="0.6" stop-color="#1d2a5e"/>
+      <stop offset="1" stop-color="#3a3f7a"/>
+    </linearGradient>
+    <radialGradient id="moonGlow" cx="0.5" cy="0.5" r="0.5">
+      <stop offset="0" stop-color="#fff7d6" stop-opacity="0.9"/>
+      <stop offset="1" stop-color="#fff7d6" stop-opacity="0"/>
+    </radialGradient>
+    <radialGradient id="floor" cx="0.5" cy="0" r="1">
+      <stop offset="0" stop-color="#4b3b6b"/>
+      <stop offset="1" stop-color="#1a1530"/>
+    </radialGradient>
+  </defs>
+
+  <!-- Anga la usiku -->
+  <rect width="400" height="400" fill="url(#sky)"/>
+
+  <!-- Nyota -->
+  <g fill="#ffffff">
+    <circle cx="40" cy="45" r="1.5"/>
+    <circle cx="90" cy="25" r="1"/>
+    <circle cx="150" cy="60" r="1.8"/>
+    <circle cx="210" cy="30" r="1.2"/>
+    <circle cx="260" cy="70" r="1"/>
+    <circle cx="320" cy="40" r="1.6"/>
+    <circle cx="365" cy="95" r="1"/>
+    <circle cx="60" cy="110" r="1"/>
+    <circle cx="120" cy="130" r="1.3"/>
+    <circle cx="340" cy="150" r="1.2"/>
+    <circle cx="25" cy="170" r="1"/>
+  </g>
+
+  <!-- Mwezi -->
+  <circle cx="320" cy="90" r="48" fill="url(#moonGlow)"/>
+  <circle cx="320" cy="90" r="28" fill="#fff3c4"/>
+  <circle cx="312" cy="84" r="5" fill="#f0e0a0" opacity="0.6"/>
+  <circle cx="326" cy="98" r="3.5" fill="#f0e0a0" opacity="0.6"/>
+
+  <!-- Sakafu ya chumba -->
+  <path d="M0 290 Q200 262 400 290 L400 400 L0 400 Z" fill="url(#floor)"/>
+
+  <!-- Njia ya mwanga wa mwezi -->
+  <path d="M250 400 L300 290 L340 290 L300 400 Z" fill="#fff3c4" opacity="0.08"/>
+
+  <!-- Dubu anayecheza -->
+  <g transform="translate(130 250)">
+    <circle cx="-22" cy="-48" r="10" fill="#b07a4a"/>
+    <circle cx="22" cy="-48" r="10" fill="#b07a4a"/>
+    <circle cx="0" cy="-30" r="26" fill="#c68b59"/>
+    <circle cx="-9" cy="-34" r="3" fill="#2a1a10"/>
+    <circle cx="9" cy="-34" r="3" fill="#2a1a10"/>
+    <ellipse cx="0" cy="-24" rx="7" ry="5" fill="#e9c49a"/>
+    <circle cx="0" cy="-26" r="2.5" fill="#2a1a10"/>
+    <ellipse cx="0" cy="0" rx="20" ry="24" fill="#c68b59"/>
+    <ellipse cx="0" cy="4" rx="10" ry="13" fill="#e9c49a"/>
+    <!-- Mikono iliyonyooshwa -->
+    <path d="M-18 -4 Q-42 -20 -40 -44" stroke="#c68b59" stroke-width="9" fill="none" stroke-linecap="round"/>
+    <path d="M18 -4 Q42 10 36 30" stroke="#c68b59" stroke-width="9" fill="none" stroke-linecap="round"/>
+    <ellipse cx="-14" cy="24" rx="7" ry="5" fill="#a86f3f"/>
+    <ellipse cx="14" cy="24" rx="7" ry="5" fill="#a86f3f"/>
+  </g>
+
+  <!-- Gari dogo la kuchezea -->
+  <g transform="translate(260 310)">
+    <rect x="-28" y="-12" width="56" height="16" rx="5" fill="#e0524b"/>
+    <path d="M-16 -12 L-10 -24 L12 -24 L18 -12 Z" fill="#f07a6f"/>
+    <rect x="-10" y="-21" width="8" height="7" fill="#bfe6ff"/>
+    <rect x="4" y="-21" width="6" height="7" fill="#bfe6ff"/>
+    <circle cx="-16" cy="6" r="7" fill="#2b2b3d"/>
+    <circle cx="-16" cy="6" r="2.5" fill="#9aa0b8"/>
+    <circle cx="18" cy="6" r="7" fill="#2b2b3d"/>
+    <circle cx="18" cy="6" r="2.5" fill="#9aa0b8"/>
+  </g>
+
+  <!-- Roboti anayeng'aa -->
+  <g transform="translate(60 300)">
+    <rect x="-12" y="-30" width="24" height="26" rx="4" fill="#8fd3c7"/>
+    <rect x="-16" y="-54" width="32" height="24" rx="5" fill="#a8e6dc"/>
+    <circle cx="-7" cy="-44" r="4" fill="#ffd166"/>
+    <circle cx="7" cy="-44" r="4" fill="#ffd166"/>
+    <rect x="-3" y="-64" width="6" height="8" fill="#8fd3c7"/>
+    <circle cx="0" cy="-66" r="3" fill="#ffd166"/>
+    <rect x="-22" y="-28" width="7" height="20" rx="3" fill="#8fd3c7"/>
+    <rect x="15" y="-28" width="7" height="20" rx="3" fill="#8fd3c7"/>
+    <circle cx="-30" cy="-44" r="2" fill="#ffd166"/>
+    <circle cx="30" cy="-44" r="2" fill="#ffd166"/>
+  </g>
+
+  <!-- Mpira unaodunda -->
+  <g>
+    <circle cx="200" cy="200" r="13" fill="#ffb347"/>
+    <path d="M187 200 Q200 190 213 200" stroke="#ff8c42" stroke-width="2" fill="none"/>
+    <path d="M200 187 Q210 200 200 213" stroke="#ff8c42" stroke-width="2" fill="none"/>
+    <ellipse cx="200" cy="222" rx="12" ry="3" fill="#000" opacity="0.25"/>
+  </g>
+
+  <!-- Nyota zinazoachwa -->
+  <g fill="#ffe69a">
+    <path d="M195 135 l3 7 7 3 -7 3 -3 7 -3 -7 -7 -3 7 -3 z"/>
+    <path d="M250 180 l2 5 5 2 -5 2 -2 5 -2 -5 -5 -2 5 -2 z"/>
+    <path d="M90 200 l2 5 5 2 -5 2 -2 5 -2 -5 -5 -2 5 -2 z"/>
+    <path d="M160 100 l2 4 4 2 -4 2 -2 4 -2 -4 -4 -2 4 -2 z"/>
+  </g>
+
+  <!-- Chupa ya nyota ya kuchezea -->
+  <g transform="translate(330 230)">
+    <path d="M0 -22 L5 -6 L22 -6 L8 4 L13 20 L0 10 L-13 20 L-8 4 L-22 -6 L-5 -6 Z" fill="#ffd166" opacity="0.9"/>
+  </g>
+</svg>

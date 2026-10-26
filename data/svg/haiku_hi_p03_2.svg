@@ -1,0 +1,110 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="400" height="400" viewBox="0 0 400 400">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#0f0c29"/>
+      <stop offset="50%" stop-color="#302b63"/>
+      <stop offset="100%" stop-color="#24243e"/>
+    </linearGradient>
+    <linearGradient id="wave1" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#ff6b6b" stop-opacity="0"/>
+      <stop offset="40%" stop-color="#feca57" stop-opacity="0.9"/>
+      <stop offset="100%" stop-color="#ff9ff3" stop-opacity="0"/>
+    </linearGradient>
+    <linearGradient id="wave2" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#48dbfb" stop-opacity="0"/>
+      <stop offset="50%" stop-color="#1dd1a1" stop-opacity="0.85"/>
+      <stop offset="100%" stop-color="#5f27cd" stop-opacity="0"/>
+    </linearGradient>
+    <radialGradient id="sun" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#fff7d1" stop-opacity="1"/>
+      <stop offset="40%" stop-color="#ffb142" stop-opacity="0.8"/>
+      <stop offset="100%" stop-color="#ff5e57" stop-opacity="0"/>
+    </radialGradient>
+    <radialGradient id="note1" cx="35%" cy="35%" r="65%">
+      <stop offset="0%" stop-color="#ffffff"/>
+      <stop offset="60%" stop-color="#ff9ff3"/>
+      <stop offset="100%" stop-color="#8e44ad"/>
+    </radialGradient>
+    <radialGradient id="note2" cx="35%" cy="35%" r="65%">
+      <stop offset="0%" stop-color="#ffffff"/>
+      <stop offset="60%" stop-color="#55efc4"/>
+      <stop offset="100%" stop-color="#00838f"/>
+    </radialGradient>
+    <radialGradient id="note3" cx="35%" cy="35%" r="65%">
+      <stop offset="0%" stop-color="#ffffff"/>
+      <stop offset="60%" stop-color="#ffeaa7"/>
+      <stop offset="100%" stop-color="#e17055"/>
+    </radialGradient>
+    <filter id="glow" x="-50%" y="-50%" width="200%" height="200%">
+      <feGaussianBlur stdDeviation="4" result="b"/>
+      <feMerge>
+        <feMergeNode in="b"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+    <filter id="soft" x="-50%" y="-50%" width="200%" height="200%">
+      <feGaussianBlur stdDeviation="9"/>
+    </filter>
+  </defs>
+
+  <!-- Background -->
+  <rect width="400" height="400" fill="url(#bg)"/>
+
+  <!-- Sun-like color bloom -->
+  <circle cx="290" cy="110" r="90" fill="url(#sun)" opacity="0.8"/>
+  <circle cx="110" cy="300" r="70" fill="#ff6b6b" opacity="0.18" filter="url(#soft)"/>
+
+  <!-- Brush-like sweeping washes -->
+  <path d="M-20 150 C 80 90, 160 220, 260 150 S 380 90, 430 130 L 430 175 C 380 140, 300 230, 200 200 S 60 180, -20 205 Z"
+        fill="url(#wave1)" opacity="0.7"/>
+  <path d="M-20 280 C 60 230, 150 330, 230 270 S 360 230, 430 260 L 430 300 C 360 280, 290 350, 210 320 S 80 310, -20 325 Z"
+        fill="url(#wave2)" opacity="0.7"/>
+
+  <!-- Staff lines flowing like paint strokes -->
+  <g fill="none" stroke="#ffffff" stroke-width="1.5" stroke-linecap="round" opacity="0.5">
+    <path d="M30 120 C 110 100, 170 140, 250 118 S 360 100, 380 112"/>
+    <path d="M30 138 C 110 118, 170 158, 250 136 S 360 118, 380 130"/>
+    <path d="M30 156 C 110 136, 170 176, 250 154 S 360 136, 380 148"/>
+    <path d="M30 174 C 110 154, 170 194, 250 172 S 360 154, 380 166"/>
+    <path d="M30 192 C 110 172, 170 212, 250 190 S 360 172, 380 184"/>
+  </g>
+
+  <!-- Flowing melodic curve -->
+  <path d="M20 330 C 90 260, 130 390, 200 300 S 310 240, 385 290"
+        fill="none" stroke="#feca57" stroke-width="3" stroke-linecap="round" filter="url(#glow)" opacity="0.9"/>
+  <path d="M20 345 C 95 285, 140 380, 205 318 S 315 265, 385 310"
+        fill="none" stroke="#48dbfb" stroke-width="2" stroke-linecap="round" opacity="0.6"/>
+
+  <!-- Notes as painted droplets -->
+  <g filter="url(#glow)">
+    <g transform="translate(95 245) rotate(-18)">
+      <ellipse cx="0" cy="0" rx="13" ry="10" fill="url(#note1)"/>
+      <line x1="12" y1="-2" x2="12" y2="-55" stroke="#ff9ff3" stroke-width="2.5"/>
+    </g>
+    <g transform="translate(200 185) rotate(12)">
+      <ellipse cx="0" cy="0" rx="15" ry="11" fill="url(#note2)"/>
+      <line x1="-13" y1="2" x2="-13" y2="-60" stroke="#55efc4" stroke-width="2.5"/>
+    </g>
+    <g transform="translate(300 215) rotate(-8)">
+      <ellipse cx="0" cy="0" rx="11" ry="9" fill="url(#note3)"/>
+      <line x1="10" y1="-1" x2="10" y2="-48" stroke="#ffeaa7" stroke-width="2.5"/>
+    </g>
+    <g transform="translate(160 350) rotate(20)">
+      <ellipse cx="0" cy="0" rx="9" ry="7" fill="url(#note2)"/>
+    </g>
+    <g transform="translate(340 360) rotate(-15)">
+      <ellipse cx="0" cy="0" rx="8" ry="6" fill="url(#note1)"/>
+    </g>
+  </g>
+
+  <!-- Scattered color particles -->
+  <g fill="#ffffff">
+    <circle cx="60" cy="60" r="2" opacity="0.8"/>
+    <circle cx="150" cy="45" r="1.5" opacity="0.6"/>
+    <circle cx="350" cy="50" r="2.5" opacity="0.7"/>
+    <circle cx="370" cy="200" r="1.5" opacity="0.6"/>
+    <circle cx="40" cy="220" r="2" opacity="0.5"/>
+    <circle cx="250" cy="70" r="1.2" opacity="0.7"/>
+    <circle cx="120" cy="385" r="1.8" opacity="0.6"/>
+  </g>
+</svg>

@@ -1,0 +1,40 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 400" width="400" height="400">
+  <defs>
+    <filter id="pencil" x="-10%" y="-10%" width="120%" height="120%">
+      <feTurbulence type="fractalNoise" baseFrequency="0.05" numOctaves="2" seed="7" result="noise"/>
+      <feDisplacementMap in="SourceGraphic" in2="noise" scale="3.5" xChannelSelector="R" yChannelSelector="G"/>
+    </filter>
+  </defs>
+
+  <rect width="400" height="400" fill="#f6f1e6"/>
+
+  <g filter="url(#pencil)" stroke="#2b2b2b" stroke-linecap="round" stroke-linejoin="round" fill="none">
+    <!-- hand-drawn staff -->
+    <path d="M40 130 Q200 126 360 131" stroke-width="2"/>
+    <path d="M40 150 Q200 147 360 152" stroke-width="2"/>
+    <path d="M40 170 Q200 166 360 171" stroke-width="2"/>
+    <path d="M40 190 Q200 187 360 191" stroke-width="2"/>
+    <path d="M40 210 Q200 207 360 212" stroke-width="2"/>
+
+    <!-- note heads -->
+    <ellipse cx="120" cy="200" rx="14" ry="10" transform="rotate(-18 120 200)" fill="#2b2b2b" stroke="none"/>
+    <ellipse cx="190" cy="180" rx="14" ry="10" transform="rotate(-18 190 180)" fill="#2b2b2b" stroke="none"/>
+    <ellipse cx="262" cy="160" rx="14" ry="10" transform="rotate(-18 262 160)" fill="#2b2b2b" stroke="none"/>
+
+    <!-- stems -->
+    <path d="M132 198 L132 130" stroke-width="2.5"/>
+    <path d="M202 178 L202 113" stroke-width="2.5"/>
+    <path d="M274 158 L274 96" stroke-width="2.5"/>
+
+    <!-- beam -->
+    <path d="M132 130 L274 96" stroke-width="6"/>
+
+    <!-- sketched sound trail -->
+    <path d="M40 300 C100 260 140 340 200 300 S300 260 360 300" stroke="#4a4a7a" stroke-width="2.5"/>
+    <path d="M60 322 C110 296 150 344 205 322 S300 292 340 322" stroke="#4a4a7a" stroke-width="1.5" opacity="0.6"/>
+
+    <!-- loose hatching -->
+    <path d="M300 60 L312 48 M308 70 L322 56 M316 82 L330 68" stroke="#2b2b2b" stroke-width="1.5" opacity="0.7"/>
+    <path d="M70 90 Q90 76 110 90 T150 90" stroke="#4a4a7a" stroke-width="1.5" opacity="0.6"/>
+  </g>
+</svg>

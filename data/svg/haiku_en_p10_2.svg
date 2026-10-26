@@ -1,0 +1,71 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="400" height="400" viewBox="0 0 400 400">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#fdf6ec"/>
+      <stop offset="1" stop-color="#ffe9d1"/>
+    </linearGradient>
+    <linearGradient id="liquid" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#5fb3ff"/>
+      <stop offset="0.5" stop-color="#2563eb"/>
+      <stop offset="1" stop-color="#1e2a8a"/>
+    </linearGradient>
+    <linearGradient id="glass" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#ffffff" stop-opacity="0.15"/>
+      <stop offset="0.3" stop-color="#ffffff" stop-opacity="0.6"/>
+      <stop offset="0.7" stop-color="#ffffff" stop-opacity="0.2"/>
+      <stop offset="1" stop-color="#ffffff" stop-opacity="0.5"/>
+    </linearGradient>
+    <clipPath id="bowl">
+      <path d="M120 150 H280 C280 215 250 245 200 245 C150 245 120 215 120 150 Z"/>
+    </clipPath>
+  </defs>
+
+  <!-- background -->
+  <rect width="400" height="400" fill="url(#bg)"/>
+  <circle cx="200" cy="200" r="150" fill="#ffffff" opacity="0.5"/>
+
+  <!-- glass stem and base -->
+  <rect x="193" y="245" width="14" height="78" rx="4" fill="#cfe3f5"/>
+  <ellipse cx="200" cy="330" rx="62" ry="12" fill="#cfe3f5"/>
+  <ellipse cx="200" cy="326" rx="52" ry="8" fill="#e6f1fb"/>
+
+  <!-- liquid -->
+  <g clip-path="url(#bowl)">
+    <rect x="100" y="150" width="200" height="110" fill="url(#liquid)"/>
+    <path d="M100 160 Q125 148 150 160 T200 160 T250 160 T300 160 V175 H100 Z" fill="#8fd0ff" opacity="0.8"/>
+    <circle cx="150" cy="200" r="4" fill="#bfe6ff" opacity="0.7"/>
+    <circle cx="178" cy="222" r="3" fill="#bfe6ff" opacity="0.7"/>
+    <circle cx="232" cy="190" r="5" fill="#bfe6ff" opacity="0.6"/>
+    <circle cx="214" cy="232" r="2.5" fill="#bfe6ff" opacity="0.7"/>
+    <circle cx="250" cy="225" r="3" fill="#bfe6ff" opacity="0.6"/>
+  </g>
+
+  <!-- bowl outline and glass sheen -->
+  <path d="M120 150 H280 C280 215 250 245 200 245 C150 245 120 215 120 150 Z" fill="url(#glass)" stroke="#9cc7ea" stroke-width="3"/>
+  <path d="M132 165 Q138 205 165 225" fill="none" stroke="#ffffff" stroke-width="5" stroke-linecap="round" opacity="0.7"/>
+  <line x1="120" y1="150" x2="280" y2="150" stroke="#9cc7ea" stroke-width="4" stroke-linecap="round"/>
+
+  <!-- blueberries floating above -->
+  <g>
+    <circle cx="92" cy="110" r="14" fill="#3b3fa8"/>
+    <circle cx="88" cy="105" r="3" fill="#8e93e0" opacity="0.8"/>
+    <circle cx="120" cy="88" r="10" fill="#4a4fb8"/>
+    <circle cx="117" cy="85" r="2.5" fill="#9fa4ea" opacity="0.8"/>
+    <circle cx="308" cy="104" r="13" fill="#3b3fa8"/>
+    <circle cx="304" cy="99" r="3" fill="#8e93e0" opacity="0.8"/>
+    <circle cx="286" cy="72" r="9" fill="#4a4fb8"/>
+    <circle cx="283" cy="69" r="2.5" fill="#9fa4ea" opacity="0.8"/>
+  </g>
+
+  <!-- small droplets/sparkles -->
+  <g fill="#2563eb" opacity="0.5">
+    <path d="M200 60 Q204 68 200 72 Q196 68 200 60 Z"/>
+    <path d="M160 50 Q163 56 160 59 Q157 56 160 50 Z"/>
+    <path d="M240 45 Q243 51 240 54 Q237 51 240 45 Z"/>
+  </g>
+  <g fill="#5fb3ff" opacity="0.6">
+    <circle cx="60" cy="200" r="4"/>
+    <circle cx="345" cy="220" r="5"/>
+    <circle cx="335" cy="280" r="3"/>
+  </g>
+</svg>

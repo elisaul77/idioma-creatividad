@@ -1,0 +1,128 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 400" width="400" height="400">
+  <defs>
+    <linearGradient id="sky" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#bfe6f5"/>
+      <stop offset="1" stop-color="#fdf3c4"/>
+    </linearGradient>
+    <linearGradient id="soil" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#9c6b3c"/>
+      <stop offset="1" stop-color="#5e3b1f"/>
+    </linearGradient>
+    <linearGradient id="mound" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#d9a441"/>
+      <stop offset="0.5" stop-color="#f2c75c"/>
+      <stop offset="1" stop-color="#c98d2e"/>
+    </linearGradient>
+    <radialGradient id="glow" cx="0.5" cy="0.5" r="0.5">
+      <stop offset="0" stop-color="#fff7cc" stop-opacity="0.9"/>
+      <stop offset="1" stop-color="#fff7cc" stop-opacity="0"/>
+    </radialGradient>
+    <pattern id="comb" width="12" height="10" patternUnits="userSpaceOnUse">
+      <path d="M0 5 L3 0 L9 0 L12 5 L9 10 L3 10 Z" fill="#8a5a1a" fill-opacity="0.45"/>
+    </pattern>
+  </defs>
+
+  <!-- Himmel -->
+  <rect width="400" height="400" fill="url(#sky)"/>
+  <circle cx="320" cy="70" r="70" fill="url(#glow)"/>
+  <circle cx="320" cy="70" r="26" fill="#ffd966"/>
+
+  <!-- Wolken aus Pollen -->
+  <g fill="#ffffff" fill-opacity="0.7">
+    <ellipse cx="90" cy="60" rx="34" ry="12"/>
+    <ellipse cx="108" cy="52" rx="22" ry="12"/>
+    <ellipse cx="200" cy="38" rx="26" ry="9"/>
+  </g>
+
+  <!-- Hintere Hügel -->
+  <path d="M0 290 Q80 250 160 285 T320 280 T400 270 L400 400 L0 400 Z" fill="#8fbf6a"/>
+
+  <!-- Linke Kleinbauten -->
+  <g>
+    <path d="M18 300 Q18 262 40 252 Q62 262 62 300 Z" fill="#e8b65a"/>
+    <path d="M30 300 Q30 276 40 270 Q50 276 50 300 Z" fill="#7a4a1e"/>
+  </g>
+
+  <!-- Hauptturm links -->
+  <path d="M62 300 L74 170 Q100 150 126 170 L138 300 Z" fill="url(#mound)"/>
+  <path d="M62 300 L74 170 Q100 150 126 170 L138 300 Z" fill="url(#comb)"/>
+  <path d="M96 150 L100 118 L104 150" fill="#c98d2e"/>
+
+  <!-- Hauptturm Mitte (höchster Bau) -->
+  <path d="M150 300 L166 120 Q200 90 234 120 L250 300 Z" fill="url(#mound)"/>
+  <path d="M150 300 L166 120 Q200 90 234 120 L250 300 Z" fill="url(#comb)"/>
+  <path d="M196 92 L200 40 L204 92" fill="#d9a441"/>
+  <circle cx="200" cy="38" r="4" fill="#ffd966"/>
+
+  <!-- Turm rechts -->
+  <path d="M268 300 L278 190 Q304 172 330 190 L340 300 Z" fill="url(#mound)"/>
+  <path d="M268 300 L278 190 Q304 172 330 190 L340 300 Z" fill="url(#comb)"/>
+
+  <!-- Brücken aus Halmen zwischen den Türmen -->
+  <g fill="none" stroke="#6b4a1e" stroke-width="3" stroke-linecap="round">
+    <path d="M126 215 Q138 200 150 215"/>
+    <path d="M250 205 Q259 192 268 205"/>
+    <path d="M230 160 Q244 146 258 160" stroke-width="2"/>
+  </g>
+
+  <!-- Fenster-Ausgänge -->
+  <g fill="#3b2410">
+    <circle cx="200" cy="170" r="6"/>
+    <circle cx="96" cy="200" r="5"/>
+    <circle cx="304" cy="230" r="5"/>
+    <rect x="186" y="232" width="28" height="10" rx="5"/>
+  </g>
+
+  <!-- Vordergrund-Boden mit Tunnelschnitt -->
+  <rect y="300" width="400" height="100" fill="url(#soil)"/>
+  <path d="M0 300 Q100 292 200 300 T400 300 L400 306 L0 306 Z" fill="#7a4f28"/>
+  <g fill="#3b2410" opacity="0.85">
+    <path d="M20 340 Q60 330 110 342 Q150 352 190 340" stroke="#3b2410" stroke-width="7" fill="none" stroke-linecap="round"/>
+    <path d="M220 362 Q270 350 330 364 Q360 370 385 358" stroke="#3b2410" stroke-width="6" fill="none" stroke-linecap="round"/>
+    <path d="M140 378 L200 372" stroke="#3b2410" stroke-width="4" fill="none" stroke-linecap="round"/>
+  </g>
+  <!-- Ameisen in den Gängen -->
+  <g fill="#2a1a0c">
+    <circle cx="60" cy="338" r="2.2"/>
+    <circle cx="72" cy="340" r="2.2"/>
+    <circle cx="300" cy="360" r="2.2"/>
+    <circle cx="316" cy="356" r="2.2"/>
+    <circle cx="170" cy="374" r="2.2"/>
+  </g>
+
+  <!-- Grashalme am Rand -->
+  <g fill="none" stroke="#4f8a3c" stroke-width="2.5" stroke-linecap="round">
+    <path d="M10 300 Q14 285 8 272"/>
+    <path d="M24 300 Q22 288 30 280"/>
+    <path d="M360 300 Q356 284 366 274"/>
+    <path d="M382 300 Q386 288 378 280"/>
+  </g>
+
+  <!-- Insekten -->
+  <!-- Biene -->
+  <g transform="translate(300 128) rotate(-12)">
+    <ellipse cx="0" cy="0" rx="12" ry="8" fill="#ffd21f" stroke="#3b2410" stroke-width="1.5"/>
+    <path d="M-4 -7 L-4 7 M4 -7 L4 7" stroke="#3b2410" stroke-width="3"/>
+    <ellipse cx="-2" cy="-12" rx="6" ry="4" fill="#ffffff" fill-opacity="0.8" stroke="#5a7a8a" stroke-width="0.8"/>
+    <circle cx="9" cy="-2" r="1.6" fill="#3b2410"/>
+  </g>
+  <!-- Libelle -->
+  <g transform="translate(150 150)">
+    <path d="M-22 0 L22 0" stroke="#2b6f8f" stroke-width="3" stroke-linecap="round"/>
+    <ellipse cx="-6" cy="-6" rx="8" ry="3" fill="#bfeaf7" fill-opacity="0.8" transform="rotate(-20 -6 -6)"/>
+    <ellipse cx="6" cy="-6" rx="8" ry="3" fill="#bfeaf7" fill-opacity="0.8" transform="rotate(20 6 -6)"/>
+  </g>
+  <!-- Marienkäfer auf Blatt -->
+  <g transform="translate(372 236)">
+    <path d="M-16 6 Q0 -10 16 6 Q0 14 -16 6 Z" fill="#6fb34a"/>
+    <circle cx="-2" cy="2" r="4" fill="#d7262b"/>
+    <circle cx="6" cy="4" r="3" fill="#d7262b"/>
+    <circle cx="-2" cy="2" r="0.8" fill="#222"/>
+  </g>
+  <!-- Schmetterling -->
+  <g transform="translate(40 220)">
+    <path d="M0 0 Q-16 -18 -24 -4 Q-16 8 0 0 Z" fill="#e87bb0" stroke="#7a2a50" stroke-width="0.8"/>
+    <path d="M0 0 Q16 -18 24 -4 Q16 8 0 0 Z" fill="#f5a6c8" stroke="#7a2a50" stroke-width="0.8"/>
+    <rect x="-1.5" y="-4" width="3" height="10" rx="1.5" fill="#3b2410"/>
+  </g>
+</svg>

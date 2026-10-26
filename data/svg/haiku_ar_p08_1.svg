@@ -1,0 +1,98 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="400" height="400" viewBox="0 0 400 400">
+  <defs>
+    <linearGradient id="sky" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#0b1026"/>
+      <stop offset="70%" stop-color="#1d2b64"/>
+      <stop offset="100%" stop-color="#3b2a5c"/>
+    </linearGradient>
+    <radialGradient id="glow" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#7ef9ff" stop-opacity="0.9"/>
+      <stop offset="60%" stop-color="#3dd8ff" stop-opacity="0.25"/>
+      <stop offset="100%" stop-color="#3dd8ff" stop-opacity="0"/>
+    </radialGradient>
+    <radialGradient id="moon" cx="40%" cy="40%" r="60%">
+      <stop offset="0%" stop-color="#fffbe6"/>
+      <stop offset="100%" stop-color="#f0d98c"/>
+    </radialGradient>
+    <linearGradient id="pad" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#8e7cff"/>
+      <stop offset="100%" stop-color="#4b3bb5"/>
+    </linearGradient>
+    <linearGradient id="ground" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#14122e"/>
+      <stop offset="100%" stop-color="#05040f"/>
+    </linearGradient>
+  </defs>
+
+  <!-- Sky -->
+  <rect width="400" height="400" fill="url(#sky)"/>
+
+  <!-- Stars -->
+  <g fill="#ffffff">
+    <circle cx="40" cy="50" r="1.5" opacity="0.9"/>
+    <circle cx="90" cy="120" r="1" opacity="0.7"/>
+    <circle cx="160" cy="40" r="1.2" opacity="0.8"/>
+    <circle cx="250" cy="70" r="1.5" opacity="0.9"/>
+    <circle cx="330" cy="30" r="1" opacity="0.6"/>
+    <circle cx="370" cy="130" r="1.3" opacity="0.8"/>
+    <circle cx="300" cy="150" r="1" opacity="0.5"/>
+    <circle cx="60" cy="200" r="1" opacity="0.6"/>
+    <circle cx="200" cy="130" r="1" opacity="0.7"/>
+  </g>
+
+  <!-- Moon -->
+  <circle cx="320" cy="90" r="34" fill="url(#moon)"/>
+  <circle cx="332" cy="82" r="30" fill="#1d2b64"/>
+
+  <!-- Hills -->
+  <path d="M0 290 Q80 250 170 285 T400 275 L400 400 L0 400 Z" fill="url(#ground)"/>
+
+  <!-- Glow behind controller -->
+  <circle cx="200" cy="215" r="120" fill="url(#glow)"/>
+
+  <!-- Game controller -->
+  <path d="M130 185
+           Q150 170 200 175
+           Q250 170 270 185
+           Q300 200 305 240
+           Q308 268 285 272
+           Q262 276 250 252
+           Q242 242 228 242
+           L172 242
+           Q158 242 150 252
+           Q138 276 115 272
+           Q92 268 95 240
+           Q100 200 130 185 Z"
+        fill="url(#pad)" stroke="#c9bfff" stroke-width="2"/>
+
+  <!-- D-pad -->
+  <g fill="#1a1440">
+    <rect x="132" y="212" width="12" height="32" rx="3"/>
+    <rect x="118" y="226" width="40" height="12" rx="3"/>
+  </g>
+
+  <!-- Buttons -->
+  <g>
+    <circle cx="268" cy="218" r="6" fill="#7ef9ff"/>
+    <circle cx="284" cy="232" r="6" fill="#ff8fb1"/>
+    <circle cx="252" cy="232" r="6" fill="#ffe27a"/>
+    <circle cx="268" cy="246" r="6" fill="#9dffb0"/>
+  </g>
+
+  <!-- Light rays -->
+  <g stroke="#7ef9ff" stroke-width="1.5" stroke-linecap="round" opacity="0.5">
+    <line x1="200" y1="150" x2="200" y2="125"/>
+    <line x1="160" y1="158" x2="145" y2="138"/>
+    <line x1="240" y1="158" x2="255" y2="138"/>
+    <line x1="140" y1="200" x2="115" y2="192"/>
+    <line x1="260" y1="200" x2="285" y2="192"/>
+  </g>
+
+  <!-- Pixel sparkles -->
+  <g fill="#ffe27a">
+    <rect x="85" y="150" width="4" height="4"/>
+    <rect x="315" y="180" width="4" height="4"/>
+    <rect x="70" y="230" width="3" height="3"/>
+    <rect x="330" y="250" width="3" height="3"/>
+  </g>
+</svg>

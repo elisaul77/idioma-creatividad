@@ -1,0 +1,88 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 400" width="400" height="400">
+<defs>
+<radialGradient id="bg" cx="50%" cy="40%" r="75%">
+<stop offset="0" stop-color="#2b1b5a"/>
+<stop offset="1" stop-color="#070a1f"/>
+</radialGradient>
+<linearGradient id="body" x1="0" y1="0" x2="1" y2="1">
+<stop offset="0" stop-color="#7ef0d8"/>
+<stop offset="0.5" stop-color="#4fa8e8"/>
+<stop offset="1" stop-color="#8f5cd9"/>
+</linearGradient>
+<linearGradient id="fin" x1="0" y1="0" x2="0" y2="1">
+<stop offset="0" stop-color="#ffd27a" stop-opacity="0.95"/>
+<stop offset="1" stop-color="#ff6fb1" stop-opacity="0.6"/>
+</linearGradient>
+<radialGradient id="glow" cx="50%" cy="50%" r="50%">
+<stop offset="0" stop-color="#ffffff" stop-opacity="0.9"/>
+<stop offset="1" stop-color="#ffffff" stop-opacity="0"/>
+</radialGradient>
+<filter id="soft" x="-20%" y="-20%" width="140%" height="140%">
+<feGaussianBlur stdDeviation="3"/>
+</filter>
+</defs>
+
+<rect width="400" height="400" fill="url(#bg)"/>
+
+<g fill="#ffffff">
+<circle cx="40" cy="50" r="1.5" opacity="0.8"/>
+<circle cx="90" cy="30" r="1" opacity="0.6"/>
+<circle cx="170" cy="45" r="1.5" opacity="0.9"/>
+<circle cx="260" cy="25" r="1" opacity="0.7"/>
+<circle cx="360" cy="55" r="1.8" opacity="0.9"/>
+<circle cx="380" cy="150" r="1" opacity="0.6"/>
+<circle cx="25" cy="190" r="1.2" opacity="0.7"/>
+<circle cx="210" cy="90" r="1" opacity="0.5"/>
+<circle cx="300" cy="380" r="1.2" opacity="0.6"/>
+<circle cx="120" cy="385" r="1" opacity="0.5"/>
+</g>
+
+<ellipse cx="200" cy="368" rx="95" ry="10" fill="#000000" opacity="0.35"/>
+
+<g>
+<path d="M 178 270 Q 166 318 146 345" stroke="url(#body)" stroke-width="12" stroke-linecap="round" fill="none"/>
+<path d="M 198 280 Q 196 320 200 352" stroke="url(#body)" stroke-width="12" stroke-linecap="round" fill="none"/>
+<path d="M 226 276 Q 234 314 236 345" stroke="url(#body)" stroke-width="12" stroke-linecap="round" fill="none"/>
+<path d="M 250 262 Q 268 300 262 338" stroke="url(#body)" stroke-width="12" stroke-linecap="round" fill="none"/>
+<polygon points="142,345 146,366 150,345 146,338" fill="#d8fff6" opacity="0.9"/>
+<polygon points="196,352 200,374 204,352 200,344" fill="#d8fff6" opacity="0.9"/>
+<polygon points="232,345 236,366 240,345 236,338" fill="#d8fff6" opacity="0.9"/>
+<polygon points="258,338 262,359 266,338 262,331" fill="#d8fff6" opacity="0.9"/>
+</g>
+
+<path d="M 262 240 C 320 220, 336 160, 304 148 C 282 140, 278 170, 298 176" stroke="url(#body)" stroke-width="10" stroke-linecap="round" fill="none"/>
+<circle cx="298" cy="176" r="12" fill="url(#glow)"/>
+<circle cx="298" cy="176" r="4" fill="#ffffff"/>
+
+<g>
+<path d="M 190 196 L 172 128 L 204 180 Z" fill="url(#fin)"/>
+<path d="M 214 186 L 212 118 L 230 182 Z" fill="url(#fin)"/>
+<path d="M 240 194 L 262 132 L 254 202 Z" fill="url(#fin)"/>
+</g>
+
+<ellipse cx="205" cy="235" rx="62" ry="48" fill="url(#body)"/>
+<ellipse cx="190" cy="222" rx="28" ry="16" fill="#ffffff" opacity="0.25"/>
+
+<path d="M 152 166 Q 140 140 118 132" stroke="#7ef0d8" stroke-width="3" stroke-linecap="round" fill="none"/>
+<circle cx="118" cy="132" r="10" fill="url(#glow)"/>
+<circle cx="118" cy="132" r="5" fill="#ffd27a"/>
+
+<path d="M 166 172 C 174 150, 196 150, 192 166 C 190 176, 180 172, 182 166" stroke="#ffd27a" stroke-width="3" stroke-linecap="round" fill="none"/>
+
+<circle cx="150" cy="195" r="34" fill="url(#body)"/>
+<ellipse cx="122" cy="206" rx="20" ry="14" fill="url(#body)"/>
+<circle cx="141" cy="186" r="9" fill="#ffffff"/>
+<circle cx="143" cy="186" r="4.5" fill="#1a1036"/>
+<circle cx="161" cy="182" r="6" fill="#ffffff"/>
+<circle cx="162" cy="182" r="3" fill="#1a1036"/>
+<circle cx="110" cy="203" r="2.5" fill="#1a1036"/>
+
+<circle cx="80" cy="120" r="12" fill="url(#glow)" opacity="0.7"/>
+<circle cx="80" cy="120" r="5" fill="#7ef0d8"/>
+<circle cx="330" cy="90" r="9" fill="url(#glow)" opacity="0.7"/>
+<circle cx="330" cy="90" r="3.5" fill="#ff9ad5"/>
+<circle cx="326" cy="312" r="11" fill="url(#glow)" opacity="0.7"/>
+<circle cx="326" cy="312" r="4.5" fill="#ffd27a"/>
+<circle cx="62" cy="298" r="8" fill="url(#glow)" opacity="0.7"/>
+<circle cx="62" cy="298" r="3" fill="#8f5cd9"/>
+</svg>

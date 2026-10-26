@@ -1,0 +1,51 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="400" height="400" viewBox="0 0 400 400">
+  <defs>
+    <radialGradient id="bg" cx="50%" cy="40%" r="75%">
+      <stop offset="0%" stop-color="#0b2a5b"/>
+      <stop offset="60%" stop-color="#06163a"/>
+      <stop offset="100%" stop-color="#020815"/>
+    </radialGradient>
+    <linearGradient id="drop" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#9fe3ff"/>
+      <stop offset="45%" stop-color="#2a8cff"/>
+      <stop offset="100%" stop-color="#0a2fb0"/>
+    </linearGradient>
+    <radialGradient id="glow" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#5fd0ff" stop-opacity="0.9"/>
+      <stop offset="100%" stop-color="#5fd0ff" stop-opacity="0"/>
+    </radialGradient>
+    <filter id="blur" x="-50%" y="-50%" width="200%" height="200%">
+      <feGaussianBlur stdDeviation="6"/>
+    </filter>
+  </defs>
+
+  <rect width="400" height="400" fill="url(#bg)"/>
+
+  <g fill="none" stroke="#3aa7ff" stroke-width="1.5">
+    <circle cx="200" cy="200" r="40" stroke-opacity="0.8"/>
+    <circle cx="200" cy="200" r="65" stroke-opacity="0.65"/>
+    <circle cx="200" cy="200" r="92" stroke-opacity="0.5"/>
+    <circle cx="200" cy="200" r="122" stroke-opacity="0.35"/>
+    <circle cx="200" cy="200" r="155" stroke-opacity="0.2"/>
+    <circle cx="200" cy="200" r="190" stroke-opacity="0.1"/>
+  </g>
+
+  <circle cx="200" cy="200" r="90" fill="url(#glow)" opacity="0.7" filter="url(#blur)"/>
+
+  <path d="M200 120 C235 165 262 198 262 232 C262 268 234 292 200 292 C166 292 138 268 138 232 C138 198 165 165 200 120 Z"
+        fill="url(#drop)"/>
+
+  <ellipse cx="180" cy="222" rx="10" ry="18" fill="#ffffff" opacity="0.55" transform="rotate(20 180 222)"/>
+
+  <path d="M40 320 Q110 300 160 322 T280 322 T380 318" fill="none" stroke="#5fd0ff" stroke-width="2" opacity="0.5"/>
+  <path d="M30 340 Q100 325 170 342 T300 342 T390 338" fill="none" stroke="#2a8cff" stroke-width="2" opacity="0.35"/>
+
+  <g fill="#bfefff">
+    <circle cx="90" cy="95" r="2" opacity="0.8"/>
+    <circle cx="320" cy="80" r="1.5" opacity="0.7"/>
+    <circle cx="335" cy="170" r="2.5" opacity="0.6"/>
+    <circle cx="65" cy="200" r="1.5" opacity="0.5"/>
+    <circle cx="300" cy="280" r="2" opacity="0.6"/>
+    <circle cx="110" cy="260" r="1.2" opacity="0.7"/>
+  </g>
+</svg>

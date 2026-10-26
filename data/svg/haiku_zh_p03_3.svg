@@ -1,0 +1,97 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 400" width="400" height="400">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#1b1447"/>
+      <stop offset="0.55" stop-color="#0d2a4f"/>
+      <stop offset="1" stop-color="#062b2e"/>
+    </linearGradient>
+    <radialGradient id="core" cx="50%" cy="50%" r="50%">
+      <stop offset="0" stop-color="#fff3c4" stop-opacity="1"/>
+      <stop offset="0.35" stop-color="#ffb347" stop-opacity="0.8"/>
+      <stop offset="1" stop-color="#ff6f91" stop-opacity="0"/>
+    </radialGradient>
+    <linearGradient id="ribbon1" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#ff6f91"/>
+      <stop offset="0.5" stop-color="#ffd166"/>
+      <stop offset="1" stop-color="#06d6a0"/>
+    </linearGradient>
+    <linearGradient id="ribbon2" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#4cc9f0"/>
+      <stop offset="0.5" stop-color="#7b61ff"/>
+      <stop offset="1" stop-color="#f72585"/>
+    </linearGradient>
+    <filter id="soft" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="2.5"/>
+    </filter>
+    <filter id="glow" x="-50%" y="-50%" width="200%" height="200%">
+      <feGaussianBlur stdDeviation="4" result="b"/>
+      <feMerge>
+        <feMergeNode in="b"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+  </defs>
+
+  <!-- background -->
+  <rect width="400" height="400" fill="url(#bg)"/>
+
+  <!-- ambient haze -->
+  <circle cx="90" cy="80" r="70" fill="#7b61ff" opacity="0.18" filter="url(#soft)"/>
+  <circle cx="330" cy="320" r="90" fill="#06d6a0" opacity="0.15" filter="url(#soft)"/>
+
+  <!-- sound ripples radiating from the core -->
+  <g fill="none" filter="url(#soft)" stroke-linecap="round">
+    <circle cx="200" cy="200" r="34" stroke="#fff3c4" stroke-width="3" opacity="0.9"/>
+    <circle cx="200" cy="200" r="58" stroke="#ffd166" stroke-width="2.5" opacity="0.7"/>
+    <circle cx="200" cy="200" r="84" stroke="#ff6f91" stroke-width="2.2" opacity="0.55"/>
+    <circle cx="200" cy="200" r="112" stroke="#7b61ff" stroke-width="2" opacity="0.4"/>
+    <circle cx="200" cy="200" r="142" stroke="#4cc9f0" stroke-width="1.6" opacity="0.28"/>
+  </g>
+
+  <!-- core glow -->
+  <circle cx="200" cy="200" r="78" fill="url(#core)"/>
+  <circle cx="200" cy="200" r="16" fill="#fffbe9" filter="url(#glow)"/>
+
+  <!-- staff lines turned into flowing ribbons -->
+  <g fill="none" stroke-linecap="round" filter="url(#glow)">
+    <path d="M-10 150 C60 110, 120 190, 200 170 S330 110, 410 150" stroke="url(#ribbon1)" stroke-width="4" opacity="0.9"/>
+    <path d="M-10 170 C60 130, 120 210, 200 190 S330 130, 410 170" stroke="url(#ribbon1)" stroke-width="3.5" opacity="0.8"/>
+    <path d="M-10 190 C60 150, 120 230, 200 210 S330 150, 410 190" stroke="url(#ribbon1)" stroke-width="3" opacity="0.7"/>
+    <path d="M-10 230 C60 190, 120 270, 200 250 S330 190, 410 230" stroke="url(#ribbon2)" stroke-width="3.5" opacity="0.8"/>
+    <path d="M-10 250 C60 210, 120 290, 200 270 S330 210, 410 250" stroke="url(#ribbon2)" stroke-width="3" opacity="0.7"/>
+    <path d="M-10 270 C60 230, 120 310, 200 290 S330 230, 410 270" stroke="url(#ribbon2)" stroke-width="2.5" opacity="0.6"/>
+  </g>
+
+  <!-- floating notes drawn as luminous shapes -->
+  <g filter="url(#glow)">
+    <ellipse cx="92" cy="92" rx="11" ry="8" transform="rotate(-20 92 92)" fill="#ffd166"/>
+    <path d="M102 92 L102 62" stroke="#ffd166" stroke-width="2.5"/>
+
+    <ellipse cx="312" cy="108" rx="10" ry="7" transform="rotate(-20 312 108)" fill="#06d6a0"/>
+    <path d="M321 108 L321 80 Q330 86 326 98" stroke="#06d6a0" stroke-width="2.5" fill="none"/>
+
+    <ellipse cx="78" cy="318" rx="9" ry="6.5" transform="rotate(-20 78 318)" fill="#ff6f91"/>
+    <path d="M86 318 L86 292" stroke="#ff6f91" stroke-width="2.5"/>
+
+    <ellipse cx="330" cy="300" rx="12" ry="8.5" transform="rotate(-20 330 300)" fill="#4cc9f0"/>
+    <path d="M341 300 L341 268 Q350 276 345 290" stroke="#4cc9f0" stroke-width="2.5" fill="none"/>
+
+    <ellipse cx="290" cy="352" rx="7" ry="5" transform="rotate(-20 290 352)" fill="#7b61ff"/>
+  </g>
+
+  <!-- rhythmic dots scattered like sparks -->
+  <g>
+    <circle cx="140" cy="60" r="3" fill="#fff3c4" opacity="0.9"/>
+    <circle cx="260" cy="48" r="2" fill="#ffd166" opacity="0.8"/>
+    <circle cx="48" cy="200" r="2.5" fill="#4cc9f0" opacity="0.8"/>
+    <circle cx="366" cy="210" r="2.5" fill="#ff6f91" opacity="0.8"/>
+    <circle cx="170" cy="352" r="2" fill="#06d6a0" opacity="0.9"/>
+    <circle cx="232" cy="28" r="1.8" fill="#fff3c4" opacity="0.7"/>
+    <circle cx="20" cy="330" r="2" fill="#7b61ff" opacity="0.8"/>
+    <circle cx="380" cy="60" r="1.8" fill="#4cc9f0" opacity="0.7"/>
+    <circle cx="120" cy="150" r="1.6" fill="#ffd166" opacity="0.7"/>
+    <circle cx="282" cy="236" r="1.6" fill="#06d6a0" opacity="0.7"/>
+    <circle cx="150" cy="260" r="1.4" fill="#fff3c4" opacity="0.6"/>
+    <circle cx="60" cy="140" r="1.4" fill="#ff6f91" opacity="0.6"/>
+  </g>
+</svg>

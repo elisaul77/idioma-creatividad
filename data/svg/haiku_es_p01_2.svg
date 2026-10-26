@@ -1,0 +1,109 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 400" width="400" height="400">
+  <defs>
+    <radialGradient id="cielo" cx="50%" cy="40%" r="75%">
+      <stop offset="0%" stop-color="#2b1b4f"/>
+      <stop offset="60%" stop-color="#121a3a"/>
+      <stop offset="100%" stop-color="#05070f"/>
+    </radialGradient>
+    <linearGradient id="cuerpo" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#3fd6b0"/>
+      <stop offset="100%" stop-color="#1b7f8a"/>
+    </linearGradient>
+    <linearGradient id="ala" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#ff6fb1"/>
+      <stop offset="100%" stop-color="#ffc857"/>
+    </linearGradient>
+    <radialGradient id="orbe" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#fffbe6"/>
+      <stop offset="50%" stop-color="#ffe066" stop-opacity="0.9"/>
+      <stop offset="100%" stop-color="#ffe066" stop-opacity="0"/>
+    </radialGradient>
+    <radialGradient id="suelo" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#000" stop-opacity="0.5"/>
+      <stop offset="100%" stop-color="#000" stop-opacity="0"/>
+    </radialGradient>
+  </defs>
+
+  <rect width="400" height="400" fill="url(#cielo)"/>
+
+  <g fill="#ffffff" opacity="0.8">
+    <circle cx="40" cy="60" r="1.5"/>
+    <circle cx="90" cy="30" r="1"/>
+    <circle cx="160" cy="48" r="1.8"/>
+    <circle cx="300" cy="38" r="1.4"/>
+    <circle cx="350" cy="90" r="1"/>
+    <circle cx="370" cy="160" r="1.6"/>
+    <circle cx="25" cy="150" r="1.2"/>
+    <circle cx="60" cy="200" r="1"/>
+    <circle cx="330" cy="240" r="1.2"/>
+    <circle cx="240" cy="70" r="1"/>
+  </g>
+
+  <ellipse cx="200" cy="350" rx="130" ry="18" fill="url(#suelo)"/>
+
+  <!-- Alas -->
+  <g opacity="0.92">
+    <path d="M170 200 C110 90, 30 110, 40 190 C50 240, 120 230, 170 220 Z" fill="url(#ala)"/>
+    <path d="M230 200 C290 90, 370 110, 360 190 C350 240, 280 230, 230 220 Z" fill="url(#ala)"/>
+    <circle cx="90" cy="165" r="10" fill="#7a2e8e" opacity="0.6"/>
+    <circle cx="70" cy="200" r="6" fill="#7a2e8e" opacity="0.6"/>
+    <circle cx="310" cy="165" r="10" fill="#7a2e8e" opacity="0.6"/>
+    <circle cx="330" cy="200" r="6" fill="#7a2e8e" opacity="0.6"/>
+  </g>
+
+  <!-- Cola en espiral con orbe -->
+  <path d="M270 270 C320 300, 340 260, 325 235 C312 214, 290 230, 302 246" fill="none" stroke="#1b7f8a" stroke-width="10" stroke-linecap="round"/>
+  <circle cx="302" cy="246" r="26" fill="url(#orbe)"/>
+  <circle cx="302" cy="246" r="7" fill="#fffbe6"/>
+
+  <!-- Patas con raíces -->
+  <g stroke="#17616b" stroke-width="12" stroke-linecap="round" fill="none">
+    <path d="M150 280 L140 330 L125 345"/>
+    <path d="M175 288 L172 335 L186 350"/>
+    <path d="M225 288 L228 335 L214 350"/>
+    <path d="M250 280 L260 330 L275 345"/>
+  </g>
+
+  <!-- Cuerpo -->
+  <ellipse cx="200" cy="240" rx="92" ry="58" fill="url(#cuerpo)"/>
+  <!-- Cristales en el lomo -->
+  <g fill="#c9fff0" opacity="0.85">
+    <polygon points="180,192 186,172 192,192"/>
+    <polygon points="200,186 207,162 214,186"/>
+    <polygon points="222,192 229,174 235,194"/>
+  </g>
+  <!-- Escamas suaves -->
+  <g fill="none" stroke="#9ff5dc" stroke-width="2" opacity="0.5">
+    <path d="M150 240 q10 8 20 0"/>
+    <path d="M180 255 q10 8 20 0"/>
+    <path d="M210 250 q10 8 20 0"/>
+    <path d="M160 265 q10 8 20 0"/>
+  </g>
+
+  <!-- Cuello y cabeza -->
+  <path d="M130 210 Q120 180 115 160 L150 150 Q160 190 170 215 Z" fill="url(#cuerpo)"/>
+  <ellipse cx="118" cy="162" rx="48" ry="40" fill="url(#cuerpo)" transform="rotate(-12 118 162)"/>
+  <!-- Hocico -->
+  <path d="M80 160 Q52 166 48 178 Q60 186 84 182 Z" fill="#2fb59a"/>
+  <circle cx="58" cy="172" r="2.5" fill="#0b2a33"/>
+
+  <!-- Orejas -->
+  <polygon points="104,130 96,92 124,122" fill="#2fb59a"/>
+  <polygon points="130,124 136,86 146,130" fill="#2fb59a"/>
+  <path d="M104 124 L99 100 L118 120 Z" fill="#ff8fc4" opacity="0.7"/>
+
+  <!-- Cuerno espiral -->
+  <path d="M96 128 C80 110, 90 84, 116 90 C132 95, 124 112, 112 108 C104 105, 106 96, 113 98" fill="none" stroke="#ffc857" stroke-width="5" stroke-linecap="round"/>
+
+  <!-- Ojo -->
+  <ellipse cx="112" cy="152" rx="10" ry="12" fill="#0b2a33"/>
+  <ellipse cx="112" cy="152" rx="5" ry="8" fill="#ffe066"/>
+  <circle cx="115" cy="148" r="2" fill="#fff"/>
+
+  <!-- Mejilla y bigotes luminosos -->
+  <circle cx="135" cy="172" r="6" fill="#ff8fc4" opacity="0.6"/>
+  <g stroke="#c9fff0" stroke-width="1.5" stroke-linecap="round" opacity="0.8">
+    <path d="M70 180 Q50 190 30 186"/>
+    <path d="M72 188 Q52 200 34 206"/>
+  </g>
+</svg>

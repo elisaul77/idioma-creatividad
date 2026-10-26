@@ -1,2 +1,3 @@
 data/votos.db*
 __pycache__/
+build/

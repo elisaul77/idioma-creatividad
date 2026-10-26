@@ -1,0 +1,90 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 400" width="400" height="400">
+  <defs>
+    <radialGradient id="bg" cx="50%" cy="40%" r="75%">
+      <stop offset="0%" stop-color="#2b1d5c"/>
+      <stop offset="60%" stop-color="#101a3d"/>
+      <stop offset="100%" stop-color="#050812"/>
+    </radialGradient>
+    <linearGradient id="body" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#ff8a5b"/>
+      <stop offset="100%" stop-color="#c2366b"/>
+    </linearGradient>
+    <linearGradient id="wing" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#4fe3c1"/>
+      <stop offset="100%" stop-color="#7a5cff"/>
+    </linearGradient>
+    <radialGradient id="orb" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#fff7b0"/>
+      <stop offset="100%" stop-color="#ffd23f" stop-opacity="0"/>
+    </radialGradient>
+  </defs>
+
+  <!-- Background -->
+  <rect width="400" height="400" fill="url(#bg)"/>
+  <g fill="#ffffff">
+    <circle cx="40" cy="50" r="1.5" opacity="0.8"/>
+    <circle cx="120" cy="30" r="1" opacity="0.6"/>
+    <circle cx="330" cy="45" r="2" opacity="0.9"/>
+    <circle cx="370" cy="110" r="1.2" opacity="0.7"/>
+    <circle cx="60" cy="380" r="1" opacity="0.5"/>
+    <circle cx="350" cy="350" r="1.5" opacity="0.6"/>
+    <circle cx="200" cy="25" r="1.2" opacity="0.7"/>
+    <circle cx="25" cy="260" r="1" opacity="0.6"/>
+  </g>
+
+  <!-- Wings -->
+  <g opacity="0.85">
+    <path d="M170,175 C120,60 40,70 20,140 C50,130 70,150 90,160 C60,170 50,200 60,215 C90,200 120,200 170,205 Z" fill="url(#wing)"/>
+    <path d="M230,175 C280,60 360,70 380,140 C350,130 330,150 310,160 C340,170 350,200 340,215 C310,200 280,200 230,205 Z" fill="url(#wing)"/>
+  </g>
+
+  <!-- Tail with spiral and glowing orb -->
+  <path d="M130,245 C60,260 40,300 70,320 C95,338 110,310 90,300 C75,293 80,280 95,285"
+        fill="none" stroke="#ff8a5b" stroke-width="12" stroke-linecap="round"/>
+  <circle cx="70" cy="320" r="22" fill="url(#orb)"/>
+  <circle cx="70" cy="320" r="6" fill="#ffd23f"/>
+
+  <!-- Legs -->
+  <g stroke="#c2366b" stroke-width="14" stroke-linecap="round" fill="none">
+    <path d="M160,295 L150,350"/>
+    <path d="M200,305 L200,355"/>
+    <path d="M240,295 L250,350"/>
+  </g>
+  <g fill="#ffd23f">
+    <ellipse cx="146" cy="354" rx="12" ry="5"/>
+    <ellipse cx="200" cy="358" rx="12" ry="5"/>
+    <ellipse cx="254" cy="354" rx="12" ry="5"/>
+  </g>
+
+  <!-- Body -->
+  <ellipse cx="200" cy="250" rx="85" ry="60" fill="url(#body)"/>
+  <g fill="#ffffff" opacity="0.25">
+    <circle cx="175" cy="235" r="9"/>
+    <circle cx="205" cy="265" r="6"/>
+    <circle cx="225" cy="232" r="5"/>
+    <circle cx="150" cy="260" r="5"/>
+  </g>
+
+  <!-- Neck and head -->
+  <circle cx="290" cy="205" r="34" fill="url(#body)"/>
+
+  <!-- Eye stalks -->
+  <g stroke="#ff8a5b" stroke-width="4" stroke-linecap="round">
+    <line x1="280" y1="178" x2="270" y2="130"/>
+    <line x1="296" y1="174" x2="304" y2="122"/>
+  </g>
+  <g>
+    <circle cx="270" cy="128" r="9" fill="#ffffff"/>
+    <circle cx="272" cy="128" r="4" fill="#101a3d"/>
+    <circle cx="304" cy="120" r="9" fill="#ffffff"/>
+    <circle cx="306" cy="120" r="4" fill="#101a3d"/>
+  </g>
+
+  <!-- Head eye and beak -->
+  <circle cx="302" cy="200" r="8" fill="#ffffff"/>
+  <circle cx="304" cy="200" r="4" fill="#101a3d"/>
+  <path d="M318,200 Q345,205 352,222 Q330,224 318,216 Z" fill="#ffd23f"/>
+
+  <!-- Ground shadow -->
+  <ellipse cx="200" cy="372" rx="120" ry="10" fill="#000000" opacity="0.35"/>
+</svg>

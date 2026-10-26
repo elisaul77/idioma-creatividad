@@ -1,0 +1,140 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 400" width="400" height="400">
+  <defs>
+    <linearGradient id="himmel" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#bfe6ff"/>
+      <stop offset="1" stop-color="#fff4d9"/>
+    </linearGradient>
+    <linearGradient id="koerper" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#9c7cf5"/>
+      <stop offset="1" stop-color="#7a58e0"/>
+    </linearGradient>
+  </defs>
+
+  <!-- Himmel -->
+  <rect width="400" height="400" fill="url(#himmel)"/>
+
+  <!-- Sonne -->
+  <circle cx="335" cy="70" r="28" fill="#ffd76a"/>
+  <circle cx="335" cy="70" r="40" fill="#ffd76a" opacity="0.25"/>
+
+  <!-- Wolken -->
+  <g fill="#ffffff" opacity="0.9">
+    <ellipse cx="70" cy="75" rx="32" ry="13"/>
+    <ellipse cx="90" cy="68" rx="20" ry="12"/>
+    <ellipse cx="200" cy="50" rx="26" ry="10"/>
+    <ellipse cx="216" cy="45" rx="16" ry="10"/>
+  </g>
+
+  <!-- Sterne -->
+  <g fill="#ffffff">
+    <circle cx="40" cy="140" r="2.5"/>
+    <circle cx="370" cy="150" r="2"/>
+    <circle cx="20" cy="30" r="2"/>
+    <circle cx="170" cy="25" r="1.5"/>
+  </g>
+
+  <!-- Hügel und Gras -->
+  <path d="M0 320 Q100 290 200 315 T400 310 L400 400 L0 400 Z" fill="#a6dd82"/>
+  <path d="M0 350 Q120 335 230 355 T400 348 L400 400 L0 400 Z" fill="#8fd16e"/>
+
+  <!-- Blumen links -->
+  <g stroke="#4f9e4a" stroke-width="3" fill="none">
+    <path d="M58 360 L58 336"/>
+    <path d="M78 362 L78 344"/>
+  </g>
+  <g fill="#ff8fb1">
+    <circle cx="58" cy="332" r="7"/>
+    <circle cx="51" cy="337" r="5"/>
+    <circle cx="65" cy="337" r="5"/>
+  </g>
+  <circle cx="58" cy="332" r="3" fill="#ffe27a"/>
+  <g fill="#ffd166">
+    <circle cx="78" cy="340" r="5"/>
+    <circle cx="72" cy="344" r="4"/>
+    <circle cx="84" cy="344" r="4"/>
+  </g>
+
+  <!-- Blumen rechts -->
+  <g stroke="#4f9e4a" stroke-width="3" fill="none">
+    <path d="M345 365 L345 342"/>
+    <path d="M328 366 L328 352"/>
+  </g>
+  <g fill="#c79bff">
+    <circle cx="345" cy="338" r="7"/>
+    <circle cx="338" cy="343" r="5"/>
+    <circle cx="352" cy="343" r="5"/>
+  </g>
+  <circle cx="345" cy="338" r="3" fill="#ffe27a"/>
+  <circle cx="328" cy="352" r="5" fill="#ff8fb1"/>
+
+  <!-- Rauchwölkchen aus den Hörnern -->
+  <g fill="#ffffff" opacity="0.85">
+    <circle cx="122" cy="40" r="8"/>
+    <circle cx="112" cy="26" r="5"/>
+    <circle cx="278" cy="40" r="8"/>
+    <circle cx="288" cy="26" r="5"/>
+  </g>
+
+  <!-- Hörner als Schornsteine -->
+  <path d="M140 150 Q115 110 128 52 Q148 92 165 140 Z" fill="#f6e7bd" stroke="#d9b97a" stroke-width="3" stroke-linejoin="round"/>
+  <path d="M260 150 Q285 110 272 52 Q252 92 235 140 Z" fill="#f6e7bd" stroke="#d9b97a" stroke-width="3" stroke-linejoin="round"/>
+
+  <!-- Körper -->
+  <path d="M85 210 Q80 130 140 120 Q200 105 260 120 Q320 130 315 210 L318 300 Q318 332 286 332 L114 332 Q82 332 82 300 Z" fill="url(#koerper)"/>
+
+  <!-- Flauschige Wölbungen am Dach -->
+  <g fill="#9c7cf5">
+    <circle cx="112" cy="140" r="12"/>
+    <circle cx="140" cy="122" r="12"/>
+    <circle cx="200" cy="112" r="12"/>
+    <circle cx="260" cy="122" r="12"/>
+    <circle cx="288" cy="140" r="12"/>
+  </g>
+
+  <!-- Flecken -->
+  <g fill="#b9a4ff" opacity="0.8">
+    <circle cx="100" cy="262" r="8"/>
+    <circle cx="300" cy="252" r="10"/>
+    <circle cx="292" cy="172" r="6"/>
+    <circle cx="108" cy="172" r="5"/>
+    <circle cx="270" cy="290" r="5"/>
+  </g>
+
+  <!-- Augenbrauen -->
+  <g stroke="#3b2a6b" stroke-width="4" fill="none" stroke-linecap="round">
+    <path d="M120 150 Q150 138 176 150"/>
+    <path d="M224 150 Q250 138 280 150"/>
+  </g>
+
+  <!-- Augen (Fenster) -->
+  <g>
+    <circle cx="150" cy="190" r="32" fill="#ffffff" stroke="#3b2a6b" stroke-width="4"/>
+    <circle cx="160" cy="195" r="13" fill="#3b2a6b"/>
+    <circle cx="165" cy="190" r="4" fill="#ffffff"/>
+  </g>
+  <g>
+    <circle cx="250" cy="190" r="32" fill="#ffffff" stroke="#3b2a6b" stroke-width="4"/>
+    <circle cx="260" cy="195" r="13" fill="#3b2a6b"/>
+    <circle cx="265" cy="190" r="4" fill="#ffffff"/>
+  </g>
+
+  <!-- Wangen -->
+  <ellipse cx="120" cy="240" rx="14" ry="8" fill="#ff9fb8" opacity="0.7"/>
+  <ellipse cx="280" cy="240" rx="14" ry="8" fill="#ff9fb8" opacity="0.7"/>
+
+  <!-- Tür als Mund mit Zähnen -->
+  <path d="M160 332 L160 275 Q200 240 240 275 L240 332 Z" fill="#4a1f4f"/>
+  <g fill="#ffffff">
+    <path d="M166 271 L176 271 L171 282 Z"/>
+    <path d="M186 260 L196 260 L191 271 Z"/>
+    <path d="M204 260 L214 260 L209 271 Z"/>
+    <path d="M224 271 L234 271 L229 282 Z"/>
+  </g>
+
+  <!-- Zunge -->
+  <path d="M168 332 Q170 378 200 378 Q230 378 232 332 Z" fill="#ff6b8b"/>
+  <path d="M200 340 L200 368" stroke="#e0476b" stroke-width="3" stroke-linecap="round"/>
+
+  <!-- Türschwelle -->
+  <rect x="150" y="330" width="100" height="8" rx="4" fill="#7a58e0"/>
+</svg>

@@ -1,0 +1,64 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 400" width="400" height="400">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#FFF6D5"/>
+      <stop offset="1" stop-color="#FFD6A5"/>
+    </linearGradient>
+    <radialGradient id="sun" cx="50%" cy="45%" r="55%">
+      <stop offset="0" stop-color="#FFF9C4"/>
+      <stop offset="0.6" stop-color="#FFD54F"/>
+      <stop offset="1" stop-color="#FFA726"/>
+    </radialGradient>
+    <radialGradient id="glow" cx="50%" cy="50%" r="50%">
+      <stop offset="0" stop-color="#FFFFFF" stop-opacity="0.9"/>
+      <stop offset="1" stop-color="#FFFFFF" stop-opacity="0"/>
+    </radialGradient>
+  </defs>
+
+  <rect width="400" height="400" fill="url(#bg)"/>
+  <circle cx="200" cy="200" r="150" fill="url(#glow)"/>
+
+  <g stroke="#FFB300" stroke-width="12" stroke-linecap="round" fill="none">
+    <line x1="200" y1="30" x2="200" y2="60" transform="rotate(0 200 200)"/>
+    <line x1="200" y1="30" x2="200" y2="60" transform="rotate(30 200 200)"/>
+    <line x1="200" y1="30" x2="200" y2="60" transform="rotate(60 200 200)"/>
+    <line x1="200" y1="30" x2="200" y2="60" transform="rotate(90 200 200)"/>
+    <line x1="200" y1="30" x2="200" y2="60" transform="rotate(120 200 200)"/>
+    <line x1="200" y1="30" x2="200" y2="60" transform="rotate(150 200 200)"/>
+    <line x1="200" y1="30" x2="200" y2="60" transform="rotate(180 200 200)"/>
+    <line x1="200" y1="30" x2="200" y2="60" transform="rotate(210 200 200)"/>
+    <line x1="200" y1="30" x2="200" y2="60" transform="rotate(240 200 200)"/>
+    <line x1="200" y1="30" x2="200" y2="60" transform="rotate(270 200 200)"/>
+    <line x1="200" y1="30" x2="200" y2="60" transform="rotate(300 200 200)"/>
+    <line x1="200" y1="30" x2="200" y2="60" transform="rotate(330 200 200)"/>
+  </g>
+
+  <path d="M0 360 Q200 320 400 360 L400 400 L0 400Z" fill="#FFCC80" opacity="0.7"/>
+
+  <circle cx="200" cy="200" r="95" fill="url(#sun)"/>
+
+  <path d="M160 185 Q170 170 180 185" stroke="#6D4C41" stroke-width="6" stroke-linecap="round" fill="none"/>
+  <path d="M220 185 Q230 170 240 185" stroke="#6D4C41" stroke-width="6" stroke-linecap="round" fill="none"/>
+
+  <circle cx="150" cy="210" r="10" fill="#FF8A65" opacity="0.6"/>
+  <circle cx="250" cy="210" r="10" fill="#FF8A65" opacity="0.6"/>
+
+  <path d="M165 215 Q200 255 235 215 Q200 232 165 215Z" fill="#6D4C41" stroke="#6D4C41" stroke-width="4" stroke-linejoin="round"/>
+
+  <circle cx="100" cy="140" r="5" fill="#FF7043"/>
+  <circle cx="300" cy="140" r="4" fill="#4FC3F7"/>
+  <circle cx="120" cy="290" r="4" fill="#AED581"/>
+  <circle cx="285" cy="300" r="6" fill="#F06292"/>
+  <circle cx="200" cy="368" r="5" fill="#BA68C8"/>
+  <circle cx="60" cy="240" r="4" fill="#4DB6AC"/>
+  <circle cx="345" cy="230" r="5" fill="#FFB74D"/>
+
+  <g fill="#FFFFFF">
+    <path d="M70 76 Q70 90 84 90 Q70 90 70 104 Q70 90 56 90 Q70 90 70 76Z"/>
+    <path d="M330 66 Q330 76 340 76 Q330 76 330 86 Q330 76 320 76 Q330 76 330 66Z"/>
+    <path d="M60 308 Q60 320 72 320 Q60 320 60 332 Q60 320 48 320 Q60 320 60 308Z"/>
+    <path d="M345 296 Q345 312 361 312 Q345 312 345 328 Q345 312 329 312 Q345 312 345 296Z"/>
+    <path d="M318 190 Q318 198 326 198 Q318 198 318 206 Q318 198 310 198 Q318 198 318 190Z"/>
+    <path d="M74 190 Q74 199 83 199 Q74 199 74 208 Q74 199 65 199 Q74 199 74 190Z"/>
+  </g>
+</svg>

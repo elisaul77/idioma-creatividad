@@ -1,0 +1,87 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="400" height="400" viewBox="0 0 400 400">
+  <defs>
+    <radialGradient id="sky" cx="50%" cy="60%" r="75%">
+      <stop offset="0%" stop-color="#FFF3B0"/>
+      <stop offset="60%" stop-color="#FFD6A5"/>
+      <stop offset="100%" stop-color="#FFADAD"/>
+    </radialGradient>
+    <radialGradient id="sun" cx="40%" cy="35%" r="65%">
+      <stop offset="0%" stop-color="#FFFBE6"/>
+      <stop offset="70%" stop-color="#FFD23F"/>
+      <stop offset="100%" stop-color="#FFB703"/>
+    </radialGradient>
+    <linearGradient id="hill" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#9BE7A0"/>
+      <stop offset="100%" stop-color="#4CAF7A"/>
+    </linearGradient>
+    <linearGradient id="petal" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#FF9EC7"/>
+      <stop offset="100%" stop-color="#FF6FA8"/>
+    </linearGradient>
+  </defs>
+
+  <!-- Background -->
+  <rect width="400" height="400" fill="url(#sky)"/>
+
+  <!-- Rays -->
+  <g stroke="#FFC857" stroke-width="10" stroke-linecap="round" opacity="0.85">
+    <line x1="150" y1="120" x2="110" y2="70"/>
+    <line x1="150" y1="120" x2="150" y2="55"/>
+    <line x1="150" y1="120" x2="190" y2="70"/>
+    <line x1="150" y1="120" x2="80" y2="120"/>
+    <line x1="150" y1="120" x2="220" y2="120"/>
+  </g>
+
+  <!-- Sun -->
+  <circle cx="150" cy="150" r="60" fill="url(#sun)"/>
+  <circle cx="150" cy="150" r="60" fill="none" stroke="#FFB703" stroke-width="3" opacity="0.4"/>
+
+  <!-- Sun face -->
+  <circle cx="128" cy="140" r="5" fill="#7A4A00"/>
+  <circle cx="172" cy="140" r="5" fill="#7A4A00"/>
+  <path d="M118 160 Q150 185 182 160" fill="none" stroke="#7A4A00" stroke-width="5" stroke-linecap="round"/>
+  <circle cx="115" cy="161" r="6" fill="#FF8FA3" opacity="0.6"/>
+  <circle cx="185" cy="161" r="6" fill="#FF8FA3" opacity="0.6"/>
+
+  <!-- Flying bird -->
+  <path d="M290 110 Q305 96 320 110 Q335 96 350 110" fill="none" stroke="#3D405B" stroke-width="5" stroke-linecap="round"/>
+  <path d="M240 150 Q250 140 260 150 Q270 140 280 150" fill="none" stroke="#3D405B" stroke-width="4" stroke-linecap="round" opacity="0.7"/>
+
+  <!-- Hill -->
+  <path d="M0 280 Q120 230 240 270 T400 260 L400 400 L0 400 Z" fill="url(#hill)"/>
+
+  <!-- Flowers -->
+  <g>
+    <g transform="translate(70 300)">
+      <line x1="0" y1="0" x2="0" y2="50" stroke="#2E7D5B" stroke-width="4"/>
+      <circle cx="0" cy="-8" r="10" fill="url(#petal)"/>
+      <circle cx="-10" cy="0" r="10" fill="url(#petal)"/>
+      <circle cx="10" cy="0" r="10" fill="url(#petal)"/>
+      <circle cx="0" cy="8" r="10" fill="url(#petal)"/>
+      <circle cx="0" cy="0" r="6" fill="#FFD23F"/>
+    </g>
+    <g transform="translate(200 320)">
+      <line x1="0" y1="0" x2="0" y2="60" stroke="#2E7D5B" stroke-width="4"/>
+      <circle cx="0" cy="-8" r="11" fill="#FFA36C"/>
+      <circle cx="-11" cy="0" r="11" fill="#FFA36C"/>
+      <circle cx="11" cy="0" r="11" fill="#FFA36C"/>
+      <circle cx="0" cy="8" r="11" fill="#FFA36C"/>
+      <circle cx="0" cy="0" r="6" fill="#FFF3B0"/>
+    </g>
+    <g transform="translate(330 300)">
+      <line x1="0" y1="0" x2="0" y2="50" stroke="#2E7D5B" stroke-width="4"/>
+      <circle cx="0" cy="-8" r="10" fill="#B983FF"/>
+      <circle cx="-10" cy="0" r="10" fill="#B983FF"/>
+      <circle cx="10" cy="0" r="10" fill="#B983FF"/>
+      <circle cx="0" cy="8" r="10" fill="#B983FF"/>
+      <circle cx="0" cy="0" r="6" fill="#FFD23F"/>
+    </g>
+  </g>
+
+  <!-- Sparkles -->
+  <g fill="#FFFFFF" opacity="0.9">
+    <path d="M50 200 l4 10 l10 4 l-10 4 l-4 10 l-4 -10 l-10 -4 l10 -4 z"/>
+    <path d="M360 200 l3 8 l8 3 l-8 3 l-3 8 l-3 -8 l-8 -3 l8 -3 z"/>
+    <path d="M250 60 l2 6 l6 2 l-6 2 l-2 6 l-2 -6 l-6 -2 l6 -2 z"/>
+  </g>
+</svg>

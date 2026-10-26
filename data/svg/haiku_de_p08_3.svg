@@ -1,0 +1,124 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="400" height="400" viewBox="0 0 400 400">
+  <defs>
+    <linearGradient id="himmel" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#141a3a"/>
+      <stop offset="1" stop-color="#3b2a5e"/>
+    </linearGradient>
+    <linearGradient id="boden" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#6b4630"/>
+      <stop offset="1" stop-color="#4a2f20"/>
+    </linearGradient>
+    <radialGradient id="mondlicht" cx="0.5" cy="0.5" r="0.5">
+      <stop offset="0" stop-color="#fff3c4" stop-opacity="0.35"/>
+      <stop offset="1" stop-color="#fff3c4" stop-opacity="0"/>
+    </radialGradient>
+  </defs>
+
+  <!-- Himmel und Boden -->
+  <rect width="400" height="400" fill="url(#himmel)"/>
+  <rect y="320" width="400" height="80" fill="url(#boden)"/>
+
+  <!-- Sterne -->
+  <g fill="#fff8e1">
+    <circle cx="30" cy="30" r="1.5"/>
+    <circle cx="90" cy="50" r="1"/>
+    <circle cx="150" cy="25" r="1.8"/>
+    <circle cx="210" cy="60" r="1"/>
+    <circle cx="260" cy="20" r="1.4"/>
+    <circle cx="370" cy="150" r="1.2"/>
+    <circle cx="50" cy="130" r="1"/>
+    <circle cx="180" cy="110" r="1.2"/>
+    <circle cx="20" cy="190" r="1"/>
+    <circle cx="380" cy="30" r="1.5"/>
+  </g>
+
+  <!-- Mond -->
+  <circle cx="330" cy="75" r="60" fill="url(#mondlicht)"/>
+  <circle cx="330" cy="75" r="28" fill="#fff3c4"/>
+  <circle cx="340" cy="68" r="25" fill="#222650"/>
+
+  <!-- Papierflieger mit Spur -->
+  <path d="M 60 110 Q 110 70 170 95" fill="none" stroke="#fff8e1" stroke-width="1.5" stroke-dasharray="4 5" opacity="0.6"/>
+  <polygon points="170,95 150,100 160,108" fill="#f5f5f5"/>
+  <polygon points="170,95 160,108 157,100" fill="#cfd8dc"/>
+
+  <!-- Spielzeugeisenbahn auf Regal -->
+  <rect x="20" y="200" width="170" height="8" fill="#8b5e3c"/>
+  <rect x="30" y="172" width="44" height="28" rx="3" fill="#e53935"/>
+  <rect x="78" y="172" width="44" height="28" rx="3" fill="#1e88e5"/>
+  <rect x="126" y="172" width="44" height="28" rx="3" fill="#fdd835"/>
+  <rect x="34" y="162" width="14" height="10" fill="#c62828"/>
+  <circle cx="42" cy="202" r="5" fill="#263238"/>
+  <circle cx="64" cy="202" r="5" fill="#263238"/>
+  <circle cx="90" cy="202" r="5" fill="#263238"/>
+  <circle cx="112" cy="202" r="5" fill="#263238"/>
+  <circle cx="138" cy="202" r="5" fill="#263238"/>
+  <circle cx="160" cy="202" r="5" fill="#263238"/>
+  <!-- Rauchwölkchen -->
+  <g fill="#e0e0e0" opacity="0.4">
+    <circle cx="40" cy="150" r="5"/>
+    <circle cx="48" cy="142" r="7"/>
+    <circle cx="60" cy="136" r="5"/>
+  </g>
+
+  <!-- Teddybär tanzt -->
+  <g transform="translate(110 250)">
+    <!-- Ohren -->
+    <circle cx="-22" cy="-42" r="10" fill="#a0673f"/>
+    <circle cx="22" cy="-42" r="10" fill="#a0673f"/>
+    <circle cx="-22" cy="-42" r="5" fill="#f0c9a0"/>
+    <circle cx="22" cy="-42" r="5" fill="#f0c9a0"/>
+    <!-- Kopf -->
+    <circle cx="0" cy="-30" r="24" fill="#b87a4b"/>
+    <!-- Schnauze -->
+    <ellipse cx="0" cy="-22" rx="10" ry="8" fill="#f0c9a0"/>
+    <circle cx="0" cy="-25" r="3" fill="#3e2723"/>
+    <!-- Augen -->
+    <circle cx="-9" cy="-36" r="3" fill="#1a1a1a"/>
+    <circle cx="9" cy="-36" r="3" fill="#1a1a1a"/>
+    <!-- Körper -->
+    <ellipse cx="0" cy="10" rx="22" ry="28" fill="#b87a4b"/>
+    <ellipse cx="0" cy="14" rx="12" ry="16" fill="#f0c9a0"/>
+    <!-- Arme hoch -->
+    <path d="M -18 0 Q -40 -20 -36 -48" stroke="#b87a4b" stroke-width="10" stroke-linecap="round" fill="none"/>
+    <path d="M 18 0 Q 40 -20 36 -48" stroke="#b87a4b" stroke-width="10" stroke-linecap="round" fill="none"/>
+    <!-- Beine -->
+    <path d="M -10 34 L -18 58" stroke="#b87a4b" stroke-width="11" stroke-linecap="round"/>
+    <path d="M 10 34 L 22 56" stroke="#b87a4b" stroke-width="11" stroke-linecap="round"/>
+    <ellipse cx="-20" cy="60" rx="8" ry="5" fill="#8a5630"/>
+    <ellipse cx="24" cy="58" rx="8" ry="5" fill="#8a5630"/>
+  </g>
+
+  <!-- Roboter -->
+  <g transform="translate(300 250)">
+    <line x1="0" y1="-62" x2="0" y2="-74" stroke="#90a4ae" stroke-width="3"/>
+    <circle cx="0" cy="-78" r="5" fill="#ff7043"/>
+    <rect x="-22" y="-56" width="44" height="34" rx="6" fill="#90a4ae"/>
+    <rect x="-14" y="-48" width="8" height="8" fill="#00e5ff"/>
+    <rect x="6" y="-48" width="8" height="8" fill="#00e5ff"/>
+    <rect x="-16" y="-20" width="32" height="40" rx="5" fill="#607d8b"/>
+    <circle cx="0" cy="-2" r="5" fill="#ffca28"/>
+    <rect x="-30" y="-16" width="8" height="28" rx="4" fill="#78909c"/>
+    <rect x="22" y="-16" width="8" height="28" rx="4" fill="#78909c"/>
+    <rect x="-14" y="20" width="10" height="26" rx="3" fill="#455a64"/>
+    <rect x="4" y="20" width="10" height="26" rx="3" fill="#455a64"/>
+  </g>
+
+  <!-- Kreisel dreht sich -->
+  <g transform="translate(200 318)">
+    <path d="M -2 -22 L 2 -22 L 14 0 L -14 0 Z" fill="#ab47bc"/>
+    <path d="M -14 0 L 14 0 L 0 4 Z" fill="#7b1fa2"/>
+    <line x1="0" y1="-22" x2="0" y2="-28" stroke="#4e342e" stroke-width="2"/>
+    <path d="M -22 -10 Q -26 -4 -20 2" fill="none" stroke="#fff8e1" stroke-width="1.5" opacity="0.6"/>
+    <path d="M 22 -10 Q 26 -4 20 2" fill="none" stroke="#fff8e1" stroke-width="1.5" opacity="0.6"/>
+  </g>
+
+  <!-- Musiknoten -->
+  <g fill="#ffd54f" opacity="0.85">
+    <ellipse cx="240" cy="200" rx="5" ry="4" transform="rotate(-20 240 200)"/>
+    <rect x="244" y="180" width="2" height="20"/>
+    <ellipse cx="262" cy="170" rx="5" ry="4" transform="rotate(-20 262 170)"/>
+    <rect x="266" y="150" width="2" height="20"/>
+    <path d="M 266 150 Q 276 156 268 166" fill="none" stroke="#ffd54f" stroke-width="2"/>
+  </g>
+</svg>

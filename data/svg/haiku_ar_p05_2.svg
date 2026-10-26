@@ -1,0 +1,71 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="400" height="400" viewBox="0 0 400 400">
+  <defs>
+    <radialGradient id="bg" cx="50%" cy="50%" r="70%">
+      <stop offset="0" stop-color="#1b1030"/>
+      <stop offset="1" stop-color="#05060f"/>
+    </radialGradient>
+    <radialGradient id="mantle" cx="50%" cy="50%" r="50%">
+      <stop offset="0" stop-color="#7a3b1e"/>
+      <stop offset="0.6" stop-color="#b5552a"/>
+      <stop offset="1" stop-color="#d98a3d"/>
+    </radialGradient>
+    <radialGradient id="core" cx="50%" cy="50%" r="50%">
+      <stop offset="0" stop-color="#fff6c2"/>
+      <stop offset="0.35" stop-color="#ffb42e"/>
+      <stop offset="0.7" stop-color="#e5461c"/>
+      <stop offset="1" stop-color="#7a1a0c" stop-opacity="0"/>
+    </radialGradient>
+    <linearGradient id="cap" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#9fb3c8"/>
+      <stop offset="0.5" stop-color="#eef4fa"/>
+      <stop offset="1" stop-color="#6d7f94"/>
+    </linearGradient>
+    <linearGradient id="flame" x1="0" y1="1" x2="0" y2="0">
+      <stop offset="0" stop-color="#ffd27a" stop-opacity="0.95"/>
+      <stop offset="1" stop-color="#ff5a1f" stop-opacity="0"/>
+    </linearGradient>
+    <filter id="glow" x="-50%" y="-50%" width="200%" height="200%">
+      <feGaussianBlur stdDeviation="4" result="b"/>
+      <feMerge>
+        <feMergeNode in="b"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+  </defs>
+
+  <!-- Background -->
+  <rect width="400" height="400" fill="url(#bg)"/>
+  <g fill="#ffffff" opacity="0.6">
+    <circle cx="40" cy="60" r="1.2"/>
+    <circle cx="350" cy="50" r="1"/>
+    <circle cx="370" cy="170" r="1.4"/>
+    <circle cx="25" cy="250" r="1"/>
+    <circle cx="330" cy="330" r="1.2"/>
+    <circle cx="70" cy="360" r="1"/>
+    <circle cx="150" cy="25" r="1"/>
+  </g>
+
+  <!-- Earth cross-section -->
+  <circle cx="200" cy="200" r="170" fill="url(#mantle)"/>
+  <circle cx="200" cy="200" r="170" fill="none" stroke="#4a6b3a" stroke-width="6"/>
+  <circle cx="200" cy="200" r="140" fill="none" stroke="#c97a3a" stroke-width="1.5" stroke-dasharray="6 8" opacity="0.4"/>
+  <circle cx="200" cy="200" r="110" fill="#d2572a" opacity="0.55"/>
+  <circle cx="200" cy="200" r="55" fill="url(#core)"/>
+  <circle cx="200" cy="200" r="22" fill="#fff6c2" filter="url(#glow)"/>
+
+  <!-- Descent shaft -->
+  <rect x="192" y="30" width="16" height="140" fill="#0b0a14" opacity="0.85"/>
+  <rect x="192" y="30" width="16" height="140" fill="none" stroke="#ffb42e" stroke-width="1" opacity="0.5"/>
+
+  <!-- Vehicle -->
+  <g transform="translate(200,135)">
+    <!-- Exhaust flame -->
+    <path d="M-6,-18 Q0,-52 0,-62 Q0,-52 6,-18 Z" fill="url(#flame)" filter="url(#glow)"/>
+    <!-- Capsule body -->
+    <path d="M-14,-18 L14,-18 L14,8 L0,24 L-14,8 Z" fill="url(#cap)" stroke="#2c3a4a" stroke-width="1.5"/>
+    <!-- Window -->
+    <circle cx="0" cy="-6" r="4" fill="#3aa0ff"/>
+    <!-- Hull band -->
+    <line x1="-14" y1="0" x2="14" y2="0" stroke="#5b6c80" stroke-width="1.5"/>
+  </g>
+</svg>

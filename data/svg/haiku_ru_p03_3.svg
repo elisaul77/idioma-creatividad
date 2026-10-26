@@ -1,0 +1,79 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="400" height="400" viewBox="0 0 400 400">
+  <defs>
+    <filter id="pencil" x="-10%" y="-10%" width="120%" height="120%">
+      <feTurbulence type="fractalNoise" baseFrequency="0.9" numOctaves="2" seed="7" result="noise"/>
+      <feDisplacementMap in="SourceGraphic" in2="noise" scale="2.5" xChannelSelector="R" yChannelSelector="G"/>
+    </filter>
+    <filter id="paper" x="0" y="0" width="100%" height="100%">
+      <feTurbulence type="fractalNoise" baseFrequency="0.6" numOctaves="3" seed="3" result="grain"/>
+      <feColorMatrix in="grain" type="matrix" values="0 0 0 0 0.45  0 0 0 0 0.35  0 0 0 0 0.2  0 0 0 0.08 0"/>
+      <feComposite in2="SourceGraphic" operator="in"/>
+    </filter>
+    <radialGradient id="glow" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#f6c85f" stop-opacity="0.55"/>
+      <stop offset="100%" stop-color="#f6c85f" stop-opacity="0"/>
+    </radialGradient>
+  </defs>
+
+  <!-- paper -->
+  <rect width="400" height="400" fill="#f7f0e1"/>
+  <rect width="400" height="400" fill="#f7f0e1" filter="url(#paper)"/>
+
+  <!-- warm glow -->
+  <circle cx="230" cy="190" r="170" fill="url(#glow)"/>
+
+  <!-- staff lines (hand-drawn, slightly wobbly) -->
+  <g fill="none" stroke="#2f2a26" stroke-width="1.6" stroke-linecap="round" filter="url(#pencil)">
+    <path d="M30 120 C120 116 220 124 370 118"/>
+    <path d="M30 145 C110 149 230 141 370 147"/>
+    <path d="M30 170 C125 166 215 174 370 169"/>
+    <path d="M30 195 C120 199 240 191 370 196"/>
+    <path d="M30 220 C115 216 225 224 370 219"/>
+  </g>
+
+  <!-- treble clef, drawn as a single gesture -->
+  <path d="M64 96 C78 88 92 110 74 136 C58 160 54 176 70 190 C92 208 104 170 84 150 C70 136 92 120 102 142 C112 166 96 200 66 222 C46 238 58 262 80 252"
+        fill="none" stroke="#2f2a26" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round" filter="url(#pencil)"/>
+
+  <!-- melody line, sweeping through the staff -->
+  <path d="M150 240 C180 200 200 140 240 150 C270 158 250 200 280 200 C310 200 320 150 350 130"
+        fill="none" stroke="#c4553a" stroke-width="2.2" stroke-linecap="round" stroke-dasharray="1 0" filter="url(#pencil)"/>
+  <path d="M150 244 C182 206 204 144 242 154 C272 162 252 204 282 204 C312 204 322 154 352 134"
+        fill="none" stroke="#c4553a" stroke-width="0.8" stroke-opacity="0.6" stroke-linecap="round" filter="url(#pencil)"/>
+
+  <!-- notes -->
+  <g filter="url(#pencil)">
+    <g transform="rotate(-18 150 245)">
+      <ellipse cx="150" cy="245" rx="9" ry="6.5" fill="#2f2a26"/>
+      <path d="M158 243 L158 176" stroke="#2f2a26" stroke-width="1.8" fill="none" stroke-linecap="round"/>
+    </g>
+    <g transform="rotate(-18 242 154)">
+      <ellipse cx="242" cy="154" rx="9" ry="6.5" fill="#c4553a"/>
+      <path d="M250 152 L250 86" stroke="#c4553a" stroke-width="1.8" fill="none" stroke-linecap="round"/>
+      <path d="M250 86 C268 98 272 112 262 124" stroke="#c4553a" stroke-width="1.8" fill="none" stroke-linecap="round"/>
+    </g>
+    <g transform="rotate(-18 282 200)">
+      <ellipse cx="282" cy="200" rx="9" ry="6.5" fill="#2f2a26"/>
+    </g>
+    <g transform="rotate(-18 352 134)">
+      <ellipse cx="352" cy="134" rx="9" ry="6.5" fill="none" stroke="#2f2a26" stroke-width="1.8"/>
+      <path d="M344 132 L344 200" stroke="#2f2a26" stroke-width="1.8" fill="none" stroke-linecap="round"/>
+    </g>
+  </g>
+
+  <!-- loose sketched strokes suggesting sound -->
+  <g fill="none" stroke="#2f2a26" stroke-width="1.2" stroke-linecap="round" stroke-opacity="0.7" filter="url(#pencil)">
+    <path d="M300 300 C312 290 312 310 324 300"/>
+    <path d="M316 318 C332 304 332 332 348 318"/>
+    <path d="M90 318 C100 308 100 328 110 318"/>
+    <path d="M70 330 C84 316 84 344 98 330"/>
+  </g>
+
+  <!-- small dots as scattered rests -->
+  <g fill="#2f2a26" filter="url(#pencil)">
+    <circle cx="112" cy="300" r="2.2"/>
+    <circle cx="260" cy="330" r="1.8"/>
+    <circle cx="200" cy="350" r="2.4"/>
+    <circle cx="330" cy="260" r="1.6"/>
+  </g>
+</svg>

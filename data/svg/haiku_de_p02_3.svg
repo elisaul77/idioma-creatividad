@@ -1,0 +1,90 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="400" height="400" viewBox="0 0 400 400">
+  <defs>
+    <radialGradient id="himmel" cx="50%" cy="35%" r="75%">
+      <stop offset="0%" stop-color="#5b3e9e"/>
+      <stop offset="55%" stop-color="#2a2466"/>
+      <stop offset="100%" stop-color="#120f33"/>
+    </radialGradient>
+    <radialGradient id="mond" cx="40%" cy="40%" r="60%">
+      <stop offset="0%" stop-color="#fff6d6"/>
+      <stop offset="100%" stop-color="#f2c97a"/>
+    </radialGradient>
+    <radialGradient id="glanz" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#ffb3e6" stop-opacity="0.55"/>
+      <stop offset="100%" stop-color="#ffb3e6" stop-opacity="0"/>
+    </radialGradient>
+    <linearGradient id="insel" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#8fd3c8"/>
+      <stop offset="100%" stop-color="#3b6e7a"/>
+    </linearGradient>
+    <linearGradient id="treppe" x1="0" y1="1" x2="1" y2="0">
+      <stop offset="0%" stop-color="#ffd7f2" stop-opacity="0"/>
+      <stop offset="100%" stop-color="#ffffff" stop-opacity="0.8"/>
+    </linearGradient>
+    <filter id="weich" x="-50%" y="-50%" width="200%" height="200%">
+      <feGaussianBlur stdDeviation="6"/>
+    </filter>
+  </defs>
+
+  <!-- Himmel -->
+  <rect width="400" height="400" fill="url(#himmel)"/>
+
+  <!-- Nebelglanz -->
+  <circle cx="110" cy="120" r="110" fill="url(#glanz)"/>
+  <circle cx="310" cy="250" r="130" fill="url(#glanz)"/>
+
+  <!-- Sterne -->
+  <g fill="#ffffff">
+    <circle cx="48" cy="48" r="1.8" opacity="0.9"/>
+    <circle cx="170" cy="36" r="1.2" opacity="0.7"/>
+    <circle cx="360" cy="70" r="2" opacity="0.9"/>
+    <circle cx="280" cy="30" r="1.1" opacity="0.6"/>
+    <circle cx="200" cy="90" r="1.4" opacity="0.8"/>
+    <circle cx="90" cy="180" r="1.3" opacity="0.6"/>
+    <circle cx="376" cy="190" r="1.5" opacity="0.7"/>
+    <circle cx="25" cy="260" r="1.6" opacity="0.8"/>
+    <circle cx="330" cy="330" r="1.2" opacity="0.6"/>
+    <circle cx="150" cy="300" r="1" opacity="0.5"/>
+  </g>
+
+  <!-- Mond mit Sichel -->
+  <circle cx="290" cy="110" r="46" fill="#ffe9a8" opacity="0.35" filter="url(#weich)"/>
+  <path d="M 300 70 A 50 50 0 1 0 330 150 A 40 40 0 1 1 300 70 Z" fill="url(#mond)"/>
+
+  <!-- Spirale aus Traumfäden -->
+  <path d="M 200 200 C 200 180 225 175 230 195 C 235 215 205 225 195 210 C 185 195 210 165 235 175 C 262 186 262 225 240 240 C 215 255 170 245 165 215 C 160 185 190 150 225 150"
+        fill="none" stroke="#ff9ed8" stroke-width="2.5" stroke-linecap="round" opacity="0.8"/>
+  <path d="M 200 200 C 200 180 225 175 230 195 C 235 215 205 225 195 210 C 185 195 210 165 235 175 C 262 186 262 225 240 240 C 215 255 170 245 165 215 C 160 185 190 150 225 150"
+        fill="none" stroke="#ffffff" stroke-width="1" stroke-linecap="round" opacity="0.6"/>
+
+  <!-- Treppe aus Licht ins Nichts -->
+  <path d="M 40 360 L 90 360 L 90 330 L 130 330 L 130 300 L 170 300 L 170 270 L 210 270 L 210 240 L 250 240 L 250 210"
+        fill="none" stroke="url(#treppe)" stroke-width="6" stroke-linejoin="round" opacity="0.9"/>
+
+  <!-- Schwebende Insel -->
+  <ellipse cx="290" cy="300" rx="70" ry="14" fill="#2b2352" opacity="0.5" filter="url(#weich)"/>
+  <path d="M 225 300 C 240 318 340 318 355 300 C 345 296 235 296 225 300 Z" fill="url(#insel)"/>
+  <path d="M 225 300 Q 290 292 355 300 Q 340 316 290 318 Q 240 316 225 300 Z" fill="url(#insel)"/>
+  <!-- Baum auf der Insel -->
+  <rect x="289" y="262" width="4" height="34" fill="#6b4a7a"/>
+  <circle cx="291" cy="252" r="18" fill="#ff9ed8" opacity="0.85"/>
+  <circle cx="280" cy="262" r="10" fill="#ffc2e6" opacity="0.8"/>
+  <circle cx="303" cy="262" r="11" fill="#ffb3e6" opacity="0.8"/>
+
+  <!-- Schwebende Seifenblasen -->
+  <g fill="none" stroke="#c9f2ff" stroke-width="1.5">
+    <circle cx="70" cy="90" r="14" opacity="0.6"/>
+    <circle cx="105" cy="60" r="7" opacity="0.5"/>
+    <circle cx="60" cy="210" r="10" opacity="0.5"/>
+    <circle cx="350" cy="200" r="12" opacity="0.55"/>
+  </g>
+  <g fill="#c9f2ff" opacity="0.15">
+    <circle cx="70" cy="90" r="14"/>
+    <circle cx="105" cy="60" r="7"/>
+    <circle cx="60" cy="210" r="10"/>
+    <circle cx="350" cy="200" r="12"/>
+  </g>
+
+  <!-- Weicher Schleier -->
+  <rect y="330" width="400" height="70" fill="#120f33" opacity="0.25" filter="url(#weich)"/>
+</svg>

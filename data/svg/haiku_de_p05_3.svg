@@ -1,0 +1,52 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="400" height="400" viewBox="0 0 400 400">
+  <defs>
+    <radialGradient id="bg" cx="50%" cy="50%" r="70%">
+      <stop offset="0" stop-color="#1a1f3a"/>
+      <stop offset="1" stop-color="#05060d"/>
+    </radialGradient>
+    <radialGradient id="core" cx="50%" cy="50%" r="50%">
+      <stop offset="0" stop-color="#fffbe0"/>
+      <stop offset="0.6" stop-color="#ffd23f" stop-opacity="0.8"/>
+      <stop offset="1" stop-color="#ff8c00" stop-opacity="0"/>
+    </radialGradient>
+    <linearGradient id="hull" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#eef3f9"/>
+      <stop offset="1" stop-color="#8fa0b8"/>
+    </linearGradient>
+    <linearGradient id="flame" x1="1" y1="0" x2="0" y2="0">
+      <stop offset="0" stop-color="#ffd23f"/>
+      <stop offset="1" stop-color="#ff4d00" stop-opacity="0"/>
+    </linearGradient>
+  </defs>
+
+  <rect width="400" height="400" fill="url(#bg)"/>
+
+  <g fill="#ffffff">
+    <circle cx="28" cy="universal" r="0"/>
+  </g>
+
+  <circle cx="200" cy="200" r="170" fill="#6b4226"/>
+  <circle cx="200" cy="200" r="135" fill="#b84a2c"/>
+  <circle cx="200" cy="200" r="95" fill="#f07f2a"/>
+  <circle cx="200" cy="200" r="55" fill="#ffd23f"/>
+  <circle cx="200" cy="200" r="70" fill="url(#core)"/>
+  <circle cx="200" cy="200" r="30" fill="#fff7d1"/>
+
+  <path d="M30 30 Q 70 70 105 95" fill="none" stroke="#ffb347" stroke-width="3" stroke-dasharray="6 6" opacity="0.7"/>
+
+  <g transform="translate(120 110) rotate(45)">
+    <polygon points="-52,-8 -80,0 -52,8" fill="url(#flame)"/>
+    <polygon points="-38,-18 -52,-30 -46,0 -52,30 -38,18" fill="#e0524a"/>
+    <ellipse cx="0" cy="0" rx="38" ry="18" fill="url(#hull)" stroke="#5b6a80" stroke-width="2"/>
+    <polygon points="36,-12 60,0 36,12" fill="#8a94a3" stroke="#5b6a80" stroke-width="1.5"/>
+    <path d="M42 -6 L54 -2 M44 3 L56 1" stroke="#5b6a80" stroke-width="1.5" fill="none"/>
+    <circle cx="-5" cy="0" r="8" fill="#4fd1ff" stroke="#1b5f7a" stroke-width="1.5"/>
+    <circle cx="-7" cy="-3" r="2" fill="#ffffff" opacity="0.8"/>
+  </g>
+
+  <circle cx="30" cy="370" r="1.5" fill="#ffffff"/>
+  <circle cx="370" cy="40" r="1.5" fill="#ffffff"/>
+  <circle cx="345" cy="330" r="1.2" fill="#ffffff"/>
+  <circle cx="60" cy="200" r="1.2" fill="#ffffff"/>
+  <circle cx="330" cy="150" r="1.5" fill="#ffffff"/>
+</svg>

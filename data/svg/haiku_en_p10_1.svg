@@ -1,0 +1,46 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 400" width="400" height="400">
+  <defs>
+    <radialGradient id="bg" cx="50%" cy="40%" r="75%">
+      <stop offset="0" stop-color="#eaf6ff"/>
+      <stop offset="1" stop-color="#b6d9f4"/>
+    </radialGradient>
+    <radialGradient id="berry" cx="35%" cy="30%" r="75%">
+      <stop offset="0" stop-color="#8fbcff"/>
+      <stop offset="0.45" stop-color="#2f5fd0"/>
+      <stop offset="1" stop-color="#121d63"/>
+    </radialGradient>
+    <mask id="bite">
+      <rect width="400" height="400" fill="#fff"/>
+      <circle cx="270" cy="170" r="46" fill="#000"/>
+    </mask>
+  </defs>
+
+  <rect width="400" height="400" fill="url(#bg)"/>
+
+  <!-- ripples of flavour -->
+  <ellipse cx="200" cy="322" rx="160" ry="24" fill="none" stroke="#4d86e8" stroke-opacity="0.35" stroke-width="3"/>
+  <ellipse cx="200" cy="332" rx="125" ry="18" fill="none" stroke="#4d86e8" stroke-opacity="0.45" stroke-width="3"/>
+  <ellipse cx="200" cy="341" rx="90" ry="12" fill="none" stroke="#4d86e8" stroke-opacity="0.55" stroke-width="3"/>
+
+  <!-- blueberry with a bite -->
+  <circle cx="200" cy="210" r="110" fill="url(#berry)" mask="url(#bite)"/>
+  <ellipse cx="160" cy="160" rx="26" ry="13" fill="#ffffff" fill-opacity="0.6" transform="rotate(-30 160 160)"/>
+  <circle cx="148" cy="190" r="5" fill="#ffffff" fill-opacity="0.45"/>
+
+  <!-- crown -->
+  <polygon points="200,108 208,122 222,120 214,132 222,142 207,140 200,152 193,140 178,142 186,132 178,120 192,122" fill="#0d1842" transform="translate(0,-6)"/>
+
+  <!-- droplets -->
+  <circle cx="95" cy="250" r="6" fill="#3a6fe0"/>
+  <circle cx="320" cy="250" r="4" fill="#3a6fe0"/>
+  <circle cx="120" cy="345" r="5" fill="#3a6fe0"/>
+  <circle cx="300" cy="352" r="7" fill="#3a6fe0"/>
+
+  <!-- sparkles -->
+  <path d="M80,90 Q80,90 90,90 Q80,90 80,100 Q80,90 70,90 Q80,90 80,80 Q80,90 80,90 Z" fill="#ffffff"/>
+  <path d="M80,80 Q80,90 90,90 Q80,90 80,100 Q80,90 70,90 Q80,90 80,80 Z" fill="#ffffff"/>
+  <path d="M330,80 Q330,80 330,80 Q330,80 330,80 Z" fill="none"/>
+  <path d="M330,70 Q330,80 337,80 Q330,80 330,90 Q330,80 323,80 Q330,80 330,70 Z" fill="#ffffff"/>
+  <path d="M340,290 Q340,302 352,302 Q340,302 340,314 Q340,302 328,302 Q340,302 340,290 Z" fill="#ffffff"/>
+  <path d="M62,305 Q62,311 68,311 Q62,311 62,317 Q62,311 56,311 Q62,311 62,305 Z" fill="#ffffff"/>
+</svg>

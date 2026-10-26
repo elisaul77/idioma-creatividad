@@ -1,0 +1,55 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="400" height="400" viewBox="0 0 400 400">
+  <defs>
+    <filter id="hand" x="-10%" y="-10%" width="120%" height="120%">
+      <feTurbulence type="fractalNoise" baseFrequency="0.05" numOctaves="2" seed="7" result="n"/>
+      <feDisplacementMap in="SourceGraphic" in2="n" scale="4" xChannelSelector="R" yChannelSelector="G"/>
+    </filter>
+    <filter id="grain" x="0" y="0" width="100%" height="100%">
+      <feTurbulence type="fractalNoise" baseFrequency="0.9" numOctaves="3" stitchTiles="stitch" result="t"/>
+      <feColorMatrix in="t" type="matrix" values="0 0 0 0 0.45  0 0 0 0 0.4  0 0 0 0 0.3  0 0 0 -1.6 1.0"/>
+    </filter>
+  </defs>
+
+  <!-- Papier -->
+  <rect width="400" height="400" fill="#f6f1e4"/>
+  <rect width="400" height="400" filter="url(#grain)" opacity="0.35"/>
+
+  <!-- Notenlinien, von Hand gezogen -->
+  <g filter="url(#hand)" stroke="#4a4a52" stroke-width="1.6" fill="none" stroke-linecap="round">
+    <path d="M40 150 Q200 147 360 151"/>
+    <path d="M40 170 Q200 172 360 169"/>
+    <path d="M40 190 Q200 187 360 191"/>
+    <path d="M40 210 Q200 213 360 209"/>
+    <path d="M40 230 Q200 228 360 231"/>
+  </g>
+
+  <!-- Der Bleistiftstrich, der sich in Noten verwandelt -->
+  <path d="M28 300 C60 250 70 190 100 205 S140 250 160 190 S190 120 215 175 S250 240 270 210 S300 150 330 170 S360 190 380 120"
+        filter="url(#hand)" stroke="#2d2d33" stroke-width="2.4" fill="none" stroke-linecap="round"/>
+
+  <!-- Noten -->
+  <g filter="url(#hand)">
+    <!-- Viertelnote -->
+    <ellipse cx="118" cy="212" rx="9" ry="6.5" transform="rotate(-18 118 212)" fill="#2d2d33"/>
+    <path d="M126 210 L126 140" stroke="#2d2d33" stroke-width="2" stroke-linecap="round"/>
+
+    <!-- Achtelpaar -->
+    <ellipse cx="190" cy="190" rx="9" ry="6.5" transform="rotate(-18 190 190)" fill="#2d2d33"/>
+    <ellipse cx="250" cy="172" rx="9" ry="6.5" transform="rotate(-18 250 172)" fill="#d9573b"/>
+    <path d="M198 189 L198 120" stroke="#2d2d33" stroke-width="2" stroke-linecap="round"/>
+    <path d="M258 171 L258 102" stroke="#d9573b" stroke-width="2" stroke-linecap="round"/>
+    <polygon points="198,120 258,102 258,110 198,128" fill="#2d2d33"/>
+
+    <!-- Einzelne Achtelnote mit Fahne -->
+    <ellipse cx="320" cy="162" rx="9" ry="6.5" transform="rotate(-18 320 162)" fill="#2d2d33"/>
+    <path d="M328 160 L328 92" stroke="#2d2d33" stroke-width="2" stroke-linecap="round"/>
+    <path d="M328 92 q20 10 10 30" stroke="#2d2d33" stroke-width="2" fill="none" stroke-linecap="round"/>
+  </g>
+
+  <!-- Klangwellen, skizziert -->
+  <g filter="url(#hand)" stroke="#8a8478" stroke-width="1.5" fill="none" stroke-linecap="round" stroke-dasharray="6 5">
+    <path d="M300 300 q15 15 0 30"/>
+    <path d="M318 288 q25 27 0 54"/>
+    <path d="M336 276 q35 39 0 78"/>
+  </g>
+</svg>

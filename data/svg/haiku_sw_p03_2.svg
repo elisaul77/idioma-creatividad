@@ -1,0 +1,52 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="400" height="400" viewBox="0 0 400 400">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#fdf3e7"/>
+      <stop offset="1" stop-color="#f4d6c6"/>
+    </linearGradient>
+    <linearGradient id="ink" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#2b4c7e"/>
+      <stop offset="1" stop-color="#b5486b"/>
+    </linearGradient>
+    <filter id="brush" x="-10%" y="-10%" width="120%" height="120%">
+      <feTurbulence type="fractalNoise" baseFrequency="0.04" numOctaves="3" seed="7" result="noise"/>
+      <feDisplacementMap in="SourceGraphic" in2="noise" scale="6"/>
+    </filter>
+  </defs>
+
+  <rect width="400" height="400" fill="url(#bg)"/>
+
+  <!-- Paint splatters -->
+  <circle cx="60" cy="70" r="8" fill="#e08e6d" opacity="0.6"/>
+  <circle cx="75" cy="58" r="4" fill="#e08e6d" opacity="0.5"/>
+  <circle cx="345" cy="310" r="10" fill="#7fb3a8" opacity="0.5"/>
+  <circle cx="330" cy="326" r="5" fill="#7fb3a8" opacity="0.4"/>
+  <circle cx="50" cy="330" r="6" fill="#d9a441" opacity="0.5"/>
+
+  <!-- Staff lines -->
+  <g filter="url(#brush)" fill="none" stroke="url(#ink)" stroke-linecap="round" stroke-width="3">
+    <path d="M30 120 C 110 105, 170 135, 250 118 S 360 100, 380 112"/>
+    <path d="M30 150 C 110 135, 170 165, 250 148 S 360 130, 380 142"/>
+    <path d="M30 180 C 110 165, 170 195, 250 178 S 360 160, 380 172"/>
+    <path d="M30 210 C 110 195, 170 225, 250 208 S 360 190, 380 202"/>
+    <path d="M30 240 C 110 225, 170 255, 250 238 S 360 220, 380 232"/>
+  </g>
+
+  <!-- Painted notes -->
+  <g filter="url(#brush)">
+    <ellipse cx="90" cy="250" rx="13" ry="9" transform="rotate(-20 90 250)" fill="#2b4c7e"/>
+    <path d="M102 248 L102 170" stroke="#2b4c7e" stroke-width="3" fill="none" stroke-linecap="round"/>
+
+    <ellipse cx="170" cy="210" rx="13" ry="9" transform="rotate(-20 170 210)" fill="#b5486b"/>
+    <path d="M182 208 L182 130" stroke="#b5486b" stroke-width="3" fill="none" stroke-linecap="round"/>
+
+    <ellipse cx="280" cy="180" rx="13" ry="9" transform="rotate(-20 280 180)" fill="url(#ink)"/>
+    <ellipse cx="330" cy="150" rx="13" ry="9" transform="rotate(-20 330 150)" fill="url(#ink)"/>
+    <path d="M292 178 L292 105 M342 148 L342 77" stroke="#2b4c7e" stroke-width="3" fill="none" stroke-linecap="round"/>
+    <path d="M292 105 L342 77" stroke="#2b4c7e" stroke-width="6" fill="none" stroke-linecap="round"/>
+  </g>
+
+  <!-- Brush swirl -->
+  <path d="M40 360 C 120 330, 160 380, 230 350 S 330 340, 370 365"
+        fill="none" stroke="#b5486b" stroke-width="4" stroke-linecap="round" opacity="0.45" filter="url(#brush)"/>
+</svg>

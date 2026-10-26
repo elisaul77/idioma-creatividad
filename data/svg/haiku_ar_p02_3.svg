@@ -1,0 +1,62 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="400" height="400" viewBox="0 0 400 400">
+  <defs>
+    <linearGradient id="sky" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#1a1040"/>
+      <stop offset="0.6" stop-color="#4b2a7a"/>
+      <stop offset="1" stop-color="#c77dbb"/>
+    </linearGradient>
+    <radialGradient id="moon" cx="0.4" cy="0.35" r="0.7">
+      <stop offset="0" stop-color="#fffaf0"/>
+      <stop offset="1" stop-color="#f2c879"/>
+    </radialGradient>
+    <radialGradient id="glow">
+      <stop offset="0" stop-color="#ffe9b0" stop-opacity="0.7"/>
+      <stop offset="1" stop-color="#ffe9b0" stop-opacity="0"/>
+    </radialGradient>
+    <radialGradient id="orb">
+      <stop offset="0" stop-color="#ffffff" stop-opacity="0.9"/>
+      <stop offset="1" stop-color="#9fd8ff" stop-opacity="0"/>
+    </radialGradient>
+    <linearGradient id="ribbon" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#7fe7ff" stop-opacity="0"/>
+      <stop offset="0.5" stop-color="#b993ff" stop-opacity="0.8"/>
+      <stop offset="1" stop-color="#ff9ad5" stop-opacity="0"/>
+    </linearGradient>
+    <filter id="soft" x="-50%" y="-50%" width="200%" height="200%">
+      <feGaussianBlur stdDeviation="4"/>
+    </filter>
+  </defs>
+
+  <rect width="400" height="400" fill="url(#sky)"/>
+
+  <!-- stars -->
+  <g fill="#ffffff">
+    <circle cx="40" cy="50" r="1.5" opacity="0.8"/>
+    <circle cx="90" cy="25" r="1" opacity="0.6"/>
+    <circle cx="330" cy="40" r="1.8" opacity="0.9"/>
+    <circle cx="365" cy="110" r="1.2" opacity="0.6"/>
+    <circle cx="25" cy="150" r="1" opacity="0.5"/>
+    <circle cx="150" cy="30" r="1.2" opacity="0.7"/>
+    <circle cx="290" cy="85" r="1" opacity="0.5"/>
+    <circle cx="60" cy="210" r="1.1" opacity="0.5"/>
+    <circle cx="355" cy="215" r="1.4" opacity="0.7"/>
+  </g>
+
+  <!-- moon glow and crescent -->
+  <circle cx="200" cy="150" r="95" fill="url(#glow)"/>
+  <path d="M200 95 A55 55 0 1 0 255 150 A42 42 0 1 1 200 95 Z" fill="url(#moon)"/>
+
+  <!-- floating orbs -->
+  <circle cx="90" cy="120" r="14" fill="url(#orb)" opacity="0.7"/>
+  <circle cx="315" cy="190" r="10" fill="url(#orb)" opacity="0.6"/>
+  <circle cx="120" cy="215" r="6" fill="url(#orb)" opacity="0.5"/>
+  <circle cx="290" cy="95" r="7" fill="url(#orb)" opacity="0.5"/>
+
+  <!-- drifting ribbons -->
+  <path d="M-10 265 C60 225, 120 305, 200 265 S330 225, 410 275" fill="none" stroke="url(#ribbon)" stroke-width="14" stroke-linecap="round" filter="url(#soft)"/>
+  <path d="M-10 305 C70 275, 130 345, 210 305 S330 275, 410 320" fill="none" stroke="url(#ribbon)" stroke-width="8" stroke-linecap="round" opacity="0.8"/>
+  <path d="M-10 335 C80 315, 150 365, 230 335 S340 310, 410 350" fill="none" stroke="url(#ribbon)" stroke-width="5" stroke-linecap="round" opacity="0.6"/>
+
+  <!-- spiral wisp -->
+  <path d="M200 380 C160 370, 150 340, 175 330 C200 320, 215 345, 198 355 C185 362, 180 348, 190 345" fill="none" stroke="#e0c8ff" stroke-width="1.5" stroke-linecap="round" opacity="0.6"/>
+</svg>

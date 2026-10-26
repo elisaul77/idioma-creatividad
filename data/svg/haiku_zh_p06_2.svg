@@ -1,0 +1,85 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="400" height="400" viewBox="0 0 400 400">
+  <defs>
+    <radialGradient id="sky" cx="50%" cy="40%" r="75%">
+      <stop offset="0%" stop-color="#FFF6C9"/>
+      <stop offset="100%" stop-color="#FFD98A"/>
+    </radialGradient>
+    <radialGradient id="sun" cx="40%" cy="35%" r="70%">
+      <stop offset="0%" stop-color="#FFF3A3"/>
+      <stop offset="100%" stop-color="#FFB627"/>
+    </radialGradient>
+    <linearGradient id="hill" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#8BD67A"/>
+      <stop offset="100%" stop-color="#4FB36A"/>
+    </linearGradient>
+  </defs>
+
+  <!-- background -->
+  <rect width="400" height="400" fill="url(#sky)"/>
+
+  <!-- soft clouds -->
+  <g fill="#FFFFFF" opacity="0.85">
+    <ellipse cx="70" cy="80" rx="34" ry="16"/>
+    <ellipse cx="95" cy="72" rx="26" ry="18"/>
+    <ellipse cx="330" cy="110" rx="30" ry="14"/>
+    <ellipse cx="352" cy="102" rx="22" ry="16"/>
+  </g>
+
+  <!-- sun rays -->
+  <g stroke="#FFB627" stroke-width="10" stroke-linecap="round">
+    <line x1="200" y1="62" x2="200" y2="32"/>
+    <line x1="200" y1="338" x2="200" y2="368" opacity="0"/>
+    <line x1="112" y1="112" x2="92" y2="92"/>
+    <line x1="288" y1="112" x2="308" y2="92"/>
+    <line x1="70" y1="200" x2="40" y2="200"/>
+    <line x1="330" y1="200" x2="360" y2="200"/>
+    <line x1="112" y1="288" x2="92" y2="308"/>
+    <line x1="288" y1="288" x2="308" y2="308"/>
+  </g>
+
+  <!-- sun body -->
+  <circle cx="200" cy="200" r="92" fill="url(#sun)"/>
+  <circle cx="200" cy="200" r="92" fill="none" stroke="#FFA000" stroke-width="3" opacity="0.5"/>
+
+  <!-- rosy cheeks -->
+  <circle cx="160" cy="226" r="112" fill="none"/>
+  <ellipse cx="158" cy="222" rx="13" ry="8" fill="#FF8FA3" opacity="0.7"/>
+  <ellipse cx="242" cy="222" rx="13" ry="8" fill="#FF8FA3" opacity="0.7"/>
+
+  <!-- happy closed eyes -->
+  <g fill="none" stroke="#5A3412" stroke-width="6" stroke-linecap="round">
+    <path d="M250 180 Q162 165 0 0" transform="translate(0,0)" opacity="0"/>
+    <path d="M220 188 Q232 172 244 188"/>
+    <path d="M156 188 Q168 172 180 188"/>
+  </g>
+
+  <!-- big smile -->
+  <path d="M250 340" fill="none"/>
+  <path d="M158 226 Q200 268 242 226" fill="#7A3B12" stroke="#5A3412" stroke-width="5" stroke-linejoin="round"/>
+  <path d="M170 234 Q200 254 230 234 Q200 246 170 234 Z" fill="#FF6B6B"/>
+
+  <!-- hill -->
+  <path d="M0 330 Q100 290 200 320 T400 320 L400 400 L0 400 Z" fill="url(#hill)"/>
+
+  <!-- little flowers -->
+  <g>
+    <circle cx="60" cy="338" r="7" fill="#FF8FA3"/>
+    <circle cx="60" cy="338" r="3" fill="#FFF3A3"/>
+    <circle cx="340" cy="346" r="7" fill="#FF8FA3"/>
+    <circle cx="340" cy="346" r="3" fill="#FFF3A3"/>
+    <circle cx="300" cy="362" r="5" fill="#B38CFF"/>
+    <circle cx="300" cy="362" r="2" fill="#FFF3A3"/>
+  </g>
+
+  <!-- confetti -->
+  <g>
+    <rect x="78" y="150" width="10" height="5" rx="2" fill="#FF6B6B" transform="rotate(20 83 152)"/>
+    <rect x="318" y="250" width="10" height="5" rx="2" fill="#4DA6FF" transform="rotate(-25 323 252)"/>
+    <circle cx="120" cy="260" r="4" fill="#B38CFF"/>
+    <circle cx="290" cy="150" r="4" fill="#FF6B6B"/>
+    <rect x="260" cy="60" x="0" y="0" width="0" height="0"/>
+    <rect x="150" y="60" width="9" height="5" rx="2" fill="#4DA6FF" transform="rotate(-15 154 62)"/>
+    <circle cx="350" cy="170" r="4" fill="#4CD08F"/>
+    <circle cx="48" cy="250" r="4" fill="#FF8FA3"/>
+  </g>
+</svg>

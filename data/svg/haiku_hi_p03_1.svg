@@ -1,0 +1,56 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="400" height="400" viewBox="0 0 400 400">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#1b1f3b"/>
+      <stop offset="0.55" stop-color="#4b2e6b"/>
+      <stop offset="1" stop-color="#f4a261"/>
+    </linearGradient>
+    <linearGradient id="staff" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#ffd166"/>
+      <stop offset="1" stop-color="#ef476f"/>
+    </linearGradient>
+    <filter id="soft" x="-50%" y="-50%" width="200%" height="200%">
+      <feGaussianBlur stdDeviation="6"/>
+    </filter>
+  </defs>
+
+  <rect width="400" height="400" fill="url(#bg)"/>
+
+  <g filter="url(#soft)" opacity="0.7">
+    <circle cx="80" cy="90" r="50" fill="#06d6a0"/>
+    <circle cx="320" cy="110" r="60" fill="#118ab2"/>
+    <circle cx="200" cy="330" r="70" fill="#ef476f"/>
+    <circle cx="340" cy="310" r="40" fill="#ffd166"/>
+  </g>
+
+  <g fill="none" stroke="url(#staff)" stroke-width="2.5" stroke-linecap="round" opacity="0.9">
+    <path d="M20 150 C 100 120, 150 180, 200 150 S 300 120, 380 150"/>
+    <path d="M20 170 C 100 140, 150 200, 200 170 S 300 140, 380 170"/>
+    <path d="M20 190 C 100 160, 150 220, 200 190 S 300 160, 380 190"/>
+    <path d="M20 210 C 100 180, 150 240, 200 210 S 300 180, 380 210"/>
+    <path d="M20 230 C 100 200, 150 260, 200 230 S 300 200, 380 230"/>
+  </g>
+
+  <g>
+    <ellipse cx="110" cy="200" rx="16" ry="11" transform="rotate(-20 110 200)" fill="#ffd166"/>
+    <line x1="125" y1="198" x2="125" y2="130" stroke="#ffd166" stroke-width="3"/>
+    <ellipse cx="200" cy="265" rx="16" ry="11" transform="rotate(-20 200 265)" fill="#06d6a0"/>
+    <line x1="184" y1="263" x2="184" y2="195" stroke="#06d6a0" stroke-width="3"/>
+    <ellipse cx="290" cy="240" rx="16" ry="11" transform="rotate(-20 290 240)" fill="#ef476f"/>
+    <line x1="305" y1="238" x2="305" y2="170" stroke="#ef476f" stroke-width="3"/>
+  </g>
+
+  <g fill="none" stroke-linecap="round" opacity="0.55">
+    <path d="M40 340 Q 120 300 200 350 T 370 320" stroke="#ffd166" stroke-width="14"/>
+    <path d="M30 60 Q 130 30 210 70 T 380 50" stroke="#06d6a0" stroke-width="10"/>
+  </g>
+
+  <g fill="#ffffff" opacity="0.8">
+    <circle cx="150" cy="80" r="3"/>
+    <circle cx="265" cy="60" r="2"/>
+    <circle cx="60" cy="280" r="2.5"/>
+    <circle cx="355" cy="200" r="2"/>
+    <circle cx="235" cy="385" r="2.5"/>
+    <circle cx="140" cy="370" r="1.8"/>
+  </g>
+</svg>

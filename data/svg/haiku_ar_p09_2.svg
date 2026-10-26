@@ -1,0 +1,85 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="400" height="400" viewBox="0 0 400 400">
+  <defs>
+    <linearGradient id="sky" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#2b3a2e"/>
+      <stop offset="0.6" stop-color="#8a9a4b"/>
+      <stop offset="1" stop-color="#e0b35a"/>
+    </linearGradient>
+    <linearGradient id="soil" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#7a4a24"/>
+      <stop offset="1" stop-color="#3e2212"/>
+    </linearGradient>
+    <linearGradient id="mound" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#c58b4a"/>
+      <stop offset="0.5" stop-color="#e0a966"/>
+      <stop offset="1" stop-color="#a86d35"/>
+    </linearGradient>
+    <linearGradient id="comb" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#f5c542"/>
+      <stop offset="1" stop-color="#c48a12"/>
+    </linearGradient>
+    <pattern id="hex" width="16" height="14" patternUnits="userSpaceOnUse">
+      <path d="M8 0 L16 4.6 L16 9.4 L8 14 L0 9.4 L0 4.6 Z" fill="none" stroke="#7a4f08" stroke-width="1"/>
+    </pattern>
+  </defs>
+
+  <!-- Sky -->
+  <rect width="400" height="400" fill="url(#sky)"/>
+  <circle cx="320" cy="90" r="34" fill="#ffe7a3" opacity="0.85"/>
+
+  <!-- Distant termite mounds -->
+  <path d="M10 270 Q30 200 60 180 Q80 200 100 270 Z" fill="#6b4a2a" opacity="0.5"/>
+  <path d="M300 265 Q320 190 345 170 Q370 200 390 265 Z" fill="#6b4a2a" opacity="0.5"/>
+
+  <!-- Main tall spire mound -->
+  <path d="M150 300 L165 150 Q170 110 180 60 Q190 30 200 20 Q210 30 220 60 Q230 110 235 150 L250 300 Z" fill="url(#mound)"/>
+  <g stroke="#8a5628" stroke-width="1.5" fill="none" opacity="0.7">
+    <path d="M168 140 Q200 150 232 140"/>
+    <path d="M166 190 Q200 200 234 190"/>
+    <path d="M162 240 Q200 250 238 240"/>
+    <path d="M158 280 Q200 290 242 280"/>
+  </g>
+  <!-- Arched windows -->
+  <g fill="#3e2212">
+    <path d="M195 110 a5 5 0 0 1 10 0 v10 h-10 z"/>
+    <path d="M190 170 a5 5 0 0 1 10 0 v10 h-10 z"/>
+    <path d="M200 220 a5 5 0 0 1 10 0 v10 h-10 z"/>
+  </g>
+
+  <!-- Side towers -->
+  <path d="M60 300 L72 200 Q76 170 84 150 Q92 170 98 200 L110 300 Z" fill="url(#mound)"/>
+  <path d="M280 300 L292 210 Q296 180 304 160 Q312 180 318 210 L330 300 Z" fill="url(#mound)"/>
+  <path d="M85 300 L94 240 Q97 225 102 215 Q108 228 110 240 L118 300 Z" fill="url(#mound)" opacity="0.85"/>
+
+  <!-- Honeycomb hall -->
+  <rect x="20" y="230" width="90" height="70" rx="6" fill="url(#comb)"/>
+  <rect x="20" y="230" width="90" height="70" fill="url(#hex)"/>
+  <rect x="20" y="230" width="90" height="70" rx="6" fill="none" stroke="#7a4f08" stroke-width="2"/>
+
+  <!-- Ground -->
+  <rect x="0" y="300" width="400" height="100" fill="url(#soil)"/>
+  <path d="M0 300 Q50 292 100 300 T200 300 T300 300 T400 300 V310 H0 Z" fill="#5a3418"/>
+
+  <!-- Tunnel entrances -->
+  <g fill="#1e0f06">
+    <ellipse cx="130" cy="318" rx="12" ry="5"/>
+    <ellipse cx="275" cy="322" rx="14" ry="5"/>
+    <ellipse cx="365" cy="316" rx="10" ry="4"/>
+  </g>
+
+  <!-- Insects flying -->
+  <g fill="#1e1408">
+    <ellipse cx="120" cy="120" rx="5" ry="3"/>
+    <path d="M115 118 q-6 -6 -10 -2 M125 118 q6 -6 10 -2" stroke="#1e1408" stroke-width="1" fill="none"/>
+    <ellipse cx="350" cy="140" rx="4" ry="2.5"/>
+    <path d="M346 138 q-5 -5 -9 -1 M354 138 q5 -5 9 -1" stroke="#1e1408" stroke-width="1" fill="none"/>
+    <ellipse cx="75" cy="90" rx="3.5" ry="2"/>
+  </g>
+
+  <!-- Ants walking along ground -->
+  <g fill="#1e0f06">
+    <circle cx="150" cy="335" r="2.5"/><circle cx="156" cy="335" r="3"/><circle cx="164" cy="335" r="2"/>
+    <circle cx="240" cy="352" r="2.5"/><circle cx="247" cy="352" r="3"/><circle cx="256" cy="352" r="2"/>
+    <circle cx="320" cy="370" r="2.5"/><circle cx="327" cy="370" r="3"/><circle cx="335" cy="370" r="2"/>
+  </g>
+</svg>

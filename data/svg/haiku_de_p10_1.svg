@@ -1,0 +1,80 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 400" width="400" height="400">
+  <defs>
+    <radialGradient id="bg" cx="50%" cy="40%" r="75%">
+      <stop offset="0%" stop-color="#e8f4ff"/>
+      <stop offset="60%" stop-color="#9fd0f5"/>
+      <stop offset="100%" stop-color="#2a5fa8"/>
+    </radialGradient>
+    <radialGradient id="drop" cx="35%" cy="30%" r="70%">
+      <stop offset="0%" stop-color="#ffffff" stop-opacity="0.9"/>
+      <stop offset="30%" stop-color="#5aa9ff"/>
+      <stop offset="100%" stop-color="#0b2e6b"/>
+    </radialGradient>
+    <radialGradient id="berry" cx="35%" cy="30%" r="70%">
+      <stop offset="0%" stop-color="#8fa8ff"/>
+      <stop offset="100%" stop-color="#1b1f4f"/>
+    </radialGradient>
+    <linearGradient id="wave" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#ffffff" stop-opacity="0"/>
+      <stop offset="50%" stop-color="#ffffff" stop-opacity="0.7"/>
+      <stop offset="100%" stop-color="#ffffff" stop-opacity="0"/>
+    </linearGradient>
+  </defs>
+
+  <!-- Hintergrund -->
+  <rect width="400" height="400" fill="url(#bg)"/>
+
+  <!-- Geschmackswellen -->
+  <g fill="none" stroke="url(#wave)" stroke-width="3" stroke-linecap="round">
+    <path d="M60 300 Q120 280 180 300 T300 300 T380 296"/>
+    <path d="M40 330 Q110 310 180 330 T320 330 T390 326" opacity="0.7"/>
+    <path d="M70 90 Q130 70 190 90 T310 90" opacity="0.6"/>
+  </g>
+
+  <!-- Kühler Eiskristall links oben -->
+  <g stroke="#ffffff" stroke-width="2.5" stroke-linecap="round" opacity="0.85">
+    <line x1="72" y1="150" x2="72" y2="190"/>
+    <line x1="52" y1="170" x2="92" y2="170"/>
+    <line x1="58" y1="156" x2="86" y2="184"/>
+    <line x1="86" y1="156" x2="58" y2="184"/>
+  </g>
+
+  <!-- Zentraler Tropfen: der Geschmack selbst -->
+  <path d="M200 96 C250 160 292 205 292 255 C292 302 250 336 200 336 C150 336 108 302 108 255 C108 205 150 160 200 96 Z"
+        fill="url(#drop)"/>
+  <!-- Glanzlicht -->
+  <ellipse cx="165" cy="200" rx="10" ry="26" fill="#ffffff" opacity="0.75" transform="rotate(-18 165 200)"/>
+  <circle cx="178" cy="258" r="4" fill="#ffffff" opacity="0.6"/>
+
+  <!-- Geschmacksknospen als Blasen im Tropfen -->
+  <g fill="#ffffff" opacity="0.5">
+    <circle cx="232" cy="230" r="7"/>
+    <circle cx="246" cy="268" r="4"/>
+    <circle cx="220" cy="290" r="5"/>
+    <circle cx="200" cy="214" r="3"/>
+  </g>
+
+  <!-- Blaubeeren schwebend -->
+  <circle cx="330" cy="130" r="18" fill="url(#berry)"/>
+  <circle cx="324" cy="124" r="4" fill="#ffffff" opacity="0.7"/>
+  <circle cx="352" cy="162" r="11" fill="url(#berry)"/>
+  <circle cx="348" cy="158" r="2.5" fill="#ffffff" opacity="0.7"/>
+  <circle cx="60" cy="250" r="14" fill="url(#berry)"/>
+  <circle cx="56" cy="246" r="3" fill="#ffffff" opacity="0.7"/>
+
+  <!-- Salzige Meeresperlen -->
+  <g fill="#ffffff" opacity="0.8">
+    <circle cx="90" cy="60" r="3"/>
+    <circle cx="112" cy="46" r="2"/>
+    <circle cx="340" cy="60" r="3"/>
+    <circle cx="362" cy="84" r="2"/>
+    <circle cx="28" cy="110" r="2"/>
+  </g>
+
+  <!-- Kühle Blasen -->
+  <g fill="none" stroke="#ffffff" stroke-width="2" opacity="0.6">
+    <circle cx="150" cy="120" r="8"/>
+    <circle cx="262" cy="350" r="6"/>
+    <circle cx="36" cy="370" r="10"/>
+  </g>
+</svg>

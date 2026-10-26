@@ -1,0 +1,67 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="400" height="400" viewBox="0 0 400 400">
+  <defs>
+    <radialGradient id="bg" cx="50%" cy="50%" r="70%">
+      <stop offset="0%" stop-color="#1b2540"/>
+      <stop offset="100%" stop-color="#05070f"/>
+    </radialGradient>
+    <radialGradient id="core" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#fff3a0"/>
+      <stop offset="60%" stop-color="#ffb020"/>
+      <stop offset="100%" stop-color="#e0501a"/>
+    </radialGradient>
+    <linearGradient id="hull" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#9aa6b8"/>
+      <stop offset="0.5" stop-color="#e8eef7"/>
+      <stop offset="1" stop-color="#6b7689"/>
+    </linearGradient>
+    <radialGradient id="glow" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#ff8c2a" stop-opacity="0.9"/>
+      <stop offset="100%" stop-color="#ff8c2a" stop-opacity="0"/>
+    </radialGradient>
+  </defs>
+
+  <!-- background -->
+  <rect width="400" height="400" fill="url(#bg)"/>
+  <g fill="#ffffff" opacity="0.7">
+    <circle cx="30" cy="40" r="1.2"/>
+    <circle cx="350" cy="55" r="1"/>
+    <circle cx="370" cy="300" r="1.4"/>
+    <circle cx="25" cy="330" r="1"/>
+    <circle cx="90" cy="20" r="0.9"/>
+    <circle cx="310" cy="25" r="1.1"/>
+  </g>
+
+  <!-- earth cross-section -->
+  <circle cx="200" cy="200" r="170" fill="#6b4a2b"/>
+  <circle cx="200" cy="200" r="170" fill="none" stroke="#8a6a44" stroke-width="6"/>
+  <circle cx="200" cy="200" r="130" fill="#b5562b"/>
+  <circle cx="200" cy="200" r="85" fill="#e0692a"/>
+  <circle cx="200" cy="200" r="45" fill="url(#core)"/>
+
+  <!-- descent trail -->
+  <line x1="200" y1="20" x2="200" y2="95" stroke="#cfd8e6" stroke-width="2"/>
+  <line x1="200" y1="20" x2="200" y2="120" stroke="#ffd27a" stroke-width="3" stroke-dasharray="6 6" opacity="0.5"/>
+
+  <!-- heat aura -->
+  <circle cx="200" cy="150" r="60" fill="none" stroke="#ffd27a" stroke-width="1.5" stroke-dasharray="4 6" opacity="0.35"/>
+  <circle cx="200" cy="165" r="38" fill="url(#glow)"/>
+
+  <!-- vehicle -->
+  <!-- fins -->
+  <path d="M182 120 L165 135 L182 135 Z" fill="#7a8699"/>
+  <path d="M218 120 L235 135 L218 135 Z" fill="#7a8699"/>
+  <!-- body -->
+  <rect x="182" y="95" width="36" height="50" rx="16" fill="url(#hull)"/>
+  <!-- cockpit -->
+  <circle cx="200" cy="115" r="7" fill="#1d3b66" stroke="#7fd3ff" stroke-width="1.5"/>
+  <!-- drill nose -->
+  <path d="M182 140 L218 140 L200 185 Z" fill="#c9d3e0" stroke="#55627a" stroke-width="1.5"/>
+  <path d="M190 148 L210 155 M188 160 L212 167 M192 172 L208 178" stroke="#55627a" stroke-width="2" fill="none"/>
+  <!-- sparks -->
+  <g fill="#fff0a0">
+    <circle cx="194" cy="192" r="1.8"/>
+    <circle cx="206" cy="196" r="1.5"/>
+    <circle cx="200" cy="202" r="2"/>
+    <circle cx="188" cy="198" r="1.2"/>
+  </g>
+</svg>

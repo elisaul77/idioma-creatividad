@@ -1,0 +1,92 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="400" height="400" viewBox="0 0 400 400">
+  <defs>
+    <linearGradient id="himmel" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#ffe9b3"/>
+      <stop offset="1" stop-color="#ffd08a"/>
+    </linearGradient>
+    <pattern id="wabe" width="14" height="12" patternUnits="userSpaceOnUse">
+      <path d="M7 0 L14 4 L14 8 L7 12 L0 8 L0 4 Z" fill="none" stroke="#8a4f1e" stroke-width="1.2" opacity="0.55"/>
+    </pattern>
+  </defs>
+
+  <!-- Himmel und Sonne -->
+  <rect width="400" height="400" fill="url(#himmel)"/>
+  <circle cx="320" cy="70" r="50" fill="#fff4c2" opacity="0.35"/>
+  <circle cx="320" cy="70" r="28" fill="#fff4c2"/>
+
+  <!-- Ferne Hügel -->
+  <path d="M0 260 Q80 200 160 255 T320 250 T400 240 L400 300 L0 300 Z" fill="#9bc57a" opacity="0.8"/>
+
+  <!-- Libelle -->
+  <g>
+    <line x1="284" y1="106" x2="332" y2="94" stroke="#2a6f7a" stroke-width="4" stroke-linecap="round"/>
+    <ellipse cx="302" cy="92" rx="16" ry="5" transform="rotate(-25 302 92)" fill="#bfe9f0" opacity="0.75" stroke="#5aa7b5" stroke-width="1"/>
+    <ellipse cx="306" cy="104" rx="16" ry="5" transform="rotate(20 306 104)" fill="#bfe9f0" opacity="0.75" stroke="#5aa7b5" stroke-width="1"/>
+    <circle cx="334" cy="93" r="4" fill="#2a6f7a"/>
+  </g>
+
+  <!-- Biene -->
+  <g>
+    <ellipse cx="100" cy="112" rx="13" ry="20" transform="rotate(-70 100 112) translate(0 0)" fill="#ffffff" opacity="0.6"/>
+    <ellipse cx="112" cy="104" rx="10" ry="7" fill="#f4b400"/>
+    <rect x="106" y="99" width="3" height="10" fill="#3b2412" transform="rotate(20 107 104)"/>
+    <rect x="112" y="99" width="3" height="10" fill="#3b2412" transform="rotate(20 113 104)"/>
+    <circle cx="120" cy="103" r="2.5" fill="#3b2412"/>
+  </g>
+
+  <!-- Türme aus Lehm -->
+  <!-- Turm 1: Kuppel mit Blatt-Dach -->
+  <rect x="40" y="200" width="60" height="100" rx="4" fill="#c98f54"/>
+  <rect x="40" y="200" width="60" height="100" rx="4" fill="url(#wabe)"/>
+  <path d="M36 200 Q70 150 104 200 Z" fill="#d9a06a"/>
+  <path d="M70 150 Q95 128 120 150 Q95 166 70 150 Z" fill="#6fbf5a"/>
+  <line x1="72" y1="149" x2="112" y2="149" stroke="#4a8f3a" stroke-width="1.5"/>
+
+  <!-- Turm 2: Spitze -->
+  <rect x="130" y="130" width="70" height="170" rx="3" fill="#b87a45"/>
+  <rect x="130" y="130" width="70" height="170" rx="3" fill="url(#wabe)"/>
+  <path d="M130 130 L165 60 L200 130 Z" fill="#c98f54"/>
+  <circle cx="165" cy="60" r="4" fill="#8a4f1e"/>
+
+  <!-- Turm 3: gestapelte Ringe -->
+  <rect x="230" y="170" width="70" height="130" fill="#b87a45"/>
+  <rect x="230" y="170" width="70" height="130" fill="url(#wabe)"/>
+  <rect x="227" y="170" width="76" height="25" rx="12" fill="#d9a06a"/>
+  <rect x="233" y="200" width="64" height="22" rx="11" fill="#c98f54"/>
+  <rect x="238" y="226" width="54" height="20" rx="10" fill="#d9a06a"/>
+
+  <!-- Turm 4: kleiner Bau -->
+  <rect x="325" y="240" width="40" height="60" rx="3" fill="#c98f54"/>
+  <rect x="325" y="240" width="40" height="60" rx="3" fill="url(#wabe)"/>
+  <path d="M320 240 Q345 222 370 240 Z" fill="#6fbf5a"/>
+
+  <!-- Brücken aus Erde -->
+  <path d="M100 230 Q115 208 130 230" fill="none" stroke="#8b5a2b" stroke-width="5" stroke-linecap="round"/>
+  <path d="M200 212 Q215 190 230 212" fill="none" stroke="#8b5a2b" stroke-width="5" stroke-linecap="round"/>
+
+  <!-- Ameisen auf den Brücken -->
+  <g fill="#3b2412">
+    <circle cx="108" cy="221" r="2.5"/>
+    <circle cx="115" cy="214" r="2.5"/>
+    <circle cx="122" cy="220" r="2.5"/>
+    <circle cx="210" cy="202" r="2.5"/>
+    <circle cx="218" cy="197" r="2.5"/>
+  </g>
+
+  <!-- Boden -->
+  <rect x="0" y="300" width="400" height="100" fill="#7a4e2a"/>
+  <path d="M0 300 Q20 294 40 300 T80 300 T120 300 T160 300 T200 300 T240 300 T280 300 T320 300 T360 300 T400 300 L400 306 L0 306 Z" fill="#5b9a3c"/>
+
+  <!-- Eingänge zu unterirdischen Gängen -->
+  <ellipse cx="60" cy="330" rx="18" ry="8" fill="#3b2412"/>
+  <ellipse cx="200" cy="340" rx="22" ry="9" fill="#3b2412"/>
+  <ellipse cx="340" cy="335" rx="18" ry="8" fill="#3b2412"/>
+
+  <!-- Grashalme -->
+  <g stroke="#4a8f3a" stroke-width="2" stroke-linecap="round" fill="none">
+    <path d="M20 300 Q22 290 18 282"/>
+    <path d="M150 300 Q153 288 148 280"/>
+    <path d="M280 300 Q283 291 279 284"/>
+    <path d="M385 300 Q388 292 384 286"/>
+  </g>
+</svg>

@@ -1,0 +1,93 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="400" height="400" viewBox="0 0 400 400">
+  <defs>
+    <linearGradient id="sky" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#FFF3B0"/>
+      <stop offset="60%" stop-color="#FFD6A5"/>
+      <stop offset="100%" stop-color="#FFADAD"/>
+    </linearGradient>
+    <radialGradient id="sunGlow" cx="0.5" cy="0.5" r="0.5">
+      <stop offset="0%" stop-color="#FFE066" stop-opacity="0.9"/>
+      <stop offset="100%" stop-color="#FFE066" stop-opacity="0"/>
+    </radialGradient>
+    <radialGradient id="sunBody" cx="0.4" cy="0.35" r="0.7">
+      <stop offset="0%" stop-color="#FFF7A1"/>
+      <stop offset="100%" stop-color="#FFB703"/>
+    </radialGradient>
+  </defs>
+
+  <rect width="400" height="400" fill="url(#sky)"/>
+
+  <!-- Sun glow -->
+  <circle cx="200" cy="200" r="160" fill="url(#sunGlow)"/>
+
+  <!-- Rays -->
+  <g stroke="#FFB703" stroke-width="10" stroke-linecap="round" opacity="0.85">
+    <line x1="200" y1="20" x2="200" y2="50"/>
+    <line x1="200" y1="350" x2="200" y2="380"/>
+    <line x1="20" y1="200" x2="50" y2="200"/>
+    <line x1="350" y1="200" x2="380" y2="200"/>
+    <line x1="68" y1="68" x2="89" y2="89"/>
+    <line x1="332" y1="332" x2="311" y2="311"/>
+    <line x1="332" y1="68" x2="311" y2="89"/>
+    <line x1="68" y1="332" x2="89" y2="311"/>
+  </g>
+
+  <!-- Sun body -->
+  <circle cx="200" cy="200" r="90" fill="url(#sunBody)"/>
+
+  <!-- Cheeks -->
+  <circle cx="160" cy="222" r="11" fill="#FF8FA3" opacity="0.6"/>
+  <circle cx="240" cy="222" r="11" fill="#FF8FA3" opacity="0.6"/>
+
+  <!-- Happy closed eyes -->
+  <path d="M250 180 Q160 0 0 0" fill="none"/>
+  <path d="M220 178 Q230 160 242 178" fill="none" stroke="#5C3A00" stroke-width="6" stroke-linecap="round"/>
+  <path d="M158 178 Q170 160 180 178" fill="none" stroke="#5C3A00" stroke-width="6" stroke-linecap="round"/>
+
+  <!-- Smile -->
+  <path d="M250 320 L0 0" fill="none"/>
+  <path d="M220 215 Q200 245 180 215" fill="none" stroke="#5C3A00" stroke-width="6" stroke-linecap="round"/>
+
+  <!-- Rainbow arc -->
+  <g fill="none" stroke-width="8" stroke-linecap="round">
+    <path d="M40 330 Q200 230 360 330" stroke="#FF6B6B" opacity="0.7"/>
+    <path d="M52 340 Q200 248 348 340" stroke="#FFD93D" opacity="0.7"/>
+    <path d="M64 350 Q200 266 336 350" stroke="#6BCB77" opacity="0.7"/>
+    <path d="M76 360 Q200 284 324 360" stroke="#4D96FF" opacity="0.7"/>
+  </g>
+
+  <!-- Hills -->
+  <path d="M0 360 Q100 320 200 350 T400 340 L400 400 L0 400 Z" fill="#A8E6A1"/>
+  <path d="M0 380 Q120 350 240 375 T400 370 L400 400 L0 400 Z" fill="#7BD389"/>
+
+  <!-- Flowers -->
+  <g>
+    <circle cx="70" cy="340" r="6" fill="#FF8FA3"/>
+    <circle cx="64" cy="334" r="5" fill="#FF8FA3"/>
+    <circle cx="76" cy="334" r="5" fill="#FF8FA3"/>
+    <circle cx="64" cy="346" r="5" fill="#FF8FA3"/>
+    <circle cx="76" cy="346" r="5" fill="#FF8FA3"/>
+    <circle cx="70" cy="340" r="4" fill="#FFD93D"/>
+
+    <circle cx="330" cy="352" r="6" fill="#FFD93D"/>
+    <circle cx="324" cy="346" r="5" fill="#FFD93D"/>
+    <circle cx="336" cy="346" r="5" fill="#FFD93D"/>
+    <circle cx="324" cy="358" r="5" fill="#FFD93D"/>
+    <circle cx="336" cy="358" r="5" fill="#FFD93D"/>
+    <circle cx="330" cy="352" r="4" fill="#FF8FA3"/>
+  </g>
+
+  <!-- Confetti -->
+  <g>
+    <rect x="30" y="60" width="10" height="5" rx="2" fill="#4D96FF" transform="rotate(20 35 62)"/>
+    <rect x="340" y="110" width="10" height="5" rx="2" fill="#FF6B6B" transform="rotate(-30 345 112)"/>
+    <circle cx="60" cy="130" r="4" fill="#6BCB77"/>
+    <circle cx="350" cy="260" r="4" fill="#9B5DE5"/>
+    <rect x="110" y="40" width="8" height="8" rx="1" fill="#FF8FA3" transform="rotate(45 114 44)"/>
+    <rect x="290" y="40" width="8" height="8" rx="1" fill="#4D96FF" transform="rotate(15 294 44)"/>
+    <circle cx="25" cy="250" r="3.5" fill="#FFD93D"/>
+    <circle cx="380" cy="170" r="3.5" fill="#6BCB77"/>
+    <rect x="300" y="210" width="9" height="5" rx="2" fill="#9B5DE5" transform="rotate(-20 304 212)"/>
+    <circle cx="150" cy="25" r="3" fill="#FF6B6B"/>
+  </g>
+</svg>

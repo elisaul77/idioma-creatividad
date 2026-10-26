@@ -1,0 +1,125 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 400" width="400" height="400">
+  <defs>
+    <radialGradient id="bg" cx="50%" cy="40%" r="75%">
+      <stop offset="0%" stop-color="#1b0b3a"/>
+      <stop offset="60%" stop-color="#0a0820"/>
+      <stop offset="100%" stop-color="#03040d"/>
+    </radialGradient>
+    <linearGradient id="trunk" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#0e3b4a"/>
+      <stop offset="50%" stop-color="#3ff2ff"/>
+      <stop offset="100%" stop-color="#0e3b4a"/>
+    </linearGradient>
+    <linearGradient id="branch" x1="0" y1="1" x2="0" y2="0">
+      <stop offset="0%" stop-color="#2de2e6"/>
+      <stop offset="100%" stop-color="#ff5fd2"/>
+    </linearGradient>
+    <radialGradient id="orb" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#ffffff"/>
+      <stop offset="40%" stop-color="#7ff7ff"/>
+      <stop offset="100%" stop-color="#7ff7ff" stop-opacity="0"/>
+    </radialGradient>
+    <radialGradient id="canopy" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#ff7ad9" stop-opacity="0.55"/>
+      <stop offset="70%" stop-color="#6a4cff" stop-opacity="0.25"/>
+      <stop offset="100%" stop-color="#6a4cff" stop-opacity="0"/>
+    </radialGradient>
+    <linearGradient id="ring" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#ffd166" stop-opacity="0"/>
+      <stop offset="50%" stop-color="#ffd166" stop-opacity="0.9"/>
+      <stop offset="100%" stop-color="#ffd166" stop-opacity="0"/>
+    </linearGradient>
+    <filter id="glow" x="-50%" y="-50%" width="200%" height="200%">
+      <feGaussianBlur stdDeviation="3" result="b"/>
+      <feMerge>
+        <feMergeNode in="b"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+    <path id="leaf" d="M0,-7 L4.5,0 L0,7 L-4.5,0 Z"/>
+  </defs>
+
+  <rect width="400" height="400" fill="url(#bg)"/>
+
+  <!-- Sterne -->
+  <g fill="#ffffff">
+    <circle cx="40" cy="50" r="1.2" opacity="0.8"/>
+    <circle cx="95" cy="28" r="0.9" opacity="0.6"/>
+    <circle cx="330" cy="40" r="1.4" opacity="0.9"/>
+    <circle cx="365" cy="95" r="1" opacity="0.7"/>
+    <circle cx="28" cy="150" r="1" opacity="0.5"/>
+    <circle cx="375" cy="210" r="1.2" opacity="0.6"/>
+    <circle cx="60" cy="235" r="0.9" opacity="0.7"/>
+    <circle cx="150" cy="22" r="0.8" opacity="0.6"/>
+    <circle cx="260" cy="18" r="1" opacity="0.8"/>
+  </g>
+
+  <!-- Leuchtende Krone -->
+  <ellipse cx="200" cy="150" rx="150" ry="120" fill="url(#canopy)"/>
+
+  <!-- Bodenringe -->
+  <ellipse cx="200" cy="345" rx="150" ry="18" fill="none" stroke="#3ff2ff" stroke-width="1.5" opacity="0.6"/>
+  <ellipse cx="200" cy="345" rx="110" ry="12" fill="none" stroke="#ff5fd2" stroke-width="1" opacity="0.4"/>
+
+  <!-- Stamm -->
+  <path d="M190,330 C188,280 196,240 200,200 C204,240 212,280 210,330 Z" fill="url(#trunk)" opacity="0.9" filter="url(#glow)"/>
+
+  <!-- Äste als leuchtende Datenleitungen -->
+  <g fill="none" stroke="url(#branch)" stroke-width="4" stroke-linecap="round" filter="url(#glow)">
+    <path d="M200,250 C170,225 140,215 115,170"/>
+    <path d="M200,240 C230,215 265,205 292,160"/>
+    <path d="M200,200 C180,170 165,150 150,105"/>
+    <path d="M200,195 C222,165 238,145 255,100"/>
+    <path d="M200,180 C200,150 198,120 200,70"/>
+    <path d="M115,170 C100,150 95,130 90,110" stroke-width="2"/>
+    <path d="M292,160 C305,140 312,125 318,108" stroke-width="2"/>
+  </g>
+
+  <!-- Knoten -->
+  <g>
+    <circle cx="115" cy="170" r="14" fill="url(#orb)"/>
+    <circle cx="292" cy="160" r="14" fill="url(#orb)"/>
+    <circle cx="150" cy="105" r="12" fill="url(#orb)"/>
+    <circle cx="255" cy="100" r="12" fill="url(#orb)"/>
+    <circle cx="200" cy="70" r="14" fill="url(#orb)"/>
+    <circle cx="90" cy="110" r="9" fill="url(#orb)"/>
+    <circle cx="318" cy="108" r="9" fill="url(#orb)"/>
+    <g fill="#ffffff">
+      <circle cx="115" cy="170" r="3"/>
+      <circle cx="292" cy="160" r="3"/>
+      <circle cx="150" cy="105" r="2.5"/>
+      <circle cx="255" cy="100" r="2.5"/>
+      <circle cx="200" cy="70" r="3.5"/>
+      <circle cx="90" cy="110" r="2"/>
+      <circle cx="318" cy="108" r="2"/>
+    </g>
+  </g>
+
+  <!-- Blätter als Kristalle -->
+  <g fill="#7ff7ff" opacity="0.8" filter="url(#glow)">
+    <use href="#leaf" transform="translate(120,135) rotate(20)"/>
+    <use href="#leaf" transform="translate(168,88) rotate(-15)"/>
+    <use href="#leaf" transform="translate(235,80) rotate(30)"/>
+    <use href="#leaf" transform="translate(270,135) rotate(-25)"/>
+    <use href="#leaf" transform="translate(80,160) rotate(-40)"/>
+    <use href="#leaf" transform="translate(320,150) rotate(45)"/>
+    <use href="#leaf" transform="translate(200,40) rotate(10)"/>
+    <use href="#leaf" transform="translate(180,55) rotate(-30)" fill="#ff7ad9"/>
+    <use href="#leaf" transform="translate(245,190) rotate(60)" fill="#ff7ad9"/>
+    <use href="#leaf" transform="translate(140,195) rotate(-60)" fill="#ff7ad9"/>
+  </g>
+
+  <!-- Orbitierender Ring und Mond -->
+  <ellipse cx="200" cy="170" rx="175" ry="42" fill="none" stroke="url(#ring)" stroke-width="2" transform="rotate(-12 200 170)"/>
+  <circle cx="352" cy="132" r="7" fill="#ffd166" filter="url(#glow)"/>
+  <circle cx="352" cy="132" r="2.5" fill="#ffffff"/>
+
+  <!-- Fallende Lichtpartikel -->
+  <g fill="#3ff2ff" filter="url(#glow)">
+    <circle cx="70" cy="280" r="2" opacity="0.8"/>
+    <circle cx="330" cy="290" r="2.5" opacity="0.7"/>
+    <circle cx="110" cy="310" r="1.5" opacity="0.6"/>
+    <circle cx="295" cy="250" r="1.8" opacity="0.8"/>
+    <circle cx="250" cy="320" r="1.5" opacity="0.5"/>
+  </g>
+</svg>

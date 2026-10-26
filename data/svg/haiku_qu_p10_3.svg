@@ -1,0 +1,40 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="400" height="400" viewBox="0 0 400 400">
+  <defs>
+    <linearGradient id="cielo" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#e6f7ff"/>
+      <stop offset="1" stop-color="#b8e4f7"/>
+    </linearGradient>
+    <linearGradient id="agua" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#5cc0e6"/>
+      <stop offset="1" stop-color="#1e7fb3"/>
+    </linearGradient>
+  </defs>
+  <rect width="400" height="400" fill="url(#cielo)"/>
+  <circle cx="300" cy="110" r="38" fill="#ffffff" opacity="0.8"/>
+  <rect x="0" y="230" width="400" height="170" fill="url(#agua)"/>
+  <g fill="none" stroke="#ffffff" stroke-width="2" stroke-linecap="round" opacity="0.5">
+    <path d="M60 270 Q90 262 120 270"/>
+    <path d="M220 300 Q250 292 280 300"/>
+    <path d="M110 335 Q140 327 170 335"/>
+    <path d="M250 350 Q280 342 310 350"/>
+  </g>
+  <g stroke="#2e8b57" stroke-width="4" stroke-linecap="round" fill="none">
+    <path d="M40 330 Q44 290 36 250"/>
+    <path d="M60 330 Q58 300 66 262"/>
+    <path d="M360 330 Q356 292 364 258"/>
+    <path d="M340 330 Q344 306 336 276"/>
+  </g>
+  <g fill="#3fa66b">
+    <ellipse cx="36" cy="246" rx="5" ry="14"/>
+    <ellipse cx="66" cy="258" rx="5" ry="14"/>
+    <ellipse cx="364" cy="254" rx="5" ry="14"/>
+    <ellipse cx="336" cy="272" rx="5" ry="14"/>
+  </g>
+  <g fill="#7fd6a0" opacity="0.95">
+    <ellipse cx="150" cy="290" rx="22" ry="8"/>
+    <ellipse cx="260" cy="320" rx="18" ry="7"/>
+  </g>
+  <g fill="#ffffff">
+    <circle cx="200" cy="200" r="5"/>
+  </g>
+</svg>

@@ -1,0 +1,96 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 400" width="400" height="400">
+  <defs>
+    <linearGradient id="sky" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#ffe3a3"/>
+      <stop offset="0.6" stop-color="#ffb866"/>
+      <stop offset="1" stop-color="#f58e4a"/>
+    </linearGradient>
+    <linearGradient id="mound" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#6b4220"/>
+      <stop offset="0.5" stop-color="#9a6632"/>
+      <stop offset="1" stop-color="#6b4220"/>
+    </linearGradient>
+    <linearGradient id="ground" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#8c5a2a"/>
+      <stop offset="1" stop-color="#4e2c12"/>
+    </linearGradient>
+    <pattern id="hex" width="16" height="18.5" patternUnits="userSpaceOnUse">
+      <path d="M8 0 L16 4.6 L16 13.9 L8 18.5 L0 13.9 L0 4.6 Z" fill="none" stroke="#ffd45c" stroke-width="1.6" opacity="0.8"/>
+    </pattern>
+  </defs>
+
+  <!-- Sky -->
+  <rect width="400" height="400" fill="url(#sky)"/>
+  <circle cx="318" cy="88" r="40" fill="#fff4c9" opacity="0.9"/>
+  <circle cx="318" cy="88" r="58" fill="#fff4c9" opacity="0.18"/>
+
+  <!-- Distant hills -->
+  <path d="M0 260 Q80 215 170 250 T400 240 L400 400 L0 400 Z" fill="#d9864a" opacity="0.6"/>
+
+  <!-- Far skyline of termite mounds -->
+  <path d="M10 260 Q18 200 26 180 Q34 200 42 260 Z" fill="#b87340" opacity="0.7"/>
+  <path d="M300 250 Q312 190 322 170 Q332 190 344 250 Z" fill="#b87340" opacity="0.7"/>
+  <path d="M360 255 Q368 210 376 196 Q384 210 392 255 Z" fill="#b87340" opacity="0.7"/>
+
+  <!-- Termite mound towers -->
+  <path d="M40 320 Q44 220 70 150 Q78 128 90 118 Q102 128 110 150 Q136 220 140 320 Z" fill="url(#mound)"/>
+  <path d="M74 150 Q90 138 106 150" fill="none" stroke="#4e2c12" stroke-width="2" opacity="0.5"/>
+  <path d="M60 210 Q90 198 120 210" fill="none" stroke="#4e2c12" stroke-width="2" opacity="0.4"/>
+  <path d="M52 265 Q90 252 128 265" fill="none" stroke="#4e2c12" stroke-width="2" opacity="0.4"/>
+  <circle cx="90" cy="112" r="5" fill="#ffd45c"/>
+
+  <!-- Honeycomb tower -->
+  <rect x="170" y="150" width="70" height="170" rx="6" fill="#c97a2e"/>
+  <rect x="170" y="150" width="70" height="170" rx="6" fill="url(#hex)"/>
+  <path d="M165 150 L205 110 L245 150 Z" fill="#a8601f"/>
+  <rect x="195" y="200" width="20" height="28" rx="10" fill="#4e2c12"/>
+
+  <!-- Spiral nest tower -->
+  <path d="M270 320 L280 200 Q284 176 300 170 Q318 164 324 182 Q328 196 316 200 Q306 204 306 214 Q306 226 318 226 L332 226 L340 320 Z" fill="#9a5e2b"/>
+  <path d="M266 320 L340 320 L336 330 L270 330 Z" fill="#6b4220"/>
+  <rect x="290" y="250" width="12" height="18" rx="6" fill="#ffd45c"/>
+  <rect x="312" y="250" width="12" height="18" rx="6" fill="#ffd45c"/>
+
+  <!-- Low burrow dwellings -->
+  <rect x="18" y="300" width="60" height="30" rx="14" fill="#7a4a22"/>
+  <circle cx="34" cy="314" r="5" fill="#2b1708"/>
+  <circle cx="54" cy="314" r="5" fill="#2b1708"/>
+  <circle cx="70" cy="314" r="5" fill="#2b1708"/>
+  <rect x="130" y="292" width="78" height="38" rx="16" fill="#8f5a2a"/>
+  <path d="M142 306 h54 M142 318 h54" stroke="#ffd45c" stroke-width="3" stroke-linecap="round" opacity="0.7"/>
+
+  <!-- Ground -->
+  <path d="M0 330 Q120 318 200 330 T400 326 L400 400 L0 400 Z" fill="url(#ground)"/>
+
+  <!-- Ant trails -->
+  <path d="M20 360 Q120 340 210 362 T390 352" fill="none" stroke="#2b1708" stroke-width="2" stroke-dasharray="3 6" stroke-linecap="round"/>
+  <path d="M60 385 Q180 372 300 388" fill="none" stroke="#2b1708" stroke-width="2" stroke-dasharray="3 6" stroke-linecap="round"/>
+
+  <!-- Bee flying over -->
+  <g transform="translate(150 80) rotate(-12)">
+    <ellipse cx="0" cy="-10" rx="8" ry="14" fill="#ffffff" opacity="0.7"/>
+    <ellipse cx="14" cy="-10" rx="8" ry="14" fill="#ffffff" opacity="0.7"/>
+    <ellipse cx="0" cy="0" rx="13" ry="9" fill="#ffd21f"/>
+    <rect x="-6" y="-9" width="3" height="18" fill="#2b1708"/>
+    <rect x="1" y="-9" width="3" height="18" fill="#2b1708"/>
+    <circle cx="12" cy="-2" r="2" fill="#2b1708"/>
+  </g>
+
+  <!-- Second bee -->
+  <g transform="translate(232 128) rotate(8) scale(0.7)">
+    <ellipse cx="0" cy="-10" rx="8" ry="14" fill="#ffffff" opacity="0.7"/>
+    <ellipse cx="14" cy="-10" rx="8" ry="14" fill="#ffffff" opacity="0.7"/>
+    <ellipse cx="0" cy="0" rx="13" ry="9" fill="#ffd21f"/>
+    <rect x="-6" y="-9" width="3" height="18" fill="#2b1708"/>
+    <rect x="1" y="-9" width="3" height="18" fill="#2b1708"/>
+    <circle cx="12" cy="-2" r="2" fill="#2b1708"/>
+  </g>
+
+  <!-- Dragonfly -->
+  <g transform="translate(60 180) rotate(-20)">
+    <ellipse cx="-14" cy="-8" rx="16" ry="5" fill="#9fe3ff" opacity="0.6" transform="rotate(-15 -14 -8)"/>
+    <ellipse cx="-14" cy="8" rx="16" ry="5" fill="#9fe3ff" opacity="0.6" transform="rotate(15 -14 8)"/>
+    <rect x="-26" y="-2.5" width="36" height="5" rx="2.5" fill="#1f6f8b"/>
+    <circle cx="10" cy="0" r="4" fill="#1f6f8b"/>
+  </g>
+</svg>

@@ -1,0 +1,121 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="400" height="400" viewBox="0 0 400 400">
+  <defs>
+    <linearGradient id="sky" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#1b1f4b"/>
+      <stop offset="0.6" stop-color="#7a4f8f"/>
+      <stop offset="1" stop-color="#f29e6b"/>
+    </linearGradient>
+    <linearGradient id="soil" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#6b4226"/>
+      <stop offset="1" stop-color="#3b2314"/>
+    </linearGradient>
+    <linearGradient id="amber" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#b86e2c"/>
+      <stop offset="0.5" stop-color="#e0a050"/>
+      <stop offset="1" stop-color="#a65c22"/>
+    </linearGradient>
+    <linearGradient id="shell" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#3f5d1c"/>
+      <stop offset="0.45" stop-color="#8fb83a"/>
+      <stop offset="1" stop-color="#2c4212"/>
+    </linearGradient>
+    <radialGradient id="glow">
+      <stop offset="0" stop-color="#fff6a0" stop-opacity="1"/>
+      <stop offset="1" stop-color="#fff6a0" stop-opacity="0"/>
+    </radialGradient>
+    <pattern id="comb" width="12" height="14" patternUnits="userSpaceOnUse">
+      <polygon points="3,0 6,1.5 6,4.5 3,6 0,4.5 0,1.5" fill="#ffe08a" opacity="0.8"/>
+      <polygon points="9,7 12,8.5 12,11.5 9,13 6,11.5 6,8.5" fill="#ffe08a" opacity="0.8"/>
+    </pattern>
+  </defs>
+
+  <!-- Sky -->
+  <rect width="400" height="400" fill="url(#sky)"/>
+
+  <!-- Stars -->
+  <circle cx="40" cy="40" r="1.5" fill="#ffffff"/>
+  <circle cx="90" cy="25" r="1" fill="#ffffff"/>
+  <circle cx="160" cy="45" r="1.2" fill="#ffffff"/>
+  <circle cx="215" cy="20" r="1" fill="#ffffff"/>
+  <circle cx="375" cy="15" r="1.3" fill="#ffffff"/>
+  <circle cx="20" cy="110" r="1" fill="#ffffff"/>
+  <circle cx="265" cy="130" r="1.1" fill="#ffffff"/>
+  <circle cx="385" cy="170" r="1" fill="#ffffff"/>
+
+  <!-- Moon -->
+  <circle cx="330" cy="70" r="26" fill="#fff3c4"/>
+  <circle cx="322" cy="63" r="5" fill="#e8d9a0" opacity="0.6"/>
+  <circle cx="338" cy="80" r="3" fill="#e8d9a0" opacity="0.6"/>
+
+  <!-- Distant skyline -->
+  <path d="M0 260 L30 230 L30 260 L70 215 L70 260 L120 240 L120 260 L170 200 L170 260 L220 235 L220 260 L270 210 L270 260 L320 238 L320 260 L370 220 L370 260 L400 245 L400 300 L0 300 Z" fill="#3d2b5c" opacity="0.6"/>
+
+  <!-- Low back buildings -->
+  <rect x="0" y="250" width="40" height="40" fill="#4a3360"/>
+  <rect x="140" y="235" width="30" height="50" fill="#4a3360"/>
+  <rect x="225" y="245" width="40" height="40" fill="#4a3360"/>
+
+  <!-- Termite spire tower -->
+  <path d="M50 280 L50 170 Q50 120 85 110 Q120 120 120 170 L120 280 Z" fill="url(#amber)"/>
+  <rect x="50" y="170" width="70" height="110" fill="url(#comb)"/>
+
+  <!-- Beetle dome tower -->
+  <path d="M170 280 L170 200 Q225 110 280 200 L280 280 Z" fill="url(#shell)"/>
+  <path d="M225 155 L225 280 M225 155 Q200 200 185 280 M225 155 Q250 200 265 280" stroke="#1f2e0c" stroke-width="1.5" fill="none" opacity="0.5"/>
+  <path d="M190 220 Q200 190 215 175" stroke="#d7f0a0" stroke-width="3" fill="none" opacity="0.4" stroke-linecap="round"/>
+
+  <!-- Bee hive tower -->
+  <path d="M300 185 Q340 150 380 185 Z" fill="#8a5a00"/>
+  <rect x="310" y="180" width="60" height="100" rx="14" fill="#e9b949"/>
+  <path d="M312 210 H368 M312 240 H368 M312 262 H368" stroke="#8a5a00" stroke-width="5"/>
+  <rect x="310" y="180" width="60" height="100" rx="14" fill="url(#comb)" opacity="0.5"/>
+
+  <!-- Spider-silk bridge -->
+  <path d="M120 190 Q145 218 170 190" stroke="#f0f0f0" stroke-width="1.2" fill="none" opacity="0.7"/>
+  <path d="M120 190 Q145 205 170 190" stroke="#f0f0f0" stroke-width="0.8" fill="none" opacity="0.5"/>
+  <path d="M145 196 L145 212 M132 194 L138 210 M158 194 L152 210" stroke="#f0f0f0" stroke-width="0.6" opacity="0.5"/>
+
+  <!-- Ground -->
+  <rect x="0" y="280" width="400" height="120" fill="url(#soil)"/>
+  <path d="M0 280 Q100 270 200 280 T400 280 L400 290 L0 290 Z" fill="#8a5a33"/>
+
+  <!-- Tunnel entrances -->
+  <ellipse cx="100" cy="330" rx="12" ry="6" fill="#1a0f08"/>
+  <ellipse cx="260" cy="345" rx="15" ry="7" fill="#1a0f08"/>
+  <ellipse cx="340" cy="320" rx="10" ry="5" fill="#1a0f08"/>
+
+  <!-- Ant road -->
+  <path d="M0 330 Q100 310 200 335 T400 320" stroke="#2a180c" stroke-width="4" fill="none" stroke-dasharray="2 6"/>
+
+  <!-- Ant column -->
+  <g fill="#120a05">
+    <ellipse cx="30" cy="300" rx="4" ry="2.5"/>
+    <ellipse cx="64" cy="300" rx="4" ry="2.5"/>
+    <ellipse cx="98" cy="300" rx="4" ry="2.5"/>
+    <ellipse cx="132" cy="300" rx="4" ry="2.5"/>
+    <ellipse cx="166" cy="300" rx="4" ry="2.5"/>
+    <ellipse cx="200" cy="300" rx="4" ry="2.5"/>
+    <ellipse cx="234" cy="300" rx="4" ry="2.5"/>
+    <ellipse cx="268" cy="300" rx="4" ry="2.5"/>
+    <ellipse cx="302" cy="300" rx="4" ry="2.5"/>
+    <ellipse cx="336" cy="300" rx="4" ry="2.5"/>
+    <ellipse cx="370" cy="300" rx="4" ry="2.5"/>
+  </g>
+
+  <!-- Fireflies (street lights) -->
+  <circle cx="150" cy="120" r="14" fill="url(#glow)"/>
+  <circle cx="150" cy="120" r="2.5" fill="#fff6a0"/>
+  <circle cx="260" cy="85" r="14" fill="url(#glow)"/>
+  <circle cx="260" cy="85" r="2.5" fill="#fff6a0"/>
+  <circle cx="370" cy="140" r="14" fill="url(#glow)"/>
+  <circle cx="370" cy="140" r="2.5" fill="#fff6a0"/>
+  <circle cx="95" cy="80" r="12" fill="url(#glow)"/>
+  <circle cx="95" cy="80" r="2" fill="#fff6a0"/>
+  <circle cx="30" cy="180" r="12" fill="url(#glow)"/>
+  <circle cx="30" cy="180" r="2" fill="#fff6a0"/>
+
+  <!-- Dragonfly -->
+  <line x1="185" y1="68" x2="215" y2="72" stroke="#1b1f2b" stroke-width="3" stroke-linecap="round"/>
+  <ellipse cx="198" cy="60" rx="12" ry="4" transform="rotate(-20 198 60)" fill="#d8f0ff" opacity="0.5"/>
+  <ellipse cx="200" cy="78" rx="12" ry="4" transform="rotate(15 200 78)" fill="#d8f0ff" opacity="0.5"/>
+</svg>

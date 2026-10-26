@@ -1,0 +1,87 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="400" height="400" viewBox="0 0 400 400">
+  <defs>
+    <linearGradient id="sky" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#ffe9b3"/>
+      <stop offset="1" stop-color="#f4b860"/>
+    </linearGradient>
+    <radialGradient id="sun" cx="0.5" cy="0.5" r="0.5">
+      <stop offset="0" stop-color="#fffbe8"/>
+      <stop offset="0.6" stop-color="#ffe6a0"/>
+      <stop offset="1" stop-color="#ffe6a0" stop-opacity="0"/>
+    </radialGradient>
+    <linearGradient id="mound" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#c58246"/>
+      <stop offset="0.5" stop-color="#a0643a"/>
+      <stop offset="1" stop-color="#7d4a2a"/>
+    </linearGradient>
+    <polygon id="hex" points="0,-6 5.2,-3 5.2,3 0,6 -5.2,3 -5.2,-3" fill="#ffd27a" stroke="#7d4a2a" stroke-width="0.8"/>
+    <g id="bee">
+      <ellipse cx="0" cy="0" rx="9" ry="6" fill="#ffc107" stroke="#3b2a1a" stroke-width="1.2"/>
+      <path d="M-3,-6 L-3,6 M3,-6 L3,6" stroke="#3b2a1a" stroke-width="2"/>
+      <ellipse cx="-2" cy="-8" rx="5" ry="3.5" fill="#ffffff" opacity="0.8"/>
+      <ellipse cx="3" cy="-8" rx="4" ry="3" fill="#ffffff" opacity="0.8"/>
+    </g>
+  </defs>
+
+  <!-- Sky -->
+  <rect width="400" height="400" fill="url(#sky)"/>
+  <circle cx="330" cy="70" r="60" fill="url(#sun)"/>
+  <circle cx="330" cy="70" r="22" fill="#fff6d6"/>
+
+  <!-- Distant hazy mounds -->
+  <path d="M0,300 C30,260 50,250 70,300 Z" fill="#e8a866" opacity="0.6"/>
+  <path d="M330,300 C350,255 370,245 400,300 Z" fill="#e8a866" opacity="0.6"/>
+
+  <!-- Termite-like towers -->
+  <path d="M55,320 C70,250 90,200 100,120 Q105,100 110,120 C120,200 140,250 150,320 Z" fill="url(#mound)"/>
+  <path d="M150,320 C170,230 180,160 200,70 Q204,58 208,70 C220,160 230,230 250,320 Z" fill="url(#mound)"/>
+  <path d="M240,320 C255,260 265,200 285,130 Q290,115 295,130 C310,200 325,260 345,320 Z" fill="url(#mound)"/>
+
+  <!-- Honeycomb windows -->
+  <g>
+    <use href="#hex" x="105" y="160"/>
+    <use href="#hex" x="95" y="190"/>
+    <use href="#hex" x="115" y="190"/>
+    <use href="#hex" x="100" y="220"/>
+    <use href="#hex" x="112" y="250"/>
+    <use href="#hex" x="200" y="110"/>
+    <use href="#hex" x="192" y="140"/>
+    <use href="#hex" x="208" y="140"/>
+    <use href="#hex" x="200" y="170"/>
+    <use href="#hex" x="186" y="200"/>
+    <use href="#hex" x="214" y="200"/>
+    <use href="#hex" x="200" y="230"/>
+    <use href="#hex" x="180" y="260"/>
+    <use href="#hex" x="220" y="260"/>
+    <use href="#hex" x="290" y="170"/>
+    <use href="#hex" x="283" y="200"/>
+    <use href="#hex" x="297" y="200"/>
+    <use href="#hex" x="290" y="230"/>
+    <use href="#hex" x="278" y="260"/>
+    <use href="#hex" x="302" y="260"/>
+  </g>
+
+  <!-- Leaf bridges between towers -->
+  <path d="M112,250 Q160,215 192,250" fill="none" stroke="#6b8e23" stroke-width="6" stroke-linecap="round"/>
+  <path d="M112,250 Q160,235 192,250" fill="none" stroke="#8fbc4a" stroke-width="2" stroke-linecap="round"/>
+  <path d="M220,250 Q265,220 282,250" fill="none" stroke="#6b8e23" stroke-width="6" stroke-linecap="round"/>
+
+  <!-- Ground -->
+  <path d="M0,320 Q100,308 200,320 T400,320 L400,400 L0,400 Z" fill="#6b4423"/>
+  <path d="M0,335 Q120,328 220,338 T400,334 L400,400 L0,400 Z" fill="#553619" opacity="0.7"/>
+  <path d="M0,320 Q50,312 100,320 T200,320 T300,320 T400,320" fill="none" stroke="#7fa33a" stroke-width="4" stroke-linecap="round"/>
+
+  <!-- Tunnel entrances -->
+  <ellipse cx="75" cy="345" rx="10" ry="5" fill="#2e1d0e"/>
+  <ellipse cx="200" cy="355" rx="12" ry="6" fill="#2e1d0e"/>
+  <ellipse cx="320" cy="342" rx="9" ry="4.5" fill="#2e1d0e"/>
+
+  <!-- Ant trail -->
+  <path d="M10,375 Q120,362 200,378 T390,372" fill="none" stroke="#2b1d12" stroke-width="4" stroke-linecap="round" stroke-dasharray="3 9"/>
+
+  <!-- Bees -->
+  <use href="#bee" x="150" y="90" transform="rotate(-12 150 90)"/>
+  <use href="#bee" x="258" y="60" transform="rotate(8 258 60)"/>
+  <use href="#bee" x="335" y="140" transform="rotate(-6 335 140)"/>
+  <use href="#bee" x="40" y="180" transform="rotate(10 40 180)"/>
+</svg>

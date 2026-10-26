@@ -1,0 +1,172 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 400" width="400" height="400">
+  <defs>
+    <linearGradient id="sky" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#bfe3f5"/>
+      <stop offset="1" stop-color="#f7f1d6"/>
+    </linearGradient>
+    <linearGradient id="soil" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#8a5a34"/>
+      <stop offset="1" stop-color="#5a3a20"/>
+    </linearGradient>
+    <linearGradient id="mound1" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#d9a35f"/>
+      <stop offset="0.5" stop-color="#f0c884"/>
+      <stop offset="1" stop-color="#c58b47"/>
+    </linearGradient>
+    <linearGradient id="mound2" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#b8743a"/>
+      <stop offset="0.5" stop-color="#d99a5c"/>
+      <stop offset="1" stop-color="#9c5d2b"/>
+    </linearGradient>
+    <linearGradient id="comb" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#ffd54a"/>
+      <stop offset="1" stop-color="#e0a414"/>
+    </linearGradient>
+    <linearGradient id="leaf" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#7fd16b"/>
+      <stop offset="1" stop-color="#2f8f3e"/>
+    </linearGradient>
+    <pattern id="hex" width="12" height="10.4" patternUnits="userSpaceOnUse">
+      <path d="M6 0 L12 3.46 L12 10.4 L6 13.86 L0 10.4 L0 3.46 Z" fill="none" stroke="#b07f00" stroke-width="0.8" opacity="0.6"/>
+    </pattern>
+    <radialGradient id="sun" cx="0.5" cy="0.5" r="0.5">
+      <stop offset="0" stop-color="#fff6b0"/>
+      <stop offset="1" stop-color="#ffd23f" stop-opacity="0"/>
+    </radialGradient>
+  </defs>
+
+  <!-- Sky -->
+  <rect width="400" height="400" fill="url(#sky)"/>
+  <circle cx="340" cy="60" r="60" fill="url(#sun)"/>
+  <circle cx="340" cy="60" r="22" fill="#ffd23f"/>
+
+  <!-- Distant hills -->
+  <path d="M0 230 Q60 190 120 225 T250 215 T400 220 L400 260 L0 260 Z" fill="#a8d88f" opacity="0.7"/>
+
+  <!-- Termite mound towers -->
+  <g id="towers">
+    <path d="M30 260 L40 150 Q55 110 70 150 L80 260 Z" fill="url(#mound1)"/>
+    <path d="M90 260 L100 120 Q115 80 130 120 L140 260 Z" fill="url(#mound2)"/>
+    <path d="M155 260 L165 175 Q180 145 195 175 L205 260 Z" fill="url(#mound1)"/>
+    <path d="M300 260 L312 130 Q328 95 344 130 L356 260 Z" fill="url(#mound2)"/>
+    <path d="M360 260 L368 190 Q380 165 392 190 L400 260 Z" fill="url(#mound1)"/>
+    <!-- Tower windows -->
+    <g fill="#5a3a20" opacity="0.8">
+      <circle cx="55" cy="170" r="3"/><circle cx="52" cy="200" r="3"/><circle cx="60" cy="230" r="3"/>
+      <circle cx="115" cy="150" r="3"/><circle cx="110" cy="185" r="3"/><circle cx="118" cy="215" r="3"/>
+      <circle cx="180" cy="200" r="3"/><circle cx="175" cy="232" r="3"/>
+      <circle cx="328" cy="160" r="3"/><circle cx="325" cy="195" r="3"/><circle cx="332" cy="228" r="3"/>
+      <circle cx="380" cy="215" r="3"/>
+    </g>
+    <!-- Antenna spires -->
+    <g stroke="#5a3a20" stroke-width="1.5" fill="none">
+      <path d="M55 150 L55 130"/><path d="M115 120 L115 100"/>
+      <path d="M180 175 L180 158"/><path d="M328 130 L328 110"/>
+    </g>
+    <g fill="#ffd23f">
+      <circle cx="55" cy="128" r="3"/><circle cx="115" cy="98" r="3"/>
+      <circle cx="180" cy="156" r="3"/><circle cx="328" cy="108" r="3"/>
+    </g>
+  </g>
+
+  <!-- Honeycomb hive building -->
+  <g id="hive">
+    <rect x="215" y="195" width="75" height="65" fill="url(#comb)" rx="6"/>
+    <rect x="215" y="195" width="75" height="65" fill="url(#hex)" rx="6"/>
+    <path d="M205 200 Q252 170 300 200 Z" fill="#c77f00"/>
+    <rect x="240" y="225" width="20" height="35" rx="10" fill="#7a4a00"/>
+  </g>
+
+  <!-- Leaf roofs / canopy platforms -->
+  <g id="leaves">
+    <path d="M10 262 Q35 240 60 262 Q35 272 10 262 Z" fill="url(#leaf)"/>
+    <path d="M120 262 Q145 238 175 262 Q148 274 120 262 Z" fill="url(#leaf)"/>
+    <path d="M290 262 Q315 240 345 262 Q318 274 290 262 Z" fill="url(#leaf)"/>
+    <path d="M345 262 Q368 244 395 262 Q370 274 345 262 Z" fill="url(#leaf)"/>
+  </g>
+
+  <!-- Ground -->
+  <rect x="0" y="260" width="400" height="140" fill="url(#soil)"/>
+  <path d="M0 260 Q100 252 200 260 T400 260 L400 268 L0 268 Z" fill="#5fb14a"/>
+
+  <!-- Ant tunnel road -->
+  <path d="M0 310 Q100 300 200 318 T400 310" stroke="#3b2414" stroke-width="18" fill="none" stroke-linecap="round"/>
+  <path d="M0 310 Q100 300 200 318 T400 310" stroke="#ffffff" stroke-width="1.5" stroke-dasharray="8 8" fill="none" opacity="0.5"/>
+
+  <!-- Ants marching -->
+  <g fill="#2a1a0e">
+    <ellipse cx="30" cy="308" rx="4" ry="2.5"/><ellipse cx="44" cy="306" rx="4" ry="2.5"/>
+    <ellipse cx="60" cy="304" rx="4" ry="2.5"/><ellipse cx="78" cy="305" rx="4" ry="2.5"/>
+    <ellipse cx="200" cy="321" rx="4" ry="2.5"/><ellipse cx="216" cy="322" rx="4" ry="2.5"/>
+    <ellipse cx="232" cy="321" rx="4" ry="2.5"/><ellipse cx="350" cy="312" rx="4" ry="2.5"/>
+    <ellipse cx="366" cy="311" rx="4" ry="2.5"/>
+  </g>
+
+  <!-- Caterpillar bridge over a stream -->
+  <g id="caterpillar">
+    <circle cx="120" cy="350" r="9" fill="#7ed957"/>
+    <circle cx="137" cy="349" r="9" fill="#7ed957"/>
+    <circle cx="154" cy="350" r="9" fill="#7ed957"/>
+    <circle cx="171" cy="349" r="9" fill="#7ed957"/>
+    <circle cx="112" cy="346" r="2" fill="#1d3b12"/>
+    <circle cx="109" cy="342" r="1.5" fill="#1d3b12"/>
+    <circle cx="112" cy="352" r="1" fill="#1d3b12"/>
+    <g stroke="#1d3b12" stroke-width="1.5" fill="none">
+      <path d="M116 340 Q113 332 108 332"/><path d="M117 341 Q118 333 114 328"/>
+    </g>
+    <g fill="#ff6b6b">
+      <circle cx="137" cy="348" r="2"/><circle cx="154" cy="349" r="2"/>
+    </g>
+  </g>
+
+  <!-- Pond -->
+  <ellipse cx="300" cy="365" rx="60" ry="14" fill="#3fa7d6"/>
+  <ellipse cx="300" cy="363" rx="45" ry="8" fill="#7fd0f0" opacity="0.6"/>
+  <g fill="#2f8f3e">
+    <ellipse cx="282" cy="366" rx="8" ry="3"/><ellipse cx="318" cy="362" rx="7" ry="3"/>
+  </g>
+
+  <!-- Ladybugs on the roofs -->
+  <g id="ladybugs">
+    <circle cx="35" cy="252" r="5" fill="#e53935"/>
+    <line x1="35" y1="247" x2="35" y2="257" stroke="#222" stroke-width="1"/>
+    <circle cx="33" cy="251" r="1" fill="#222"/><circle cx="37" cy="254" r="1" fill="#222"/>
+    <circle cx="335" cy="252" r="5" fill="#e53935"/>
+    <line x1="335" y1="247" x2="335" y2="257" stroke="#222" stroke-width="1"/>
+    <circle cx="333" cy="251" r="1" fill="#222"/><circle cx="337" cy="254" r="1" fill="#222"/>
+  </g>
+
+  <!-- Butterflies flying above the city -->
+  <g id="butterflies">
+    <g transform="translate(90 200)">
+      <path d="M0 0 Q-14 -14 -18 0 Q-14 10 0 0 Z" fill="#ff8fb1"/>
+      <path d="M0 0 Q14 -14 18 0 Q14 10 0 0 Z" fill="#ff8fb1"/>
+      <rect x="-1" y="-4" width="2" height="8" rx="1" fill="#4a2a1a"/>
+    </g>
+    <g transform="translate(260 150) rotate(-12)">
+      <path d="M0 0 Q-12 -12 -16 0 Q-12 9 0 0 Z" fill="#8e7cff"/>
+      <path d="M0 0 Q12 -12 16 0 Q12 9 0 0 Z" fill="#8e7cff"/>
+      <rect x="-1" y="-4" width="2" height="8" rx="1" fill="#4a2a1a"/>
+    </g>
+  </g>
+
+  <!-- Dragonfly -->
+  <g transform="translate(200 110)">
+    <ellipse cx="0" cy="0" rx="3" ry="18" fill="#1c7a8c" transform="rotate(-8)"/>
+    <ellipse cx="-12" cy="-4" rx="12" ry="3" fill="#bfeaf2" opacity="0.8" transform="rotate(-25)"/>
+    <ellipse cx="12" cy="-4" rx="12" ry="3" fill="#bfeaf2" opacity="0.8" transform="rotate(25)"/>
+    <ellipse cx="-10" cy="4" rx="10" ry="2.5" fill="#bfeaf2" opacity="0.7" transform="rotate(20)"/>
+    <ellipse cx="10" cy="4" rx="10" ry="2.5" fill="#bfeaf2" opacity="0.7" transform="rotate(-20)"/>
+    <circle cx="0" cy="-17" r="3" fill="#0e4a57"/>
+  </g>
+
+  <!-- Flower patches -->
+  <g>
+    <circle cx="200" cy="278" r="3" fill="#ff5c8a"/><circle cx="196" cy="276" r="3" fill="#ff5c8a"/>
+    <circle cx="204" cy="276" r="3" fill="#ff5c8a"/><circle cx="200" cy="274" r="3" fill="#ff5c8a"/>
+    <circle cx="200" cy="278" r="2" fill="#ffe066"/>
+    <circle cx="20" cy="282" r="3" fill="#ffd23f"/><circle cx="16" cy="280" r="3" fill="#ffd23f"/>
+    <circle cx="24" cy="280" r="3" fill="#ffd23f"/><circle cx="20" cy="278" r="3" fill="#ffd23f"/>
+    <circle cx="20" cy="282" r="2" fill="#8a4a00"/>
+  </g>
+</svg>

@@ -1,0 +1,115 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="400" height="400" viewBox="0 0 400 400">
+  <defs>
+    <radialGradient id="sky" cx="50%" cy="40%" r="75%">
+      <stop offset="0%" stop-color="#1b1f4a"/>
+      <stop offset="100%" stop-color="#05060f"/>
+    </radialGradient>
+    <radialGradient id="crust" cx="50%" cy="50%" r="50%">
+      <stop offset="85%" stop-color="#6b4a2e"/>
+      <stop offset="100%" stop-color="#8a5f3a"/>
+    </radialGradient>
+    <radialGradient id="mantle" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#b8502a"/>
+      <stop offset="100%" stop-color="#d9733a"/>
+    </radialGradient>
+    <radialGradient id="outerCore" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#f6a33a"/>
+      <stop offset="100%" stop-color="#ffcf5a"/>
+    </radialGradient>
+    <radialGradient id="innerCore" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#fffbe0"/>
+      <stop offset="60%" stop-color="#ffe98a"/>
+      <stop offset="100%" stop-color="#ffb347" stop-opacity="0.6"/>
+    </radialGradient>
+    <linearGradient id="hull" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#7d8aa6"/>
+      <stop offset="50%" stop-color="#e3eaf7"/>
+      <stop offset="100%" stop-color="#5a6680"/>
+    </linearGradient>
+    <linearGradient id="exhaust" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#ffffff" stop-opacity="0"/>
+      <stop offset="60%" stop-color="#7ff0ff" stop-opacity="0.8"/>
+      <stop offset="100%" stop-color="#ffb347" stop-opacity="0.9"/>
+    </linearGradient>
+    <radialGradient id="glow" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#ffd27a" stop-opacity="0.9"/>
+      <stop offset="100%" stop-color="#ff7a1a" stop-opacity="0"/>
+    </radialGradient>
+    <clipPath id="earthClip">
+      <circle cx="200" cy="240" r="165"/>
+    </clipPath>
+  </defs>
+
+  <!-- Background -->
+  <rect width="400" height="400" fill="url(#sky)"/>
+  <g fill="#ffffff">
+    <circle cx="40" cy="45" r="1.5" opacity="0.8"/>
+    <circle cx="95" cy="30" r="1" opacity="0.6"/>
+    <circle cx="330" cy="50" r="1.8" opacity="0.9"/>
+    <circle cx="365" cy="120" r="1.2" opacity="0.7"/>
+    <circle cx="30" cy="160" r="1" opacity="0.5"/>
+    <circle cx="370" cy="200" r="1.4" opacity="0.6"/>
+    <circle cx="60" cy="300" r="1.2" opacity="0.5"/>
+    <circle cx="345" cy="330" r="1" opacity="0.6"/>
+  </g>
+
+  <!-- Earth cross-section -->
+  <g>
+    <circle cx="200" cy="240" r="170" fill="#2a1a10" opacity="0.5"/>
+    <circle cx="200" cy="240" r="165" fill="url(#crust)"/>
+    <g clip-path="url(#earthClip)">
+      <circle cx="200" cy="240" r="128" fill="url(#mantle)"/>
+      <circle cx="200" cy="240" r="72" fill="url(#outerCore)"/>
+      <circle cx="200" cy="240" r="34" fill="url(#innerCore)"/>
+      <!-- Crust texture -->
+      <g fill="none" stroke="#4a2f1b" stroke-width="2" opacity="0.5">
+        <path d="M60 200 Q90 180 120 200"/>
+        <path d="M270 260 Q300 240 330 270"/>
+        <path d="M80 300 Q110 290 130 320"/>
+        <path d="M250 120 Q280 110 300 135"/>
+      </g>
+    </g>
+    <circle cx="200" cy="240" r="165" fill="none" stroke="#c49a6c" stroke-width="2" opacity="0.7"/>
+  </g>
+
+  <!-- Heat trail -->
+  <rect x="193" y="20" width="14" height="110" rx="7" fill="url(#exhaust)" opacity="0.9"/>
+  <circle cx="200" cy="120" r="34" fill="url(#glow)" opacity="0.5"/>
+
+  <!-- Vehicle: drill pod -->
+  <g>
+    <!-- Side fins -->
+    <path d="M174 118 L150 146 L152 152 L176 140 Z" fill="#4a5670"/>
+    <path d="M226 118 L250 146 L248 152 L224 140 Z" fill="#4a5670"/>
+
+    <!-- Body -->
+    <path d="M200 52 C224 52 230 84 230 112 L230 142 L170 142 L170 112 C170 84 176 52 200 52 Z" fill="url(#hull)" stroke="#2a3248" stroke-width="2"/>
+
+    <!-- Porthole -->
+    <circle cx="200" cy="92" r="11" fill="#0d1a2e" stroke="#2a3248" stroke-width="2"/>
+    <circle cx="200" cy="92" r="7" fill="#58f0ff" opacity="0.9"/>
+    <circle cx="197" cy="89" r="2" fill="#ffffff" opacity="0.9"/>
+
+    <!-- Band -->
+    <rect x="170" y="128" width="60" height="5" fill="#2a3248"/>
+
+    <!-- Spiral drill -->
+    <path d="M170 142 L230 142 L200 196 Z" fill="#8a94aa" stroke="#2a3248" stroke-width="2"/>
+    <g stroke="#2a3248" stroke-width="2" fill="none">
+      <path d="M180 150 L212 158"/>
+      <path d="M220 150 L188 162"/>
+      <path d="M185 168 L210 178"/>
+      <path d="M215 168 L192 182"/>
+    </g>
+    <circle cx="200" cy="196" r="3" fill="#ffb347"/>
+  </g>
+
+  <!-- Sparks at drill tip -->
+  <g fill="#ffd27a">
+    <circle cx="188" cy="206" r="2"/>
+    <circle cx="212" cy="210" r="1.6"/>
+    <circle cx="200" cy="218" r="2.2"/>
+    <circle cx="180" cy="220" r="1.4"/>
+    <circle cx="220" cy="224" r="1.6"/>
+  </g>
+</svg>

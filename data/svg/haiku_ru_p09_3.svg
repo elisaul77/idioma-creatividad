@@ -1,0 +1,116 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 400" width="400" height="400">
+  <defs>
+    <linearGradient id="sky" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#ffe3a8"/>
+      <stop offset="1" stop-color="#f29e5c"/>
+    </linearGradient>
+    <linearGradient id="mound" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#d9965a"/>
+      <stop offset="1" stop-color="#7a4522"/>
+    </linearGradient>
+    <linearGradient id="soil" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#8e5d2e"/>
+      <stop offset="1" stop-color="#3f250f"/>
+    </linearGradient>
+    <pattern id="hex" width="14" height="12" patternUnits="userSpaceOnUse">
+      <path d="M7 0 L14 4 L14 10 L7 12 L0 10 L0 4 Z" fill="none" stroke="#ffd166" stroke-width="1" opacity="0.45"/>
+    </pattern>
+  </defs>
+
+  <!-- небо и солнце -->
+  <rect width="400" height="400" fill="url(#sky)"/>
+  <circle cx="330" cy="82" r="34" fill="#fff4cc"/>
+  <circle cx="330" cy="82" r="50" fill="#fff4cc" opacity="0.25"/>
+
+  <!-- дальние холмы -->
+  <path d="M0 232 Q60 192 130 226 T265 216 T400 222 V290 H0 Z" fill="#d9834a" opacity="0.55"/>
+
+  <!-- мосты между башнями -->
+  <path d="M118 210 Q150 190 172 200" fill="none" stroke="#a8652f" stroke-width="5" stroke-linecap="round"/>
+  <path d="M228 200 Q250 186 282 196" fill="none" stroke="#a8652f" stroke-width="5" stroke-linecap="round"/>
+
+  <!-- левая башня -->
+  <path d="M86 270 L86 170 Q86 140 115 138 Q144 140 144 170 L144 270 Z" fill="url(#mound)"/>
+  <path d="M96 200 Q115 186 134 200" fill="none" stroke="#4a2a12" stroke-width="2" opacity="0.5"/>
+  <g fill="#3a200c" opacity="0.8">
+    <path d="M106 170 a5 6 0 0 1 10 0 Z"/>
+    <path d="M106 226 a5 6 0 0 1 10 0 Z"/>
+  </g>
+
+  <!-- правая башня -->
+  <path d="M256 270 L256 150 Q256 118 288 116 Q320 118 320 150 L320 270 Z" fill="url(#mound)"/>
+  <path d="M266 186 Q288 172 310 186" fill="none" stroke="#4a2a12" stroke-width="2" opacity="0.5"/>
+  <g fill="#3a200c" opacity="0.8">
+    <path d="M276 150 a5 6 0 0 1 10 0 Z"/>
+    <path d="M276 212 a5 6 0 0 1 10 0 Z"/>
+    <path d="M276 244 a5 6 0 0 1 10 0 Z"/>
+  </g>
+
+  <!-- центральная башня с сотами -->
+  <path d="M170 270 L170 96 L200 40 L230 96 L230 270 Z" fill="url(#mound)"/>
+  <rect x="170" y="96" width="60" height="174" fill="url(#hex)"/>
+  <path d="M164 110 H236 M160 150 H240 M158 190 H242" stroke="#5c3316" stroke-width="3" stroke-linecap="round" opacity="0.6"/>
+  <circle cx="200" cy="72" r="5" fill="#ffd166"/>
+  <path d="M186 228 Q200 206 214 228 V270 H186 Z" fill="#2b1608"/>
+
+  <!-- поле и почва -->
+  <path d="M0 268 Q100 258 200 268 T400 266 V400 H0 Z" fill="url(#soil)"/>
+
+  <!-- трава -->
+  <g stroke="#6f8f3a" stroke-width="2" stroke-linecap="round" fill="none">
+    <path d="M30 268 Q26 256 20 250"/>
+    <path d="M36 268 Q40 254 46 248"/>
+    <path d="M300 266 Q296 254 290 248"/>
+    <path d="M308 266 Q312 252 318 246"/>
+    <path d="M370 267 Q366 256 360 252"/>
+  </g>
+
+  <!-- подземные ходы -->
+  <path d="M60 310 Q120 290 170 320 T280 310 T380 330" fill="none" stroke="#24130a" stroke-width="10" stroke-linecap="round" opacity="0.8"/>
+  <path d="M120 350 Q160 336 200 352" fill="none" stroke="#24130a" stroke-width="7" stroke-linecap="round" opacity="0.7"/>
+  <circle cx="170" cy="320" r="4" fill="#24130a"/>
+  <circle cx="280" cy="310" r="4" fill="#24130a"/>
+
+  <!-- муравьи -->
+  <g fill="#2a1a0c">
+    <g transform="translate(60 300)">
+      <circle cx="0" cy="0" r="2.5"/><circle cx="5" cy="0" r="1.8"/><circle cx="10" cy="0" r="3"/>
+    </g>
+    <g transform="translate(90 306)">
+      <circle cx="0" cy="0" r="2.5"/><circle cx="5" cy="0" r="1.8"/><circle cx="10" cy="0" r="3"/>
+    </g>
+    <g transform="translate(230 338)">
+      <circle cx="0" cy="0" r="2.5"/><circle cx="5" cy="0" r="1.8"/><circle cx="10" cy="0" r="3"/>
+    </g>
+    <g transform="translate(256 344)">
+      <circle cx="0" cy="0" r="2.5"/><circle cx="5" cy="0" r="1.8"/><circle cx="10" cy="0" r="3"/>
+    </g>
+  </g>
+
+  <!-- пчёлы -->
+  <g transform="translate(64 80)">
+    <ellipse cx="-2" cy="-9" rx="5" ry="3" fill="#ffffff" opacity="0.75"/>
+    <ellipse cx="4" cy="-9" rx="5" ry="3" fill="#ffffff" opacity="0.75"/>
+    <ellipse rx="10" ry="7" fill="#ffc83d"/>
+    <path d="M-3 -6 V6 M3 -6 V6" stroke="#2b1a0e" stroke-width="2"/>
+    <circle cx="8" cy="-2" r="1.3" fill="#2b1a0e"/>
+  </g>
+  <g transform="translate(120 140) scale(0.7)">
+    <ellipse cx="-2" cy="-9" rx="5" ry="3" fill="#ffffff" opacity="0.75"/>
+    <ellipse cx="4" cy="-9" rx="5" ry="3" fill="#ffffff" opacity="0.75"/>
+    <ellipse rx="10" ry="7" fill="#ffc83d"/>
+    <path d="M-3 -6 V6 M3 -6 V6" stroke="#2b1a0e" stroke-width="2"/>
+    <circle cx="8" cy="-2" r="1.3" fill="#2b1a0e"/>
+  </g>
+  <g transform="translate(340 180) scale(0.85)">
+    <ellipse cx="-2" cy="-9" rx="5" ry="3" fill="#ffffff" opacity="0.75"/>
+    <ellipse cx="4" cy="-9" rx="5" ry="3" fill="#ffffff" opacity="0.75"/>
+    <ellipse rx="10" ry="7" fill="#ffc83d"/>
+    <path d="M-3 -6 V6 M3 -6 V6" stroke="#2b1a0e" stroke-width="2"/>
+    <circle cx="8" cy="-2" r="1.3" fill="#2b1a0e"/>
+  </g>
+
+  <!-- траектории полёта -->
+  <path d="M74 88 Q100 60 150 92" fill="none" stroke="#fff4cc" stroke-width="1.2" stroke-dasharray="4 4" opacity="0.6"/>
+  <path d="M340 190 Q300 230 260 200" fill="none" stroke="#fff4cc" stroke-width="1.2" stroke-dasharray="4 4" opacity="0.6"/>
+</svg>

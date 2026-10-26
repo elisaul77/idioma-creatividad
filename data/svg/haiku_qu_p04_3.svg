@@ -1,0 +1,101 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="400" height="400" viewBox="0 0 400 400">
+  <defs>
+    <linearGradient id="cielo" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#a7d8f0"/>
+      <stop offset="1" stop-color="#fdf3dc"/>
+    </linearGradient>
+    <radialGradient id="sol" cx="0.5" cy="0.5" r="0.5">
+      <stop offset="0" stop-color="#fff4b0"/>
+      <stop offset="1" stop-color="#ffd35a" stop-opacity="0"/>
+    </radialGradient>
+    <radialGradient id="luz" cx="0.5" cy="0.5" r="0.5">
+      <stop offset="0" stop-color="#ffe9a0" stop-opacity="0.9"/>
+      <stop offset="1" stop-color="#ffe9a0" stop-opacity="0"/>
+    </radialGradient>
+  </defs>
+
+  <!-- Cielo -->
+  <rect width="400" height="400" fill="url(#cielo)"/>
+
+  <!-- Sol -->
+  <circle cx="330" cy="75" r="60" fill="url(#sol)"/>
+  <circle cx="330" cy="75" r="26" fill="#ffd966"/>
+
+  <!-- Nubes -->
+  <g fill="#ffffff" opacity="0.9">
+    <ellipse cx="90" cy="70" rx="38" ry="16"/>
+    <ellipse cx="115" cy="62" rx="28" ry="18"/>
+    <ellipse cx="68" cy="66" rx="22" ry="13"/>
+    <ellipse cx="230" cy="110" rx="30" ry="12"/>
+    <ellipse cx="250" cy="103" rx="20" ry="13"/>
+  </g>
+
+  <!-- Colinas -->
+  <path d="M0 260 Q100 215 200 252 T400 240 L400 400 L0 400 Z" fill="#9ccc8a"/>
+  <path d="M0 300 Q120 270 220 298 T400 290 L400 400 L0 400 Z" fill="#7fb874"/>
+
+  <!-- Casa -->
+  <g>
+    <!-- Chimenea -->
+    <rect x="262" y="150" width="22" height="50" fill="#b8704a"/>
+    <rect x="258" y="146" width="30" height="8" rx="2" fill="#8f5536"/>
+    <!-- Humo -->
+    <g fill="none" stroke="#ffffff" stroke-width="5" stroke-linecap="round" opacity="0.8">
+      <path d="M273 140 Q265 128 273 116 Q281 104 273 92"/>
+      <path d="M287 136 Q281 126 288 116"/>
+    </g>
+
+    <!-- Techo -->
+    <path d="M120 200 L200 130 L280 200 Z" fill="#d9654a"/>
+    <path d="M120 200 L200 130 L200 140 L132 200 Z" fill="#e68068" opacity="0.6"/>
+
+    <!-- Muro -->
+    <rect x="130" y="198" width="140" height="110" fill="#f5e6c8"/>
+    <rect x="130" y="290" width="140" height="18" fill="#e3cfa5"/>
+
+    <!-- Ventana con luz -->
+    <rect x="150" y="220" width="46" height="46" fill="#fff1c2" stroke="#8a6a4a" stroke-width="4"/>
+    <circle cx="173" cy="243" r="36" fill="url(#luz)"/>
+    <line x1="173" y1="220" x2="173" y2="266" stroke="#8a6a4a" stroke-width="3"/>
+    <line x1="150" y1="243" x2="196" y2="243" stroke="#8a6a4a" stroke-width="3"/>
+
+    <!-- Ventana derecha -->
+    <rect x="214" y="220" width="46" height="46" fill="#fff1c2" stroke="#8a6a4a" stroke-width="4"/>
+    <circle cx="237" cy="243" r="36" fill="url(#luz)"/>
+    <line x1="237" y1="220" x2="237" y2="266" stroke="#8a6a4a" stroke-width="3"/>
+    <line x1="214" y1="243" x2="260" y2="243" stroke="#8a6a4a" stroke-width="3"/>
+
+    <!-- Puerta -->
+    <path d="M186 308 L186 262 Q200 248 214 262 L214 308 Z" fill="#8a5a3c"/>
+    <circle cx="208" cy="287" r="2.5" fill="#ffd966"/>
+  </g>
+
+  <!-- Corazón sobre la puerta -->
+  <path d="M200 232 C200 226 192 222 189 228 C186 222 178 226 180 233 C182 240 200 248 200 248 C200 248 218 240 220 233 C222 226 214 222 211 228 C208 222 200 226 200 232 Z" fill="#e8475f"/>
+
+  <!-- Camino -->
+  <path d="M190 400 Q196 350 200 308 Q204 350 210 400 Z" fill="#e8d4a2"/>
+
+  <!-- Flores -->
+  <g>
+    <circle cx="90" cy="330" r="7" fill="#ff8fab"/>
+    <circle cx="90" cy="330" r="3" fill="#ffe066"/>
+    <line x1="90" y1="337" x2="90" y2="370" stroke="#4f8f4a" stroke-width="3"/>
+    <circle cx="112" cy="345" r="6" fill="#ffb3c6"/>
+    <circle cx="112" cy="345" r="2.5" fill="#ffe066"/>
+    <line x1="112" y1="351" x2="112" y2="380" stroke="#4f8f4a" stroke-width="3"/>
+    <circle cx="300" cy="335" r="7" fill="#ff8fab"/>
+    <circle cx="300" cy="335" r="3" fill="#ffe066"/>
+    <line x1="300" y1="342" x2="300" y2="372" stroke="#4f8f4a" stroke-width="3"/>
+    <circle cx="322" cy="352" r="6" fill="#ffb3c6"/>
+    <circle cx="322" cy="352" r="2.5" fill="#ffe066"/>
+    <line x1="322" y1="358" x2="322" y2="385" stroke="#4f8f4a" stroke-width="3"/>
+  </g>
+
+  <!-- Arbusto -->
+  <g fill="#5fa35a">
+    <circle cx="70" cy="290" r="22"/>
+    <circle cx="92" cy="282" r="18"/>
+    <circle cx="50" cy="300" r="16"/>
+  </g>
+</svg>

@@ -1,0 +1,94 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 400" width="400" height="400">
+  <defs>
+    <linearGradient id="sky" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#1d2b53"/>
+      <stop offset="1" stop-color="#7e5a9b"/>
+    </linearGradient>
+    <linearGradient id="body" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#7fe0c7"/>
+      <stop offset="1" stop-color="#3fb4a0"/>
+    </linearGradient>
+  </defs>
+
+  <!-- Himmel -->
+  <rect width="400" height="400" fill="url(#sky)"/>
+  <circle cx="330" cy="70" r="26" fill="#ffe8a3"/>
+  <circle cx="312" cy="62" r="22" fill="#7e5a9b" opacity="0.25"/>
+  <g fill="#fff9c4">
+    <circle cx="40" cy="50" r="2"/>
+    <circle cx="90" cy="110" r="1.5"/>
+    <circle cx="160" cy="40" r="2.5"/>
+    <circle cx="220" cy="90" r="1.5"/>
+    <circle cx="60" cy="180" r="2"/>
+    <circle cx="370" cy="160" r="1.5"/>
+    <circle cx="260" cy="30" r="1.8"/>
+    <circle cx="25" cy="250" r="1.5"/>
+  </g>
+
+  <!-- Boden -->
+  <path d="M0 330 Q200 290 400 330 L400 400 L0 400 Z" fill="#2a3f6b"/>
+  <ellipse cx="200" cy="335" rx="110" ry="14" fill="#000" opacity="0.25"/>
+
+  <!-- Flügel aus Blättern -->
+  <path d="M150 200 C90 120 40 150 50 210 C60 250 110 240 150 220 Z" fill="#ffd166" opacity="0.9"/>
+  <path d="M250 200 C310 120 360 150 350 210 C340 250 290 240 250 220 Z" fill="#ffd166" opacity="0.9"/>
+  <path d="M150 200 C120 175 90 170 70 190" fill="none" stroke="#c98a2b" stroke-width="2"/>
+  <path d="M250 200 C280 175 310 170 330 190" fill="none" stroke="#c98a2b" stroke-width="2"/>
+
+  <!-- Schweif als Komet -->
+  <path d="M290 250 C340 270 350 300 330 310" fill="none" stroke="url(#body)" stroke-width="14" stroke-linecap="round"/>
+  <polygon points="332,294 336,304 346,304 338,311 341,321 332,315 323,321 326,311 318,304 328,304" fill="#ffd166"/>
+
+  <!-- Beine -->
+  <g fill="url(#body)">
+    <rect x="145" y="280" width="16" height="50" rx="8"/>
+    <rect x="175" y="284" width="16" height="48" rx="8"/>
+    <rect x="209" y="284" width="16" height="48" rx="8"/>
+    <rect x="239" y="280" width="16" height="50" rx="8"/>
+  </g>
+
+  <!-- Körper -->
+  <ellipse cx="200" cy="235" rx="90" ry="60" fill="url(#body)"/>
+  <ellipse cx="200" cy="250" rx="55" ry="35" fill="#e9fff8" opacity="0.6"/>
+  <g fill="#2a9d8f" opacity="0.5">
+    <circle cx="160" cy="220" r="5"/>
+    <circle cx="240" cy="215" r="4"/>
+    <circle cx="250" cy="250" r="6"/>
+    <circle cx="130" cy="245" r="4"/>
+  </g>
+
+  <!-- Rüssel als Spirale -->
+  <path d="M200 185 C215 200 215 225 195 232 C175 240 165 260 178 272 C190 282 205 270 198 258"
+        fill="none" stroke="url(#body)" stroke-width="12" stroke-linecap="round"/>
+
+  <!-- Kopf -->
+  <circle cx="200" cy="165" r="52" fill="url(#body)"/>
+
+  <!-- Geweih aus Ästen mit Kugeln -->
+  <g fill="none" stroke="#2b2d42" stroke-width="5" stroke-linecap="round">
+    <path d="M165 125 C150 100 130 105 125 85"/>
+    <path d="M235 125 C250 100 270 105 275 85"/>
+    <path d="M160 118 L142 118"/>
+    <path d="M240 118 L258 118"/>
+  </g>
+  <g fill="#ff9f68">
+    <circle cx="125" cy="85" r="6"/>
+    <circle cx="275" cy="85" r="6"/>
+    <circle cx="142" cy="118" r="4"/>
+    <circle cx="258" cy="118" r="4"/>
+  </g>
+
+  <!-- Uhrenaugen -->
+  <g fill="#ffffff" stroke="#2b2d42" stroke-width="3">
+    <circle cx="183" cy="160" r="15"/>
+    <circle cx="217" cy="160" r="15"/>
+  </g>
+  <g stroke="#2b2d42" stroke-width="2.5" stroke-linecap="round">
+    <line x1="183" y1="160" x2="183" y2="150"/>
+    <line x1="183" y1="160" x2="191" y2="163"/>
+    <line x1="217" y1="160" x2="217" y2="150"/>
+    <line x1="217" y1="160" x2="209" y2="163"/>
+  </g>
+  <circle cx="183" cy="160" r="2" fill="#2b2d42"/>
+  <circle cx="217" cy="160" r="2" fill="#2b2d42"/>
+</svg>

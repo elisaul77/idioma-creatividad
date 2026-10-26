@@ -1,0 +1,56 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 400" width="400" height="400">
+<defs>
+<linearGradient id="sky" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#050816"/><stop offset="1" stop-color="#1b1030"/></linearGradient>
+<radialGradient id="mantle" cx="50%" cy="50%" r="50%"><stop offset="0" stop-color="#c0622a"/><stop offset="1" stop-color="#6e2a12"/></radialGradient>
+<radialGradient id="outer" cx="50%" cy="50%" r="50%"><stop offset="0" stop-color="#ffb347"/><stop offset="1" stop-color="#e0501a"/></radialGradient>
+<radialGradient id="core" cx="50%" cy="50%" r="50%"><stop offset="0" stop-color="#ffffff"/><stop offset="0.4" stop-color="#fff3a0"/><stop offset="1" stop-color="#ff7a1a"/></radialGradient>
+<radialGradient id="glow" cx="50%" cy="50%" r="50%"><stop offset="0" stop-color="#ffd27a" stop-opacity="0.9"/><stop offset="1" stop-color="#ff5a00" stop-opacity="0"/></radialGradient>
+<linearGradient id="hull" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#e8f1ff"/><stop offset="0.5" stop-color="#8fa3c7"/><stop offset="1" stop-color="#3a4663"/></linearGradient>
+</defs>
+
+<rect width="400" height="400" fill="url(#sky)"/>
+
+<g fill="#ffffff">
+<circle cx="30" cy="40" r="1.5" opacity="0.8"/>
+<circle cx="360" cy="50" r="1.2" opacity="0.7"/>
+<circle cx="60" cy="330" r="1.5" opacity="0.9"/>
+<circle cx="350" cy="360" r="1.2" opacity="0.6"/>
+<circle cx="40" cy="200" r="1" opacity="0.6"/>
+<circle cx="372" cy="250" r="1.5" opacity="0.8"/>
+<circle cx="120" cy="25" r="1" opacity="0.7"/>
+<circle cx="300" cy="18" r="1.3" opacity="0.8"/>
+<circle cx="18" cy="110" r="1" opacity="0.5"/>
+<circle cx="385" cy="150" r="1" opacity="0.6"/>
+</g>
+
+<circle cx="200" cy="200" r="170" fill="#5c4033" stroke="#2e1d14" stroke-width="3"/>
+<circle cx="200" cy="200" r="150" fill="none" stroke="#6f4d38" stroke-width="6" stroke-dasharray="30 10" opacity="0.5"/>
+<path d="M60 150 Q120 120 170 140" fill="none" stroke="#7a5842" stroke-width="4" opacity="0.6"/>
+<path d="M250 300 Q300 270 340 290" fill="none" stroke="#7a5842" stroke-width="4" opacity="0.6"/>
+
+<circle cx="200" cy="200" r="125" fill="url(#mantle)"/>
+<circle cx="200" cy="200" r="85" fill="url(#outer)"/>
+<circle cx="200" cy="200" r="60" fill="url(#glow)"/>
+
+<path d="M280 120 Q235 135 205 192" fill="none" stroke="#0d0806" stroke-width="10" stroke-linecap="round"/>
+<path d="M280 120 Q235 135 205 192" fill="none" stroke="#7fe7ff" stroke-width="2" stroke-dasharray="6 6" opacity="0.9"/>
+
+<circle cx="200" cy="200" r="40" fill="url(#core)"/>
+
+<circle cx="255" cy="140" r="2" fill="#ffd27a"/>
+<circle cx="232" cy="160" r="1.5" fill="#ffd27a"/>
+<circle cx="262" cy="150" r="1" fill="#fff3a0"/>
+<circle cx="222" cy="172" r="1.2" fill="#ffb347"/>
+
+<g transform="translate(280 120) rotate(135)">
+<path d="M46 -4 L130 -40 L130 40 L46 4 Z" fill="#7fe7ff" opacity="0.2"/>
+<ellipse cx="-40" cy="0" rx="18" ry="7" fill="#ff9a3c" opacity="0.9"/>
+<ellipse cx="-38" cy="0" rx="8" ry="3.5" fill="#fff6c2"/>
+<path d="M-22 -10 L-36 -24 L-30 -6 Z" fill="#8fa3c7"/>
+<path d="M-22 10 L-36 24 L-30 6 Z" fill="#8fa3c7"/>
+<path d="M-28 -12 L10 -12 Q34 -12 40 0 Q34 12 10 12 L-28 12 Z" fill="url(#hull)" stroke="#1b2438" stroke-width="2"/>
+<rect x="-14" y="-12" width="4" height="24" fill="#3a4663"/>
+<path d="M38 -6 L60 0 L38 6 Z" fill="#ffd27a"/>
+<circle cx="6" cy="0" r="6" fill="#7fe7ff" stroke="#1b2438" stroke-width="1.5"/>
+</g>
+</svg>

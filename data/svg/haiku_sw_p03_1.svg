@@ -1,0 +1,69 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="400" height="400" viewBox="0 0 400 400">
+  <defs>
+    <radialGradient id="bg" cx="50%" cy="45%" r="75%">
+      <stop offset="0%" stop-color="#fff8ec"/>
+      <stop offset="100%" stop-color="#f1e3cc"/>
+    </radialGradient>
+    <filter id="rough" x="-20%" y="-20%" width="140%" height="140%">
+      <feTurbulence type="fractalNoise" baseFrequency="0.04" numOctaves="2" seed="7" result="n"/>
+      <feDisplacementMap in="SourceGraphic" in2="n" scale="6"/>
+    </filter>
+    <filter id="soft" x="-30%" y="-30%" width="160%" height="160%">
+      <feGaussianBlur stdDeviation="0.6"/>
+    </filter>
+  </defs>
+
+  <rect width="400" height="400" fill="url(#bg)"/>
+
+  <!-- Mistari mitano ya muziki, yakichorwa kwa brashi -->
+  <g fill="none" stroke="#3b2f2a" stroke-width="3" stroke-linecap="round" filter="url(#rough)" opacity="0.85">
+    <path d="M40 120 C120 110, 200 130, 360 118"/>
+    <path d="M40 150 C120 142, 200 160, 360 150"/>
+    <path d="M40 180 C120 172, 200 190, 360 181"/>
+    <path d="M40 210 C120 202, 200 220, 360 211"/>
+    <path d="M40 240 C120 232, 200 250, 360 241"/>
+  </g>
+
+  <!-- Ufunguo wa sauti uliopinda kama mstari wa brashi -->
+  <path d="M74 300 C64 270, 92 250, 84 220 C78 196, 102 180, 96 150 C92 124, 120 104, 104 88 C92 76, 78 96, 92 110"
+        fill="none" stroke="#b5452e" stroke-width="7" stroke-linecap="round" stroke-linejoin="round" filter="url(#rough)"/>
+
+  <!-- Nota za rangi zilizomwagika -->
+  <g filter="url(#soft)">
+    <ellipse cx="170" cy="168" rx="20" ry="15" transform="rotate(-18 170 168)" fill="#2e7d6b"/>
+    <ellipse cx="230" cy="198" rx="20" ry="15" transform="rotate(-18 230 198)" fill="#e0a526"/>
+    <ellipse cx="290" cy="228" rx="20" ry="15" transform="rotate(-18 290 228)" fill="#3c6fb0"/>
+    <ellipse cx="200" cy="296" rx="18" ry="13" transform="rotate(-18 200 296)" fill="#c2507a"/>
+  </g>
+
+  <!-- Shina za noti -->
+  <g stroke-width="4" stroke-linecap="round" fill="none">
+    <path d="M187 166 L187 90" stroke="#2e7d6b"/>
+    <path d="M247 196 L247 120" stroke="#e0a526"/>
+    <path d="M307 226 L307 150" stroke="#3c6fb0"/>
+    <path d="M217 294 L217 218" stroke="#c2507a"/>
+  </g>
+  <!-- Bendera za noti -->
+  <path d="M187 90 C205 100, 212 118, 200 132" fill="none" stroke="#2e7d6b" stroke-width="4" stroke-linecap="round"/>
+  <path d="M307 150 C325 160, 332 178, 320 192" fill="none" stroke="#3c6fb0" stroke-width="4" stroke-linecap="round"/>
+
+  <!-- Matone ya rangi yanayodondoka -->
+  <g fill="#2e7d6b" opacity="0.8">
+    <circle cx="156" cy="196" r="2.5"/>
+    <circle cx="152" cy="212" r="1.8"/>
+  </g>
+  <g fill="#e0a526" opacity="0.8">
+    <circle cx="256" cy="224" r="2.2"/>
+    <circle cx="259" cy="240" r="1.6"/>
+  </g>
+  <g fill="#c2507a" opacity="0.8">
+    <circle cx="186" cy="320" r="2"/>
+    <circle cx="183" cy="334" r="1.5"/>
+  </g>
+
+  <!-- Mistari mifupi ya kasi ya mkono -->
+  <g fill="none" stroke="#b5452e" stroke-width="2" stroke-linecap="round" opacity="0.5">
+    <path d="M300 340 C320 332, 340 344, 362 336"/>
+    <path d="M310 352 C326 346, 342 356, 356 350"/>
+  </g>
+</svg>

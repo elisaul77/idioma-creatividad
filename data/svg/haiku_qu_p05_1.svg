@@ -1,0 +1,39 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="400" height="400" viewBox="0 0 400 400">
+  <defs>
+    <radialGradient id="sky" cx="50%" cy="40%" r="70%">
+      <stop offset="0%" stop-color="#fff3c4"/>
+      <stop offset="100%" stop-color="#e9b872"/>
+    </radialGradient>
+    <radialGradient id="glow" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#ffd54a" stop-opacity="0.9"/>
+      <stop offset="100%" stop-color="#ffd54a" stop-opacity="0"/>
+    </radialGradient>
+    <linearGradient id="earth" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#8a5a2b"/>
+      <stop offset="100%" stop-color="#4e3117"/>
+    </linearGradient>
+  </defs>
+
+  <!-- Background -->
+  <rect width="400" height="400" fill="url(#sky)"/>
+
+  <!-- Ground -->
+  <path d="M0 290 Q100 262 200 285 T400 275 L400 400 L0 400 Z" fill="url(#earth)"/>
+
+  <!-- Light glow -->
+  <circle cx="200" cy="165" r="120" fill="url(#glow)"/>
+
+  <!-- Heart (Pachamama's heart) -->
+  <path d="M200 255 C150 215 118 185 118 152 C118 124 140 106 164 106 C180 106 194 115 200 128 C206 115 220 106 236 106 C260 106 282 124 282 152 C282 185 250 215 200 255 Z"
+        fill="#c2453b" opacity="0.85"/>
+
+  <!-- Lamp (antawa) -->
+  <line x1="200" y1="58" x2="200" y2="84" stroke="#5b3a1e" stroke-width="5" stroke-linecap="round"/>
+  <path d="M182 84 L218 84 L210 104 L190 104 Z" fill="#5b3a1e"/>
+  <circle cx="200" cy="72" r="10" fill="#fff8d6"/>
+  <circle cx="200" cy="72" r="22" fill="#ffd54a" opacity="0.35"/>
+
+  <!-- Path of walking -->
+  <path d="M200 300 Q180 320 210 345 Q240 370 200 400"
+        fill="none" stroke="#f6e7c1" stroke-width="10" stroke-linecap="round" stroke-dasharray="2 14" opacity="0.8"/>
+</svg>

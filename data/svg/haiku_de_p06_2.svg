@@ -1,0 +1,119 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="400" height="400" viewBox="0 0 400 400">
+  <defs>
+    <linearGradient id="himmel" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#FFE9A8"/>
+      <stop offset="0.6" stop-color="#FFC983"/>
+      <stop offset="1" stop-color="#FF9E7A"/>
+    </linearGradient>
+    <radialGradient id="glanz" cx="0.5" cy="0.5" r="0.5">
+      <stop offset="0" stop-color="#FFFBEA" stop-opacity="0.95"/>
+      <stop offset="1" stop-color="#FFF3C4" stop-opacity="0"/>
+    </radialGradient>
+    <linearGradient id="huegel1" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#7BC8A4"/>
+      <stop offset="1" stop-color="#3E9C7A"/>
+    </linearGradient>
+    <linearGradient id="huegel2" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#4FA58A"/>
+      <stop offset="1" stop-color="#2C7A65"/>
+    </linearGradient>
+  </defs>
+
+  <!-- Himmel -->
+  <rect width="400" height="400" fill="url(#himmel)"/>
+
+  <!-- Glanz hinter der Sonne -->
+  <circle cx="200" cy="170" r="150" fill="url(#glanz)"/>
+
+  <!-- Strahlen -->
+  <g stroke="#FFF6D6" stroke-width="6" stroke-linecap="round" opacity="0.85">
+    <line x1="200" y1="70" x2="200" y2="40"/>
+    <line x1="200" y1="270" x2="200" y2="300"/>
+    <line x1="100" y1="170" x2="72" y2="170"/>
+    <line x1="300" y1="170" x2="328" y2="170"/>
+    <line x1="127" y1="97" x2="107" y2="77"/>
+    <line x1="273" y1="97" x2="293" y2="77"/>
+    <line x1="127" y1="243" x2="107" y2="263"/>
+    <line x1="273" y1="243" x2="293" y2="263"/>
+  </g>
+
+  <!-- Sonne mit Blütenblättern -->
+  <g transform="translate(200 170)">
+    <g fill="#FFD84D" opacity="0.9">
+      <ellipse cx="0" cy="-58" rx="18" ry="30"/>
+      <ellipse cx="0" cy="-58" rx="18" ry="30" transform="rotate(45)"/>
+      <ellipse cx="0" cy="-58" rx="18" ry="30" transform="rotate(90)"/>
+      <ellipse cx="0" cy="-58" rx="18" ry="30" transform="rotate(135)"/>
+      <ellipse cx="0" cy="-58" rx="18" ry="30" transform="rotate(180)"/>
+      <ellipse cx="0" cy="-58" rx="18" ry="30" transform="rotate(225)"/>
+      <ellipse cx="0" cy="-58" rx="18" ry="30" transform="rotate(270)"/>
+      <ellipse cx="0" cy="-58" rx="18" ry="30" transform="rotate(315)"/>
+    </g>
+    <g fill="#FFE066" opacity="0.95">
+      <ellipse cx="0" cy="-44" rx="12" ry="20" transform="rotate(22.5)"/>
+      <ellipse cx="0" cy="-44" rx="12" ry="20" transform="rotate(67.5)"/>
+      <ellipse cx="0" cy="-44" rx="12" ry="20" transform="rotate(112.5)"/>
+      <ellipse cx="0" cy="-44" rx="12" ry="20" transform="rotate(157.5)"/>
+      <ellipse cx="0" cy="-44" rx="12" ry="20" transform="rotate(202.5)"/>
+      <ellipse cx="0" cy="-44" rx="12" ry="20" transform="rotate(247.5)"/>
+      <ellipse cx="0" cy="-44" rx="12" ry="20" transform="rotate(292.5)"/>
+      <ellipse cx="0" cy="-44" rx="12" ry="20" transform="rotate(337.5)"/>
+    </g>
+    <circle cx="0" cy="0" r="42" fill="#FFB347"/>
+    <circle cx="0" cy="0" r="34" fill="#FFCF5C"/>
+    <!-- Lächeln -->
+    <path d="M -16 4 Q 0 20 16 4" fill="none" stroke="#B5561E" stroke-width="4" stroke-linecap="round"/>
+    <circle cx="-13" cy="-8" r="4" fill="#B5561E"/>
+    <circle cx="13" cy="-8" r="4" fill="#B5561E"/>
+  </g>
+
+  <!-- Vogel mit geschwungenen Flügeln -->
+  <g transform="translate(318 88)" fill="none" stroke="#2F4858" stroke-width="3" stroke-linecap="round" stroke-linejoin="round">
+    <path d="M -16 2 Q -8 -10 0 0 Q 8 -10 16 2"/>
+  </g>
+  <g transform="translate(70 120) scale(0.8)" fill="none" stroke="#2F4858" stroke-width="3" stroke-linecap="round" stroke-linejoin="round">
+    <path d="M -16 2 Q -8 -10 0 0 Q 8 -10 16 2"/>
+  </g>
+
+  <!-- Konfetti -->
+  <g>
+    <circle cx="90" cy="230" r="5" fill="#FF6F91"/>
+    <rect x="120" y="214" width="9" height="5" rx="2" fill="#6A4C93" transform="rotate(25 124 216)"/>
+    <circle cx="300" cy="220" r="4" fill="#FF6F91"/>
+    <rect x="262" y="250" width="10" height="5" rx="2" fill="#2EC4B6" transform="rotate(-30 267 252)"/>
+    <circle cx="150" cy="265" r="4" fill="#2EC4B6"/>
+    <rect x="330" y="200" width="8" height="5" rx="2" fill="#6A4C93" transform="rotate(60 334 202)"/>
+    <circle cx="60" cy="280" r="3.5" fill="#6A4C93"/>
+    <rect x="200" y="232" width="9" height="5" rx="2" fill="#FF6F91" transform="rotate(-15 204 234)"/>
+    <circle cx="352" cy="275" r="4.5" fill="#2EC4B6"/>
+  </g>
+
+  <!-- Tanzende Figur -->
+  <g stroke="#2F4858" stroke-width="7" stroke-linecap="round" stroke-linejoin="round" fill="none">
+    <!-- Körper -->
+    <path d="M 200 258 L 200 300"/>
+    <!-- Arme nach oben -->
+    <path d="M 200 268 L 178 246 L 170 226"/>
+    <path d="M 200 268 L 222 246 L 230 226"/>
+    <!-- Beine springend -->
+    <path d="M 200 300 L 184 326 L 176 344"/>
+    <path d="M 200 300 L 218 324 L 232 336"/>
+  </g>
+  <circle cx="200" cy="246" r="13" fill="#2F4858"/>
+
+  <!-- Hügel -->
+  <path d="M 0 320 Q 80 296 160 318 T 320 316 T 400 312 L 400 400 L 0 400 Z" fill="url(#huegel1)"/>
+  <path d="M 0 350 Q 100 330 200 348 T 400 344 L 400 400 L 0 400 Z" fill="url(#huegel2)"/>
+
+  <!-- Blumen am Boden -->
+  <g stroke="#2C7A65" stroke-width="3" stroke-linecap="round">
+    <line x1="60" y1="352" x2="60" y2="380"/>
+    <line x1="345" y1="356" x2="345" y2="384"/>
+  </g>
+  <g>
+    <circle cx="60" cy="348" r="6" fill="#FF6F91"/>
+    <circle cx="60" cy="348" r="2.5" fill="#FFE066"/>
+    <circle cx="345" cy="352" r="6" fill="#FFE066"/>
+    <circle cx="345" cy="352" r="2.5" fill="#FF6F91"/>
+  </g>
+</svg>

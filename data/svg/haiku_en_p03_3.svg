@@ -1,0 +1,52 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 400" width="400" height="400">
+  <defs>
+    <filter id="pencil" x="-10%" y="-10%" width="120%" height="120%">
+      <feTurbulence type="fractalNoise" baseFrequency="0.05" numOctaves="3" seed="7" result="noise"/>
+      <feDisplacementMap in="SourceGraphic" in2="noise" scale="3.5" xChannelSelector="R" yChannelSelector="G"/>
+    </filter>
+    <filter id="grain" x="0" y="0" width="100%" height="100%">
+      <feTurbulence type="fractalNoise" baseFrequency="0.9" numOctaves="2" seed="3" result="g"/>
+      <feColorMatrix in="g" type="matrix" values="0 0 0 0 0.35  0 0 0 0 0.3  0 0 0 0 0.25  0 0 0 -1.4 0.9" result="speck"/>
+      <feComposite in="speck" in2="SourceGraphic" operator="in"/>
+    </filter>
+  </defs>
+
+  <!-- paper -->
+  <rect width="400" height="400" fill="#f5f0e6"/>
+  <rect width="400" height="400" fill="#e9dfcc" opacity="0.35"/>
+
+  <g filter="url(#pencil)" stroke="#2e2b28" stroke-linecap="round" stroke-linejoin="round" fill="none">
+    <!-- staff, hand-ruled -->
+    <path d="M40 150 Q200 147 360 151" stroke-width="1.6"/>
+    <path d="M40 170 Q200 168 360 171" stroke-width="1.6"/>
+    <path d="M40 190 Q200 188 360 191" stroke-width="1.6"/>
+    <path d="M40 210 Q200 208 360 211" stroke-width="1.6"/>
+    <path d="M40 230 Q200 228 360 231" stroke-width="1.6"/>
+
+    <!-- stems -->
+    <path d="M130 210 L130 100" stroke-width="2.2"/>
+    <path d="M190 190 L190 80" stroke-width="2.2"/>
+    <path d="M250 170 L250 60" stroke-width="2.2"/>
+    <path d="M310 150 L310 40" stroke-width="2.2"/>
+
+    <!-- beam drawn as a scribbled bar -->
+    <path d="M130 100 L310 40" stroke-width="7"/>
+    <path d="M130 108 L310 48" stroke-width="2" opacity="0.6"/>
+
+    <!-- note heads -->
+    <ellipse cx="120" cy="210" rx="11" ry="8" transform="rotate(-20 120 210)" fill="#2e2b28" stroke-width="1.4"/>
+    <ellipse cx="180" cy="190" rx="11" ry="8" transform="rotate(-20 180 190)" fill="#2e2b28" stroke-width="1.4"/>
+    <ellipse cx="240" cy="170" rx="11" ry="8" transform="rotate(-20 240 170)" fill="#2e2b28" stroke-width="1.4"/>
+    <ellipse cx="300" cy="150" rx="11" ry="8" transform="rotate(-20 300 150)" fill="#2e2b28" stroke-width="1.4"/>
+
+    <!-- loose sketch lines that keep the melody moving -->
+    <path d="M40 318 C80 258 120 382 160 322 S240 258 280 322 S340 382 366 318" stroke-width="1.4" stroke-dasharray="2 4" opacity="0.8"/>
+    <path d="M40 340 C90 300 130 360 170 340 S250 300 300 340" stroke-width="1" opacity="0.5"/>
+
+    <!-- pencil hatching under the first note -->
+    <path d="M108 222 L122 214 M110 226 L126 218 M113 230 L130 222" stroke-width="0.9" opacity="0.6"/>
+  </g>
+
+  <!-- graphite dust texture on the strokes -->
+  <rect width="400" height="400" filter="url(#grain)" opacity="0.25"/>
+</svg>

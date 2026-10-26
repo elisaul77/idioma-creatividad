@@ -1,0 +1,72 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="400" height="400" viewBox="0 0 400 400">
+  <defs>
+    <linearGradient id="sky" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#1b1036"/>
+      <stop offset="55%" stop-color="#4b2a7a"/>
+      <stop offset="100%" stop-color="#e0799b"/>
+    </linearGradient>
+    <radialGradient id="moon" cx="0.4" cy="0.4" r="0.6">
+      <stop offset="0%" stop-color="#fffbe6"/>
+      <stop offset="100%" stop-color="#f6d98a"/>
+    </radialGradient>
+    <radialGradient id="glow" cx="0.5" cy="0.5" r="0.5">
+      <stop offset="0%" stop-color="#ffd1f0" stop-opacity="0.55"/>
+      <stop offset="100%" stop-color="#ffd1f0" stop-opacity="0"/>
+    </radialGradient>
+    <radialGradient id="cloud" cx="0.5" cy="0.5" r="0.5">
+      <stop offset="0%" stop-color="#c9a6ff" stop-opacity="0.6"/>
+      <stop offset="100%" stop-color="#c9a6ff" stop-opacity="0"/>
+    </radialGradient>
+    <filter id="blur" x="-50%" y="-50%" width="200%" height="200%">
+      <feGaussianBlur stdDeviation="6"/>
+    </filter>
+  </defs>
+
+  <!-- Sky -->
+  <rect width="400" height="400" fill="url(#sky)"/>
+
+  <!-- Dreamy nebula swirls -->
+  <ellipse cx="90" cy="120" rx="120" ry="50" fill="url(#cloud)" transform="rotate(-20 90 120)"/>
+  <ellipse cx="320" cy="260" rx="130" ry="60" fill="url(#cloud)" transform="rotate(15 320 260)"/>
+  <ellipse cx="200" cy="330" rx="150" ry="40" fill="#ff9ec7" opacity="0.25" filter="url(#blur)"/>
+
+  <!-- Moon glow and moon -->
+  <circle cx="200" cy="170" r="110" fill="url(#glow)"/>
+  <circle cx="200" cy="170" r="62" fill="url(#moon)"/>
+  <circle cx="178" cy="150" r="10" fill="#e8c26a" opacity="0.35"/>
+  <circle cx="222" cy="190" r="14" fill="#e8c26a" opacity="0.3"/>
+  <circle cx="212" cy="148" r="6" fill="#e8c26a" opacity="0.3"/>
+
+  <!-- Stars -->
+  <g fill="#ffffff">
+    <circle cx="40" cy="50" r="2"/>
+    <circle cx="90" cy="30" r="1.5"/>
+    <circle cx="150" cy="60" r="2.5"/>
+    <circle cx="260" cy="40" r="2"/>
+    <circle cx="340" cy="70" r="1.8"/>
+    <circle cx="370" cy="150" r="1.5"/>
+    <circle cx="30" cy="200" r="1.6"/>
+    <circle cx="60" cy="300" r="2"/>
+    <circle cx="130" cy="260" r="1.4"/>
+    <circle cx="350" cy="340" r="2.2"/>
+    <circle cx="280" cy="300" r="1.5"/>
+    <circle cx="110" cy="370" r="1.8"/>
+  </g>
+  <g fill="#fff6c9">
+    <path d="M300 110 l3 8 8 3 -8 3 -3 8 -3 -8 -8 -3 8 -3z"/>
+    <path d="M70 160 l2 5 5 2 -5 2 -2 5 -2 -5 -5 -2 5 -2z"/>
+    <path d="M330 200 l2.5 6 6 2.5 -6 2.5 -2.5 6 -2.5 -6 -6 -2.5 6 -2.5z"/>
+  </g>
+
+  <!-- Floating dream orbs -->
+  <g opacity="0.5">
+    <circle cx="110" cy="230" r="8" fill="#ffc6e6" filter="url(#blur)"/>
+    <circle cx="300" cy="90" r="6" fill="#b7f0ff" filter="url(#blur)"/>
+    <circle cx="260" cy="300" r="10" fill="#d9b8ff" filter="url(#blur)"/>
+    <circle cx="150" cy="330" r="5" fill="#ffe9a8" filter="url(#blur)"/>
+  </g>
+
+  <!-- Soft drifting clouds at bottom -->
+  <path d="M0 330 Q50 300 100 325 T200 325 T300 320 T400 330 L400 400 L0 400 Z" fill="#2a1650" opacity="0.7"/>
+  <path d="M0 360 Q70 335 140 355 T280 355 T400 360 L400 400 L0 400 Z" fill="#1b1036" opacity="0.85"/>
+</svg>

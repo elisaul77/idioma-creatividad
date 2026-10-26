@@ -1,0 +1,59 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="400" height="400" viewBox="0 0 400 400">
+  <defs>
+    <linearGradient id="wave" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#c0562f"/>
+      <stop offset="0.5" stop-color="#d9a441"/>
+      <stop offset="1" stop-color="#2f6f8f"/>
+    </linearGradient>
+  </defs>
+
+  <!-- ورقة الرسم -->
+  <rect width="400" height="400" fill="#f7f1e3"/>
+
+  <!-- موجة مرسومة بخط حر تتحول إلى أسطر -->
+  <path d="M40 92 C80 40, 120 140, 160 92 S240 40, 280 92 S340 140, 360 92"
+        fill="none" stroke="url(#wave)" stroke-width="4" stroke-linecap="round"/>
+  <path d="M42 96 C82 48, 122 132, 162 96" fill="none" stroke="url(#wave)" stroke-width="1.5" opacity="0.6"/>
+
+  <!-- خطوط السُلَّم الخماسي بخط يدوي -->
+  <g fill="none" stroke="#3b2f2f" stroke-width="2" stroke-linecap="round">
+    <path d="M40 150 Q200 144 360 151"/>
+    <path d="M40 170 Q200 165 360 171"/>
+    <path d="M40 190 Q200 186 360 191"/>
+    <path d="M40 210 Q200 205 360 211"/>
+    <path d="M40 230 Q200 226 360 231"/>
+  </g>
+
+  <!-- حلزون يشبه المفتاح المرسوم -->
+  <path d="M62 128 C50 150, 74 170, 60 196 C50 215, 72 236, 58 258"
+        fill="none" stroke="#3b2f2f" stroke-width="2.5" stroke-linecap="round"/>
+  <circle cx="60" cy="190" r="3" fill="#3b2f2f"/>
+
+  <!-- النوتات: بيضاوية مائلة مع أعمدة -->
+  <g fill="#2b2320">
+    <ellipse cx="120" cy="206" rx="11" ry="8" transform="rotate(-22 120 206)"/>
+    <ellipse cx="180" cy="186" rx="11" ry="8" transform="rotate(-22 180 186)"/>
+    <ellipse cx="240" cy="226" rx="11" ry="8" transform="rotate(-22 240 226)"/>
+    <ellipse cx="300" cy="176" rx="11" ry="8" transform="rotate(-22 300 176)"/>
+  </g>
+  <g stroke="#2b2320" stroke-width="2.5" stroke-linecap="round">
+    <line x1="130" y1="204" x2="130" y2="128"/>
+    <line x1="190" y1="184" x2="190" y2="108"/>
+    <line x1="230" y1="226" x2="230" y2="290"/>
+    <line x1="310" y1="174" x2="310" y2="98"/>
+  </g>
+  <!-- العارضة الرابطة -->
+  <path d="M130 128 L190 108 L190 118 L130 138 Z" fill="#2b2320"/>
+  <path d="M190 108 L310 98 L310 108 L190 118 Z" fill="#2b2320"/>
+
+  <!-- نقاط حبر تتساقط كالإيقاع -->
+  <g fill="#c0562f">
+    <circle cx="90" cy="300" r="4"/>
+    <circle cx="150" cy="325" r="3"/>
+    <circle cx="205" cy="310" r="5"/>
+    <circle cx="265" cy="338" r="3.5"/>
+    <circle cx="320" cy="312" r="4"/>
+  </g>
+  <path d="M90 300 Q120 280 150 325 T205 310 T265 338 T320 312"
+        fill="none" stroke="#2f6f8f" stroke-width="1.5" stroke-dasharray="3 5" stroke-linecap="round"/>
+</svg>

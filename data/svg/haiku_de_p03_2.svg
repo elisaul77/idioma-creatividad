@@ -1,0 +1,58 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="400" height="400" viewBox="0 0 400 400">
+  <defs>
+    <filter id="rough" x="-10%" y="-10%" width="120%" height="120%">
+      <feTurbulence type="fractalNoise" baseFrequency="0.04" numOctaves="2" seed="3" result="n"/>
+      <feDisplacementMap in="SourceGraphic" in2="n" scale="3.5" xChannelSelector="R" yChannelSelector="G"/>
+    </filter>
+    <pattern id="hatch" width="4" height="4" patternUnits="userSpaceOnUse" patternTransform="rotate(45)">
+      <line x1="0" y1="0" x2="0" y2="4" stroke="#3b3b3b" stroke-width="1.2"/>
+    </pattern>
+  </defs>
+
+  <!-- Papier -->
+  <rect width="400" height="400" fill="#f6efdf"/>
+
+  <!-- Notenlinien, leicht verwackelt -->
+  <g filter="url(#rough)" stroke="#3b3b3b" stroke-width="1.6" fill="none" stroke-linecap="round">
+    <path d="M40 150 Q200 147 360 151"/>
+    <path d="M40 170 Q200 173 360 169"/>
+    <path d="M40 190 Q200 188 360 191"/>
+    <path d="M40 210 Q200 213 360 209"/>
+    <path d="M40 230 Q200 228 360 231"/>
+  </g>
+
+  <!-- Noten als skizzierte Linien -->
+  <g filter="url(#rough)" stroke="#3b3b3b" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+    <!-- Notenköpfe, schraffiert -->
+    <ellipse cx="110" cy="212" rx="13" ry="9" transform="rotate(-18 110 212)" fill="url(#hatch)"/>
+    <ellipse cx="190" cy="192" rx="13" ry="9" transform="rotate(-18 190 192)" fill="url(#hatch)"/>
+    <ellipse cx="270" cy="232" rx="13" ry="9" transform="rotate(-18 270 232)" fill="none"/>
+
+    <!-- Hälse -->
+    <path d="M122 210 L122 128" fill="none"/>
+    <path d="M202 190 L202 110" fill="none"/>
+    <path d="M257 232 L257 300" fill="none"/>
+
+    <!-- Balken -->
+    <path d="M122 128 L202 110 L202 118 L122 136 Z" fill="#3b3b3b"/>
+  </g>
+
+  <!-- Schwingungen, als gezogene Bögen -->
+  <g filter="url(#rough)" stroke="#3b3b3b" stroke-width="1.4" fill="none" stroke-linecap="round">
+    <path d="M300 170 Q316 190 300 210"/>
+    <path d="M318 158 Q342 190 318 222"/>
+    <path d="M336 146 Q368 190 336 234"/>
+  </g>
+
+  <!-- Bleistiftstrich, der sich durch das Bild schlängelt -->
+  <path d="M70 330 C110 300 140 352 180 322 S260 300 300 340 S350 330 372 318"
+        filter="url(#rough)" fill="none" stroke="#7a7a7a" stroke-width="1.2" stroke-linecap="round" stroke-dasharray="1 0"/>
+
+  <!-- Bleistift -->
+  <g transform="translate(70 330) rotate(-35)" filter="url(#rough)">
+    <rect x="8" y="-7" width="100" height="14" fill="#f2c94c" stroke="#3b3b3b" stroke-width="1.4"/>
+    <line x1="30" y1="-7" x2="30" y2="7" stroke="#3b3b3b" stroke-width="1.2"/>
+    <polygon points="8,-7 8,7 0,0" fill="#e9dcc0" stroke="#3b3b3b" stroke-width="1.4"/>
+    <polygon points="0,0 3,-2.5 3,2.5" fill="#333"/>
+  </g>
+</svg>

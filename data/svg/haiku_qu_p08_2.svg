@@ -1,0 +1,101 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="400" height="400" viewBox="0 0 400 400">
+  <defs>
+    <linearGradient id="sky" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#0b1033"/>
+      <stop offset="1" stop-color="#2d2360"/>
+    </linearGradient>
+    <radialGradient id="glow" cx="0.5" cy="0.5" r="0.5">
+      <stop offset="0" stop-color="#fff6cc" stop-opacity="0.6"/>
+      <stop offset="1" stop-color="#fff6cc" stop-opacity="0"/>
+    </radialGradient>
+    <linearGradient id="floor" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#7a5232"/>
+      <stop offset="1" stop-color="#4e3320"/>
+    </linearGradient>
+  </defs>
+
+  <!-- Night sky -->
+  <rect x="0" y="0" width="400" height="300" fill="url(#sky)"/>
+
+  <!-- Stars -->
+  <g fill="#ffffff">
+    <circle cx="30" cy="30" r="2"/>
+    <circle cx="80" cy="18" r="1.5"/>
+    <circle cx="150" cy="40" r="2"/>
+    <circle cx="200" cy="15" r="1.5"/>
+    <circle cx="260" cy="30" r="2"/>
+    <circle cx="370" cy="150" r="1.5"/>
+    <circle cx="25" cy="140" r="1.5"/>
+    <circle cx="180" cy="110" r="1.5"/>
+    <circle cx="55" cy="90" r="1.5"/>
+    <circle cx="385" cy="25" r="2"/>
+  </g>
+
+  <!-- Moon with glow -->
+  <circle cx="320" cy="75" r="60" fill="url(#glow)"/>
+  <circle cx="320" cy="75" r="28" fill="#fff3c4"/>
+  <circle cx="330" cy="68" r="5" fill="#f3e2a0" opacity="0.7"/>
+  <circle cx="312" cy="86" r="3" fill="#f3e2a0" opacity="0.7"/>
+
+  <!-- Floor -->
+  <rect x="0" y="300" width="400" height="100" fill="url(#floor)"/>
+  <g stroke="#3a2415" stroke-width="2" opacity="0.6">
+    <line x1="0" y1="325" x2="400" y2="325"/>
+    <line x1="0" y1="350" x2="400" y2="350"/>
+    <line x1="0" y1="375" x2="400" y2="375"/>
+  </g>
+
+  <!-- Bouncing ball with motion arcs -->
+  <g>
+    <path d="M 75 215 Q 85 175 110 178" fill="none" stroke="#ffffff" stroke-width="2" stroke-dasharray="4 4" opacity="0.6"/>
+    <path d="M 60 240 Q 62 205 80 195" fill="none" stroke="#ffffff" stroke-width="2" stroke-dasharray="4 4" opacity="0.4"/>
+    <circle cx="110" cy="250" r="22" fill="#e8553d"/>
+    <path d="M 92 250 Q 110 238 128 250" fill="none" stroke="#ffe066" stroke-width="5"/>
+    <ellipse cx="110" cy="276" rx="18" ry="4" fill="#000000" opacity="0.3"/>
+  </g>
+
+  <!-- Teddy bear, dancing -->
+  <g>
+    <circle cx="232" cy="222" r="9" fill="#a0672f"/>
+    <circle cx="214" cy="212" r="8" fill="#a0672f"/>
+    <circle cx="250" cy="212" r="8" fill="#a0672f"/>
+    <circle cx="214" cy="212" r="4" fill="#e0b48a"/>
+    <circle cx="250" cy="212" r="4" fill="#e0b48a"/>
+    <circle cx="232" cy="236" r="20" fill="#b97a3c"/>
+    <ellipse cx="232" cy="280" rx="24" ry="30" fill="#b97a3c"/>
+    <ellipse cx="232" cy="286" rx="12" ry="14" fill="#e0b48a"/>
+    <!-- Raised arms -->
+    <line x1="210" y1="270" x2="188" y2="250" stroke="#b97a3c" stroke-width="10" stroke-linecap="round"/>
+    <line x1="254" y1="270" x2="276" y2="250" stroke="#b97a3c" stroke-width="10" stroke-linecap="round"/>
+    <!-- Legs -->
+    <ellipse cx="218" cy="312" rx="9" ry="12" fill="#a0672f"/>
+    <ellipse cx="246" cy="312" rx="9" ry="12" fill="#a0672f"/>
+    <!-- Music notes -->
+    <g fill="#ffe066">
+      <circle cx="290" cy="200" r="5"/>
+      <line x1="295" y1="200" x2="295" y2="180" stroke="#ffe066" stroke-width="2"/>
+      <circle cx="304" cy="190" r="4"/>
+      <line x1="308" y1="190" x2="308" y2="172" stroke="#ffe066" stroke-width="2"/>
+    </g>
+  </g>
+
+  <!-- Toy car rolling -->
+  <g>
+    <line x1="270" y1="338" x2="290" y2="338" stroke="#ffffff" stroke-width="2" stroke-dasharray="3 4" opacity="0.5"/>
+    <line x1="268" y1="350" x2="288" y2="350" stroke="#ffffff" stroke-width="2" stroke-dasharray="3 4" opacity="0.4"/>
+    <rect x="300" y="318" width="62" height="22" rx="6" fill="#3a86ff"/>
+    <rect x="314" y="306" width="30" height="16" rx="5" fill="#2a66cc"/>
+    <circle cx="316" cy="342" r="9" fill="#222222"/>
+    <circle cx="348" cy="342" r="9" fill="#222222"/>
+    <circle cx="316" cy="342" r="3" fill="#bbbbbb"/>
+    <circle cx="348" cy="342" r="3" fill="#bbbbbb"/>
+  </g>
+
+  <!-- Stacked blocks -->
+  <g>
+    <rect x="40" y="318" width="34" height="34" fill="#ff8c42"/>
+    <rect x="46" y="284" width="30" height="34" fill="#4ecdc4"/>
+    <rect x="164" y="318" width="34" height="34" fill="#ffd166"/>
+    <rect x="170" y="290" width="26" height="28" fill="#ef476f"/>
+  </g>
+</svg>

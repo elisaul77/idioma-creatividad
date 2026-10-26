@@ -1,0 +1,121 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="400" height="400" viewBox="0 0 400 400">
+  <defs>
+    <linearGradient id="sky" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#8FD8FF"/>
+      <stop offset="1" stop-color="#FFF4C2"/>
+    </linearGradient>
+    <radialGradient id="sunG" cx="0.5" cy="0.5" r="0.5">
+      <stop offset="0" stop-color="#FFF7A0"/>
+      <stop offset="1" stop-color="#FFC233"/>
+    </radialGradient>
+  </defs>
+
+  <!-- 天空 -->
+  <rect width="400" height="400" fill="url(#sky)"/>
+
+  <!-- 太阳光芒 -->
+  <g stroke="#FFD54F" stroke-width="6" stroke-linecap="round" opacity="0.85">
+    <line x1="362" y1="90" x2="380" y2="90"/>
+    <line x1="349.7" y1="119.7" x2="362.4" y2="132.4"/>
+    <line x1="320" y1="132" x2="320" y2="150"/>
+    <line x1="290.3" y1="119.7" x2="277.6" y2="132.4"/>
+    <line x1="278" y1="90" x2="260" y2="90"/>
+    <line x1="290.3" y1="60.3" x2="277.6" y2="47.6"/>
+    <line x1="320" y1="48" x2="320" y2="30"/>
+    <line x1="349.7" y1="60.3" x2="362.4" y2="47.6"/>
+  </g>
+  <circle cx="320" cy="90" r="36" fill="url(#sunG)"/>
+
+  <!-- 彩虹 -->
+  <g fill="none" stroke-width="14">
+    <path d="M50 300 A150 150 0 0 1 350 300" stroke="#FF6B6B"/>
+    <path d="M64 300 A136 136 0 0 1 336 300" stroke="#FFA94D"/>
+    <path d="M78 300 A122 122 0 0 1 322 300" stroke="#FFE066"/>
+    <path d="M92 300 A108 108 0 0 1 308 300" stroke="#69DB7C"/>
+    <path d="M106 300 A94 94 0 0 1 294 300" stroke="#4DABF7"/>
+  </g>
+
+  <!-- 小鸟 -->
+  <path d="M110 120 Q120 108 130 120 Q140 108 150 120" fill="none" stroke="#3E4A5A" stroke-width="3" stroke-linecap="round"/>
+  <path d="M255 150 Q263 141 271 150 Q279 141 287 150" fill="none" stroke="#3E4A5A" stroke-width="3" stroke-linecap="round"/>
+
+  <!-- 山丘 -->
+  <path d="M0 300 Q100 250 200 290 T400 280 V400 H0Z" fill="#7BD389"/>
+  <path d="M0 330 Q150 280 280 330 T400 320 V400 H0Z" fill="#4CAF6A"/>
+
+  <!-- 欢乐的人物 -->
+  <g>
+    <!-- 举起的手臂 -->
+    <line x1="186" y1="286" x2="150" y2="250" stroke="#FF7AA2" stroke-width="12" stroke-linecap="round"/>
+    <line x1="214" y1="286" x2="250" y2="250" stroke="#FF7AA2" stroke-width="12" stroke-linecap="round"/>
+    <circle cx="150" cy="250" r="8" fill="#FFD8B0"/>
+    <circle cx="250" cy="250" r="8" fill="#FFD8B0"/>
+
+    <!-- 腿 -->
+    <line x1="192" y1="324" x2="184" y2="356" stroke="#3F51B5" stroke-width="12" stroke-linecap="round"/>
+    <line x1="208" y1="324" x2="216" y2="356" stroke="#3F51B5" stroke-width="12" stroke-linecap="round"/>
+
+    <!-- 身体 -->
+    <rect x="182" y="276" width="36" height="50" rx="14" fill="#FF7AA2"/>
+
+    <!-- 头 -->
+    <circle cx="200" cy="250" r="26" fill="#FFD8B0"/>
+    <path d="M174 248 Q176 220 200 220 Q224 220 226 248 Q218 232 200 232 Q182 232 174 248Z" fill="#5D4037"/>
+
+    <!-- 脸 -->
+    <circle cx="191" cy="246" r="3" fill="#333"/>
+    <circle cx="209" cy="246" r="3" fill="#333"/>
+    <circle cx="184" cy="256" r="4" fill="#FF8FAB" opacity="0.6"/>
+    <circle cx="216" cy="256" r="4" fill="#FF8FAB" opacity="0.6"/>
+    <path d="M191 256 Q200 266 209 256" fill="none" stroke="#333" stroke-width="3" stroke-linecap="round"/>
+  </g>
+
+  <!-- 花朵 -->
+  <g transform="translate(60 350)">
+    <circle cx="0" cy="-10" r="7" fill="#FF8FAB"/>
+    <circle cx="9.5" cy="-3" r="7" fill="#FF8FAB"/>
+    <circle cx="5.9" cy="8.1" r="7" fill="#FF8FAB"/>
+    <circle cx="-5.9" cy="8.1" r="7" fill="#FF8FAB"/>
+    <circle cx="-9.5" cy="-3" r="7" fill="#FF8FAB"/>
+    <circle r="5" fill="#FFE066"/>
+  </g>
+  <g transform="translate(110 368)">
+    <circle cx="0" cy="-10" r="7" fill="#FFFFFF"/>
+    <circle cx="9.5" cy="-3" r="7" fill="#FFFFFF"/>
+    <circle cx="5.9" cy="8.1" r="7" fill="#FFFFFF"/>
+    <circle cx="-5.9" cy="8.1" r="7" fill="#FFFFFF"/>
+    <circle cx="-9.5" cy="-3" r="7" fill="#FFFFFF"/>
+    <circle r="5" fill="#FF7043"/>
+  </g>
+  <g transform="translate(300 352)">
+    <circle cx="0" cy="-10" r="7" fill="#B388FF"/>
+    <circle cx="9.5" cy="-3" r="7" fill="#B388FF"/>
+    <circle cx="5.9" cy="8.1" r="7" fill="#B388FF"/>
+    <circle cx="-5.9" cy="8.1" r="7" fill="#B388FF"/>
+    <circle cx="-9.5" cy="-3" r="7" fill="#B388FF"/>
+    <circle r="5" fill="#FFE066"/>
+  </g>
+  <g transform="translate(345 338)">
+    <circle cx="0" cy="-8" r="6" fill="#FF8FAB"/>
+    <circle cx="7.6" cy="-2.5" r="6" fill="#FF8FAB"/>
+    <circle cx="4.7" cy="6.5" r="6" fill="#FF8FAB"/>
+    <circle cx="-4.7" cy="6.5" r="6" fill="#FF8FAB"/>
+    <circle cx="-7.6" cy="-2.5" r="6" fill="#FF8FAB"/>
+    <circle r="4" fill="#FFE066"/>
+  </g>
+
+  <!-- 飘落的彩色纸屑 -->
+  <g>
+    <rect x="40" y="60" width="8" height="8" rx="2" fill="#FF6B6B" transform="rotate(20 44 64)"/>
+    <rect x="95" y="40" width="7" height="7" rx="2" fill="#FFE066" transform="rotate(-15 98 43)"/>
+    <circle cx="150" cy="70" r="4" fill="#4DABF7"/>
+    <rect x="200" y="30" width="7" height="7" rx="2" fill="#69DB7C" transform="rotate(35 203 33)"/>
+    <circle cx="240" cy="60" r="4" fill="#FF8FAB"/>
+    <rect x="70" y="180" width="7" height="7" rx="2" fill="#B388FF" transform="rotate(10 73 183)"/>
+    <circle cx="130" cy="200" r="4" fill="#FFA94D"/>
+    <rect x="290" y="200" width="8" height="8" rx="2" fill="#4DABF7" transform="rotate(-25 294 204)"/>
+    <circle cx="360" cy="220" r="4" fill="#FF6B6B"/>
+    <rect x="25" y="230" width="7" height="7" rx="2" fill="#69DB7C" transform="rotate(30 28 233)"/>
+    <circle cx="375" cy="170" r="3.5" fill="#B388FF"/>
+  </g>
+</svg>

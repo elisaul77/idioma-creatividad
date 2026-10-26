@@ -1,0 +1,76 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="400" height="400" viewBox="0 0 400 400">
+  <defs>
+    <linearGradient id="sky" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#0b0630"/>
+      <stop offset="55%" stop-color="#2a1458"/>
+      <stop offset="100%" stop-color="#e0517a"/>
+    </linearGradient>
+    <radialGradient id="sun" cx="0.5" cy="0.5" r="0.5">
+      <stop offset="0%" stop-color="#fff6c2"/>
+      <stop offset="60%" stop-color="#ffb347"/>
+      <stop offset="100%" stop-color="#ff6f61" stop-opacity="0"/>
+    </radialGradient>
+    <linearGradient id="trunk" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#1f2a44"/>
+      <stop offset="50%" stop-color="#3ee8ff"/>
+      <stop offset="100%" stop-color="#1f2a44"/>
+    </linearGradient>
+    <radialGradient id="leaf" cx="0.5" cy="0.4" r="0.6">
+      <stop offset="0%" stop-color="#b8ffe6"/>
+      <stop offset="100%" stop-color="#22d3a6" stop-opacity="0.6"/>
+    </radialGradient>
+    <filter id="glow" x="-50%" y="-50%" width="200%" height="200%">
+      <feGaussianBlur stdDeviation="3" result="b"/>
+      <feMerge>
+        <feMergeNode in="b"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+  </defs>
+
+  <rect width="400" height="400" fill="url(#sky)"/>
+  <circle cx="200" cy="220" r="120" fill="url(#sun)"/>
+  <circle cx="200" cy="220" r="62" fill="#ffe9a8" opacity="0.9"/>
+
+  <g fill="#ffffff" opacity="0.8">
+    <circle cx="48" cy="60" r="1.5"/>
+    <circle cx="96" cy="32" r="1"/>
+    <circle cx="330" cy="50" r="1.8"/>
+    <circle cx="368" cy="110" r="1.2"/>
+    <circle cx="300" cy="24" r="1"/>
+    <circle cx="20" cy="150" r="1.2"/>
+  </g>
+
+  <path d="M0 330 Q100 300 200 325 T400 320 L400 400 L0 400 Z" fill="#14082e" opacity="0.9"/>
+  <path d="M0 360 Q120 340 220 362 T400 355 L400 400 L0 400 Z" fill="#0a0420"/>
+
+  <g filter="url(#glow)" fill="none" stroke-linecap="round">
+    <path d="M200 365 C196 330 204 300 198 262 C194 230 202 200 200 160" stroke="url(#trunk)" stroke-width="12"/>
+    <path d="M199 280 C170 262 150 240 128 208" stroke="#3ee8ff" stroke-width="5"/>
+    <path d="M201 262 C230 244 254 220 276 186" stroke="#3ee8ff" stroke-width="5"/>
+    <path d="M200 200 C178 184 166 162 150 132" stroke="#7af0ff" stroke-width="4"/>
+    <path d="M201 190 C226 172 240 150 252 120" stroke="#7af0ff" stroke-width="4"/>
+    <path d="M200 164 C190 140 194 116 200 92" stroke="#a8f6ff" stroke-width="3"/>
+    <path d="M128 208 C112 196 104 180 98 166" stroke="#3ee8ff" stroke-width="2.5"/>
+    <path d="M276 186 C292 172 300 158 306 142" stroke="#3ee8ff" stroke-width="2.5"/>
+  </g>
+
+  <g filter="url(#glow)">
+    <circle cx="150" cy="132" r="26" fill="url(#leaf)" opacity="0.85"/>
+    <circle cx="252" cy="120" r="30" fill="url(#leaf)" opacity="0.85"/>
+    <circle cx="200" cy="92" r="34" fill="url(#leaf)" opacity="0.9"/>
+    <circle cx="98" cy="166" r="20" fill="url(#leaf)" opacity="0.8"/>
+    <circle cx="306" cy="142" r="22" fill="url(#leaf)" opacity="0.8"/>
+    <circle cx="128" cy="208" r="18" fill="url(#leaf)" opacity="0.75"/>
+    <circle cx="276" cy="186" r="20" fill="url(#leaf)" opacity="0.75"/>
+  </g>
+
+  <g fill="#7af0ff" opacity="0.7" filter="url(#glow)">
+    <circle cx="170" cy="110" r="2.5"/>
+    <circle cx="232" cy="96" r="2"/>
+    <circle cx="120" cy="150" r="2"/>
+    <circle cx="288" cy="128" r="2.5"/>
+    <circle cx="200" cy="70" r="2"/>
+    <circle cx="140" cy="200" r="1.8"/>
+  </g>
+</svg>

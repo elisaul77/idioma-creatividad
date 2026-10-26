@@ -1,0 +1,83 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="400" height="400" viewBox="0 0 400 400">
+  <defs>
+    <radialGradient id="sunGlow" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#FFF6B0"/>
+      <stop offset="60%" stop-color="#FFD93B" stop-opacity="0.8"/>
+      <stop offset="100%" stop-color="#FFB703" stop-opacity="0"/>
+    </radialGradient>
+    <radialGradient id="sunBody" cx="40%" cy="35%" r="65%">
+      <stop offset="0%" stop-color="#FFF3A3"/>
+      <stop offset="100%" stop-color="#FFB703"/>
+    </radialGradient>
+    <linearGradient id="sky" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#FFE8A8"/>
+      <stop offset="100%" stop-color="#FFF9E6"/>
+    </linearGradient>
+    <linearGradient id="hill1" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#7BD389"/>
+      <stop offset="100%" stop-color="#3FA66B"/>
+    </linearGradient>
+    <linearGradient id="hill2" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#5CC5A7"/>
+      <stop offset="100%" stop-color="#2E8B7A"/>
+    </linearGradient>
+  </defs>
+
+  <!-- Sky -->
+  <rect width="400" height="400" fill="url(#sky)"/>
+
+  <!-- Glow -->
+  <circle cx="200" cy="170" r="150" fill="url(#sunGlow)"/>
+
+  <!-- Rays -->
+  <g stroke="#FFB703" stroke-width="10" stroke-linecap="round" opacity="0.9">
+    <line x1="200" y1="60" x2="200" y2="25"/>
+    <line x1="200" y1="280" x2="200" y2="315" opacity="0"/>
+    <line x1="290" y1="80" x2="312" y2="58"/>
+    <line x1="110" y1="80" x2="88" y2="58"/>
+    <line x1="318" y1="170" x2="360" y2="170"/>
+    <line x1="82" y1="170" x2="40" y2="170"/>
+    <line x1="300" y1="250" x2="330" y2="278"/>
+    <line x1="100" y1="250" x2="70" y2="278"/>
+  </g>
+
+  <!-- Sun -->
+  <circle cx="200" cy="170" r="72" fill="url(#sunBody)"/>
+
+  <!-- Smile (joy) -->
+  <circle cx="176" cy="155" r="7" fill="#7A4A00"/>
+  <circle cx="224" cy="155" r="7" fill="#7A4A00"/>
+  <path d="M170 180 Q200 210 230 180" fill="none" stroke="#7A4A00" stroke-width="7" stroke-linecap="round"/>
+  <circle cx="160" cy="185" r="8" fill="#FF8FA3" opacity="0.6"/>
+  <circle cx="240" cy="185" r="8" fill="#FF8FA3" opacity="0.6"/>
+
+  <!-- Floating joyful sparks -->
+  <g fill="#FF6B9A">
+    <circle cx="90" cy="120" r="6"/>
+    <circle cx="315" cy="125" r="5"/>
+  </g>
+  <g fill="#4DB8FF">
+    <circle cx="70" cy="200" r="5"/>
+    <circle cx="335" cy="210" r="6"/>
+  </g>
+  <g fill="#9B6DFF">
+    <circle cx="130" cy="95" r="4"/>
+    <circle cx="275" cy="92" r="4"/>
+  </g>
+
+  <!-- Hills -->
+  <path d="M0 270 Q100 215 200 255 T400 240 L400 400 L0 400 Z" fill="url(#hill1)"/>
+  <path d="M0 320 Q120 280 220 315 T400 300 L400 400 L0 400 Z" fill="url(#hill2)"/>
+
+  <!-- Little flowers -->
+  <g>
+    <circle cx="60" cy="330" r="6" fill="#FF6B9A"/>
+    <circle cx="60" cy="330" r="2.5" fill="#FFF3A3"/>
+    <circle cx="150" cy="350" r="6" fill="#FFD93B"/>
+    <circle cx="150" cy="350" r="2.5" fill="#FFFFFF"/>
+    <circle cx="260" cy="338" r="6" fill="#9B6DFF"/>
+    <circle cx="260" cy="338" r="2.5" fill="#FFF3A3"/>
+    <circle cx="345" cy="352" r="6" fill="#FF6B9A"/>
+    <circle cx="345" cy="352" r="2.5" fill="#FFFFFF"/>
+  </g>
+</svg>

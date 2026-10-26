@@ -1,0 +1,64 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="400" height="400" viewBox="0 0 400 400">
+  <defs>
+    <linearGradient id="sky" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#cfe8ff"/>
+      <stop offset="1" stop-color="#fff1d6"/>
+    </linearGradient>
+    <linearGradient id="wall" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#b9f5d0"/>
+      <stop offset="1" stop-color="#8fe3b0"/>
+    </linearGradient>
+  </defs>
+
+  <!-- Background -->
+  <rect width="400" height="400" fill="url(#sky)"/>
+  <circle cx="330" cy="60" r="28" fill="#ffd66b"/>
+  <circle cx="60" cy="70" r="5" fill="#ffffff" opacity="0.8"/>
+  <circle cx="110" cy="40" r="4" fill="#ffffff" opacity="0.8"/>
+  <circle cx="290" cy="110" r="4" fill="#ffffff" opacity="0.8"/>
+
+  <!-- Ground -->
+  <ellipse cx="200" cy="360" rx="170" ry="26" fill="#a7d98b"/>
+
+  <!-- Little horns on roof -->
+  <path d="M135 130 Q128 96 146 88 Q148 115 158 128 Z" fill="#ff9fb2"/>
+  <path d="M265 130 Q272 96 254 88 Q252 115 242 128 Z" fill="#ff9fb2"/>
+
+  <!-- Roof -->
+  <path d="M90 170 Q200 60 310 170 Z" fill="#ff8fab" stroke="#e8677f" stroke-width="6" stroke-linejoin="round"/>
+  <circle cx="200" cy="122" r="9" fill="#ffe27a"/>
+  <circle cx="150" cy="150" r="4" fill="#ffffff" opacity="0.7"/>
+  <circle cx="250" cy="150" r="4" fill="#ffffff" opacity="0.7"/>
+
+  <!-- House body -->
+  <rect x="105" y="168" width="190" height="180" rx="22" fill="url(#wall)" stroke="#6cc98f" stroke-width="6"/>
+
+  <!-- Wobbly monster eyes (windows) -->
+  <circle cx="158" cy="220" r="26" fill="#ffffff" stroke="#3b6e5a" stroke-width="5"/>
+  <circle cx="242" cy="220" r="26" fill="#ffffff" stroke="#3b6e5a" stroke-width="5"/>
+  <circle cx="164" cy="226" r="11" fill="#2b3a67"/>
+  <circle cx="236" cy="226" r="11" fill="#2b3a67"/>
+  <circle cx="168" cy="221" r="4" fill="#ffffff"/>
+  <circle cx="240" cy="221" r="4" fill="#ffffff"/>
+
+  <!-- Blush -->
+  <ellipse cx="128" cy="262" rx="12" ry="7" fill="#ff9fb2" opacity="0.7"/>
+  <ellipse cx="272" cy="262" rx="12" ry="7" fill="#ff9fb2" opacity="0.7"/>
+
+  <!-- Smile with little fangs -->
+  <path d="M168 270 Q200 300 232 270 Q200 284 168 270 Z" fill="#7a3b5a" stroke="#7a3b5a" stroke-width="4" stroke-linejoin="round"/>
+  <path d="M178 273 L184 288 L190 275 Z" fill="#ffffff"/>
+  <path d="M210 275 L216 288 L222 273 Z" fill="#ffffff"/>
+
+  <!-- Door -->
+  <path d="M182 348 L182 306 Q200 288 218 306 L218 348 Z" fill="#ffb86b" stroke="#e08a3c" stroke-width="5" stroke-linejoin="round"/>
+  <circle cx="210" cy="330" r="3" fill="#7a4a1f"/>
+
+  <!-- Spots on wall -->
+  <circle cx="122" cy="318" r="7" fill="#6cc98f" opacity="0.6"/>
+  <circle cx="282" cy="306" r="9" fill="#6cc98f" opacity="0.6"/>
+  <circle cx="276" cy="340" r="5" fill="#6cc98f" opacity="0.6"/>
+
+  <!-- Tiny tail-like flag on the roof tip -->
+  <path d="M200 112 Q214 96 232 104 Q220 108 214 118 Z" fill="#ffe27a" stroke="#e8b84a" stroke-width="3"/>
+</svg>

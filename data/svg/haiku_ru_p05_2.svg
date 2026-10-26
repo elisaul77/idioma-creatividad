@@ -1,0 +1,101 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="400" height="400" viewBox="0 0 400 400">
+  <defs>
+    <radialGradient id="bg" cx="50%" cy="40%" r="75%">
+      <stop offset="0" stop-color="#1b2445"/>
+      <stop offset="1" stop-color="#050812"/>
+    </radialGradient>
+    <radialGradient id="crust" cx="40%" cy="35%" r="70%">
+      <stop offset="0" stop-color="#8a6a45"/>
+      <stop offset="1" stop-color="#4a331c"/>
+    </radialGradient>
+    <radialGradient id="mantle" cx="40%" cy="35%" r="70%">
+      <stop offset="0" stop-color="#e0773a"/>
+      <stop offset="1" stop-color="#9c3d1a"/>
+    </radialGradient>
+    <radialGradient id="outer" cx="45%" cy="40%" r="65%">
+      <stop offset="0" stop-color="#ffd166"/>
+      <stop offset="1" stop-color="#e07b00"/>
+    </radialGradient>
+    <radialGradient id="inner" cx="50%" cy="50%" r="50%">
+      <stop offset="0" stop-color="#ffffff"/>
+      <stop offset="0.6" stop-color="#fff3b0"/>
+      <stop offset="1" stop-color="#ffb800" stop-opacity="0"/>
+    </radialGradient>
+    <linearGradient id="metal" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#5d6b84"/>
+      <stop offset="0.5" stop-color="#c9d3e6"/>
+      <stop offset="1" stop-color="#3a4558"/>
+    </linearGradient>
+    <linearGradient id="drill" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#9aa6bd"/>
+      <stop offset="1" stop-color="#4b5568"/>
+    </linearGradient>
+    <radialGradient id="glass" cx="35%" cy="30%" r="70%">
+      <stop offset="0" stop-color="#bff3ff"/>
+      <stop offset="1" stop-color="#2a7fa8"/>
+    </radialGradient>
+    <linearGradient id="exhaust" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#ffb347" stop-opacity="0"/>
+      <stop offset="1" stop-color="#ffb347" stop-opacity="0.8"/>
+    </linearGradient>
+    <filter id="glow" x="-50%" y="-50%" width="200%" height="200%">
+      <feGaussianBlur stdDeviation="6"/>
+    </filter>
+    <clipPath id="earth">
+      <circle cx="200" cy="230" r="150"/>
+    </clipPath>
+  </defs>
+
+  <!-- Background -->
+  <rect width="400" height="400" fill="url(#bg)"/>
+  <g fill="#ffffff">
+    <circle cx="40" cy="50" r="1.5" opacity="0.8"/>
+    <circle cx="90" cy="28" r="1" opacity="0.6"/>
+    <circle cx="150" cy="20" r="1.2" opacity="0.7"/>
+    <circle cx="320" cy="40" r="1.5" opacity="0.8"/>
+    <circle cx="360" cy="95" r="1" opacity="0.6"/>
+    <circle cx="28" cy="160" r="1" opacity="0.5"/>
+    <circle cx="372" cy="180" r="1.3" opacity="0.7"/>
+    <circle cx="260" cy="18" r="1" opacity="0.6"/>
+  </g>
+
+  <!-- Earth halo -->
+  <circle cx="200" cy="230" r="162" fill="#ffb800" opacity="0.12" filter="url(#glow)"/>
+
+  <!-- Earth layers -->
+  <circle cx="200" cy="230" r="150" fill="url(#crust)"/>
+  <g clip-path="url(#earth)">
+    <circle cx="200" cy="230" r="140" fill="none" stroke="#3a2614" stroke-width="2" stroke-dasharray="20 8" opacity="0.5"/>
+    <circle cx="200" cy="230" r="128" fill="none" stroke="#2a1a0c" stroke-width="1.5" stroke-dasharray="14 10" opacity="0.4"/>
+  </g>
+  <circle cx="200" cy="230" r="118" fill="url(#mantle)"/>
+  <circle cx="200" cy="230" r="78" fill="url(#outer)"/>
+  <circle cx="200" cy="230" r="60" fill="url(#inner)" opacity="0.8"/>
+  <circle cx="200" cy="230" r="36" fill="#fff6c8"/>
+
+  <!-- Shaft -->
+  <rect x="188" y="80" width="24" height="112" fill="#050812"/>
+  <rect x="188" y="80" width="24" height="112" fill="none" stroke="#2a3550" stroke-width="1.5"/>
+
+  <!-- Exhaust trail -->
+  <rect x="195" y="96" width="10" height="54" fill="url(#exhaust)" filter="url(#glow)"/>
+  <circle cx="200" cy="104" r="3" fill="#ffb347" opacity="0.5"/>
+  <circle cx="196" cy="118" r="2" fill="#ffb347" opacity="0.4"/>
+  <circle cx="204" cy="132" r="2.5" fill="#ffb347" opacity="0.3"/>
+
+  <!-- Vehicle -->
+  <path d="M184 180 L170 198 L184 194 Z" fill="#5d6b84"/>
+  <path d="M216 180 L230 198 L216 194 Z" fill="#5d6b84"/>
+  <ellipse cx="200" cy="168" rx="16" ry="24" fill="url(#metal)"/>
+  <circle cx="200" cy="160" r="6" fill="url(#glass)"/>
+  <rect x="184" y="174" width="32" height="4" fill="#2a3550"/>
+  <path d="M184 192 L216 192 L200 222 Z" fill="url(#drill)"/>
+  <path d="M192 200 L208 200 M196 208 L204 208" stroke="#2a3550" stroke-width="1.5"/>
+
+  <!-- Drill tip glow and sparks -->
+  <circle cx="200" cy="222" r="10" fill="#ffd166" opacity="0.9" filter="url(#glow)"/>
+  <circle cx="200" cy="222" r="3" fill="#ffffff"/>
+  <circle cx="186" cy="214" r="1.5" fill="#ffd166"/>
+  <circle cx="214" cy="212" r="1.5" fill="#ffd166"/>
+  <circle cx="192" cy="226" r="1" fill="#ffffff"/>
+</svg>

@@ -1,0 +1,86 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="400" height="400" viewBox="0 0 400 400">
+  <defs>
+    <linearGradient id="sky" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#FFE7A3"/>
+      <stop offset="60%" stop-color="#FFB86B"/>
+      <stop offset="100%" stop-color="#FF7F7F"/>
+    </linearGradient>
+    <radialGradient id="sun" cx="0.45" cy="0.4" r="0.6">
+      <stop offset="0%" stop-color="#FFF7C2"/>
+      <stop offset="100%" stop-color="#FFD23F"/>
+    </radialGradient>
+    <linearGradient id="hill" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#7BD389"/>
+      <stop offset="100%" stop-color="#3FA66B"/>
+    </linearGradient>
+  </defs>
+
+  <!-- Anga la jua linalochomoza -->
+  <rect width="400" height="400" fill="url(#sky)"/>
+
+  <!-- Miale ya jua inayocheza -->
+  <g stroke="#FFF3C4" stroke-width="7" stroke-linecap="round" opacity="0.85">
+    <line x1="200" y1="120" x2="200" y2="62"/>
+    <line x1="200" y1="280" x2="200" y2="338"/>
+    <line x1="120" y1="200" x2="62" y2="200"/>
+    <line x1="280" y1="200" x2="338" y2="200"/>
+    <line x1="142" y1="142" x2="100" y2="100"/>
+    <line x1="258" y1="142" x2="300" y2="100"/>
+    <line x1="142" y1="258" x2="100" y2="300"/>
+    <line x1="258" y1="258" x2="300" y2="300"/>
+  </g>
+
+  <!-- Jua -->
+  <circle cx="200" cy="200" r="80" fill="url(#sun)"/>
+  <circle cx="200" cy="200" r="80" fill="none" stroke="#FFF6CC" stroke-width="4" opacity="0.7"/>
+
+  <!-- Vipepeo wa furaha wanaoruka -->
+  <g transform="translate(70 140) rotate(-18)">
+    <path d="M0 0 C-22 -26 -48 -18 -36 6 C-28 20 -10 12 0 0Z" fill="#FF6FA5"/>
+    <path d="M0 0 C22 -26 48 -18 36 6 C28 20 10 12 0 0Z" fill="#FF8FC0"/>
+    <path d="M0 0 C-16 14 -34 36 -18 42 C-6 46 -2 18 0 0Z" fill="#E5558C"/>
+    <path d="M0 0 C16 14 34 36 18 42 C6 46 2 18 0 0Z" fill="#E5558C"/>
+    <rect x="-2.5" y="-12" width="5" height="24" rx="2.5" fill="#5A3A5E"/>
+  </g>
+
+  <!-- Vilima vya kijani -->
+  <path d="M0 300 Q90 250 200 290 T400 280 L400 400 L0 400Z" fill="url(#hill)"/>
+  <path d="M0 340 Q120 300 220 335 T400 330 L400 400 L0 400Z" fill="#2E8B57" opacity="0.8"/>
+
+  <!-- Maua yenye rangi za furaha -->
+  <g>
+    <line x1="60" y1="330" x2="60" y2="290" stroke="#2E7D4F" stroke-width="5" stroke-linecap="round"/>
+    <g fill="#FF5C8A">
+      <circle cx="60" cy="278" r="9"/>
+      <circle cx="72" cy="284" r="9"/>
+      <circle cx="48" cy="284" r="9"/>
+      <circle cx="66" cy="296" r="9"/>
+      <circle cx="54" cy="296" r="9"/>
+    </g>
+    <circle cx="60" cy="287" r="6" fill="#FFD23F"/>
+  </g>
+
+  <g>
+    <line x1="340" y1="350" x2="340" y2="312" stroke="#2E7D4F" stroke-width="5" stroke-linecap="round"/>
+    <g fill="#8E7CFF">
+      <circle cx="340" cy="300" r="9"/>
+      <circle cx="352" cy="306" r="9"/>
+      <circle cx="328" cy="306" r="9"/>
+      <circle cx="346" cy="318" r="9"/>
+      <circle cx="334" cy="318" r="9"/>
+    </g>
+    <circle cx="340" cy="309" r="6" fill="#FFF3C4"/>
+  </g>
+
+  <!-- Confeti ya sherehe -->
+  <g>
+    <circle cx="150" cy="90" r="6" fill="#4ECDC4"/>
+    <circle cx="265" cy="70" r="5" fill="#FF6FA5"/>
+    <circle cx="330" cy="150" r="6" fill="#8E7CFF"/>
+    <circle cx="40" cy="230" r="5" fill="#4ECDC4"/>
+    <rect x="236" y="110" width="10" height="10" rx="2" fill="#FFFFFF" transform="rotate(25 241 115)"/>
+    <rect x="95" y="180" width="9" height="9" rx="2" fill="#FFFFFF" transform="rotate(-20 99 184)"/>
+    <rect x="310" y="230" width="10" height="10" rx="2" fill="#FFD23F" transform="rotate(15 315 235)"/>
+    <rect x="175" y="48" width="9" height="9" rx="2" fill="#FF8FC0" transform="rotate(40 179 52)"/>
+  </g>
+</svg>

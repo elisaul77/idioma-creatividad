@@ -1,0 +1,82 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="400" height="400" viewBox="0 0 400 400">
+  <defs>
+    <linearGradient id="sky" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#0a0f26"/>
+      <stop offset="1" stop-color="#1c2a5e"/>
+    </linearGradient>
+    <radialGradient id="glow" cx="0.5" cy="0.5" r="0.5">
+      <stop offset="0" stop-color="#4fd1ff" stop-opacity="0.55"/>
+      <stop offset="1" stop-color="#4fd1ff" stop-opacity="0"/>
+    </radialGradient>
+    <linearGradient id="screen" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#2b6cb0"/>
+      <stop offset="1" stop-color="#7c3aed"/>
+    </linearGradient>
+  </defs>
+
+  <!-- Night sky -->
+  <rect width="400" height="400" fill="url(#sky)"/>
+
+  <!-- Stars -->
+  <g fill="#ffffff">
+    <circle cx="40" cy="50" r="2"/>
+    <circle cx="90" cy="30" r="1.5"/>
+    <circle cx="150" cy="60" r="2"/>
+    <circle cx="220" cy="25" r="1.5"/>
+    <circle cx="60" cy="110" r="1.5"/>
+    <circle cx="180" cy="100" r="1"/>
+    <circle cx="260" cy="120" r="2"/>
+    <circle cx="350" cy="70" r="1.5"/>
+    <circle cx="330" cy="150" r="1"/>
+    <circle cx="25" cy="170" r="1"/>
+  </g>
+
+  <!-- Moon -->
+  <circle cx="330" cy="60" r="28" fill="#fde68a"/>
+  <circle cx="342" cy="52" r="24" fill="#1c2a5e"/>
+
+  <!-- Window frame on the left -->
+  <rect x="20" y="200" width="70" height="90" rx="4" fill="#0f1733" stroke="#2c3b6e" stroke-width="3"/>
+  <line x1="55" y1="200" x2="55" y2="290" stroke="#2c3b6e" stroke-width="3"/>
+
+  <!-- TV glow -->
+  <ellipse cx="200" cy="240" rx="170" ry="120" fill="url(#glow)"/>
+
+  <!-- TV -->
+  <rect x="120" y="150" width="160" height="110" rx="10" fill="#111827"/>
+  <rect x="132" y="162" width="136" height="86" rx="4" fill="url(#screen)"/>
+  <!-- Pixel game elements on screen -->
+  <g fill="#facc15">
+    <rect x="150" y="196" width="10" height="10"/>
+    <rect x="160" y="186" width="10" height="10"/>
+    <rect x="160" y="196" width="10" height="10"/>
+    <rect x="170" y="196" width="10" height="10"/>
+  </g>
+  <g fill="#f87171">
+    <rect x="220" y="180" width="8" height="8"/>
+    <rect x="236" y="180" width="8" height="8"/>
+    <rect x="228" y="190" width="8" height="8"/>
+  </g>
+  <rect x="200" y="220" width="6" height="14" fill="#e0f2fe"/>
+  <!-- TV stand -->
+  <rect x="180" y="260" width="40" height="8" fill="#111827"/>
+  <rect x="160" y="268" width="80" height="6" rx="3" fill="#111827"/>
+
+  <!-- Player silhouette -->
+  <circle cx="200" cy="330" r="0"/>
+  <path d="M130 400 Q130 320 200 318 Q270 320 270 400 Z" fill="#050814"/>
+  <circle cx="200" cy="300" r="20" fill="#050814"/>
+  <!-- Arms -->
+  <path d="M160 340 Q170 360 185 352" stroke="#050814" stroke-width="12" fill="none" stroke-linecap="round"/>
+  <path d="M240 340 Q230 360 215 352" stroke="#050814" stroke-width="12" fill="none" stroke-linecap="round"/>
+
+  <!-- Controller -->
+  <rect x="178" y="340" width="44" height="22" rx="10" fill="#e5e7eb"/>
+  <rect x="186" y="349" width="10" height="3" fill="#374151"/>
+  <rect x="189" y="346" width="3" height="9" fill="#374151"/>
+  <circle cx="212" cy="347" r="2.5" fill="#f87171"/>
+  <circle cx="216" cy="353" r="2.5" fill="#60a5fa"/>
+
+  <!-- Light spill on the floor -->
+  <ellipse cx="200" cy="392" rx="140" ry="8" fill="#4fd1ff" opacity="0.25"/>
+</svg>

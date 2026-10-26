@@ -1,0 +1,113 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="400" height="400" viewBox="0 0 400 400">
+  <defs>
+    <linearGradient id="sky" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#0b1d3a"/>
+      <stop offset="1" stop-color="#2d1f5e"/>
+    </linearGradient>
+    <radialGradient id="glow" cx="0.5" cy="0.5" r="0.5">
+      <stop offset="0" stop-color="#ffd977" stop-opacity="0.85"/>
+      <stop offset="1" stop-color="#ffd977" stop-opacity="0"/>
+    </radialGradient>
+    <radialGradient id="ballg" cx="0.35" cy="0.35" r="0.7">
+      <stop offset="0" stop-color="#ff8fa3"/>
+      <stop offset="1" stop-color="#c2185b"/>
+    </radialGradient>
+  </defs>
+
+  <!-- Night sky -->
+  <rect width="400" height="400" fill="url(#sky)"/>
+
+  <!-- Stars -->
+  <g fill="#fff8e1">
+    <circle cx="40" cy="40" r="1.5"/>
+    <circle cx="95" cy="22" r="1"/>
+    <circle cx="170" cy="50" r="1.8"/>
+    <circle cx="215" cy="18" r="1.2"/>
+    <circle cx="260" cy="120" r="1"/>
+    <circle cx="365" cy="150" r="1.5"/>
+    <circle cx="20" cy="150" r="1.2"/>
+    <circle cx="140" cy="120" r="1"/>
+    <circle cx="385" cy="30" r="1.3"/>
+    <circle cx="300" cy="25" r="1"/>
+  </g>
+
+  <!-- Crescent moon -->
+  <path d="M330 45 A38 38 0 1 0 362 100 A30 30 0 1 1 330 45 Z" fill="#fff3b0"/>
+
+  <!-- Floor -->
+  <rect x="0" y="330" width="400" height="70" fill="#3a2a4f"/>
+  <rect x="0" y="330" width="400" height="4" fill="#4d3868"/>
+
+  <!-- Lamp glow -->
+  <circle cx="70" cy="215" r="90" fill="url(#glow)"/>
+
+  <!-- Side table and lamp -->
+  <rect x="40" y="290" width="60" height="6" rx="2" fill="#6d4c41"/>
+  <rect x="62" y="262" width="6" height="28" fill="#8d6e63"/>
+  <path d="M45 262 L95 262 L85 240 L55 240 Z" fill="#ffe082"/>
+
+  <!-- Teddy bear reading a book -->
+  <g>
+    <ellipse cx="150" cy="300" rx="34" ry="30" fill="#a1785a"/>
+    <circle cx="150" cy="245" r="26" fill="#a1785a"/>
+    <circle cx="131" cy="230" r="9" fill="#a1785a"/>
+    <circle cx="169" cy="230" r="9" fill="#a1785a"/>
+    <circle cx="131" cy="230" r="4.5" fill="#f3d9c0"/>
+    <circle cx="169" cy="230" r="4.5" fill="#f3d9c0"/>
+    <ellipse cx="150" cy="255" rx="10" ry="7" fill="#f3d9c0"/>
+    <circle cx="150" cy="251" r="2.5" fill="#3e2723"/>
+    <circle cx="142" cy="240" r="2.5" fill="#3e2723"/>
+    <circle cx="158" cy="240" r="2.5" fill="#3e2723"/>
+    <!-- Book -->
+    <path d="M118 285 L150 275 L182 285 L182 300 L150 292 L118 300 Z" fill="#e53935"/>
+    <path d="M150 275 L150 292" stroke="#ffcdd2" stroke-width="1.5"/>
+    <!-- Arms -->
+    <ellipse cx="124" cy="290" rx="8" ry="14" fill="#a1785a" transform="rotate(-20 124 290)"/>
+    <ellipse cx="176" cy="290" rx="8" ry="14" fill="#a1785a" transform="rotate(20 176 290)"/>
+    <!-- Feet -->
+    <ellipse cx="128" cy="328" rx="10" ry="6" fill="#8d6246"/>
+    <ellipse cx="172" cy="328" rx="10" ry="6" fill="#8d6246"/>
+  </g>
+
+  <!-- Dancing robot -->
+  <g>
+    <line x1="270" y1="215" x2="265" y2="195" stroke="#90a4ae" stroke-width="3"/>
+    <circle cx="265" cy="192" r="5" fill="#ffca28"/>
+    <rect x="248" y="215" width="44" height="50" rx="6" fill="#78909c"/>
+    <rect x="256" y="228" width="28" height="14" rx="3" fill="#b2ebf2"/>
+    <circle cx="263" cy="235" r="3" fill="#006064"/>
+    <circle cx="277" cy="235" r="3" fill="#006064"/>
+    <!-- Raised arms -->
+    <line x1="248" y1="222" x2="220" y2="196" stroke="#90a4ae" stroke-width="7" stroke-linecap="round"/>
+    <line x1="292" y1="222" x2="322" y2="200" stroke="#90a4ae" stroke-width="7" stroke-linecap="round"/>
+    <rect x="256" y="265" width="28" height="40" rx="4" fill="#546e7a"/>
+    <rect x="248" y="300" width="14" height="12" rx="3" fill="#37474f"/>
+    <rect x="278" y="300" width="14" height="12" rx="3" fill="#37474f"/>
+  </g>
+
+  <!-- Bouncing ball -->
+  <circle cx="335" cy="185" r="15" fill="url(#ballg)"/>
+  <path d="M327 178 Q331 172 338 175" stroke="#ffffff" stroke-width="2" fill="none" opacity="0.6"/>
+
+  <!-- Toy train on floor -->
+  <g>
+    <rect x="290" y="350" width="80" height="26" rx="4" fill="#1e88e5"/>
+    <rect x="300" y="336" width="26" height="16" rx="3" fill="#e53935"/>
+    <rect x="304" y="340" width="10" height="8" fill="#ffecb3"/>
+    <circle cx="305" cy="378" r="7" fill="#263238"/>
+    <circle cx="335" cy="378" r="7" fill="#263238"/>
+    <circle cx="358" cy="378" r="7" fill="#263238"/>
+    <circle cx="305" cy="378" r="2.5" fill="#90a4ae"/>
+    <circle cx="335" cy="378" r="2.5" fill="#90a4ae"/>
+    <circle cx="358" cy="378" r="2.5" fill="#90a4ae"/>
+    <rect x="296" y="358" width="6" height="6" fill="#ffd54f"/>
+  </g>
+
+  <!-- Music notes floating -->
+  <g fill="#ffe082" opacity="0.8">
+    <circle cx="240" cy="170" r="4"/>
+    <rect x="243" y="152" width="2" height="18"/>
+    <circle cx="200" cy="150" r="3"/>
+    <rect x="202" y="134" width="2" height="16"/>
+  </g>
+</svg>

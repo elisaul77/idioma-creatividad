@@ -1,0 +1,69 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 400" width="400" height="400">
+  <defs>
+    <linearGradient id="sky" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#140c35"/>
+      <stop offset="0.5" stop-color="#3d2370"/>
+      <stop offset="0.85" stop-color="#b2578f"/>
+      <stop offset="1" stop-color="#f09a7a"/>
+    </linearGradient>
+    <radialGradient id="moon" cx="0.4" cy="0.4" r="0.7">
+      <stop offset="0" stop-color="#fffbea"/>
+      <stop offset="1" stop-color="#f2d38a"/>
+    </radialGradient>
+    <radialGradient id="orb" cx="0.35" cy="0.35" r="0.7">
+      <stop offset="0" stop-color="#ffffff" stop-opacity="0.85"/>
+      <stop offset="0.6" stop-color="#9fd8ff" stop-opacity="0.35"/>
+      <stop offset="1" stop-color="#9fd8ff" stop-opacity="0"/>
+    </radialGradient>
+    <filter id="glow" x="-50%" y="-50%" width="200%" height="200%">
+      <feGaussianBlur stdDeviation="8"/>
+    </filter>
+    <filter id="soft" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="1.6"/>
+    </filter>
+  </defs>
+
+  <!-- Небо -->
+  <rect width="400" height="400" fill="url(#sky)"/>
+
+  <!-- Звёзды -->
+  <g fill="#ffffff">
+    <circle cx="40" cy="50" r="1.5" opacity="0.9"/>
+    <circle cx="90" cy="95" r="1" opacity="0.6"/>
+    <circle cx="150" cy="40" r="1.8" opacity="0.8"/>
+    <circle cx="220" cy="70" r="1" opacity="0.7"/>
+    <circle cx="370" cy="30" r="1.4" opacity="0.9"/>
+    <circle cx="330" cy="200" r="1" opacity="0.6"/>
+    <circle cx="25" cy="190" r="1.2" opacity="0.7"/>
+    <circle cx="60" cy="230" r="0.9" opacity="0.5"/>
+    <circle cx="180" cy="22" r="1" opacity="0.6"/>
+    <circle cx="375" cy="150" r="1.2" opacity="0.5"/>
+  </g>
+
+  <!-- Луна и её свечение -->
+  <circle cx="290" cy="110" r="78" fill="#ffe9a8" opacity="0.25" filter="url(#glow)"/>
+  <circle cx="290" cy="110" r="42" fill="url(#moon)"/>
+  <circle cx="276" cy="98" r="7" fill="#e9c77a" opacity="0.35"/>
+  <circle cx="302" cy="124" r="4" fill="#e9c77a" opacity="0.3"/>
+
+  <!-- Плывущие сферы -->
+  <circle cx="110" cy="130" r="34" fill="url(#orb)"/>
+  <circle cx="60" cy="210" r="22" fill="url(#orb)"/>
+  <circle cx="180" cy="200" r="16" fill="url(#orb)"/>
+  <circle cx="330" cy="260" r="28" fill="url(#orb)"/>
+  <circle cx="240" cy="290" r="12" fill="url(#orb)"/>
+
+  <!-- Растаявший, будто тягучий, силуэт -->
+  <ellipse cx="120" cy="170" rx="46" ry="16" fill="#ffd6e8" opacity="0.28" transform="rotate(-14 120 170)" filter="url(#soft)"/>
+  <ellipse cx="200" cy="260" rx="30" ry="10" fill="#ffd6e8" opacity="0.2" transform="rotate(8 200 260)" filter="url(#soft)"/>
+
+  <!-- Спиральная нить сна -->
+  <path d="M200 320 C120 280 290 250 230 205 S140 160 200 140 S270 180 240 200"
+        fill="none" stroke="#d9c8ff" stroke-width="2.5" stroke-linecap="round" opacity="0.7" filter="url(#soft)"/>
+  <path d="M200 320 C120 280 290 250 230 205 S140 160 200 140 S270 180 240 200"
+        fill="none" stroke="#ffffff" stroke-width="0.8" stroke-linecap="round" opacity="0.8"/>
+
+  <!-- Волны-облака внизу -->
+  <path d="M0 300 Q100 268 200 300 T400 296 L400 400 L0 400 Z" fill="#2a1659" opacity="0.6"/>
+  <path d="M0 336 Q120 304 220 338 T400 326 L400 400 L0 400 Z" fill="#170d3a" opacity="0.85"/>
+</svg>

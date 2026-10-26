@@ -1,0 +1,67 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="400" height="400" viewBox="0 0 400 400">
+  <defs>
+    <radialGradient id="bg" cx="50%" cy="45%" r="75%">
+      <stop offset="0%" stop-color="#e8f4ff"/>
+      <stop offset="55%" stop-color="#7fb8e8"/>
+      <stop offset="100%" stop-color="#1b3d7a"/>
+    </radialGradient>
+    <radialGradient id="drop" cx="35%" cy="30%" r="70%">
+      <stop offset="0%" stop-color="#ffffff" stop-opacity="0.95"/>
+      <stop offset="30%" stop-color="#4fa3ff"/>
+      <stop offset="100%" stop-color="#0a2a6b"/>
+    </radialGradient>
+    <linearGradient id="wave" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#00c6ff" stop-opacity="0"/>
+      <stop offset="50%" stop-color="#00c6ff" stop-opacity="0.8"/>
+      <stop offset="100%" stop-color="#00c6ff" stop-opacity="0"/>
+    </linearGradient>
+    <filter id="soft" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="6"/>
+    </filter>
+  </defs>
+
+  <!-- background -->
+  <rect width="400" height="400" fill="url(#bg)"/>
+
+  <!-- flavor ripples -->
+  <g fill="none" stroke="#2f7fd1" stroke-width="2" opacity="0.5">
+    <circle cx="200" cy="200" r="60"/>
+    <circle cx="200" cy="200" r="90" stroke-opacity="0.4"/>
+    <circle cx="200" cy="200" r="122" stroke-opacity="0.3"/>
+    <circle cx="200" cy="200" r="158" stroke-opacity="0.2"/>
+  </g>
+
+  <!-- glow behind the droplet -->
+  <circle cx="200" cy="200" r="70" fill="#4fa3ff" opacity="0.45" filter="url(#soft)"/>
+
+  <!-- central droplet -->
+  <path d="M200 110
+           C232 152 262 184 262 218
+           C262 250 234 276 200 276
+           C166 276 138 250 138 218
+           C138 184 168 152 200 110 Z"
+        fill="url(#drop)" stroke="#0a2a6b" stroke-width="2"/>
+
+  <!-- highlight on droplet -->
+  <ellipse cx="180" cy="206" rx="8" ry="16" fill="#ffffff" opacity="0.8" transform="rotate(20 180 206)"/>
+
+  <!-- taste waves sweeping across -->
+  <path d="M40 300 Q100 270 160 300 T280 300 T400 300" fill="none" stroke="url(#wave)" stroke-width="6" stroke-linecap="round"/>
+  <path d="M30 330 Q95 305 160 330 T290 330 T410 330" fill="none" stroke="url(#wave)" stroke-width="4" stroke-linecap="round" opacity="0.7"/>
+
+  <!-- bubbles -->
+  <g fill="#ffffff" opacity="0.7">
+    <circle cx="90" cy="150" r="5"/>
+    <circle cx="110" cy="110" r="3"/>
+    <circle cx="308" cy="128" r="6"/>
+    <circle cx="326" cy="172" r="3.5"/>
+    <circle cx="78" cy="236" r="4"/>
+    <circle cx="322" cy="250" r="4.5"/>
+  </g>
+
+  <!-- sparkles -->
+  <g fill="#ffffff">
+    <path d="M300 80 L304 92 L316 96 L304 100 L300 112 L296 100 L284 96 L296 92 Z" opacity="0.9"/>
+    <path d="M96 70 L98 76 L104 78 L98 80 L96 86 L94 80 L88 78 L94 76 Z" opacity="0.7"/>
+  </g>
+</svg>

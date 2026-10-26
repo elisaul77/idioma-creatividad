@@ -1,0 +1,79 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="400" height="400" viewBox="0 0 400 400">
+  <defs>
+    <radialGradient id="sun" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#FFF6A8"/>
+      <stop offset="60%" stop-color="#FFD93B"/>
+      <stop offset="100%" stop-color="#FFB703"/>
+    </radialGradient>
+    <linearGradient id="sky" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#FFE3F1"/>
+      <stop offset="100%" stop-color="#FFF4D6"/>
+    </linearGradient>
+    <linearGradient id="hill" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#8BE28B"/>
+      <stop offset="100%" stop-color="#3DBE6B"/>
+    </linearGradient>
+  </defs>
+
+  <rect width="400" height="400" fill="url(#sky)"/>
+
+  <!-- Sun rays -->
+  <g stroke="#FFC93C" stroke-width="8" stroke-linecap="round" opacity="0.8">
+    <line x1="200" y1="40" x2="200" y2="15"/>
+    <line x1="200" y1="160" x2="200" y2="185" opacity="0"/>
+    <line x1="290" y1="70" x2="308" y2="52"/>
+    <line x1="110" y1="70" x2="92" y2="52"/>
+    <line x1="318" y1="130" x2="342" y2="124"/>
+    <line x1="82" y1="130" x2="58" y2="124"/>
+  </g>
+
+  <!-- Sun -->
+  <circle cx="200" cy="120" r="62" fill="url(#sun)"/>
+
+  <!-- Hills -->
+  <path d="M0 290 Q100 230 200 275 T400 260 L400 400 L0 400 Z" fill="url(#hill)"/>
+  <path d="M0 330 Q130 290 250 325 T400 320 L400 400 L0 400 Z" fill="#2FA85E" opacity="0.7"/>
+
+  <!-- Flowers -->
+  <g>
+    <circle cx="90" cy="305" r="7" fill="#FF6B9A"/>
+    <circle cx="82" cy="298" r="6" fill="#FF8FB3"/>
+    <circle cx="98" cy="298" r="6" fill="#FF8FB3"/>
+    <circle cx="90" cy="290" r="6" fill="#FF8FB3"/>
+    <circle cx="90" cy="298" r="4" fill="#FFD93B"/>
+    <line x1="90" y1="312" x2="90" y2="370" stroke="#2E8B57" stroke-width="4"/>
+
+    <circle cx="310" cy="300" r="7" fill="#B07CFF"/>
+    <circle cx="302" cy="293" r="6" fill="#C9A4FF"/>
+    <circle cx="318" cy="293" r="6" fill="#C9A4FF"/>
+    <circle cx="310" cy="285" r="6" fill="#C9A4FF"/>
+    <circle cx="310" cy="293" r="4" fill="#FFD93B"/>
+    <line x1="310" y1="307" x2="310" y2="365" stroke="#2E8B57" stroke-width="4"/>
+  </g>
+
+  <!-- Happy bird -->
+  <g transform="translate(160,205)">
+    <ellipse cx="40" cy="30" rx="34" ry="26" fill="#4FC3F7"/>
+    <circle cx="66" cy="16" r="16" fill="#4FC3F7"/>
+    <path d="M80 14 L96 20 L80 26 Z" fill="#FF9800"/>
+    <circle cx="70" cy="12" r="3.5" fill="#1A1A2E"/>
+    <path d="M8 26 Q-14 8 4 2 Q14 16 20 26 Z" fill="#29B6F6"/>
+    <path d="M58 18 Q64 26 72 20" stroke="#1A1A2E" stroke-width="2.5" fill="none" stroke-linecap="round"/>
+    <circle cx="60" cy="36" r="5" fill="#FF8FB3" opacity="0.7"/>
+    <line x1="34" y1="54" x2="30" y2="66" stroke="#FF9800" stroke-width="4" stroke-linecap="round"/>
+    <line x1="46" y1="54" x2="50" y2="66" stroke="#FF9800" stroke-width="4" stroke-linecap="round"/>
+  </g>
+
+  <!-- Floating sparkles -->
+  <g fill="#FFFFFF" stroke="#FFC93C" stroke-width="2">
+    <path d="M60 220 L64 230 L74 234 L64 238 L60 248 L56 238 L46 234 L56 230 Z"/>
+    <path d="M330 210 L333 218 L341 221 L333 224 L330 232 L327 224 L319 221 L327 218 Z"/>
+    <path d="M280 170 L282 175 L287 177 L282 179 L280 184 L278 179 L273 177 L278 175 Z"/>
+  </g>
+
+  <!-- Small hearts -->
+  <g fill="#FF6B9A">
+    <path d="M120 150 C120 144 112 142 112 148 C112 142 104 144 104 150 C104 158 120 166 120 166 C120 166 120 158 120 150 Z" transform="scale(1) translate(0,0)"/>
+    <path d="M250 110 C250 104 242 102 242 108 C242 102 234 104 234 110 C234 118 250 126 250 126 C250 126 250 118 250 110 Z"/>
+  </g>
+</svg>

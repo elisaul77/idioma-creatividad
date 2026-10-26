@@ -1,0 +1,86 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="400" height="400" viewBox="0 0 400 400">
+  <defs>
+    <linearGradient id="sky" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#1b1b4a"/>
+      <stop offset="0.55" stop-color="#7a3e7e"/>
+      <stop offset="0.8" stop-color="#f08a5d"/>
+      <stop offset="1" stop-color="#ffd27a"/>
+    </linearGradient>
+    <radialGradient id="sun" cx="0.5" cy="0.5" r="0.5">
+      <stop offset="0" stop-color="#fff6c8"/>
+      <stop offset="0.6" stop-color="#ffc857"/>
+      <stop offset="1" stop-color="#ffc857" stop-opacity="0"/>
+    </radialGradient>
+    <linearGradient id="leaf" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#7ff5d6"/>
+      <stop offset="1" stop-color="#2bb3a3"/>
+    </linearGradient>
+    <linearGradient id="trunk" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#2a1a2e"/>
+      <stop offset="0.5" stop-color="#4b2f45"/>
+      <stop offset="1" stop-color="#2a1a2e"/>
+    </linearGradient>
+    <filter id="glow" x="-50%" y="-50%" width="200%" height="200%">
+      <feGaussianBlur stdDeviation="3" result="b"/>
+      <feMerge>
+        <feMergeNode in="b"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+  </defs>
+
+  <rect width="400" height="400" fill="url(#sky)"/>
+
+  <g fill="#ffffff" opacity="0.7">
+    <circle cx="50" cy="40" r="1.2"/>
+    <circle cx="120" cy="25" r="1"/>
+    <circle cx="210" cy="50" r="1.4"/>
+    <circle cx="300" cy="30" r="1"/>
+    <circle cx="355" cy="70" r="1.2"/>
+    <circle cx="80" cy="90" r="0.9"/>
+    <circle cx="265" cy="100" r="0.9"/>
+  </g>
+
+  <circle cx="200" cy="300" r="95" fill="url(#sun)"/>
+  <circle cx="200" cy="300" r="55" fill="#ffe27a" filter="url(#glow)"/>
+
+  <path d="M0 320 Q100 290 200 315 T400 310 L400 400 L0 400 Z" fill="#1d2b4f"/>
+
+  <ellipse cx="200" cy="200" rx="150" ry="40" fill="none" stroke="#7ff5d6" stroke-opacity="0.4" stroke-dasharray="4 6"/>
+
+  <g stroke="#3a2440" stroke-width="4" stroke-linecap="round" fill="none">
+    <path d="M200 230 Q170 200 140 190"/>
+    <path d="M200 220 Q230 190 265 180"/>
+    <path d="M200 200 Q185 160 160 140"/>
+    <path d="M200 195 Q220 150 250 130"/>
+    <path d="M200 170 Q195 130 200 100"/>
+    <path d="M140 190 Q120 175 105 180"/>
+    <path d="M265 180 Q290 170 300 150"/>
+  </g>
+
+  <path d="M192 335 Q196 260 200 200 Q204 260 208 335 Z" fill="url(#trunk)"/>
+
+  <g fill="url(#leaf)" opacity="0.9" filter="url(#glow)">
+    <circle cx="140" cy="190" r="14"/>
+    <circle cx="105" cy="180" r="11"/>
+    <circle cx="265" cy="180" r="14"/>
+    <circle cx="300" cy="150" r="12"/>
+    <circle cx="160" cy="140" r="15"/>
+    <circle cx="250" cy="130" r="15"/>
+    <circle cx="200" cy="100" r="16"/>
+    <circle cx="120" cy="160" r="10"/>
+    <circle cx="280" cy="120" r="11"/>
+    <circle cx="180" cy="120" r="10"/>
+    <circle cx="225" cy="150" r="12"/>
+    <circle cx="150" cy="170" r="9"/>
+  </g>
+
+  <g fill="#9ff7ff" filter="url(#glow)">
+    <circle cx="60" cy="120" r="2"/>
+    <circle cx="340" cy="90" r="2"/>
+    <circle cx="90" cy="260" r="1.8"/>
+    <circle cx="320" cy="240" r="1.8"/>
+    <circle cx="50" cy="200" r="1.5"/>
+    <circle cx="350" cy="200" r="1.5"/>
+  </g>
+</svg>

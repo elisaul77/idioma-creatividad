@@ -1,0 +1,78 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="400" height="400" viewBox="0 0 400 400">
+  <defs>
+    <linearGradient id="sky" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#bfe6ff"/>
+      <stop offset="1" stop-color="#e9f8ff"/>
+    </linearGradient>
+  </defs>
+
+  <!-- السماء -->
+  <rect width="400" height="400" fill="url(#sky)"/>
+
+  <!-- الغيوم -->
+  <g fill="#ffffff" opacity="0.9">
+    <circle cx="70" cy="70" r="18"/>
+    <circle cx="90" cy="62" r="22"/>
+    <circle cx="112" cy="72" r="16"/>
+    <circle cx="320" cy="55" r="16"/>
+    <circle cx="340" cy="46" r="22"/>
+    <circle cx="362" cy="58" r="15"/>
+  </g>
+
+  <!-- الأرض -->
+  <rect x="0" y="330" width="400" height="70" fill="#8bd17c"/>
+  <ellipse cx="200" cy="332" rx="200" ry="10" fill="#6fbf66"/>
+
+  <!-- الزهور -->
+  <g>
+    <circle cx="40" cy="352" r="6" fill="#ff8fab"/>
+    <circle cx="40" cy="352" r="2.5" fill="#ffe066"/>
+    <circle cx="360" cy="365" r="7" fill="#ffd166"/>
+    <circle cx="360" cy="365" r="2.5" fill="#ff8fab"/>
+    <circle cx="335" cy="378" r="5" fill="#c49bff"/>
+    <circle cx="65" cy="382" r="5" fill="#c49bff"/>
+  </g>
+
+  <!-- القرون -->
+  <polygon points="138,118 146,62 166,122" fill="#ffd166"/>
+  <polygon points="234,122 254,62 262,118" fill="#ffd166"/>
+
+  <!-- الجسم -->
+  <rect x="90" y="170" width="220" height="160" rx="18" fill="#ff9fb5"/>
+
+  <!-- البقع -->
+  <circle cx="112" cy="205" r="6" fill="#ffc2d1"/>
+  <circle cx="290" cy="250" r="8" fill="#ffc2d1"/>
+  <circle cx="118" cy="300" r="5" fill="#ffc2d1"/>
+  <circle cx="288" cy="308" r="6" fill="#ffc2d1"/>
+
+  <!-- السقف -->
+  <polygon points="65,185 200,95 335,185" fill="#6c5ce7"/>
+  <polygon points="200,95 335,185 320,190 200,112" fill="#5a4bd1" opacity="0.6"/>
+  <!-- هوائي -->
+  <line x1="200" y1="95" x2="200" y2="72" stroke="#6c5ce7" stroke-width="4" stroke-linecap="round"/>
+  <circle cx="200" cy="66" r="8" fill="#ffe066"/>
+
+  <!-- العيون -->
+  <circle cx="160" cy="230" r="28" fill="#ffffff"/>
+  <circle cx="240" cy="230" r="28" fill="#ffffff"/>
+  <circle cx="165" cy="235" r="13" fill="#2d2a4a"/>
+  <circle cx="245" cy="235" r="13" fill="#2d2a4a"/>
+  <circle cx="170" cy="229" r="4" fill="#ffffff"/>
+  <circle cx="250" cy="229" r="4" fill="#ffffff"/>
+
+  <!-- الخدود -->
+  <circle cx="125" cy="268" r="10" fill="#ff6f91" opacity="0.6"/>
+  <circle cx="275" cy="268" r="10" fill="#ff6f91" opacity="0.6"/>
+
+  <!-- الفم -->
+  <path d="M140 282 Q200 335 260 282 Z" fill="#7a1f3d"/>
+  <!-- الأسنان -->
+  <g fill="#ffffff">
+    <polygon points="154,282 166,282 160,294"/>
+    <polygon points="174,282 186,282 180,295"/>
+    <polygon points="194,282 206,282 200,296"/>
+    <polygon points="214,282 226,282 220,295"/>
+    <polygon points="234,282 246,282 240,294"/>
+  </g>
+</svg>

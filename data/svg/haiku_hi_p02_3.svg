@@ -1,0 +1,87 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="400" height="400" viewBox="0 0 400 400">
+  <defs>
+    <linearGradient id="sky" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#1a1040"/>
+      <stop offset="45%" stop-color="#4b2a7a"/>
+      <stop offset="75%" stop-color="#c0558a"/>
+      <stop offset="100%" stop-color="#ffb37a"/>
+    </linearGradient>
+    <radialGradient id="moon" cx="0.4" cy="0.4" r="0.6">
+      <stop offset="0%" stop-color="#fffbe6"/>
+      <stop offset="100%" stop-color="#ffd98a"/>
+    </radialGradient>
+    <radialGradient id="orb" cx="0.35" cy="0.35" r="0.7">
+      <stop offset="0%" stop-color="#ffffff" stop-opacity="0.9"/>
+      <stop offset="60%" stop-color="#9fe3ff" stop-opacity="0.35"/>
+      <stop offset="100%" stop-color="#9fe3ff" stop-opacity="0"/>
+    </radialGradient>
+    <radialGradient id="glow" cx="0.5" cy="0.5" r="0.5">
+      <stop offset="0%" stop-color="#ffe9b8" stop-opacity="0.6"/>
+      <stop offset="100%" stop-color="#ffe9b8" stop-opacity="0"/>
+    </radialGradient>
+    <filter id="blur" x="-50%" y="-50%" width="200%" height="200%">
+      <feGaussianBlur stdDeviation="6"/>
+    </filter>
+    <filter id="softblur" x="-50%" y="-50%" width="200%" height="200%">
+      <feGaussianBlur stdDeviation="2"/>
+    </filter>
+    <clipPath id="frame">
+      <rect x="0" y="0" width="400" height="400"/>
+    </clipPath>
+  </defs>
+
+  <g clip-path="url(#frame)">
+    <!-- Sky -->
+    <rect width="400" height="400" fill="url(#sky)"/>
+
+    <!-- Distant nebula swirls -->
+    <ellipse cx="90" cy="110" rx="120" ry="45" fill="#7d5cc4" opacity="0.35" filter="url(#blur)" transform="rotate(-18 90 110)"/>
+    <ellipse cx="320" cy="180" rx="110" ry="40" fill="#ff8fb1" opacity="0.3" filter="url(#blur)" transform="rotate(12 320 180)"/>
+    <ellipse cx="200" cy="60" rx="150" ry="30" fill="#5fd3e6" opacity="0.2" filter="url(#blur)"/>
+
+    <!-- Stars -->
+    <g fill="#ffffff">
+      <circle cx="40" cy="40" r="1.6" opacity="0.9"/>
+      <circle cx="110" cy="25" r="1.1" opacity="0.7"/>
+      <circle cx="170" cy="70" r="1.4" opacity="0.8"/>
+      <circle cx="260" cy="30" r="1.8" opacity="0.95"/>
+      <circle cx="350" cy="60" r="1.2" opacity="0.7"/>
+      <circle cx="30" cy="150" r="1.0" opacity="0.6"/>
+      <circle cx="210" cy="130" r="1.3" opacity="0.8"/>
+      <circle cx="370" cy="130" r="1.5" opacity="0.85"/>
+      <circle cx="140" cy="165" r="1.0" opacity="0.6"/>
+      <circle cx="60" cy="220" r="1.2" opacity="0.7"/>
+      <circle cx="300" cy="235" r="1.0" opacity="0.6"/>
+    </g>
+
+    <!-- Moon with glow -->
+    <circle cx="300" cy="95" r="58" fill="url(#glow)"/>
+    <circle cx="300" cy="95" r="34" fill="url(#moon)"/>
+    <circle cx="312" cy="86" r="30" fill="#4b2a7a" opacity="0.92"/>
+
+    <!-- Floating dream orbs -->
+    <circle cx="120" cy="200" r="34" fill="url(#orb)"/>
+    <circle cx="120" cy="200" r="34" fill="none" stroke="#c9f1ff" stroke-width="1" opacity="0.5"/>
+    <circle cx="255" cy="240" r="22" fill="url(#orb)"/>
+    <circle cx="255" cy="240" r="22" fill="none" stroke="#ffd6ef" stroke-width="1" opacity="0.5"/>
+    <circle cx="70" cy="300" r="14" fill="url(#orb)"/>
+    <circle cx="330" cy="330" r="18" fill="url(#orb)"/>
+
+    <!-- Drifting dream-threads -->
+    <path d="M 0 300 C 80 260, 140 330, 200 290 S 330 260, 400 300" fill="none" stroke="#ffd6ef" stroke-width="2" opacity="0.5" filter="url(#softblur)"/>
+    <path d="M 0 330 C 90 300, 150 360, 220 325 S 340 300, 400 340" fill="none" stroke="#9fe3ff" stroke-width="1.5" opacity="0.4" filter="url(#softblur)"/>
+
+    <!-- Dreamy hills / cloud-like forms -->
+    <path d="M 0 320 Q 100 280 200 315 T 400 305 L 400 400 L 0 400 Z" fill="#2a1450" opacity="0.8"/>
+    <path d="M 0 345 Q 120 320 220 350 T 400 340 L 400 400 L 0 400 Z" fill="#1a0c33" opacity="0.9"/>
+
+    <!-- Floating petals / sparks rising -->
+    <g fill="#ffe9b8">
+      <ellipse cx="160" cy="260" rx="3" ry="6" transform="rotate(25 160 260)" opacity="0.8"/>
+      <ellipse cx="195" cy="225" rx="2" ry="4" transform="rotate(-30 195 225)" opacity="0.7"/>
+      <ellipse cx="225" cy="180" rx="2.5" ry="5" transform="rotate(15 225 180)" opacity="0.75"/>
+      <ellipse cx="90" cy="250" rx="2" ry="4" transform="rotate(-10 90 250)" opacity="0.6"/>
+      <ellipse cx="345" cy="200" rx="2.5" ry="5" transform="rotate(40 345 200)" opacity="0.7"/>
+    </g>
+  </g>
+</svg>

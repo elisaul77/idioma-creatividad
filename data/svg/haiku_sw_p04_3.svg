@@ -1,0 +1,98 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="400" height="400" viewBox="0 0 400 400">
+  <defs>
+    <linearGradient id="anga" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#9fd8e8"/>
+      <stop offset="1" stop-color="#fdf0c8"/>
+    </linearGradient>
+    <linearGradient id="kilima" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#8ccf7a"/>
+      <stop offset="1" stop-color="#5aa653"/>
+    </linearGradient>
+    <radialGradient id="jua" cx="0.5" cy="0.5" r="0.5">
+      <stop offset="0" stop-color="#fff6c2"/>
+      <stop offset="1" stop-color="#ffd76a"/>
+    </radialGradient>
+  </defs>
+
+  <!-- Anga -->
+  <rect width="400" height="400" fill="url(#anga)"/>
+
+  <!-- Jua -->
+  <circle cx="330" cy="70" r="34" fill="url(#jua)"/>
+
+  <!-- Mawingu -->
+  <g fill="#ffffff" opacity="0.9">
+    <ellipse cx="90" cy="70" rx="38" ry="14"/>
+    <ellipse cx="115" cy="62" rx="30" ry="16"/>
+    <ellipse cx="68" cy="64" rx="22" ry="12"/>
+  </g>
+
+  <!-- Vilima -->
+  <ellipse cx="90" cy="330" rx="170" ry="90" fill="url(#kilima)"/>
+  <ellipse cx="330" cy="340" rx="150" ry="80" fill="#6cb866"/>
+
+  <!-- Mti mkubwa -->
+  <rect x="318" y="220" width="14" height="80" rx="5" fill="#8b5a2b"/>
+  <circle cx="325" cy="200" r="36" fill="#4f9a4a"/>
+  <circle cx="300" cy="215" r="24" fill="#5fae55"/>
+  <circle cx="350" cy="215" r="24" fill="#5fae55"/>
+
+  <!-- Nyumba: mwili wa nyumba -->
+  <path d="M85 250 Q80 190 130 175 Q200 150 270 175 Q320 190 315 250 Q318 300 300 325 L100 325 Q82 300 85 250 Z" fill="#d9a77a"/>
+  <!-- Kivuli cha nyumba -->
+  <path d="M250 190 Q300 205 300 250 Q302 298 288 322 L262 322 Q282 295 280 250 Q278 210 250 190 Z" fill="#c4875c" opacity="0.6"/>
+
+  <!-- Paa lenye nyasi -->
+  <path d="M70 200 Q110 120 200 118 Q290 120 330 200 Q300 185 265 188 Q200 170 135 188 Q100 190 70 200 Z" fill="#7bbf5e"/>
+  <path d="M95 190 Q120 150 160 145" stroke="#5fa04a" stroke-width="3" fill="none"/>
+  <path d="M170 150 Q200 130 235 150" stroke="#5fa04a" stroke-width="3" fill="none"/>
+
+  <!-- Bomba -->
+  <rect x="240" y="120" width="26" height="60" rx="4" fill="#b5654a"/>
+  <rect x="236" y="114" width="34" height="10" rx="3" fill="#8f4b36"/>
+  <!-- Moshi mwepesi -->
+  <g fill="none" stroke="#ffffff" stroke-width="5" stroke-linecap="round" opacity="0.85">
+    <path d="M253 104 Q243 88 257 74 Q270 60 258 46"/>
+    <path d="M268 100 Q262 86 274 74"/>
+  </g>
+
+  <!-- Madirisha kubwa za duara -->
+  <circle cx="150" cy="235" r="26" fill="#fff3b0" stroke="#7a4a2a" stroke-width="6"/>
+  <line x1="150" y1="209" x2="150" y2="261" stroke="#7a4a2a" stroke-width="4"/>
+  <line x1="124" y1="235" x2="176" y2="235" stroke="#7a4a2a" stroke-width="4"/>
+  <circle cx="250" cy="235" r="20" fill="#fff3b0" stroke="#7a4a2a" stroke-width="5"/>
+  <line x1="250" y1="215" x2="250" y2="255" stroke="#7a4a2a" stroke-width="3"/>
+  <line x1="230" y1="235" x2="270" y2="235" stroke="#7a4a2a" stroke-width="3"/>
+
+  <!-- Mlango mkubwa wa duara juu -->
+  <path d="M175 325 L175 275 Q200 245 225 275 L225 325 Z" fill="#8b5a2b"/>
+  <path d="M182 325 L182 280 Q200 258 218 280 L218 325 Z" fill="#a66f3c"/>
+  <circle cx="212" cy="302" r="3.5" fill="#ffd76a"/>
+
+  <!-- Ngazi ya mawe -->
+  <rect x="165" y="325" width="70" height="8" rx="3" fill="#bdb6a8"/>
+  <rect x="158" y="333" width="84" height="8" rx="3" fill="#a79f91"/>
+
+  <!-- Maua mbele -->
+  <g>
+    <line x1="60" y1="335" x2="60" y2="300" stroke="#3e8a3a" stroke-width="3"/>
+    <circle cx="60" cy="295" r="8" fill="#ff8fb1"/>
+    <circle cx="52" cy="300" r="6" fill="#ffb3c9"/>
+    <circle cx="68" cy="300" r="6" fill="#ffb3c9"/>
+    <line x1="345" y1="350" x2="345" y2="318" stroke="#3e8a3a" stroke-width="3"/>
+    <circle cx="345" cy="312" r="8" fill="#ffd34d"/>
+    <circle cx="337" cy="318" r="6" fill="#ffe685"/>
+    <circle cx="353" cy="318" r="6" fill="#ffe685"/>
+  </g>
+
+  <!-- Kiti cha nje -->
+  <rect x="290" y="300" width="50" height="6" rx="3" fill="#8b5a2b"/>
+  <rect x="296" y="306" width="5" height="16" fill="#8b5a2b"/>
+  <rect x="330" y="306" width="5" height="16" fill="#8b5a2b"/>
+
+  <!-- Ndege wawili -->
+  <g fill="none" stroke="#3b4a5a" stroke-width="2.5" stroke-linecap="round">
+    <path d="M190 60 Q196 54 202 60 Q208 54 214 60"/>
+    <path d="M220 48 Q225 44 230 48 Q235 44 240 48"/>
+  </g>
+</svg>

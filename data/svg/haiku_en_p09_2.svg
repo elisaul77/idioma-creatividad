@@ -1,0 +1,141 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="400" height="400" viewBox="0 0 400 400">
+  <defs>
+    <linearGradient id="sky" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#ffe9a8"/>
+      <stop offset="1" stop-color="#a6dccb"/>
+    </linearGradient>
+    <linearGradient id="soil" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#8a5a34"/>
+      <stop offset="1" stop-color="#4a2a15"/>
+    </linearGradient>
+    <linearGradient id="tower" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#f7b733"/>
+      <stop offset="1" stop-color="#e08e0b"/>
+    </linearGradient>
+    <polygon id="hx" points="0,-12 10.4,-6 10.4,6 0,12 -10.4,6 -10.4,-6"/>
+    <g id="bee">
+      <ellipse cx="0" cy="0" rx="8" ry="6" fill="#ffc914" stroke="#3a2a00" stroke-width="1.5"/>
+      <path d="M-3 -5 V5 M1.5 -5 V5" stroke="#3a2a00" stroke-width="2"/>
+      <ellipse cx="-2" cy="-9" rx="4" ry="6" fill="#ffffff" opacity="0.85" stroke="#3a2a00" stroke-width="0.8"/>
+      <circle cx="7" cy="-1" r="1.5" fill="#3a2a00"/>
+    </g>
+    <g id="ant" fill="#2b1a0e">
+      <ellipse cx="-6" cy="0" rx="3" ry="2.5"/>
+      <ellipse cx="0" cy="0" rx="2.5" ry="2"/>
+      <ellipse cx="5" cy="0" rx="3.5" ry="2.5"/>
+    </g>
+  </defs>
+
+  <!-- Sky and sun -->
+  <rect width="400" height="400" fill="url(#sky)"/>
+  <circle cx="335" cy="62" r="34" fill="#fff6c8" opacity="0.9"/>
+  <circle cx="335" cy="62" r="50" fill="#fff6c8" opacity="0.25"/>
+
+  <!-- Distant termite mounds -->
+  <path d="M0 300 Q15 240 40 230 Q60 240 80 300 Z" fill="#d6a06a" opacity="0.6"/>
+  <path d="M300 300 Q320 250 345 240 Q370 250 400 300 Z" fill="#d6a06a" opacity="0.6"/>
+
+  <!-- Tower 1 -->
+  <path d="M40 300 V190 Q70 160 100 190 V300 Z" fill="url(#tower)"/>
+  <g fill="#7a4a00" opacity="0.75">
+    <use xlink:href="#hx" transform="translate(52,200) scale(0.45)"/>
+    <use xlink:href="#hx" transform="translate(70,200) scale(0.45)"/>
+    <use xlink:href="#hx" transform="translate(88,200) scale(0.45)"/>
+    <use xlink:href="#hx" transform="translate(61,218) scale(0.45)"/>
+    <use xlink:href="#hx" transform="translate(79,218) scale(0.45)"/>
+    <use xlink:href="#hx" transform="translate(52,236) scale(0.45)"/>
+    <use xlink:href="#hx" transform="translate(70,236) scale(0.45)"/>
+    <use xlink:href="#hx" transform="translate(88,236) scale(0.45)"/>
+    <use xlink:href="#hx" transform="translate(61,254) scale(0.45)"/>
+    <use xlink:href="#hx" transform="translate(79,254) scale(0.45)"/>
+    <use xlink:href="#hx" transform="translate(52,272) scale(0.45)"/>
+    <use xlink:href="#hx" transform="translate(70,272) scale(0.45)"/>
+    <use xlink:href="#hx" transform="translate(88,272) scale(0.45)"/>
+  </g>
+
+  <!-- Tower 2 (spire) -->
+  <path d="M150 300 V110 L175 70 L200 110 V300 Z" fill="#e89b1a"/>
+  <g fill="#7a4a00" opacity="0.75">
+    <use xlink:href="#hx" transform="translate(175,130) scale(0.45)"/>
+    <use xlink:href="#hx" transform="translate(165,150) scale(0.45)"/>
+    <use xlink:href="#hx" transform="translate(185,150) scale(0.45)"/>
+    <use xlink:href="#hx" transform="translate(157,170) scale(0.45)"/>
+    <use xlink:href="#hx" transform="translate(175,170) scale(0.45)"/>
+    <use xlink:href="#hx" transform="translate(193,170) scale(0.45)"/>
+    <use xlink:href="#hx" transform="translate(165,190) scale(0.45)"/>
+    <use xlink:href="#hx" transform="translate(185,190) scale(0.45)"/>
+    <use xlink:href="#hx" transform="translate(157,210) scale(0.45)"/>
+    <use xlink:href="#hx" transform="translate(175,210) scale(0.45)"/>
+    <use xlink:href="#hx" transform="translate(193,210) scale(0.45)"/>
+    <use xlink:href="#hx" transform="translate(165,230) scale(0.45)"/>
+    <use xlink:href="#hx" transform="translate(185,230) scale(0.45)"/>
+    <use xlink:href="#hx" transform="translate(157,250) scale(0.45)"/>
+    <use xlink:href="#hx" transform="translate(175,250) scale(0.45)"/>
+    <use xlink:href="#hx" transform="translate(193,250) scale(0.45)"/>
+    <use xlink:href="#hx" transform="translate(165,270) scale(0.45)"/>
+    <use xlink:href="#hx" transform="translate(185,270) scale(0.45)"/>
+  </g>
+
+  <!-- Tower 3 -->
+  <path d="M240 300 V150 Q270 120 300 150 V300 Z" fill="url(#tower)"/>
+  <g fill="#7a4a00" opacity="0.75">
+    <use xlink:href="#hx" transform="translate(255,180) scale(0.45)"/>
+    <use xlink:href="#hx" transform="translate(270,180) scale(0.45)"/>
+    <use xlink:href="#hx" transform="translate(285,180) scale(0.45)"/>
+    <use xlink:href="#hx" transform="translate(262,198) scale(0.45)"/>
+    <use xlink:href="#hx" transform="translate(278,198) scale(0.45)"/>
+    <use xlink:href="#hx" transform="translate(255,216) scale(0.45)"/>
+    <use xlink:href="#hx" transform="translate(270,216) scale(0.45)"/>
+    <use xlink:href="#hx" transform="translate(285,216) scale(0.45)"/>
+    <use xlink:href="#hx" transform="translate(262,234) scale(0.45)"/>
+    <use xlink:href="#hx" transform="translate(278,234) scale(0.45)"/>
+    <use xlink:href="#hx" transform="translate(255,252) scale(0.45)"/>
+    <use xlink:href="#hx" transform="translate(270,252) scale(0.45)"/>
+    <use xlink:href="#hx" transform="translate(285,252) scale(0.45)"/>
+    <use xlink:href="#hx" transform="translate(262,270) scale(0.45)"/>
+    <use xlink:href="#hx" transform="translate(278,270) scale(0.45)"/>
+  </g>
+
+  <!-- Tower 4 (small dome) -->
+  <path d="M320 300 V210 Q345 190 370 210 V300 Z" fill="#d98a12"/>
+  <g fill="#7a4a00" opacity="0.75">
+    <use xlink:href="#hx" transform="translate(335,230) scale(0.45)"/>
+    <use xlink:href="#hx" transform="translate(352,230) scale(0.45)"/>
+    <use xlink:href="#hx" transform="translate(328,248) scale(0.45)"/>
+    <use xlink:href="#hx" transform="translate(345,248) scale(0.45)"/>
+    <use xlink:href="#hx" transform="translate(362,248) scale(0.45)"/>
+    <use xlink:href="#hx" transform="translate(335,266) scale(0.45)"/>
+    <use xlink:href="#hx" transform="translate(352,266) scale(0.45)"/>
+    <use xlink:href="#hx" transform="translate(328,284) scale(0.45)"/>
+    <use xlink:href="#hx" transform="translate(345,284) scale(0.45)"/>
+    <use xlink:href="#hx" transform="translate(362,284) scale(0.45)"/>
+  </g>
+
+  <!-- Ground -->
+  <rect x="0" y="300" width="400" height="100" fill="url(#soil)"/>
+  <path d="M0 300 Q50 292 100 300 T200 300 T300 300 T400 300" fill="none" stroke="#5a8a2a" stroke-width="4"/>
+  <path d="M30 300 l-4 -12 M34 300 l0 -15 M38 300 l5 -11 M220 300 l-3 -12 M224 300 l1 -16 M360 300 l-4 -12 M364 300 l3 -14" stroke="#5a8a2a" stroke-width="2" fill="none"/>
+
+  <!-- Tunnel entrances -->
+  <ellipse cx="200" cy="322" rx="18" ry="6" fill="#2b1609"/>
+  <ellipse cx="120" cy="352" rx="12" ry="4" fill="#2b1609"/>
+
+  <!-- Leaf platform -->
+  <path d="M20 340 Q80 305 150 335 Q80 360 20 340 Z" fill="#4caf50"/>
+  <path d="M28 340 Q80 335 142 335" stroke="#2e7d32" stroke-width="1.5" fill="none"/>
+
+  <!-- Ant trail -->
+  <path d="M170 370 Q230 345 290 372 T380 360" stroke="#2b1a0e" stroke-width="1" stroke-dasharray="2 5" fill="none"/>
+  <use xlink:href="#ant" transform="translate(190,364)"/>
+  <use xlink:href="#ant" transform="translate(245,358) rotate(-8)"/>
+  <use xlink:href="#ant" transform="translate(300,368) rotate(6)"/>
+  <use xlink:href="#ant" transform="translate(350,362)"/>
+
+  <!-- Bees -->
+  <use xlink:href="#bee" transform="translate(120,150) rotate(-15)"/>
+  <use xlink:href="#bee" transform="translate(210,160) rotate(10)"/>
+  <use xlink:href="#bee" transform="translate(330,130) rotate(-5)"/>
+  <use xlink:href="#bee" transform="translate(60,250) rotate(20)" transform-origin="0 0"/>
+  <use xlink:href="#bee" transform="translate(230,215) rotate(-20) scale(0.8)"/>
+  <use xlink:href="#bee" transform="translate(95,108) rotate(12) scale(0.7)"/>
+</svg>

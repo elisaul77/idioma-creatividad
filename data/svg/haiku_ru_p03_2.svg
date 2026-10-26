@@ -1,0 +1,63 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 400" width="400" height="400">
+  <defs>
+    <radialGradient id="paper" cx="50%" cy="45%" r="75%">
+      <stop offset="0" stop-color="#fff8ec"/>
+      <stop offset="1" stop-color="#eedcbc"/>
+    </radialGradient>
+    <linearGradient id="ink" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#ff6b4a"/>
+      <stop offset="0.5" stop-color="#7a5cff"/>
+      <stop offset="1" stop-color="#18b5a8"/>
+    </linearGradient>
+    <filter id="rough" x="-10%" y="-10%" width="120%" height="120%">
+      <feTurbulence type="fractalNoise" baseFrequency="0.035" numOctaves="2" seed="7" result="noise"/>
+      <feDisplacementMap in="SourceGraphic" in2="noise" scale="4"/>
+    </filter>
+  </defs>
+
+  <!-- Бумага -->
+  <rect width="400" height="400" fill="url(#paper)"/>
+
+  <!-- Нотный стан, нарисованный от руки -->
+  <g filter="url(#rough)" fill="none" stroke="#2b2a33" stroke-linecap="round" stroke-width="2.2" opacity="0.85">
+    <path d="M30 120 Q110 112 200 120 T370 118"/>
+    <path d="M30 140 Q110 132 200 140 T370 138"/>
+    <path d="M30 160 Q110 152 200 160 T370 158"/>
+    <path d="M30 180 Q110 172 200 180 T370 178"/>
+    <path d="M30 200 Q110 192 200 200 T370 198"/>
+  </g>
+
+  <!-- Ноты: головки и штили -->
+  <g filter="url(#rough)">
+    <g stroke="#2b2a33" stroke-width="2" stroke-linecap="round" fill="none">
+      <path d="M96 150 L96 100"/>
+      <path d="M160 176 L160 128"/>
+      <path d="M226 140 L226 92"/>
+      <path d="M292 166 L292 118"/>
+      <path d="M346 188 L346 140"/>
+      <path d="M96 150 Q112 112 130 104" stroke-width="2.5"/>
+    </g>
+    <ellipse cx="90" cy="152" rx="9" ry="7" transform="rotate(-20 90 152)" fill="url(#ink)"/>
+    <ellipse cx="154" cy="178" rx="9" ry="7" transform="rotate(-20 154 178)" fill="url(#ink)"/>
+    <ellipse cx="220" cy="142" rx="9" ry="7" transform="rotate(-20 220 142)" fill="url(#ink)"/>
+    <ellipse cx="286" cy="168" rx="9" ry="7" transform="rotate(-20 286 168)" fill="url(#ink)"/>
+    <ellipse cx="340" cy="190" rx="9" ry="7" transform="rotate(-20 340 190)" fill="url(#ink)"/>
+  </g>
+
+  <!-- Звуковая волна-мазок -->
+  <g fill="none" stroke-linecap="round">
+    <path d="M20 300 C90 240 140 360 200 300 S310 240 380 300" stroke="url(#ink)" stroke-width="14" opacity="0.85"/>
+    <path d="M24 318 C94 262 144 378 204 318 S314 262 384 318" stroke="#ff6b4a" stroke-width="4" opacity="0.6"/>
+    <path d="M16 282 C86 222 136 342 196 282 S306 222 376 282" stroke="#18b5a8" stroke-width="4" opacity="0.6"/>
+  </g>
+
+  <!-- Брызги краски -->
+  <g>
+    <circle cx="60" cy="70" r="4" fill="#ff6b4a" opacity="0.8"/>
+    <circle cx="340" cy="60" r="6" fill="#7a5cff" opacity="0.7"/>
+    <circle cx="362" cy="336" r="3" fill="#18b5a8" opacity="0.8"/>
+    <circle cx="40" cy="358" r="5" fill="#ffb020" opacity="0.8"/>
+    <circle cx="200" cy="50" r="2.5" fill="#7a5cff" opacity="0.7"/>
+    <circle cx="150" cy="370" r="3" fill="#ff6b4a" opacity="0.7"/>
+  </g>
+</svg>

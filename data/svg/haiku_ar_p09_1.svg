@@ -1,0 +1,96 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="400" height="400" viewBox="0 0 400 400">
+  <defs>
+    <linearGradient id="sky" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#1d2b3a"/>
+      <stop offset="0.7" stop-color="#7a5a4a"/>
+      <stop offset="1" stop-color="#e9b872"/>
+    </linearGradient>
+    <radialGradient id="sun" cx="0.5" cy="0.5" r="0.5">
+      <stop offset="0" stop-color="#fff3c4"/>
+      <stop offset="0.5" stop-color="#ffd27a" stop-opacity="0.8"/>
+      <stop offset="1" stop-color="#ffd27a" stop-opacity="0"/>
+    </radialGradient>
+    <g id="bee">
+      <ellipse cx="0" cy="0" rx="10" ry="7" fill="#f7c600"/>
+      <path d="M-4,-7 L-4,7 M2,-7 L2,7" stroke="#2b1a05" stroke-width="2.5"/>
+      <ellipse cx="-2" cy="-10" rx="5" ry="8" fill="#e6f3ff" fill-opacity="0.7" stroke="#9ec5e8" stroke-width="0.8"/>
+      <circle cx="8" cy="-2" r="1.5" fill="#2b1a05"/>
+    </g>
+  </defs>
+
+  <!-- Sky -->
+  <rect width="400" height="400" fill="url(#sky)"/>
+  <circle cx="320" cy="80" r="60" fill="url(#sun)"/>
+  <circle cx="320" cy="80" r="24" fill="#fff0b8"/>
+  <circle cx="40" cy="50" r="1.5" fill="#ffffff" opacity="0.7"/>
+  <circle cx="110" cy="30" r="1" fill="#ffffff" opacity="0.6"/>
+  <circle cx="180" cy="60" r="1.2" fill="#ffffff" opacity="0.6"/>
+
+  <!-- Mound towers -->
+  <path d="M40,300 C40,250 58,215 70,190 C82,215 100,250 100,300 Z" fill="#9a6a36"/>
+  <path d="M128,300 C128,240 140,170 150,120 C160,170 172,240 172,300 Z" fill="#8a5a2b"/>
+  <path d="M188,300 C186,230 200,130 215,75 C230,130 242,230 242,300 Z" fill="#a06c38"/>
+  <path d="M266,300 C266,250 278,190 290,145 C302,190 314,250 314,300 Z" fill="#8a5a2b"/>
+  <path d="M338,300 C338,260 348,225 355,205 C362,225 372,260 372,300 Z" fill="#9a6a36"/>
+
+  <!-- Horizontal rings -->
+  <g stroke="#4a2c12" stroke-width="1.2" opacity="0.5">
+    <path d="M46,245 H94 M42,270 H98 M130,220 H170 M128,250 H172 M190,190 H240 M188,220 H242 M190,160 H240 M268,230 H312 M266,265 H314 M340,240 H370"/>
+  </g>
+
+  <!-- Windows -->
+  <g fill="#2a1608">
+    <path d="M66,215 a4,5 0 0 1 8,0 v8 h-8 z"/>
+    <path d="M146,150 a4,5 0 0 1 8,0 v8 h-8 z"/>
+    <path d="M146,200 a4,5 0 0 1 8,0 v8 h-8 z"/>
+    <path d="M211,105 a4,5 0 0 1 8,0 v8 h-8 z"/>
+    <path d="M204,150 a4,5 0 0 1 8,0 v8 h-8 z"/>
+    <path d="M218,150 a4,5 0 0 1 8,0 v8 h-8 z"/>
+    <path d="M211,200 a4,5 0 0 1 8,0 v8 h-8 z"/>
+    <path d="M286,170 a4,5 0 0 1 8,0 v8 h-8 z"/>
+    <path d="M286,215 a4,5 0 0 1 8,0 v8 h-8 z"/>
+    <path d="M354,225 a4,5 0 0 1 8,0 v8 h-8 z"/>
+  </g>
+
+  <!-- Entrances -->
+  <g fill="#2a1608">
+    <ellipse cx="70" cy="296" rx="6" ry="4"/>
+    <ellipse cx="150" cy="296" rx="7" ry="4"/>
+    <ellipse cx="215" cy="296" rx="8" ry="4"/>
+    <ellipse cx="290" cy="296" rx="7" ry="4"/>
+    <ellipse cx="355" cy="296" rx="6" ry="4"/>
+  </g>
+
+  <!-- Bridges between towers -->
+  <g fill="none" stroke="#7a4c22" stroke-width="4" stroke-linecap="round">
+    <path d="M96,245 Q120,215 150,205"/>
+    <path d="M172,215 Q190,195 210,170"/>
+    <path d="M242,235 Q268,215 290,200"/>
+    <path d="M314,240 Q335,225 355,230"/>
+  </g>
+
+  <!-- Ground -->
+  <path d="M0,300 Q100,292 200,300 T400,300 L400,400 L0,400 Z" fill="#4a2c12"/>
+  <path d="M0,300 Q100,292 200,300 T400,300 L400,308 Q300,300 200,308 T0,308 Z" fill="#6b4220"/>
+  <g fill="#3a200c" opacity="0.6">
+    <circle cx="30" cy="340" r="3"/>
+    <circle cx="110" cy="368" r="4"/>
+    <circle cx="260" cy="350" r="3"/>
+    <circle cx="350" cy="380" r="4"/>
+    <circle cx="190" cy="385" r="2.5"/>
+  </g>
+
+  <!-- Ant trail -->
+  <path d="M20,340 Q120,320 200,350 Q290,375 380,340" fill="none" stroke="#1a0d05" stroke-width="3" stroke-dasharray="1 10" stroke-linecap="round"/>
+  <g fill="#1a0d05">
+    <ellipse cx="62" cy="332" rx="3" ry="2"/>
+    <ellipse cx="128" cy="330" rx="3" ry="2"/>
+    <ellipse cx="200" cy="350" rx="3" ry="2"/>
+    <ellipse cx="282" cy="366" rx="3" ry="2"/>
+  </g>
+
+  <!-- Flying bees -->
+  <use href="#bee" transform="translate(250,180) scale(1.2) rotate(-10)"/>
+  <use href="#bee" transform="translate(330,130) scale(0.9) rotate(12)"/>
+  <use href="#bee" transform="translate(70,150) scale(0.8) rotate(-6)"/>
+</svg>

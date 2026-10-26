@@ -1,0 +1,76 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="400" height="400" viewBox="0 0 400 400">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#e6f8ff"/>
+      <stop offset="0.6" stop-color="#9fd3f5"/>
+      <stop offset="1" stop-color="#4a7fd0"/>
+    </linearGradient>
+    <radialGradient id="drop" cx="0.35" cy="0.3" r="0.85">
+      <stop offset="0" stop-color="#c8ecff"/>
+      <stop offset="0.4" stop-color="#2f86ea"/>
+      <stop offset="1" stop-color="#0c2f8c"/>
+    </radialGradient>
+    <radialGradient id="halo" cx="0.5" cy="0.5" r="0.5">
+      <stop offset="0" stop-color="#ffffff" stop-opacity="0.8"/>
+      <stop offset="1" stop-color="#ffffff" stop-opacity="0"/>
+    </radialGradient>
+    <filter id="soft" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="5"/>
+    </filter>
+  </defs>
+
+  <!-- background -->
+  <rect width="400" height="400" fill="url(#bg)"/>
+
+  <!-- soft halo behind the drop -->
+  <circle cx="200" cy="200" r="150" fill="url(#halo)"/>
+
+  <!-- diffusing taste rings -->
+  <g fill="none" stroke="#ffffff" stroke-linecap="round">
+    <circle cx="200" cy="215" r="120" stroke-opacity="0.35" stroke-width="2" stroke-dasharray="4 14"/>
+    <circle cx="200" cy="215" r="150" stroke-opacity="0.25" stroke-width="2" stroke-dasharray="2 18"/>
+    <circle cx="200" cy="215" r="178" stroke-opacity="0.15" stroke-width="2" stroke-dasharray="1 22"/>
+  </g>
+
+  <!-- ripples on the surface below -->
+  <g fill="none" stroke="#1d4fb0" stroke-width="2.5">
+    <ellipse cx="200" cy="345" rx="150" ry="26" stroke-opacity="0.35"/>
+    <ellipse cx="200" cy="345" rx="105" ry="18" stroke-opacity="0.5"/>
+    <ellipse cx="200" cy="345" rx="60" ry="10" stroke-opacity="0.7"/>
+  </g>
+
+  <!-- blue droplet (the blue taste) -->
+  <path d="M200 88 C258 165 290 205 290 250 A90 90 0 0 1 110 250 C110 205 142 165 200 88 Z"
+        fill="url(#drop)" stroke="#ffffff" stroke-opacity="0.5" stroke-width="2"/>
+
+  <!-- inner glow of the drop -->
+  <ellipse cx="200" cy="262" rx="60" ry="40" fill="#7fd6ff" opacity="0.35" filter="url(#soft)"/>
+
+  <!-- highlights -->
+  <ellipse cx="172" cy="232" rx="13" ry="28" fill="#ffffff" opacity="0.75" transform="rotate(18 172 232)"/>
+  <circle cx="232" cy="290" r="5" fill="#ffffff" opacity="0.6"/>
+
+  <!-- rising bubbles -->
+  <g fill="none" stroke="#e8faff" stroke-width="2" opacity="0.85">
+    <circle cx="80" cy="120" r="10"/>
+    <circle cx="330" cy="92" r="7"/>
+    <circle cx="322" cy="300" r="14"/>
+    <circle cx="66" cy="292" r="8"/>
+    <circle cx="142" cy="58" r="5"/>
+    <circle cx="268" cy="350" r="9"/>
+    <circle cx="350" cy="190" r="4"/>
+  </g>
+  <g fill="#ffffff" opacity="0.4">
+    <circle cx="80" cy="120" r="3"/>
+    <circle cx="330" cy="92" r="2"/>
+    <circle cx="322" cy="300" r="4"/>
+    <circle cx="66" cy="292" r="2.5"/>
+  </g>
+
+  <!-- sparkles -->
+  <g fill="#ffffff">
+    <path d="M118 200 L121 208 L129 211 L121 214 L118 222 L115 214 L107 211 L115 208 Z" opacity="0.9"/>
+    <path d="M300 160 L302.5 166 L309 168.5 L302.5 171 L300 177 L297.5 171 L291 168.5 L297.5 166 Z" opacity="0.8"/>
+    <path d="M250 110 L252 115 L257 117 L252 119 L250 124 L248 119 L243 117 L248 115 Z" opacity="0.7"/>
+  </g>
+</svg>

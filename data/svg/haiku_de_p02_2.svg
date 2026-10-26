@@ -1,0 +1,94 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="400" height="400" viewBox="0 0 400 400">
+  <defs>
+    <linearGradient id="himmel" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#1a0f3d"/>
+      <stop offset="55%" stop-color="#4b2a7a"/>
+      <stop offset="100%" stop-color="#e88fb0"/>
+    </linearGradient>
+    <radialGradient id="mond" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#fff7d6"/>
+      <stop offset="70%" stop-color="#ffe59a"/>
+      <stop offset="100%" stop-color="#ffe59a" stop-opacity="0"/>
+    </radialGradient>
+    <radialGradient id="glanz" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#c9b8ff" stop-opacity="0.8"/>
+      <stop offset="100%" stop-color="#c9b8ff" stop-opacity="0"/>
+    </radialGradient>
+    <linearGradient id="leiter" x1="0" y1="1" x2="0" y2="0">
+      <stop offset="0%" stop-color="#ffd9f0" stop-opacity="0.1"/>
+      <stop offset="100%" stop-color="#fff3c4" stop-opacity="0.85"/>
+    </linearGradient>
+    <linearGradient id="insel" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#7fd1b9"/>
+      <stop offset="100%" stop-color="#2e6e6a"/>
+    </linearGradient>
+  </defs>
+
+  <!-- Himmel -->
+  <rect width="400" height="400" fill="url(#himmel)"/>
+
+  <!-- Sterne -->
+  <g fill="#fff8e1">
+    <circle cx="40" cy="50" r="1.5"/>
+    <circle cx="90" cy="25" r="1"/>
+    <circle cx="150" cy="60" r="1.8"/>
+    <circle cx="210" cy="30" r="1.2"/>
+    <circle cx="330" cy="45" r="1.6"/>
+    <circle cx="370" cy="110" r="1"/>
+    <circle cx="25" cy="160" r="1.2"/>
+    <circle cx="300" cy="150" r="1.4"/>
+    <circle cx="260" cy="90" r="0.9"/>
+    <circle cx="120" cy="130" r="1"/>
+  </g>
+
+  <!-- Großer Mond mit Glanz -->
+  <circle cx="290" cy="105" r="70" fill="url(#glanz)"/>
+  <circle cx="290" cy="105" r="38" fill="url(#mond)"/>
+  <circle cx="290" cy="105" r="30" fill="#fff4cc"/>
+  <circle cx="280" cy="98" r="5" fill="#f3dfa0" opacity="0.6"/>
+  <circle cx="300" cy="115" r="3.5" fill="#f3dfa0" opacity="0.6"/>
+
+  <!-- Lichtleiter zu den Sternen -->
+  <path d="M 95 330 Q 140 220 200 190 T 300 150" fill="none" stroke="url(#leiter)" stroke-width="10" stroke-linecap="round" opacity="0.6"/>
+  <path d="M 95 330 Q 140 220 200 190 T 300 150" fill="none" stroke="#fff3c4" stroke-width="2" stroke-linecap="round" stroke-dasharray="2 12" opacity="0.9"/>
+
+  <!-- Schwebende Insel -->
+  <g>
+    <ellipse cx="200" cy="262" rx="95" ry="12" fill="#2a1f4f" opacity="0.35"/>
+    <path d="M 115 245 Q 200 232 285 245 Q 262 285 200 292 Q 138 285 115 245 Z" fill="url(#insel)"/>
+    <path d="M 122 252 Q 170 238 205 240 Q 250 240 278 250" fill="none" stroke="#b6f0dc" stroke-width="2" opacity="0.5"/>
+    <!-- Baum auf der Insel -->
+    <rect x="193" y="206" width="6" height="40" fill="#5a3b2e"/>
+    <circle cx="196" cy="196" r="22" fill="#9be8c8"/>
+    <circle cx="180" cy="208" r="13" fill="#7fd1b9"/>
+    <circle cx="212" cy="208" r="13" fill="#7fd1b9"/>
+  </g>
+
+  <!-- Wolke als Kissen -->
+  <g fill="#f6d6f0" opacity="0.9">
+    <circle cx="70" cy="330" r="22"/>
+    <circle cx="95" cy="318" r="28"/>
+    <circle cx="125" cy="332" r="20"/>
+    <rect x="60" y="330" width="85" height="22" rx="11"/>
+  </g>
+  <g fill="#ffd9f0" opacity="0.6">
+    <circle cx="330" cy="290" r="18"/>
+    <circle cx="352" cy="282" r="24"/>
+    <circle cx="375" cy="294" r="16"/>
+    <rect x="320" y="290" width="70" height="18" rx="9"/>
+  </g>
+
+  <!-- Leuchtende Schmetterlinge -->
+  <g fill="#fff3c4" opacity="0.85">
+    <path d="M 160 120 Q 150 100 136 108 Q 142 124 160 120 Z"/>
+    <path d="M 160 120 Q 172 100 186 108 Q 180 124 160 120 Z"/>
+    <path d="M 240 170 Q 232 152 220 158 Q 224 174 240 170 Z"/>
+    <path d="M 240 170 Q 250 152 262 158 Q 258 174 240 170 Z"/>
+  </g>
+
+  <!-- Verträumte Spiralsterne -->
+  <g fill="none" stroke="#fff3c4" stroke-width="1.2" stroke-linecap="round" opacity="0.7">
+    <path d="M 55 90 q 6 -6 12 0 q -2 8 -10 6"/>
+    <path d="M 345 200 q 7 -7 14 0 q -2 9 -11 7"/>
+  </g>
+</svg>

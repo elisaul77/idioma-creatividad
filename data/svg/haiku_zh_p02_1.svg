@@ -1,0 +1,110 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 400" width="400" height="400">
+  <defs>
+    <radialGradient id="sky" cx="50%" cy="40%" r="75%">
+      <stop offset="0" stop-color="#7a5cff"/>
+      <stop offset="0.55" stop-color="#3b2a8f"/>
+      <stop offset="1" stop-color="#140f3a"/>
+    </radialGradient>
+    <radialGradient id="moon" cx="40%" cy="35%" r="65%">
+      <stop offset="0" stop-color="#fffbe6"/>
+      <stop offset="1" stop-color="#ffc98a"/>
+    </radialGradient>
+    <radialGradient id="glow" cx="50%" cy="50%" r="50%">
+      <stop offset="0" stop-color="#ffd6f0" stop-opacity="0.7"/>
+      <stop offset="1" stop-color="#ffd6f0" stop-opacity="0"/>
+    </radialGradient>
+    <linearGradient id="isle" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#9be7c4"/>
+      <stop offset="1" stop-color="#2f6b5e"/>
+    </linearGradient>
+    <linearGradient id="rock" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#6b4f8a"/>
+      <stop offset="1" stop-color="#2a1d4d"/>
+    </linearGradient>
+    <filter id="soft" x="-50%" y="-50%" width="200%" height="200%">
+      <feGaussianBlur stdDeviation="8"/>
+    </filter>
+  </defs>
+
+  <!-- dreamy sky -->
+  <rect width="400" height="400" fill="url(#sky)"/>
+
+  <!-- drifting colored haze -->
+  <g filter="url(#soft)" opacity="0.55">
+    <ellipse cx="80" cy="120" rx="90" ry="28" fill="#ff8fd1" transform="rotate(-20 80 120)"/>
+    <ellipse cx="330" cy="250" rx="110" ry="34" fill="#6fd6ff" transform="rotate(15 330 250)"/>
+    <ellipse cx="190" cy="50" rx="80" ry="16" fill="#ffd27a" transform="rotate(8 190 50)"/>
+    <ellipse cx="60" cy="330" rx="70" ry="22" fill="#b98cff" transform="rotate(-10 60 330)"/>
+  </g>
+
+  <!-- moon with glow -->
+  <circle cx="290" cy="100" r="95" fill="url(#glow)"/>
+  <circle cx="290" cy="100" r="40" fill="url(#moon)"/>
+  <circle cx="304" cy="88" r="36" fill="#3b2a8f" opacity="0.18"/>
+
+  <!-- stars -->
+  <g fill="#ffffff">
+    <circle cx="40" cy="45" r="1.8"/>
+    <circle cx="120" cy="30" r="1.4"/>
+    <circle cx="170" cy="95" r="2"/>
+    <circle cx="225" cy="25" r="1.5"/>
+    <circle cx="355" cy="190" r="1.6"/>
+    <circle cx="30" cy="190" r="1.4"/>
+    <circle cx="90" cy="170" r="1.8"/>
+    <circle cx="260" cy="170" r="1.2"/>
+    <circle cx="375" cy="40" r="1.7"/>
+    <circle cx="150" cy="150" r="1.2"/>
+  </g>
+
+  <!-- stepping stones leading up toward the moon -->
+  <g fill="#ffe9b8" opacity="0.85">
+    <ellipse cx="200" cy="330" rx="14" ry="5"/>
+    <ellipse cx="222" cy="306" rx="11" ry="4"/>
+    <ellipse cx="240" cy="284" rx="9" ry="3.5"/>
+    <ellipse cx="256" cy="264" rx="7" ry="3"/>
+    <ellipse cx="268" cy="247" rx="5" ry="2"/>
+  </g>
+
+  <!-- floating island -->
+  <ellipse cx="130" cy="280" rx="85" ry="18" fill="url(#isle)"/>
+  <path d="M60 282 Q130 300 205 282 L185 330 Q130 360 95 330 Z" fill="url(#rock)"/>
+  <path d="M120 280 Q118 240 130 218 Q142 240 140 280 Z" fill="#c9a0ff" opacity="0.4"/>
+  <!-- tree of pale blossoms -->
+  <rect x="124" y="200" width="6" height="82" fill="#4a3368"/>
+  <path d="M127 200 L100 176 M127 200 L154 178 M127 214 L108 200" stroke="#4a3368" stroke-width="3" fill="none" stroke-linecap="round"/>
+  <g fill="#ffb8e0" opacity="0.9">
+    <circle cx="100" cy="174" r="14"/>
+    <circle cx="124" cy="160" r="16"/>
+    <circle cx="154" cy="176" r="14"/>
+    <circle cx="136" cy="190" r="10"/>
+  </g>
+
+  <!-- melting clock draped on a branch -->
+  <g transform="translate(300 230)">
+    <path d="M-30 -22 L-30 -14" stroke="#ffd27a" stroke-width="2"/>
+    <circle cx="0" cy="0" r="22" fill="#fff1c4" opacity="0.92"/>
+    <path d="M-22 0 Q-30 22 -20 36 Q-16 44 -12 36 Q-8 22 -10 14 Z" fill="#fff1c4" opacity="0.8"/>
+    <path d="M0 0 L0 -13 M0 0 L9 4" stroke="#3b2a8f" stroke-width="2" stroke-linecap="round"/>
+  </g>
+
+  <!-- floating eye -->
+  <g transform="translate(70 80)">
+    <path d="M-26 0 Q0 -20 26 0 Q0 20 -26 0 Z" fill="#fff6e0" opacity="0.9"/>
+    <circle cx="0" cy="0" r="9" fill="#3fb6c9"/>
+    <circle cx="0" cy="0" r="4" fill="#140f3a"/>
+    <circle cx="3" cy="-3" r="1.5" fill="#ffffff"/>
+  </g>
+
+  <!-- butterflies / wings drifting -->
+  <g fill="#ff9ad5" opacity="0.75">
+    <path d="M250 320 Q262 302 272 318 Q262 330 250 320 Z"/>
+    <path d="M250 320 Q238 302 228 318 Q238 330 250 320 Z"/>
+  </g>
+  <g fill="#7fe0ff" opacity="0.7">
+    <path d="M345 330 Q355 316 364 330 Q355 340 345 330 Z"/>
+    <path d="M345 330 Q335 316 326 330 Q335 340 345 330 Z"/>
+  </g>
+
+  <!-- soft foreground mist -->
+  <ellipse cx="200" cy="400" rx="260" ry="40" fill="#e9b8ff" opacity="0.18" filter="url(#soft)"/>
+</svg>

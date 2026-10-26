@@ -1,0 +1,105 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 400" width="400" height="400">
+  <defs>
+    <linearGradient id="cielo" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#ffd27a"/>
+      <stop offset="60%" stop-color="#f7a46b"/>
+      <stop offset="100%" stop-color="#e96f5c"/>
+    </linearGradient>
+    <linearGradient id="tierra" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#8a5a34"/>
+      <stop offset="100%" stop-color="#4e2f1a"/>
+    </linearGradient>
+    <linearGradient id="torre1" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#c58f55"/>
+      <stop offset="50%" stop-color="#e0ad72"/>
+      <stop offset="100%" stop-color="#b57a45"/>
+    </linearGradient>
+    <linearGradient id="torre2" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#a86f3c"/>
+      <stop offset="50%" stop-color="#cf9b62"/>
+      <stop offset="100%" stop-color="#9a6434"/>
+    </linearGradient>
+    <pattern id="panal" width="12" height="10.4" patternUnits="userSpaceOnUse">
+      <path d="M6 0 L12 3.5 L12 6.9 L6 10.4 L0 6.9 L0 3.5 Z" fill="none" stroke="#7a4a22" stroke-width="0.8" opacity="0.6"/>
+    </pattern>
+  </defs>
+
+  <!-- Cielo -->
+  <rect width="400" height="400" fill="url(#cielo)"/>
+  <circle cx="320" cy="90" r="40" fill="#fff3c4" opacity="0.9"/>
+  <circle cx="320" cy="90" r="58" fill="#fff3c4" opacity="0.25"/>
+
+  <!-- Nubes suaves -->
+  <ellipse cx="90" cy="70" rx="45" ry="12" fill="#fff" opacity="0.35"/>
+  <ellipse cx="130" cy="60" rx="28" ry="10" fill="#fff" opacity="0.35"/>
+
+  <!-- Torres principales (termiteros) -->
+  <path d="M40 300 L60 170 Q70 130 80 110 L100 110 Q110 130 120 170 L140 300 Z" fill="url(#torre2)"/>
+  <path d="M40 300 L60 170 Q70 130 80 110 L100 110 Q110 130 120 170 L140 300 Z" fill="url(#panal)"/>
+
+  <path d="M150 300 L165 120 Q172 70 180 40 L196 40 Q204 70 211 120 L226 300 Z" fill="url(#torre1)"/>
+  <path d="M150 300 L165 120 Q172 70 180 40 L196 40 Q204 70 211 120 L226 300 Z" fill="url(#panal)"/>
+
+  <path d="M240 300 L252 150 Q258 120 266 100 L282 100 Q290 120 296 150 L308 300 Z" fill="url(#torre2)"/>
+  <path d="M240 300 L252 150 Q258 120 266 100 L282 100 Q290 120 296 150 L308 300 Z" fill="url(#panal)"/>
+
+  <path d="M322 300 L334 200 Q340 180 348 168 L362 168 Q368 180 374 200 L382 300 Z" fill="url(#torre1)"/>
+  <path d="M322 300 L334 200 Q340 180 348 168 L362 168 Q368 180 374 200 L382 300 Z" fill="url(#panal)"/>
+
+  <!-- Ventanas hexagonales -->
+  <g fill="#ffe9a8" opacity="0.85">
+    <polygon points="180,70 185,73 185,79 180,82 175,79 175,73"/>
+    <polygon points="190,90 195,93 195,99 190,102 185,99 185,93"/>
+    <polygon points="172,110 177,113 177,119 172,122 167,119 167,113"/>
+    <polygon points="264,125 268,127 268,132 264,134 260,132 260,127"/>
+    <polygon points="276,145 280,147 280,152 276,154 272,152 272,147"/>
+    <polygon points="258,160 262,162 262,167 258,169 254,167 254,162"/>
+    <polygon points="352,190 356,192 356,197 352,199 348,197 348,192"/>
+    <polygon points="60,200 65,203 65,209 60,212 55,209 55,203"/>
+    <polygon points="78,140 82,142 82,147 78,149 74,147 74,142"/>
+  </g>
+
+  <!-- Puentes entre torres -->
+  <path d="M140 230 Q190 205 240 230" fill="none" stroke="#c58f55" stroke-width="6" stroke-linecap="round"/>
+  <path d="M226 210 Q280 185 322 220" fill="none" stroke="#b57a45" stroke-width="5" stroke-linecap="round"/>
+
+  <!-- Suelo -->
+  <rect y="300" width="400" height="100" fill="url(#tierra)"/>
+  <path d="M0 300 Q100 288 200 300 T400 300 L400 306 L0 306 Z" fill="#6b4226"/>
+
+  <!-- Hormigas en fila -->
+  <g fill="#2b1a0e">
+    <circle cx="20" cy="330" r="3"/><circle cx="32" cy="332" r="2.5"/><ellipse cx="42" cy="331" rx="3" ry="2"/>
+    <circle cx="60" cy="336" r="3"/><circle cx="72" cy="338" r="2.5"/><ellipse cx="82" cy="337" rx="3" ry="2"/>
+    <circle cx="100" cy="342" r="3"/><circle cx="112" cy="344" r="2.5"/><ellipse cx="122" cy="343" rx="3" ry="2"/>
+  </g>
+  <path d="M20 330 Q60 318 100 342" fill="none" stroke="#2b1a0e" stroke-width="0.8" stroke-dasharray="2 3" opacity="0.6"/>
+
+  <!-- Túneles de entrada -->
+  <ellipse cx="200" cy="318" rx="14" ry="7" fill="#2b1a0e"/>
+  <ellipse cx="330" cy="326" rx="10" ry="5" fill="#2b1a0e"/>
+
+  <!-- Abejas volando -->
+  <g>
+    <ellipse cx="120" cy="150" rx="9" ry="6" fill="#ffc83d" stroke="#2b1a0e" stroke-width="1.5"/>
+    <path d="M118 146 L120 142 L124 146 Z" fill="#2b1a0e"/>
+    <path d="M106 140 Q112 128 122 140 Q114 142 106 140 Z" fill="#fff" opacity="0.8"/>
+    <path d="M126 140 Q132 126 142 136 Q134 140 126 140 Z" fill="#fff" opacity="0.8"/>
+    <line x1="112" y1="150" x2="114" y2="155" stroke="#2b1a0e" stroke-width="1"/>
+    <line x1="120" y1="156" x2="122" y2="161" stroke="#2b1a0e" stroke-width="1"/>
+  </g>
+  <g>
+    <ellipse cx="300" cy="60" rx="7" ry="5" fill="#ffc83d" stroke="#2b1a0e" stroke-width="1.2"/>
+    <path d="M298 57 L300 54 L303 57 Z" fill="#2b1a0e"/>
+    <path d="M290 52 Q295 42 303 52 Q296 54 290 52 Z" fill="#fff" opacity="0.8"/>
+    <path d="M304 52 Q309 42 316 50 Q310 53 304 52 Z" fill="#fff" opacity="0.8"/>
+  </g>
+
+  <!-- Libélula -->
+  <g stroke="#2e6f7e" fill="none" stroke-width="1.2">
+    <line x1="210" y1="200" x2="240" y2="192"/>
+    <ellipse cx="222" cy="184" rx="12" ry="3" fill="#8fd3e0" opacity="0.6" transform="rotate(-20 222 184)"/>
+    <ellipse cx="222" cy="194" rx="12" ry="3" fill="#8fd3e0" opacity="0.6" transform="rotate(10 222 194)"/>
+  </g>
+  <ellipse cx="240" cy="192" rx="2" ry="8" fill="#2e6f7e" transform="rotate(-70 240 192)"/>
+</svg>

@@ -1,0 +1,89 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="400" height="400" viewBox="0 0 400 400">
+  <defs>
+    <linearGradient id="sky" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#fbe9b7"/>
+      <stop offset="1" stop-color="#f4b26b"/>
+    </linearGradient>
+    <linearGradient id="ground" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#8a5a2b"/>
+      <stop offset="1" stop-color="#5a3816"/>
+    </linearGradient>
+    <pattern id="comb" width="12" height="10" patternUnits="userSpaceOnUse">
+      <path d="M0 5 L3 0 L9 0 L12 5 L9 10 L3 10 Z" fill="none" stroke="#f2b705" stroke-width="1.2" opacity="0.8"/>
+    </pattern>
+    <pattern id="mound" width="8" height="8" patternUnits="userSpaceOnUse">
+      <circle cx="2" cy="2" r="0.9" fill="#3d2410" opacity="0.5"/>
+      <circle cx="6" cy="6" r="0.9" fill="#3d2410" opacity="0.5"/>
+    </pattern>
+  </defs>
+
+  <!-- Sky -->
+  <rect width="400" height="400" fill="url(#sky)"/>
+  <circle cx="320" cy="70" r="30" fill="#fff4c9" opacity="0.9"/>
+
+  <!-- Distant hills -->
+  <path d="M0 240 Q60 200 130 230 T260 220 T400 235 L400 300 L0 300 Z" fill="#d9925a" opacity="0.6"/>
+
+  <!-- Termite mound spire (tall tower, left) -->
+  <path d="M40 300 L60 150 Q68 120 76 150 L96 300 Z" fill="#b9793e"/>
+  <path d="M40 300 L60 150 Q68 120 76 150 L96 300 Z" fill="url(#mound)"/>
+  <rect x="50" y="200" width="36" height="8" rx="2" fill="#f2b705"/>
+  <rect x="54" y="230" width="28" height="8" rx="2" fill="#f2b705"/>
+
+  <!-- Honeycomb skyscraper (center) -->
+  <rect x="150" y="110" width="78" height="190" rx="6" fill="#e0a526"/>
+  <rect x="150" y="110" width="78" height="190" rx="6" fill="url(#comb)"/>
+  <path d="M150 110 L189 88 L228 110 Z" fill="#c98a1a"/>
+  <line x1="189" y1="88" x2="189" y2="66" stroke="#7a4a12" stroke-width="3"/>
+  <circle cx="189" cy="64" r="4" fill="#f2b705"/>
+
+  <!-- Ant hill tower (right) -->
+  <path d="M250 300 Q262 180 300 160 Q338 180 350 300 Z" fill="#7b4a22"/>
+  <path d="M250 300 Q262 180 300 160 Q338 180 350 300 Z" fill="url(#mound)"/>
+  <ellipse cx="300" cy="160" rx="8" ry="5" fill="#3d2410"/>
+  <rect x="268" y="230" width="10" height="14" fill="#fbe9b7" opacity="0.8"/>
+  <rect x="322" y="230" width="10" height="14" fill="#fbe9b7" opacity="0.8"/>
+  <rect x="290" y="255" width="20" height="16" fill="#fbe9b7" opacity="0.8"/>
+
+  <!-- Small low-rise dome houses -->
+  <path d="M20 300 Q40 262 60 300 Z" fill="#c8833f"/>
+  <path d="M100 300 Q118 272 136 300 Z" fill="#c8833f"/>
+  <path d="M360 300 Q378 268 396 300 Z" fill="#c8833f"/>
+
+  <!-- Ground -->
+  <rect x="0" y="300" width="400" height="100" fill="url(#ground)"/>
+
+  <!-- Ant trails / roads -->
+  <path d="M0 330 Q120 310 200 335 T400 320" fill="none" stroke="#3d2410" stroke-width="6" stroke-linecap="round" opacity="0.6"/>
+  <path d="M0 330 Q120 310 200 335 T400 320" fill="none" stroke="#f2b705" stroke-width="2" stroke-dasharray="4 6" stroke-linecap="round"/>
+  <path d="M190 335 Q200 360 180 400" fill="none" stroke="#3d2410" stroke-width="4" opacity="0.5"/>
+
+  <!-- Ants walking the trail -->
+  <g fill="#1e120a">
+    <ellipse cx="60" cy="326" rx="4" ry="2.5"/><circle cx="65" cy="325" r="1.8"/>
+    <ellipse cx="110" cy="318" rx="4" ry="2.5"/><circle cx="115" cy="317" r="1.8"/>
+    <ellipse cx="260" cy="330" rx="4" ry="2.5"/><circle cx="265" cy="329" r="1.8"/>
+    <ellipse cx="330" cy="322" rx="4" ry="2.5"/><circle cx="335" cy="321" r="1.8"/>
+  </g>
+
+  <!-- Flying bees -->
+  <g>
+    <ellipse cx="90" cy="120" rx="10" ry="7" fill="#f2b705" stroke="#1e120a" stroke-width="1.5"/>
+    <rect x="84" y="114" width="3" height="12" fill="#1e120a"/>
+    <rect x="92" y="114" width="3" height="12" fill="#1e120a"/>
+    <ellipse cx="86" cy="106" rx="6" ry="4" fill="#ffffff" opacity="0.8"/>
+    <ellipse cx="96" cy="106" rx="6" ry="4" fill="#ffffff" opacity="0.8"/>
+  </g>
+  <g>
+    <ellipse cx="240" cy="90" rx="8" ry="6" fill="#f2b705" stroke="#1e120a" stroke-width="1.5"/>
+    <rect x="235" y="84" width="2.5" height="10" fill="#1e120a"/>
+    <rect x="242" y="84" width="2.5" height="10" fill="#1e120a"/>
+    <ellipse cx="236" cy="78" rx="5" ry="3.5" fill="#ffffff" opacity="0.8"/>
+    <ellipse cx="244" cy="78" rx="5" ry="3.5" fill="#ffffff" opacity="0.8"/>
+  </g>
+
+  <!-- Tiny ladybug and beetle -->
+  <circle cx="375" cy="95" r="6" fill="#d62828" stroke="#1e120a" stroke-width="1"/>
+  <line x1="375" y1="89" x2="375" y2="101" stroke="#1e120a" stroke-width="1"/>
+  <circle cx="20" cy="210" r="5" fill="#2a7f62" stroke="#1e120a" stroke-width="1"/>
+</svg>

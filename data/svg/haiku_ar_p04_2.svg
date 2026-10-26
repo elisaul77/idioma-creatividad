@@ -1,0 +1,77 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="400" height="400" viewBox="0 0 400 400">
+  <defs>
+    <linearGradient id="sky" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#cdeaff"/>
+      <stop offset="100%" stop-color="#fff1d6"/>
+    </linearGradient>
+    <linearGradient id="wall" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#b98cf0"/>
+      <stop offset="100%" stop-color="#9a6bd6"/>
+    </linearGradient>
+    <linearGradient id="roof" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#ff8a7a"/>
+      <stop offset="100%" stop-color="#e5604f"/>
+    </linearGradient>
+  </defs>
+
+  <!-- Background -->
+  <rect width="400" height="400" fill="url(#sky)"/>
+  <circle cx="330" cy="70" r="90" fill="#fff7c2" opacity="0.7"/>
+
+  <!-- Clouds -->
+  <g fill="#ffffff" opacity="0.9">
+    <ellipse cx="80" cy="70" rx="40" ry="16"/>
+    <ellipse cx="105" cy="62" rx="26" ry="18"/>
+    <ellipse cx="60" cy="62" rx="22" ry="14"/>
+  </g>
+
+  <!-- Ground -->
+  <ellipse cx="200" cy="362" rx="175" ry="22" fill="#a8e6a1"/>
+
+  <!-- Little tail -->
+  <path d="M290 300 q40 -10 34 -44 q-4 -20 -22 -12" fill="none" stroke="#9a6bd6" stroke-width="12" stroke-linecap="round"/>
+  <circle cx="302" cy="246" r="8" fill="#ffd54f"/>
+
+  <!-- Horns on roof -->
+  <path d="M130 130 L118 78 L152 116 Z" fill="#fff1d6" stroke="#6b4a2b" stroke-width="4" stroke-linejoin="round"/>
+  <path d="M270 130 L282 78 L248 116 Z" fill="#fff1d6" stroke="#6b4a2b" stroke-width="4" stroke-linejoin="round"/>
+
+  <!-- Roof -->
+  <path d="M96 150 L200 80 L304 150 Z" fill="url(#roof)" stroke="#b9473a" stroke-width="5" stroke-linejoin="round"/>
+  <circle cx="200" cy="122" r="11" fill="#fff1d6" stroke="#b9473a" stroke-width="4"/>
+
+  <!-- House body (monster body) -->
+  <rect x="104" y="150" width="192" height="180" rx="36" fill="url(#wall)" stroke="#6f4aa6" stroke-width="5"/>
+
+  <!-- Spots -->
+  <circle cx="132" cy="186" r="6" fill="#c9a6f2"/>
+  <circle cx="268" cy="200" r="5" fill="#c9a6f2"/>
+  <circle cx="256" cy="172" r="4" fill="#c9a6f2"/>
+
+  <!-- Eyes (windows) -->
+  <circle cx="158" cy="200" r="24" fill="#ffffff" stroke="#6f4aa6" stroke-width="5"/>
+  <circle cx="164" cy="204" r="11" fill="#3d2a5c"/>
+  <circle cx="168" cy="200" r="4" fill="#ffffff"/>
+
+  <circle cx="242" cy="200" r="24" fill="#ffffff" stroke="#6f4aa6" stroke-width="5"/>
+  <circle cx="248" cy="204" r="11" fill="#3d2a5c"/>
+  <circle cx="252" cy="200" r="4" fill="#ffffff"/>
+
+  <!-- Blush -->
+  <ellipse cx="130" cy="236" rx="12" ry="7" fill="#ff9ec4" opacity="0.7"/>
+  <ellipse cx="270" cy="236" rx="12" ry="7" fill="#ff9ec4" opacity="0.7"/>
+
+  <!-- Mouth (door) -->
+  <path d="M170 330 L170 292 Q200 266 230 292 L230 330 Z" fill="#5b2e6e" stroke="#6f4aa6" stroke-width="5" stroke-linejoin="round"/>
+  <path d="M176 292 L184 304 L192 292 L200 304 L208 292 L216 304 L224 292" fill="none" stroke="#ffffff" stroke-width="5" stroke-linejoin="round"/>
+  <path d="M170 330 Q200 344 230 330" fill="none" stroke="#ff8fb1" stroke-width="5" stroke-linecap="round"/>
+
+  <!-- Small paws -->
+  <ellipse cx="108" cy="338" rx="16" ry="10" fill="#8a5ccc"/>
+  <ellipse cx="292" cy="338" rx="16" ry="10" fill="#8a5ccc"/>
+
+  <!-- Chimney -->
+  <rect x="262" y="96" width="24" height="46" rx="4" fill="#d9776b" stroke="#b9473a" stroke-width="4"/>
+  <circle cx="274" cy="84" r="8" fill="#ffffff" opacity="0.8"/>
+  <circle cx="286" cy="68" r="6" fill="#ffffff" opacity="0.6"/>
+</svg>

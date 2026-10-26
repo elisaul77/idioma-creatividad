@@ -1,0 +1,87 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="400" height="400" viewBox="0 0 400 400">
+  <defs>
+    <linearGradient id="sky" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#f6e7a1"/>
+      <stop offset="60%" stop-color="#e9c46a"/>
+      <stop offset="100%" stop-color="#b5813a"/>
+    </linearGradient>
+    <linearGradient id="mound" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#8a5a2b"/>
+      <stop offset="100%" stop-color="#4e2e14"/>
+    </linearGradient>
+    <linearGradient id="ground" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#5b7a2e"/>
+      <stop offset="100%" stop-color="#2f4418"/>
+    </linearGradient>
+    <pattern id="hex" width="16" height="14" patternUnits="userSpaceOnUse">
+      <path d="M8 0 L16 4.6 L16 9.4 L8 14 L0 9.4 L0 4.6 Z" fill="none" stroke="#f2c14e" stroke-opacity="0.35" stroke-width="1"/>
+    </pattern>
+  </defs>
+
+  <!-- Sky -->
+  <rect width="400" height="400" fill="url(#sky)"/>
+  <circle cx="330" cy="70" r="30" fill="#fff3c4" opacity="0.8"/>
+
+  <!-- Distant small mounds -->
+  <path d="M0 260 Q40 200 80 260 Z" fill="#a0672f" opacity="0.6"/>
+  <path d="M300 265 Q345 215 390 265 Z" fill="#a0672f" opacity="0.6"/>
+
+  <!-- Main tower -->
+  <path d="M150 300 L160 120 Q200 60 240 120 L250 300 Z" fill="url(#mound)"/>
+  <rect x="150" y="120" width="100" height="180" fill="url(#hex)"/>
+  <path d="M160 120 Q200 60 240 120" fill="none" stroke="#3a2110" stroke-width="3"/>
+
+  <!-- Left tower -->
+  <path d="M60 300 L70 190 Q100 150 130 190 L140 300 Z" fill="url(#mound)"/>
+  <rect x="60" y="190" width="80" height="110" fill="url(#hex)"/>
+
+  <!-- Right tower -->
+  <path d="M260 300 L270 205 Q300 165 330 205 L340 300 Z" fill="url(#mound)"/>
+  <rect x="260" y="205" width="80" height="95" fill="url(#hex)"/>
+
+  <!-- Bridges between towers -->
+  <path d="M130 240 Q150 228 160 240" fill="none" stroke="#6b4220" stroke-width="5" stroke-linecap="round"/>
+  <path d="M250 250 Q258 240 270 250" fill="none" stroke="#6b4220" stroke-width="5" stroke-linecap="round"/>
+
+  <!-- Entrance arches -->
+  <path d="M190 300 Q200 272 210 300 Z" fill="#2a170a"/>
+  <path d="M85 300 Q92 282 100 300 Z" fill="#2a170a"/>
+  <path d="M285 300 Q292 284 300 300 Z" fill="#2a170a"/>
+
+  <!-- Ground -->
+  <rect y="300" width="400" height="100" fill="url(#ground)"/>
+  <path d="M0 300 Q100 288 200 300 T400 300 L400 306 L0 306 Z" fill="#7aa03a" opacity="0.7"/>
+
+  <!-- Leaves -->
+  <ellipse cx="40" cy="350" rx="28" ry="10" fill="#4f7d24" transform="rotate(-20 40 350)"/>
+  <ellipse cx="360" cy="340" rx="32" ry="11" fill="#4f7d24" transform="rotate(15 360 340)"/>
+
+  <!-- Flying insects (bees) -->
+  <g fill="#ffd23f" stroke="#3a2a00" stroke-width="1">
+    <ellipse cx="120" cy="160" rx="7" ry="5"/>
+    <ellipse cx="190" cy="100" rx="6" ry="4"/>
+    <ellipse cx="300" cy="140" rx="7" ry="5"/>
+  </g>
+  <g fill="#3a2a00">
+    <rect x="116" y="152" width="2" height="16"/>
+    <rect x="130" y="152" width="2" height="16"/>
+    <rect x="186" y="95" width="2" height="12"/>
+    <rect x="296" y="132" width="2" height="16"/>
+  </g>
+  <g fill="#ffffff" opacity="0.6">
+    <ellipse cx="112" cy="150" rx="5" ry="3"/>
+    <ellipse cx="128" cy="150" rx="5" ry="3"/>
+    <ellipse cx="184" cy="92" rx="4" ry="2.5"/>
+    <ellipse cx="296" cy="130" rx="5" ry="3"/>
+  </g>
+
+  <!-- Ants walking on ground -->
+  <g fill="#1e1205">
+    <circle cx="150" cy="330" r="3"/>
+    <circle cx="158" cy="329" r="2.5"/>
+    <circle cx="165" cy="330" r="3"/>
+    <circle cx="230" cy="345" r="3"/>
+    <circle cx="238" cy="344" r="2.5"/>
+    <circle cx="245" cy="345" r="3"/>
+  </g>
+</svg>

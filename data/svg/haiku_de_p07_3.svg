@@ -1,0 +1,147 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 400 400" width="400" height="400">
+  <defs>
+    <radialGradient id="sky" cx="50%" cy="40%" r="75%">
+      <stop offset="0%" stop-color="#1e1b4b"/>
+      <stop offset="55%" stop-color="#0b0d26"/>
+      <stop offset="100%" stop-color="#03040c"/>
+    </radialGradient>
+    <linearGradient id="trunk" x1="0" y1="1" x2="0" y2="0">
+      <stop offset="0%" stop-color="#0e7490"/>
+      <stop offset="100%" stop-color="#67e8f9"/>
+    </linearGradient>
+    <linearGradient id="leaf" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#f0abfc"/>
+      <stop offset="100%" stop-color="#22d3ee"/>
+    </linearGradient>
+    <radialGradient id="orb" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#ecfeff" stop-opacity="0.95"/>
+      <stop offset="100%" stop-color="#a5f3fc" stop-opacity="0"/>
+    </radialGradient>
+    <radialGradient id="crownGlow" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#c084fc" stop-opacity="0.35"/>
+      <stop offset="100%" stop-color="#c084fc" stop-opacity="0"/>
+    </radialGradient>
+    <filter id="blur" x="-50%" y="-50%" width="200%" height="200%">
+      <feGaussianBlur stdDeviation="3" result="b"/>
+      <feMerge>
+        <feMergeNode in="b"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+    <polygon id="hex" points="0,-8 7,-4 7,4 0,8 -7,4 -7,-4"/>
+  </defs>
+
+  <!-- Himmel -->
+  <rect width="400" height="400" fill="url(#sky)"/>
+
+  <!-- Sterne -->
+  <g fill="#e0e7ff">
+    <circle cx="40" cy="40" r="1.2" opacity="0.8"/>
+    <circle cx="90" cy="28" r="1" opacity="0.6"/>
+    <circle cx="150" cy="18" r="1.4" opacity="0.9"/>
+    <circle cx="225" cy="30" r="1" opacity="0.7"/>
+    <circle cx="365" cy="150" r="1.2" opacity="0.8"/>
+    <circle cx="30" cy="150" r="1" opacity="0.6"/>
+    <circle cx="370" cy="25" r="1.3" opacity="0.9"/>
+    <circle cx="60" cy="90" r="1" opacity="0.5"/>
+  </g>
+
+  <!-- Mond -->
+  <circle cx="320" cy="70" r="26" fill="#e0e7ff" opacity="0.9"/>
+  <circle cx="312" cy="64" r="5" fill="#c7d2fe" opacity="0.6"/>
+  <circle cx="327" cy="80" r="3" fill="#c7d2fe" opacity="0.5"/>
+
+  <!-- Kronenleuchten -->
+  <circle cx="200" cy="110" r="130" fill="url(#crownGlow)"/>
+
+  <!-- Umlaufbahn -->
+  <ellipse cx="200" cy="115" rx="140" ry="32" fill="none" stroke="#f0abfc" stroke-opacity="0.35" stroke-width="1" stroke-dasharray="2 6" transform="rotate(-12 200 115)"/>
+  <circle cx="330" cy="88" r="3.5" fill="#f0abfc" transform="rotate(-12 200 115)" opacity="0.9"/>
+
+  <!-- Boden mit Perspektivlinien -->
+  <ellipse cx="200" cy="352" rx="165" ry="26" fill="#0f172a" stroke="#22d3ee" stroke-opacity="0.5" stroke-width="1.2"/>
+  <g stroke="#22d3ee" stroke-opacity="0.18" stroke-width="0.8">
+    <line x1="200" y1="352" x2="90" y2="378"/>
+    <line x1="200" y1="352" x2="150" y2="380"/>
+    <line x1="200" y1="352" x2="250" y2="380"/>
+    <line x1="200" y1="352" x2="310" y2="378"/>
+    <line x1="70" y1="356" x2="330" y2="356"/>
+  </g>
+
+  <!-- Wurzeln als Leitungen -->
+  <g stroke="#22d3ee" stroke-width="1.5" fill="none" opacity="0.6" filter="url(#blur)">
+    <path d="M200 350 L182 362 L160 362"/>
+    <path d="M200 350 L218 364 L242 364"/>
+  </g>
+
+  <!-- Stamm -->
+  <path d="M200 352 C196 302 206 262 198 222 C192 192 202 166 200 140" fill="none" stroke="url(#trunk)" stroke-width="14" stroke-linecap="round" filter="url(#blur)"/>
+
+  <!-- Äste (schaltkreisartig, rechtwinklig) -->
+  <g fill="none" stroke="#67e8f9" stroke-linecap="round" stroke-linejoin="round" stroke-width="4" filter="url(#blur)" opacity="0.9">
+    <path d="M200 170 L150 130 L120 130 L100 105"/>
+    <path d="M200 160 L250 125 L275 125 L300 95"/>
+    <path d="M199 200 L160 190 L140 200 L120 195"/>
+    <path d="M201 190 L240 185 L262 170"/>
+    <path d="M200 140 L185 110 L185 80 L165 60"/>
+    <path d="M200 140 L215 105 L225 70"/>
+  </g>
+
+  <!-- Knotenpunkte -->
+  <g fill="#f0abfc">
+    <circle cx="100" cy="105" r="3"/>
+    <circle cx="300" cy="95" r="3"/>
+    <circle cx="120" cy="195" r="3"/>
+    <circle cx="262" cy="170" r="3"/>
+    <circle cx="165" cy="60" r="3"/>
+    <circle cx="225" cy="70" r="3"/>
+  </g>
+
+  <!-- Blätter als Waben -->
+  <g>
+    <use xlink:href="#hex" href="#hex" x="130" y="95" fill="url(#leaf)" opacity="0.9"/>
+    <use xlink:href="#hex" href="#hex" x="155" y="80" fill="#a5f3fc" opacity="0.7"/>
+    <use xlink:href="#hex" href="#hex" x="180" y="70" fill="url(#leaf)" opacity="0.95"/>
+    <use xlink:href="#hex" href="#hex" x="205" y="62" fill="#a5f3fc" opacity="0.8"/>
+    <use xlink:href="#hex" href="#hex" x="230" y="68" fill="url(#leaf)" opacity="0.9"/>
+    <use xlink:href="#hex" href="#hex" x="255" y="82" fill="#a5f3fc" opacity="0.65"/>
+    <use xlink:href="#hex" href="#hex" x="275" y="100" fill="url(#leaf)" opacity="0.85"/>
+    <use xlink:href="#hex" href="#hex" x="145" y="120" fill="#a5f3fc" opacity="0.6"/>
+    <use xlink:href="#hex" href="#hex" x="170" y="108" fill="url(#leaf)" opacity="0.9"/>
+    <use xlink:href="#hex" href="#hex" x="195" y="100" fill="#f0abfc" opacity="0.75"/>
+    <use xlink:href="#hex" href="#hex" x="220" y="96" fill="url(#leaf)" opacity="0.95"/>
+    <use xlink:href="#hex" href="#hex" x="245" y="110" fill="#a5f3fc" opacity="0.7"/>
+    <use xlink:href="#hex" href="#hex" x="265" y="125" fill="url(#leaf)" opacity="0.8"/>
+    <use xlink:href="#hex" href="#hex" x="160" y="140" fill="#f0abfc" opacity="0.6"/>
+    <use xlink:href="#hex" href="#hex" x="185" y="132" fill="url(#leaf)" opacity="0.85"/>
+    <use xlink:href="#hex" href="#hex" x="210" y="128" fill="#a5f3fc" opacity="0.75"/>
+    <use xlink:href="#hex" href="#hex" x="235" y="138" fill="url(#leaf)" opacity="0.8"/>
+    <use xlink:href="#hex" href="#hex" x="120" y="130" fill="#a5f3fc" opacity="0.55"/>
+    <use xlink:href="#hex" href="#hex" x="280" y="140" fill="#f0abfc" opacity="0.6"/>
+    <use xlink:href="#hex" href="#hex" x="200" y="155" fill="url(#leaf)" opacity="0.9"/>
+    <use xlink:href="#hex" href="#hex" x="180" y="160" fill="#a5f3fc" opacity="0.6"/>
+    <use xlink:href="#hex" href="#hex" x="225" y="160" fill="url(#leaf)" opacity="0.75"/>
+    <use xlink:href="#hex" href="#hex" x="150" y="165" fill="#a5f3fc" opacity="0.5"/>
+    <use xlink:href="#hex" href="#hex" x="255" y="162" fill="url(#leaf)" opacity="0.7"/>
+  </g>
+
+  <!-- Schwebende Lichtpartikel -->
+  <g>
+    <circle cx="60" cy="200" r="9" fill="url(#orb)"/>
+    <circle cx="90" cy="150" r="6" fill="url(#orb)"/>
+    <circle cx="330" cy="190" r="8" fill="url(#orb)"/>
+    <circle cx="345" cy="260" r="5" fill="url(#orb)"/>
+    <circle cx="70" cy="290" r="7" fill="url(#orb)"/>
+    <circle cx="310" cy="320" r="6" fill="url(#orb)"/>
+    <circle cx="110" cy="250" r="4" fill="url(#orb)"/>
+    <circle cx="300" cy="230" r="4" fill="url(#orb)"/>
+  </g>
+  <g fill="#ecfeff">
+    <circle cx="60" cy="200" r="1.8"/>
+    <circle cx="90" cy="150" r="1.4"/>
+    <circle cx="330" cy="190" r="1.8"/>
+    <circle cx="345" cy="260" r="1.2"/>
+    <circle cx="70" cy="290" r="1.5"/>
+    <circle cx="310" cy="320" r="1.4"/>
+  </g>
+</svg>

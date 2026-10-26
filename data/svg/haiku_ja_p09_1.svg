@@ -1,0 +1,110 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 400" width="400" height="400">
+  <defs>
+    <linearGradient id="sky" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#8fd3f4"/>
+      <stop offset="0.7" stop-color="#fde7b0"/>
+    </linearGradient>
+    <linearGradient id="soil" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#8b5a2b"/>
+      <stop offset="1" stop-color="#4a2e15"/>
+    </linearGradient>
+    <pattern id="win" width="12" height="14" patternUnits="userSpaceOnUse">
+      <rect width="12" height="14" fill="none"/>
+      <rect x="3" y="3" width="5" height="6" rx="1" fill="#ffe08a"/>
+    </pattern>
+  </defs>
+
+  <!-- Sky -->
+  <rect width="400" height="400" fill="url(#sky)"/>
+  <circle cx="330" cy="70" r="90" fill="#fff3c4" opacity="0.5"/>
+  <circle cx="330" cy="70" r="40" fill="#ffd966"/>
+
+  <!-- Clouds -->
+  <ellipse cx="90" cy="60" rx="40" ry="14" fill="#ffffff" opacity="0.85"/>
+  <ellipse cx="110" cy="52" rx="24" ry="12" fill="#ffffff" opacity="0.85"/>
+  <ellipse cx="200" cy="40" rx="34" ry="11" fill="#ffffff" opacity="0.7"/>
+
+  <!-- Distant hills -->
+  <path d="M0 290 Q60 250 130 285 T270 280 T400 275 L400 340 L0 340 Z" fill="#a7d98a"/>
+
+  <!-- Tower A -->
+  <rect x="30" y="190" width="62" height="150" fill="#c68e5a"/>
+  <rect x="30" y="190" width="62" height="150" fill="url(#win)"/>
+  <path d="M26 190 L61 168 L96 190 Z" fill="#8a4b25"/>
+
+  <!-- Tower B with antenna -->
+  <rect x="104" y="120" width="46" height="220" fill="#b87333"/>
+  <rect x="104" y="120" width="46" height="220" fill="url(#win)"/>
+  <rect x="120" y="100" width="14" height="22" fill="#8a4b25"/>
+  <line x1="127" y1="100" x2="127" y2="60" stroke="#5a3418" stroke-width="2"/>
+  <circle cx="127" cy="58" r="3" fill="#ff6b6b"/>
+
+  <!-- Dome tower C -->
+  <path d="M150 330 L150 220 Q190 150 230 220 L230 330 Z" fill="#d9a46b"/>
+  <path d="M150 330 L150 220 Q190 150 230 220 L230 330 Z" fill="url(#win)"/>
+
+  <!-- Tower D -->
+  <rect x="244" y="150" width="52" height="180" fill="#a0522d"/>
+  <rect x="244" y="150" width="52" height="180" fill="url(#win)"/>
+  <rect x="252" y="136" width="36" height="14" fill="#7a3f1f"/>
+
+  <!-- Tower E -->
+  <rect x="306" y="210" width="70" height="120" fill="#c68e5a"/>
+  <rect x="306" y="210" width="70" height="120" fill="url(#win)"/>
+  <path d="M302 210 L341 186 L380 210 Z" fill="#8a4b25"/>
+
+  <!-- Skywalks between towers -->
+  <path d="M150 175 Q200 160 244 175" stroke="#6b3e1f" stroke-width="5" fill="none"/>
+  <path d="M90 240 Q120 230 150 240" stroke="#6b3e1f" stroke-width="4" fill="none"/>
+
+  <!-- Ground -->
+  <rect x="0" y="330" width="400" height="70" fill="url(#soil)"/>
+  <path d="M0 330 Q50 318 100 330 T200 330 T300 330 T400 330 L400 338 L0 338 Z" fill="#6fbf5a"/>
+
+  <!-- Leaf and ladybug -->
+  <ellipse cx="60" cy="330" rx="26" ry="9" fill="#4caf50" transform="rotate(-15 60 330)"/>
+  <circle cx="60" cy="318" r="9" fill="#e53935"/>
+  <line x1="60" y1="309" x2="60" y2="327" stroke="#222" stroke-width="1.5"/>
+  <circle cx="60" cy="307" r="4" fill="#222"/>
+  <circle cx="56" cy="316" r="1.6" fill="#222"/>
+  <circle cx="64" cy="320" r="1.6" fill="#222"/>
+
+  <!-- Ant walking on the ground -->
+  <g transform="translate(220,345)" fill="#222" stroke="#222">
+    <line x1="-10" y1="0" x2="-18" y2="-6" stroke-width="1"/>
+    <line x1="-10" y1="0" x2="-18" y2="6" stroke-width="1"/>
+    <line x1="2" y1="0" x2="-4" y2="-7" stroke-width="1"/>
+    <line x1="2" y1="0" x2="-4" y2="7" stroke-width="1"/>
+    <line x1="8" y1="0" x2="14" y2="-7" stroke-width="1"/>
+    <line x1="8" y1="0" x2="14" y2="7" stroke-width="1"/>
+    <circle cx="-4" cy="0" r="5.5"/>
+    <circle cx="6" cy="0" r="4.5"/>
+    <circle cx="14" cy="0" r="4"/>
+  </g>
+
+  <!-- Bee flying -->
+  <g transform="translate(60,100) rotate(-12)">
+    <ellipse cx="-2" cy="-14" rx="8" ry="6" fill="#ffffff" opacity="0.85" stroke="#3a2a10" stroke-width="1"/>
+    <ellipse cx="0" cy="0" rx="14" ry="9" fill="#ffc53d" stroke="#3a2a10" stroke-width="2"/>
+    <rect x="-5" y="-7" width="3" height="14" fill="#3a2a10"/>
+    <rect x="3" y="-7" width="3" height="14" fill="#3a2a10"/>
+    <circle cx="15" cy="0" r="5" fill="#3a2a10"/>
+    <path d="M-14 0 L-20 -2 L-14 2 Z" fill="#3a2a10"/>
+  </g>
+
+  <!-- Beetle flying near the skyline -->
+  <g transform="translate(205,75)">
+    <ellipse cx="-12" cy="-6" rx="9" ry="5" fill="#ffffff" opacity="0.8" stroke="#3a2a10" stroke-width="1" transform="rotate(-20 -12 -6)"/>
+    <ellipse cx="12" cy="-6" rx="9" ry="5" fill="#ffffff" opacity="0.8" stroke="#3a2a10" stroke-width="1" transform="rotate(20 12 -6)"/>
+    <ellipse cx="0" cy="0" rx="10" ry="8" fill="#2e7d32" stroke="#1b3d1d" stroke-width="1.5"/>
+    <line x1="0" y1="-8" x2="0" y2="8" stroke="#1b3d1d" stroke-width="1"/>
+    <circle cx="-8" cy="-6" r="2.5" fill="#1b3d1d"/>
+    <circle cx="8" cy="-6" r="2.5" fill="#1b3d1d"/>
+  </g>
+
+  <!-- Tiny flying insects -->
+  <circle cx="170" cy="130" r="2" fill="#3a2a10"/>
+  <circle cx="290" cy="120" r="2" fill="#3a2a10"/>
+  <circle cx="380" cy="160" r="2" fill="#3a2a10"/>
+  <circle cx="20" cy="170" r="2" fill="#3a2a10"/>
+</svg>

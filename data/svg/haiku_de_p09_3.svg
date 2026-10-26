@@ -1,0 +1,118 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="400" height="400" viewBox="0 0 400 400">
+  <defs>
+    <linearGradient id="himmel" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#1b2a4a"/>
+      <stop offset="0.6" stop-color="#e0875a"/>
+      <stop offset="1" stop-color="#f7c873"/>
+    </linearGradient>
+    <linearGradient id="boden" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#4f7a3a"/>
+      <stop offset="1" stop-color="#2c4a22"/>
+    </linearGradient>
+    <linearGradient id="turm" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#8a5a2b"/>
+      <stop offset="0.5" stop-color="#b87d42"/>
+      <stop offset="1" stop-color="#7a4d24"/>
+    </linearGradient>
+    <linearGradient id="bienen" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#ffd54a"/>
+      <stop offset="1" stop-color="#d89a12"/>
+    </linearGradient>
+    <pattern id="waben" width="16" height="14" patternUnits="userSpaceOnUse">
+      <path d="M8 0 L16 4.6 L16 9.4 L8 14 L0 9.4 L0 4.6 Z" fill="none" stroke="#7a4d10" stroke-width="1" opacity="0.5"/>
+    </pattern>
+    <radialGradient id="sonne" cx="0.5" cy="0.5" r="0.5">
+      <stop offset="0" stop-color="#fff6c2"/>
+      <stop offset="1" stop-color="#ffb347" stop-opacity="0"/>
+    </radialGradient>
+  </defs>
+
+  <!-- Himmel -->
+  <rect width="400" height="400" fill="url(#himmel)"/>
+  <circle cx="310" cy="95" r="60" fill="url(#sonne)"/>
+  <circle cx="310" cy="95" r="26" fill="#fff3b0"/>
+
+  <!-- Insekten am Himmel als Schwarm -->
+  <g fill="none" stroke="#1b1020" stroke-width="1.5" stroke-linecap="round">
+    <path d="M70 70 q6 -8 12 0 q6 -8 12 0"/>
+    <path d="M100 52 q4 -6 8 0 q4 -6 8 0"/>
+    <path d="M150 88 q5 -7 10 0 q5 -7 10 0"/>
+    <path d="M55 110 q4 -5 8 0 q4 -5 8 0"/>
+  </g>
+
+  <!-- Ferne Hügel -->
+  <path d="M0 250 Q80 205 170 240 T400 225 L400 400 L0 400 Z" fill="#3e5f2e" opacity="0.8"/>
+
+  <!-- Termitenhügel-Türme (links) -->
+  <path d="M30 280 L50 170 Q60 150 70 170 L90 280 Z" fill="url(#turm)"/>
+  <path d="M40 240 L44 210 M60 220 L64 190 M50 200 L55 175" stroke="#5a3a1a" stroke-width="2" stroke-linecap="round" opacity="0.6"/>
+  <rect x="45" y="200" width="10" height="8" fill="#ffe08a"/>
+  <rect x="62" y="225" width="8" height="8" fill="#ffe08a" opacity="0.8"/>
+  <path d="M60 150 L70 128 L80 150 Z" fill="#6b4420"/>
+
+  <!-- Waben-Hochhaus (Mitte) -->
+  <path d="M150 280 L150 110 L200 80 L250 110 L250 280 Z" fill="url(#bienen)"/>
+  <path d="M150 280 L150 110 L200 80 L250 110 L250 280 Z" fill="url(#waben)"/>
+  <path d="M190 80 L200 40 L210 80 Z" fill="#c97f10"/>
+  <circle cx="200" cy="38" r="4" fill="#fff3b0"/>
+  <g fill="#fff8dc" stroke="#7a4d10" stroke-width="1">
+    <path d="M172 130 l6 -3 l6 3 l0 6 l-6 3 l-6 -3 Z"/>
+    <path d="M198 130 l6 -3 l6 3 l0 6 l-6 3 l-6 -3 Z"/>
+    <path d="M172 165 l6 -3 l6 3 l0 6 l-6 3 l-6 -3 Z"/>
+    <path d="M198 165 l6 -3 l6 3 l0 6 l-6 3 l-6 -3 Z"/>
+    <path d="M172 200 l6 -3 l6 3 l0 6 l-6 3 l-6 -3 Z"/>
+    <path d="M198 200 l6 -3 l6 3 l0 6 l-6 3 l-6 -3 Z"/>
+  </g>
+  <rect x="185" y="245" width="30" height="35" rx="15" fill="#5a3a10"/>
+
+  <!-- Ameisen-Brücke -->
+  <path d="M250 205 Q290 180 330 205" fill="none" stroke="#6b4420" stroke-width="6"/>
+  <path d="M250 205 Q290 180 330 205" fill="none" stroke="#c9a15a" stroke-width="2" stroke-dasharray="4 5"/>
+
+  <!-- Kuppel-Turm rechts (Marienkäfer-Dach) -->
+  <rect x="320" y="150" width="50" height="130" fill="#a8452e"/>
+  <path d="M312 150 Q345 95 378 150 Z" fill="#d1412a"/>
+  <circle cx="335" cy="130" r="5" fill="#1b1020"/>
+  <circle cx="356" cy="122" r="4" fill="#1b1020"/>
+  <circle cx="345" cy="108" r="3" fill="#1b1020"/>
+  <path d="M345 92 L345 150" stroke="#1b1020" stroke-width="2"/>
+  <g fill="#ffe08a">
+    <rect x="330" y="175" width="8" height="10"/>
+    <rect x="348" y="175" width="8" height="10"/>
+    <rect x="330" y="200" width="8" height="10"/>
+    <rect x="348" y="200" width="8" height="10"/>
+  </g>
+
+  <!-- Vordergrund-Boden -->
+  <path d="M0 290 Q200 270 400 292 L400 400 L0 400 Z" fill="url(#boden)"/>
+
+  <!-- Gras-Halme -->
+  <g stroke="#2c4a22" stroke-width="2" stroke-linecap="round" fill="none">
+    <path d="M20 330 q-4 -15 2 -25"/>
+    <path d="M60 340 q4 -18 -2 -30"/>
+    <path d="M360 335 q-5 -16 3 -28"/>
+    <path d="M385 350 q-3 -14 2 -24"/>
+  </g>
+
+  <!-- Straße aus Ameisenpfad -->
+  <path d="M0 360 Q120 340 220 362 T400 350" fill="none" stroke="#8c6a3a" stroke-width="14" opacity="0.7"/>
+  <path d="M0 360 Q120 340 220 362 T400 350" fill="none" stroke="#f3d28a" stroke-width="1.5" stroke-dasharray="6 8"/>
+
+  <!-- Ameisen-Kolonne -->
+  <g fill="#2a1a10">
+    <ellipse cx="90" cy="352" rx="3" ry="2"/>
+    <ellipse cx="108" cy="350" rx="3" ry="2"/>
+    <ellipse cx="126" cy="352" rx="3" ry="2"/>
+    <ellipse cx="144" cy="354" rx="3" ry="2"/>
+    <ellipse cx="236" cy="358" rx="3" ry="2"/>
+    <ellipse cx="254" cy="357" rx="3" ry="2"/>
+    <ellipse cx="272" cy="359" rx="3" ry="2"/>
+  </g>
+
+  <!-- Gebäude-Lichter im Vordergrund -->
+  <g fill="#ffe08a" opacity="0.9">
+    <circle cx="100" cy="310" r="2"/>
+    <circle cx="210" cy="305" r="2"/>
+    <circle cx="300" cy="312" r="2"/>
+  </g>
+</svg>

@@ -1,0 +1,96 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 400" width="400" height="400">
+  <defs>
+    <radialGradient id="sky" cx="50%" cy="40%" r="75%">
+      <stop offset="0%" stop-color="#3b2a6b"/>
+      <stop offset="55%" stop-color="#1c1846"/>
+      <stop offset="100%" stop-color="#090820"/>
+    </radialGradient>
+    <radialGradient id="moon" cx="40%" cy="35%" r="65%">
+      <stop offset="0%" stop-color="#fff8e1"/>
+      <stop offset="70%" stop-color="#ffd98a"/>
+      <stop offset="100%" stop-color="#f2b76b"/>
+    </radialGradient>
+    <radialGradient id="glow" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#ffe9b0" stop-opacity="0.55"/>
+      <stop offset="100%" stop-color="#ffe9b0" stop-opacity="0"/>
+    </radialGradient>
+    <linearGradient id="orb" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#7fe7ff" stop-opacity="0.7"/>
+      <stop offset="100%" stop-color="#c58bff" stop-opacity="0.15"/>
+    </linearGradient>
+    <linearGradient id="isle" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#8be3c4"/>
+      <stop offset="100%" stop-color="#3d6e8f"/>
+    </linearGradient>
+    <linearGradient id="stair" x1="0" y1="1" x2="1" y2="0">
+      <stop offset="0%" stop-color="#ff9ecf" stop-opacity="0.9"/>
+      <stop offset="100%" stop-color="#b9a4ff" stop-opacity="0.4"/>
+    </linearGradient>
+    <filter id="blur" x="-50%" y="-50%" width="200%" height="200%">
+      <feGaussianBlur stdDeviation="6"/>
+    </filter>
+    <filter id="softBlur" x="-50%" y="-50%" width="200%" height="200%">
+      <feGaussianBlur stdDeviation="2.5"/>
+    </filter>
+  </defs>
+
+  <!-- Небо -->
+  <rect width="400" height="400" fill="url(#sky)"/>
+
+  <!-- Звёзды -->
+  <g fill="#ffffff">
+    <circle cx="48" cy="60" r="1.6" opacity="0.9"/>
+    <circle cx="92" cy="128" r="1" opacity="0.7"/>
+    <circle cx="330" cy="50" r="1.8" opacity="0.95"/>
+    <circle cx="360" cy="150" r="1.1" opacity="0.6"/>
+    <circle cx="210" cy="32" r="1.2" opacity="0.8"/>
+    <circle cx="150" cy="88" r="0.9" opacity="0.6"/>
+    <circle cx="28" cy="230" r="1.3" opacity="0.7"/>
+    <circle cx="380" cy="268" r="1.4" opacity="0.8"/>
+    <circle cx="260" cy="170" r="0.8" opacity="0.5"/>
+    <circle cx="70" cy="330" r="1" opacity="0.6"/>
+  </g>
+
+  <!-- Луна с мягким свечением -->
+  <circle cx="290" cy="110" r="70" fill="url(#glow)"/>
+  <circle cx="290" cy="110" r="38" fill="url(#moon)"/>
+  <circle cx="304" cy="98" r="30" fill="#1c1846" opacity="0.18" filter="url(#softBlur)"/>
+
+  <!-- Спиральные потоки сна -->
+  <g fill="none" stroke="#c9b6ff" stroke-linecap="round" opacity="0.5">
+    <path d="M40 200 C 110 150, 150 260, 220 210 S 330 170, 370 230" stroke-width="2"/>
+    <path d="M20 260 C 100 220, 170 310, 250 265 S 340 300, 390 280" stroke-width="1.5" opacity="0.35"/>
+    <path d="M60 300 C 130 270, 200 340, 280 300" stroke-width="1" opacity="0.3"/>
+  </g>
+
+  <!-- Лестница, уходящая в облака -->
+  <g fill="url(#stair)" filter="url(#softBlur)" opacity="0.85">
+    <rect x="120" y="290" width="36" height="6" rx="2"/>
+    <rect x="140" y="275" width="36" height="6" rx="2"/>
+    <rect x="160" y="260" width="36" height="6" rx="2"/>
+    <rect x="180" y="245" width="36" height="6" rx="2"/>
+    <rect x="200" y="230" width="36" height="6" rx="2"/>
+  </g>
+
+  <!-- Парящие сферы -->
+  <circle cx="90" cy="150" r="22" fill="url(#orb)" stroke="#9ff0ff" stroke-opacity="0.4"/>
+  <circle cx="130" cy="120" r="9" fill="url(#orb)"/>
+  <circle cx="335" cy="215" r="16" fill="url(#orb)" stroke="#e0b8ff" stroke-opacity="0.4"/>
+  <circle cx="60" cy="210" r="6" fill="url(#orb)"/>
+
+  <!-- Плавающий остров с деревом -->
+  <g>
+    <ellipse cx="200" cy="355" rx="88" ry="20" fill="#2a2a55" opacity="0.6" filter="url(#blur)"/>
+    <path d="M118 318 Q 200 300 285 318 Q 260 358 200 368 Q 140 358 118 318 Z" fill="url(#isle)"/>
+    <rect x="198" y="262" width="4" height="58" fill="#6b4b8a"/>
+    <circle cx="200" cy="248" r="26" fill="#ff9ecf" opacity="0.85"/>
+    <circle cx="186" cy="256" r="14" fill="#ffc2e0" opacity="0.7"/>
+    <circle cx="214" cy="240" r="12" fill="#b9a4ff" opacity="0.6"/>
+  </g>
+
+  <!-- Туманные облака снизу -->
+  <g fill="#8c7fd6" opacity="0.25" filter="url(#blur)">
+    <ellipse cx="60" cy="380" rx="90" ry="26"/>
+    <ellipse cx="330" cy="385" rx="110" ry="28"/>
+  </g>
+</svg>

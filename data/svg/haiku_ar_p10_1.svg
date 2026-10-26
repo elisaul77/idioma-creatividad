@@ -1,0 +1,54 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="400" height="400" viewBox="0 0 400 400">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#fff8ec"/>
+      <stop offset="1" stop-color="#dff1ff"/>
+    </linearGradient>
+    <linearGradient id="pop" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#4fb3ff"/>
+      <stop offset="0.55" stop-color="#1e6fd9"/>
+      <stop offset="1" stop-color="#0b3d91"/>
+    </linearGradient>
+  </defs>
+
+  <!-- Background -->
+  <rect width="400" height="400" fill="url(#bg)"/>
+
+  <!-- Soft puddle -->
+  <ellipse cx="200" cy="356" rx="82" ry="9" fill="#1e6fd9" opacity="0.25"/>
+
+  <g transform="rotate(-12 200 200)">
+    <!-- Stick -->
+    <rect x="193" y="258" width="14" height="96" rx="7" fill="#f5e6c8" stroke="#d9b98a" stroke-width="2"/>
+
+    <!-- Ice pop body with drips -->
+    <path d="M150 140 A50 50 0 0 1 250 140 L250 255 Q250 270 236 270 Q226 270 226 282 Q226 300 214 300 Q202 300 202 284 Q202 272 188 272 Q176 272 176 262 L150 262 Z"
+          fill="url(#pop)"/>
+
+    <!-- Highlight -->
+    <ellipse cx="172" cy="128" rx="7" ry="18" fill="#ffffff" opacity="0.6" transform="rotate(20 172 128)"/>
+    <circle cx="182" cy="110" r="3" fill="#ffffff" opacity="0.7"/>
+  </g>
+
+  <!-- Taste waves radiating outward -->
+  <g fill="none" stroke="#1e6fd9" stroke-width="4" stroke-linecap="round" opacity="0.5">
+    <path d="M280 150 Q295 170 280 190"/>
+    <path d="M298 136 Q322 170 298 204"/>
+    <path d="M316 122 Q348 170 316 218"/>
+  </g>
+
+  <!-- Sparkles -->
+  <g fill="#4fb3ff">
+    <circle cx="90" cy="110" r="5"/>
+    <circle cx="112" cy="84" r="3"/>
+    <circle cx="330" cy="290" r="4"/>
+    <circle cx="70" cy="250" r="3"/>
+  </g>
+
+  <!-- Falling droplets -->
+  <g fill="#0b3d91" opacity="0.7">
+    <path d="M120 300 Q126 310 120 316 Q114 310 120 300 Z"/>
+    <path d="M280 330 Q285 338 280 344 Q275 338 280 330 Z"/>
+    <path d="M90 170 Q95 178 90 184 Q85 178 90 170 Z"/>
+  </g>
+</svg>

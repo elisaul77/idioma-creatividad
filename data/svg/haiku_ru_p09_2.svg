@@ -1,0 +1,88 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="400" height="400" viewBox="0 0 400 400">
+  <defs>
+    <linearGradient id="sky" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#2b3a67"/>
+      <stop offset="0.6" stop-color="#e8836b"/>
+      <stop offset="1" stop-color="#f7c873"/>
+    </linearGradient>
+    <linearGradient id="soil" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#7a4a2a"/>
+      <stop offset="1" stop-color="#4a2a16"/>
+    </linearGradient>
+    <linearGradient id="tower" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#c98a3e"/>
+      <stop offset="0.5" stop-color="#e9b25e"/>
+      <stop offset="1" stop-color="#b06f2c"/>
+    </linearGradient>
+    <pattern id="hex" width="12" height="10.4" patternUnits="userSpaceOnUse">
+      <path d="M6 0 L12 3.5 L12 6.9 L6 10.4 L0 6.9 L0 3.5 Z" fill="none" stroke="#7a4a1c" stroke-width="0.8" opacity="0.5"/>
+    </pattern>
+  </defs>
+
+  <!-- Sky -->
+  <rect x="0" y="0" width="400" height="400" fill="url(#sky)"/>
+  <circle cx="300" cy="110" r="38" fill="#fff3c4" opacity="0.9"/>
+
+  <!-- Towers -->
+  <path d="M40 300 L40 170 Q40 150 70 150 Q100 150 100 170 L100 300 Z" fill="url(#tower)"/>
+  <path d="M40 300 L40 170 Q40 150 70 150 Q100 150 100 170 L100 300 Z" fill="url(#hex)"/>
+  <line x1="70" y1="150" x2="70" y2="128" stroke="#3b2412" stroke-width="3"/>
+  <circle cx="70" cy="126" r="3" fill="#3b2412"/>
+
+  <path d="M140 300 L140 110 Q140 80 180 80 Q220 80 220 110 L220 300 Z" fill="url(#tower)"/>
+  <path d="M140 300 L140 110 Q140 80 180 80 Q220 80 220 110 L220 300 Z" fill="url(#hex)"/>
+  <line x1="180" y1="80" x2="180" y2="40" stroke="#3b2412" stroke-width="3"/>
+  <circle cx="180" cy="38" r="3" fill="#3b2412"/>
+
+  <path d="M250 300 L250 150 Q250 130 285 130 Q320 130 320 150 L320 300 Z" fill="url(#tower)"/>
+  <path d="M250 300 L250 150 Q250 130 285 130 Q320 130 320 150 L320 300 Z" fill="url(#hex)"/>
+  <line x1="285" y1="130" x2="285" y2="105" stroke="#3b2412" stroke-width="3"/>
+  <circle cx="285" cy="103" r="3" fill="#3b2412"/>
+
+  <path d="M340 300 L340 215 Q340 200 360 200 Q380 200 380 215 L380 300 Z" fill="url(#tower)"/>
+  <path d="M340 300 L340 215 Q340 200 360 200 Q380 200 380 215 L380 300 Z" fill="url(#hex)"/>
+
+  <!-- Walkways between towers -->
+  <rect x="100" y="200" width="40" height="6" fill="#c98a3e"/>
+  <rect x="220" y="180" width="30" height="6" fill="#c98a3e"/>
+
+  <!-- Entrances -->
+  <ellipse cx="70" cy="290" rx="8" ry="10" fill="#2a160a"/>
+  <ellipse cx="180" cy="290" rx="9" ry="11" fill="#2a160a"/>
+  <ellipse cx="285" cy="290" rx="8" ry="10" fill="#2a160a"/>
+  <ellipse cx="360" cy="290" rx="7" ry="9" fill="#2a160a"/>
+
+  <!-- Ground -->
+  <rect x="0" y="300" width="400" height="100" fill="url(#soil)"/>
+
+  <!-- Ant trail -->
+  <path d="M0 330 Q100 320 200 335 T400 325" stroke="#1a0d05" stroke-width="4" stroke-linecap="round" stroke-dasharray="3 5" fill="none"/>
+  <g fill="#1a0d05">
+    <ellipse cx="60" cy="326" rx="3" ry="2"/>
+    <ellipse cx="130" cy="322" rx="3" ry="2"/>
+    <ellipse cx="210" cy="336" rx="3" ry="2"/>
+    <ellipse cx="290" cy="331" rx="3" ry="2"/>
+    <ellipse cx="365" cy="326" rx="3" ry="2"/>
+  </g>
+
+  <!-- Leaves -->
+  <path d="M0 380 Q40 340 90 370 Q50 395 0 380Z" fill="#3f6b2a"/>
+  <path d="M400 370 Q360 335 315 365 Q350 392 400 370Z" fill="#3f6b2a"/>
+
+  <!-- Bees -->
+  <g transform="translate(150 220)">
+    <ellipse rx="7" ry="5" fill="#ffd21f"/>
+    <path d="M-2 -5 V5" stroke="#1a0d05" stroke-width="2"/>
+    <ellipse cx="-2" cy="-7" rx="4" ry="2.5" fill="#fff" opacity="0.8"/>
+  </g>
+  <g transform="translate(300 235) scale(0.8)">
+    <ellipse rx="7" ry="5" fill="#ffd21f"/>
+    <path d="M-2 -5 V5" stroke="#1a0d05" stroke-width="2"/>
+    <ellipse cx="-2" cy="-7" rx="4" ry="2.5" fill="#fff" opacity="0.8"/>
+  </g>
+  <g transform="translate(60 235) rotate(-10) scale(0.9)">
+    <ellipse rx="7" ry="5" fill="#ffd21f"/>
+    <path d="M-2 -5 V5" stroke="#1a0d05" stroke-width="2"/>
+    <ellipse cx="-2" cy="-7" rx="4" ry="2.5" fill="#fff" opacity="0.8"/>
+  </g>
+</svg>

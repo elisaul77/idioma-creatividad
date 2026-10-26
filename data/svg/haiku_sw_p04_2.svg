@@ -1,0 +1,100 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="400" height="400" viewBox="0 0 400 400">
+  <defs>
+    <linearGradient id="anga" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#bfe6ff"/>
+      <stop offset="1" stop-color="#f6f9d8"/>
+    </linearGradient>
+    <linearGradient id="kuta" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#b08560"/>
+      <stop offset="1" stop-color="#8a6042"/>
+    </linearGradient>
+  </defs>
+
+  <!-- Anga -->
+  <rect width="400" height="400" fill="url(#anga)"/>
+
+  <!-- Jua -->
+  <circle cx="335" cy="70" r="30" fill="#ffd966"/>
+  <circle cx="335" cy="70" r="40" fill="#ffd966" opacity="0.25"/>
+
+  <!-- Mawingu -->
+  <g fill="#ffffff" opacity="0.9">
+    <ellipse cx="90" cy="70" rx="35" ry="14"/>
+    <ellipse cx="115" cy="62" rx="26" ry="16"/>
+    <ellipse cx="65" cy="62" rx="20" ry="11"/>
+  </g>
+
+  <!-- Milima -->
+  <path d="M0 260 Q60 200 130 250 Q200 210 270 255 Q330 220 400 255 L400 400 L0 400 Z" fill="#9fcf8a"/>
+
+  <!-- Ardhi -->
+  <path d="M0 320 Q200 295 400 320 L400 400 L0 400 Z" fill="#6fb35a"/>
+
+  <!-- Moshi kutoka kwenye bomba -->
+  <g fill="#ffffff" opacity="0.7">
+    <circle cx="282" cy="108" r="8"/>
+    <circle cx="292" cy="92" r="10"/>
+    <circle cx="304" cy="76" r="12"/>
+  </g>
+
+  <!-- Bomba la moshi -->
+  <rect x="262" y="105" width="26" height="60" rx="4" fill="#7a5a44"/>
+
+  <!-- Mwili wa nyumba -->
+  <path d="M95 330 L95 200 Q95 170 125 170 L275 170 Q305 170 305 200 L305 330 Z" fill="url(#kuta)"/>
+
+  <!-- Paa lenye ulaini wa majani -->
+  <path d="M68 190 Q70 168 95 160 L200 92 Q205 90 210 92 L305 160 Q330 168 332 190 Q320 182 300 182 L200 118 L100 182 Q80 182 68 190 Z" fill="#5f8f4e"/>
+  <g fill="#7fb36a">
+    <circle cx="110" cy="176" r="10"/>
+    <circle cx="150" cy="150" r="9"/>
+    <circle cx="250" cy="150" r="9"/>
+    <circle cx="292" cy="176" r="10"/>
+  </g>
+
+  <!-- Dirisha la kushoto (uso mtamu) -->
+  <circle cx="155" cy="235" r="28" fill="#fff3b0" stroke="#5a3f2b" stroke-width="5"/>
+  <circle cx="145" cy="228" r="4" fill="#5a3f2b"/>
+  <circle cx="165" cy="228" r="4" fill="#5a3f2b"/>
+  <path d="M142 244 Q155 256 168 244" fill="none" stroke="#5a3f2b" stroke-width="3" stroke-linecap="round"/>
+  <circle cx="135" cy="242" r="4" fill="#ffb3b3" opacity="0.8"/>
+  <circle cx="175" cy="242" r="4" fill="#ffb3b3" opacity="0.8"/>
+
+  <!-- Dirisha la kulia (uso mtamu) -->
+  <circle cx="245" cy="235" r="28" fill="#fff3b0" stroke="#5a3f2b" stroke-width="5"/>
+  <circle cx="235" cy="228" r="4" fill="#5a3f2b"/>
+  <circle cx="255" cy="228" r="4" fill="#5a3f2b"/>
+  <path d="M232 244 Q245 256 258 244" fill="none" stroke="#5a3f2b" stroke-width="3" stroke-linecap="round"/>
+  <circle cx="225" cy="242" r="4" fill="#ffb3b3" opacity="0.8"/>
+  <circle cx="265" cy="242" r="4" fill="#ffb3b3" opacity="0.8"/>
+
+  <!-- Mlango wenye umbo la upinde -->
+  <path d="M175 330 L175 290 Q175 268 200 268 Q225 268 225 290 L225 330 Z" fill="#5c3a22"/>
+  <circle cx="216" cy="302" r="4" fill="#ffd966"/>
+
+  <!-- Njia ya mawe -->
+  <g fill="#d9cfc0" stroke="#b8ad9c" stroke-width="1.5">
+    <ellipse cx="200" cy="344" rx="16" ry="6"/>
+    <ellipse cx="192" cy="362" rx="20" ry="7"/>
+    <ellipse cx="205" cy="382" rx="24" ry="8"/>
+  </g>
+
+  <!-- Maua -->
+  <g>
+    <line x1="60" y1="330" x2="60" y2="300" stroke="#3f7a36" stroke-width="3"/>
+    <circle cx="60" cy="294" r="8" fill="#ff8fab"/>
+    <circle cx="60" cy="294" r="3" fill="#ffe066"/>
+    <line x1="340" y1="335" x2="340" y2="305" stroke="#3f7a36" stroke-width="3"/>
+    <circle cx="340" cy="299" r="8" fill="#ffd166"/>
+    <circle cx="340" cy="299" r="3" fill="#ff8fab"/>
+    <line x1="365" y1="345" x2="365" y2="320" stroke="#3f7a36" stroke-width="3"/>
+    <circle cx="365" cy="314" r="7" fill="#c39bff"/>
+    <circle cx="365" cy="314" r="2.5" fill="#ffe066"/>
+  </g>
+
+  <!-- Miti midogo -->
+  <g>
+    <rect x="30" y="300" width="8" height="30" fill="#7a5a44"/>
+    <circle cx="34" cy="290" r="18" fill="#4f8f45"/>
+  </g>
+</svg>

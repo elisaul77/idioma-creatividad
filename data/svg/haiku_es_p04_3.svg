@@ -1,0 +1,83 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 400" width="400" height="400">
+  <defs>
+    <linearGradient id="cielo" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#2b2d6e"/>
+      <stop offset="1" stop-color="#7a6fc2"/>
+    </linearGradient>
+    <linearGradient id="cuerpo" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#8fe3b0"/>
+      <stop offset="1" stop-color="#4fbf8a"/>
+    </linearGradient>
+  </defs>
+
+  <!-- Cielo y estrellas -->
+  <rect width="400" height="400" fill="url(#cielo)"/>
+  <circle cx="335" cy="68" r="28" fill="#fff3c4"/>
+  <circle cx="345" cy="60" r="24" fill="#2b2d6e" opacity="0.25"/>
+  <g fill="#fff8dc">
+    <circle cx="60" cy="50" r="2.5"/>
+    <circle cx="120" cy="90" r="2"/>
+    <circle cx="200" cy="40" r="2.5"/>
+    <circle cx="260" cy="110" r="2"/>
+    <circle cx="30" cy="150" r="2"/>
+    <circle cx="370" cy="170" r="2.5"/>
+  </g>
+
+  <!-- Suelo -->
+  <path d="M0 330 Q200 300 400 330 V400 H0 Z" fill="#3d8f5b"/>
+  <path d="M185 340 L215 340 L228 400 L172 400 Z" fill="#d9c7f0" opacity="0.5"/>
+
+  <!-- Flores -->
+  <g>
+    <circle cx="60" cy="362" r="6" fill="#ff7ab6"/>
+    <circle cx="60" cy="362" r="2" fill="#fff3c4"/>
+    <circle cx="340" cy="356" r="6" fill="#ffb347"/>
+    <circle cx="340" cy="356" r="2" fill="#fff3c4"/>
+    <circle cx="90" cy="385" r="5" fill="#ff7ab6"/>
+    <circle cx="312" cy="382" r="5" fill="#ffb347"/>
+  </g>
+
+  <!-- Brazos saludando -->
+  <g fill="none" stroke="#4fbf8a" stroke-width="14" stroke-linecap="round">
+    <path d="M100 230 Q65 215 70 180"/>
+    <path d="M300 230 Q335 215 330 180"/>
+  </g>
+  <circle cx="70" cy="178" r="10" fill="#8fe3b0"/>
+  <circle cx="330" cy="178" r="10" fill="#8fe3b0"/>
+
+  <!-- Cuerpo de la casa -->
+  <rect x="95" y="170" width="210" height="170" rx="26" fill="url(#cuerpo)"/>
+
+  <!-- Manchitas -->
+  <g fill="#7fd8a4">
+    <circle cx="122" cy="198" r="6"/>
+    <circle cx="280" cy="195" r="8"/>
+    <circle cx="272" cy="300" r="5"/>
+    <circle cx="118" cy="305" r="4"/>
+  </g>
+
+  <!-- Tejado con cuernos -->
+  <path d="M82 182 L200 92 L318 182 Z" fill="#e8603c"/>
+  <path d="M82 182 L200 92 L318 182" fill="none" stroke="#c44d2b" stroke-width="4" stroke-linejoin="round"/>
+  <path d="M158 112 Q146 82 166 68 Q170 96 184 104 Z" fill="#fff3c4"/>
+  <path d="M242 112 Q254 82 234 68 Q230 96 216 104 Z" fill="#fff3c4"/>
+
+  <!-- Ojos (ventanas) -->
+  <g>
+    <circle cx="150" cy="232" r="25" fill="#ffffff"/>
+    <circle cx="156" cy="238" r="12" fill="#2b2d6e"/>
+    <circle cx="160" cy="233" r="4" fill="#ffffff"/>
+    <circle cx="250" cy="232" r="25" fill="#ffffff"/>
+    <circle cx="256" cy="238" r="12" fill="#2b2d6e"/>
+    <circle cx="260" cy="233" r="4" fill="#ffffff"/>
+  </g>
+
+  <!-- Mejillas -->
+  <circle cx="122" cy="270" r="10" fill="#ff9fb0" opacity="0.6"/>
+  <circle cx="278" cy="270" r="10" fill="#ff9fb0" opacity="0.6"/>
+
+  <!-- Puerta-boca -->
+  <rect x="180" y="290" width="40" height="50" rx="20" fill="#3b2a5c"/>
+  <path d="M182 292 L188 305 L194 292 Z" fill="#ffffff"/>
+  <path d="M206 292 L212 305 L218 292 Z" fill="#ffffff"/>
+</svg>

@@ -1,0 +1,94 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="400" height="400" viewBox="0 0 400 400">
+  <defs>
+    <linearGradient id="sky" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#8fd3ff"/>
+      <stop offset="1" stop-color="#fff1c9"/>
+    </linearGradient>
+    <linearGradient id="body" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#a68cf0"/>
+      <stop offset="1" stop-color="#7b5fd6"/>
+    </linearGradient>
+  </defs>
+
+  <!-- Sky -->
+  <rect width="400" height="400" fill="url(#sky)"/>
+
+  <!-- Sun -->
+  <circle cx="335" cy="68" r="30" fill="#fff6a8"/>
+  <circle cx="335" cy="68" r="42" fill="#fff6a8" opacity="0.35"/>
+
+  <!-- Clouds -->
+  <g fill="#ffffff" opacity="0.9">
+    <ellipse cx="80" cy="70" rx="34" ry="13"/>
+    <ellipse cx="102" cy="62" rx="24" ry="14"/>
+    <ellipse cx="200" cy="48" rx="28" ry="11"/>
+    <ellipse cx="220" cy="42" rx="20" ry="12"/>
+  </g>
+
+  <!-- Hills -->
+  <ellipse cx="90" cy="345" rx="170" ry="70" fill="#8fd694"/>
+  <ellipse cx="330" cy="360" rx="150" ry="60" fill="#7cc985"/>
+
+  <!-- Path -->
+  <path d="M200 318 L165 400 L235 400 Z" fill="#f2d7a0"/>
+
+  <!-- Horns (roof) -->
+  <path d="M135 165 Q118 122 102 96 Q150 110 172 152 Z" fill="#f7e7a6" stroke="#e0c46a" stroke-width="3" stroke-linejoin="round"/>
+  <path d="M265 165 Q282 122 298 96 Q250 110 228 152 Z" fill="#f7e7a6" stroke="#e0c46a" stroke-width="3" stroke-linejoin="round"/>
+
+  <!-- Tail -->
+  <path d="M285 290 Q330 300 320 262 Q312 240 336 232" fill="none" stroke="#7b5fd6" stroke-width="12" stroke-linecap="round"/>
+
+  <!-- Body (house) -->
+  <rect x="110" y="140" width="180" height="180" rx="62" fill="url(#body)"/>
+
+  <!-- Spots -->
+  <circle cx="132" cy="182" r="8" fill="#b9a4f2"/>
+  <circle cx="268" cy="262" r="10" fill="#b9a4f2"/>
+  <circle cx="252" cy="170" r="5" fill="#b9a4f2"/>
+  <circle cx="128" cy="268" r="6" fill="#b9a4f2"/>
+
+  <!-- Eyes (windows) -->
+  <circle cx="160" cy="204" r="22" fill="#ffffff"/>
+  <circle cx="240" cy="204" r="22" fill="#ffffff"/>
+  <circle cx="164" cy="208" r="10" fill="#3b2a5a"/>
+  <circle cx="244" cy="208" r="10" fill="#3b2a5a"/>
+  <circle cx="168" cy="203" r="3.5" fill="#ffffff"/>
+  <circle cx="248" cy="203" r="3.5" fill="#ffffff"/>
+
+  <!-- Blush -->
+  <circle cx="132" cy="236" r="9" fill="#ff9ec4" opacity="0.75"/>
+  <circle cx="268" cy="236" r="9" fill="#ff9ec4" opacity="0.75"/>
+
+  <!-- Smile -->
+  <path d="M172 240 Q200 262 228 240" fill="none" stroke="#3b2a5a" stroke-width="5" stroke-linecap="round"/>
+
+  <!-- Door -->
+  <path d="M182 320 V290 Q200 268 218 290 V320 Z" fill="#5a3fa8"/>
+  <circle cx="211" cy="302" r="2.5" fill="#ffe066"/>
+
+  <!-- Little feet -->
+  <ellipse cx="142" cy="320" rx="16" ry="8" fill="#6b4fb8"/>
+  <ellipse cx="258" cy="320" rx="16" ry="8" fill="#6b4fb8"/>
+
+  <!-- Floating heart -->
+  <path d="M305 128 C296 112 274 116 278 133 C281 146 305 158 305 158 C305 158 329 146 332 133 C336 116 314 112 305 128 Z" fill="#ff6b8b"/>
+
+  <!-- Flowers -->
+  <g>
+    <circle cx="60" cy="318" r="6" fill="#ff8fab"/>
+    <circle cx="54" cy="324" r="6" fill="#ff8fab"/>
+    <circle cx="66" cy="324" r="6" fill="#ff8fab"/>
+    <circle cx="60" cy="324" r="3" fill="#ffe066"/>
+
+    <circle cx="345" cy="312" r="6" fill="#ffb347"/>
+    <circle cx="339" cy="318" r="6" fill="#ffb347"/>
+    <circle cx="351" cy="318" r="6" fill="#ffb347"/>
+    <circle cx="345" cy="318" r="3" fill="#fff6a8"/>
+
+    <circle cx="90" cy="372" r="5" fill="#ff8fab"/>
+    <circle cx="85" cy="377" r="5" fill="#ff8fab"/>
+    <circle cx="95" cy="377" r="5" fill="#ff8fab"/>
+    <circle cx="90" cy="377" r="2.5" fill="#ffe066"/>
+  </g>
+</svg>

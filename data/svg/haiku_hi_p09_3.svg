@@ -1,0 +1,124 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="400" height="400" viewBox="0 0 400 400">
+  <defs>
+    <linearGradient id="sky" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#7fb3d5"/>
+      <stop offset="0.6" stop-color="#ffd8a8"/>
+      <stop offset="1" stop-color="#f4a261"/>
+    </linearGradient>
+    <linearGradient id="soil" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#8d5524"/>
+      <stop offset="1" stop-color="#4a2a12"/>
+    </linearGradient>
+    <linearGradient id="tower" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#c98a4b"/>
+      <stop offset="0.5" stop-color="#b5703a"/>
+      <stop offset="1" stop-color="#8f5426"/>
+    </linearGradient>
+    <g id="ant">
+      <ellipse cx="0" cy="0" rx="4" ry="3" fill="#2b1a0e"/>
+      <ellipse cx="7" cy="0" rx="3" ry="2.6" fill="#2b1a0e"/>
+      <circle cx="12" cy="-1" r="2.6" fill="#2b1a0e"/>
+      <path d="M2 1 L-3 5 M2 -1 L-3 -5 M7 1 L4 5 M7 -1 L4 -5 M10 1 L13 5" stroke="#2b1a0e" stroke-width="1" fill="none"/>
+    </g>
+    <g id="bee">
+      <ellipse cx="-2" cy="-7" rx="5" ry="8" fill="#ffffff" opacity="0.6" transform="rotate(-20 -2 -7)"/>
+      <ellipse cx="6" cy="-7" rx="4" ry="7" fill="#ffffff" opacity="0.5" transform="rotate(20 6 -7)"/>
+      <ellipse cx="0" cy="0" rx="8" ry="5.5" fill="#f7c600" stroke="#5a3a00" stroke-width="1"/>
+      <path d="M-3 -5 V5 M2 -5 V5" stroke="#3b2a00" stroke-width="2"/>
+    </g>
+  </defs>
+
+  <!-- Sky -->
+  <rect width="400" height="400" fill="url(#sky)"/>
+  <circle cx="330" cy="80" r="38" fill="#ffe066" opacity="0.9"/>
+  <circle cx="330" cy="80" r="52" fill="#ffe066" opacity="0.2"/>
+
+  <!-- Distant hills -->
+  <path d="M0 260 Q60 220 130 250 T270 240 T400 250 V300 H0Z" fill="#c9875a" opacity="0.6"/>
+
+  <!-- Bridges between towers -->
+  <rect x="100" y="232" width="32" height="6" rx="3" fill="#7a4520"/>
+  <rect x="180" y="220" width="30" height="6" rx="3" fill="#7a4520"/>
+  <rect x="240" y="200" width="30" height="6" rx="3" fill="#7a4520"/>
+  <rect x="320" y="240" width="30" height="6" rx="3" fill="#7a4520"/>
+
+  <!-- Towers -->
+  <path d="M60 290 V215 Q85 190 110 215 V290Z" fill="url(#tower)"/>
+  <path d="M125 290 V170 Q155 140 185 170 V290Z" fill="url(#tower)"/>
+  <path d="M200 290 V190 Q222 170 245 190 V290Z" fill="url(#tower)"/>
+  <path d="M260 290 V160 L295 108 L330 160 V290Z" fill="url(#tower)"/>
+  <path d="M340 290 V212 Q362 194 385 212 V290Z" fill="url(#tower)"/>
+
+  <!-- Antennae -->
+  <path d="M295 108 L285 70 M295 108 L305 72" stroke="#5a3418" stroke-width="1.5" fill="none"/>
+  <circle cx="285" cy="70" r="3" fill="#ffe066"/>
+  <circle cx="305" cy="72" r="3" fill="#ffe066"/>
+  <path d="M155 140 L150 118" stroke="#5a3418" stroke-width="1.5"/>
+  <circle cx="150" cy="118" r="2.5" fill="#ffe066"/>
+
+  <!-- Windows -->
+  <g fill="#3b2314">
+    <ellipse cx="85" cy="235" rx="6" ry="9"/>
+    <ellipse cx="85" cy="260" rx="6" ry="9"/>
+    <ellipse cx="155" cy="195" rx="7" ry="10"/>
+    <ellipse cx="155" cy="232" rx="7" ry="10"/>
+    <ellipse cx="222" cy="220" rx="6" ry="9"/>
+    <ellipse cx="222" cy="250" rx="6" ry="9"/>
+    <ellipse cx="295" cy="185" rx="8" ry="11"/>
+    <ellipse cx="295" cy="225" rx="8" ry="11"/>
+    <ellipse cx="295" cy="262" rx="8" ry="11"/>
+    <ellipse cx="362" cy="240" rx="6" ry="9"/>
+  </g>
+  <g fill="#ffe9a8">
+    <circle cx="85" cy="235" r="2.5"/>
+    <circle cx="155" cy="195" r="2.5"/>
+    <circle cx="222" cy="250" r="2.5"/>
+    <circle cx="295" cy="225" r="3"/>
+    <circle cx="295" cy="262" r="3"/>
+    <circle cx="362" cy="240" r="2.5"/>
+  </g>
+
+  <!-- Ground -->
+  <path d="M0 290 Q100 272 200 288 T400 282 V400 H0Z" fill="url(#soil)"/>
+
+  <!-- Tunnel entrances -->
+  <path d="M100 330 Q115 310 130 330 V345 H100Z" fill="#1e0f05"/>
+  <path d="M245 335 Q262 312 280 335 V350 H245Z" fill="#1e0f05"/>
+  <path d="M40 350 Q52 335 64 350 V362 H40Z" fill="#1e0f05"/>
+
+  <!-- Pebbles -->
+  <g fill="#6b3d1c">
+    <ellipse cx="30" cy="310" rx="5" ry="3"/>
+    <ellipse cx="170" cy="318" rx="4" ry="2.5"/>
+    <ellipse cx="310" cy="305" rx="5" ry="3"/>
+    <ellipse cx="370" cy="340" rx="6" ry="3"/>
+    <ellipse cx="200" cy="378" rx="5" ry="3"/>
+  </g>
+
+  <!-- Grass -->
+  <g stroke="#4f7d2a" stroke-width="2" fill="none" stroke-linecap="round">
+    <path d="M15 292 Q12 280 8 272"/>
+    <path d="M20 292 Q22 278 28 270"/>
+    <path d="M160 288 Q157 276 152 268"/>
+    <path d="M168 288 Q170 276 176 270"/>
+    <path d="M280 284 Q277 272 272 264"/>
+    <path d="M292 284 Q295 272 300 266"/>
+    <path d="M390 282 Q387 270 382 262"/>
+  </g>
+
+  <!-- Ant workers -->
+  <use href="#ant" x="60" y="312" transform="scale(1)"/>
+  <use href="#ant" x="78" y="326" transform="scale(-1 1) translate(-160 0)"/>
+  <use href="#ant" x="180" y="340" transform="scale(1.2)"/>
+  <use href="#ant" x="230" y="318"/>
+  <use href="#ant" x="300" y="345" transform="scale(-1 1) translate(-600 0)"/>
+  <use href="#ant" x="345" y="312"/>
+  <use href="#ant" x="130" y="372" transform="scale(1.1)"/>
+  <use href="#ant" x="265" y="372"/>
+
+  <!-- Flying bees -->
+  <use href="#bee" x="120" y="110" transform="scale(0.9)"/>
+  <use href="#bee" x="210" y="88" transform="scale(1.1)"/>
+  <use href="#bee" x="370" y="150" transform="scale(0.8)"/>
+  <use href="#bee" x="45" y="170" transform="scale(0.7)"/>
+</svg>

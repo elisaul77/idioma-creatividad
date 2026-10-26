@@ -1,0 +1,102 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="400" height="400" viewBox="0 0 400 400">
+  <defs>
+    <linearGradient id="sky" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#1a1040"/>
+      <stop offset="45%" stop-color="#4a2a7a"/>
+      <stop offset="75%" stop-color="#b05a9a"/>
+      <stop offset="100%" stop-color="#f3a7a0"/>
+    </linearGradient>
+    <radialGradient id="glow" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#fff6d8" stop-opacity="0.95"/>
+      <stop offset="40%" stop-color="#ffd38a" stop-opacity="0.45"/>
+      <stop offset="100%" stop-color="#ffb3c6" stop-opacity="0"/>
+    </radialGradient>
+    <radialGradient id="orb1" cx="35%" cy="35%" r="65%">
+      <stop offset="0%" stop-color="#e9d6ff" stop-opacity="0.9"/>
+      <stop offset="100%" stop-color="#7b5cc9" stop-opacity="0.15"/>
+    </radialGradient>
+    <radialGradient id="orb2" cx="35%" cy="35%" r="65%">
+      <stop offset="0%" stop-color="#ffe3f1" stop-opacity="0.85"/>
+      <stop offset="100%" stop-color="#e06aa8" stop-opacity="0.12"/>
+    </radialGradient>
+    <linearGradient id="wisp" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#ffffff" stop-opacity="0"/>
+      <stop offset="50%" stop-color="#ffe7b8" stop-opacity="0.7"/>
+      <stop offset="100%" stop-color="#ffffff" stop-opacity="0"/>
+    </linearGradient>
+    <filter id="soft" x="-50%" y="-50%" width="200%" height="200%">
+      <feGaussianBlur stdDeviation="6"/>
+    </filter>
+    <filter id="haze" x="-50%" y="-50%" width="200%" height="200%">
+      <feGaussianBlur stdDeviation="14"/>
+    </filter>
+    <clipPath id="frame">
+      <rect x="0" y="0" width="400" height="400" rx="0"/>
+    </clipPath>
+  </defs>
+
+  <g clip-path="url(#frame)">
+    <!-- Sky -->
+    <rect width="400" height="400" fill="url(#sky)"/>
+
+    <!-- Distant haze clouds -->
+    <ellipse cx="90" cy="300" rx="150" ry="36" fill="#f6b7c8" opacity="0.35" filter="url(#haze)"/>
+    <ellipse cx="330" cy="260" rx="130" ry="30" fill="#c9a0ff" opacity="0.3" filter="url(#haze)"/>
+    <ellipse cx="200" cy="350" rx="220" ry="40" fill="#ffd1b3" opacity="0.4" filter="url(#haze)"/>
+
+    <!-- Stars -->
+    <g fill="#fff8e7">
+      <circle cx="42" cy="48" r="1.6" opacity="0.9"/>
+      <circle cx="98" cy="22" r="1.1" opacity="0.7"/>
+      <circle cx="160" cy="62" r="1.4" opacity="0.85"/>
+      <circle cx="268" cy="36" r="1.8" opacity="0.95"/>
+      <circle cx="342" cy="78" r="1.2" opacity="0.7"/>
+      <circle cx="372" cy="150" r="1.5" opacity="0.8"/>
+      <circle cx="24" cy="170" r="1.2" opacity="0.6"/>
+      <circle cx="210" cy="118" r="1" opacity="0.6"/>
+      <circle cx="300" cy="190" r="1.3" opacity="0.75"/>
+      <circle cx="70" cy="210" r="1" opacity="0.5"/>
+    </g>
+
+    <!-- Four-point twinkles -->
+    <g fill="#ffffff" opacity="0.9">
+      <path d="M128 92 L130 86 L132 92 L138 94 L132 96 L130 102 L128 96 L122 94 Z"/>
+      <path d="M332 232 L334 226 L336 232 L342 234 L336 236 L334 242 L332 236 L326 234 Z" opacity="0.8"/>
+      <path d="M58 118 L59.5 114 L61 118 L65 119.5 L61 121 L59.5 125 L58 121 L54 119.5 Z" opacity="0.8"/>
+    </g>
+
+    <!-- Dream moon with halo -->
+    <circle cx="200" cy="160" r="95" fill="url(#glow)" opacity="0.8"/>
+    <circle cx="200" cy="160" r="58" fill="#fff3d6" opacity="0.92"/>
+    <circle cx="222" cy="146" r="52" fill="#4a2a7a" opacity="0.9"/>
+    <circle cx="200" cy="160" r="58" fill="none" stroke="#ffe9b0" stroke-width="1.5" opacity="0.7"/>
+
+    <!-- Floating translucent orbs -->
+    <circle cx="90" cy="130" r="26" fill="url(#orb1)"/>
+    <circle cx="310" cy="112" r="18" fill="url(#orb2)"/>
+    <circle cx="120" cy="245" r="14" fill="url(#orb2)"/>
+    <circle cx="282" cy="290" r="34" fill="url(#orb1)"/>
+    <circle cx="170" cy="310" r="10" fill="url(#orb1)"/>
+    <circle cx="345" cy="205" r="9" fill="url(#orb2)"/>
+
+    <!-- Flowing dream currents -->
+    <path d="M-10 280 C 60 240, 120 320, 200 285 S 330 240, 410 275" fill="none" stroke="url(#wisp)" stroke-width="10" opacity="0.6" filter="url(#soft)"/>
+    <path d="M-10 300 C 70 265, 130 340, 205 305 S 335 262, 410 298" fill="none" stroke="#ffd6a5" stroke-width="2" opacity="0.6"/>
+    <path d="M-10 320 C 80 292, 140 355, 215 325 S 340 285, 410 322" fill="none" stroke="#f7b6d2" stroke-width="1.5" opacity="0.5"/>
+    <path d="M30 380 C 110 340, 170 395, 250 360 S 360 340, 420 365" fill="none" stroke="#e9c8ff" stroke-width="1.2" opacity="0.45"/>
+
+    <!-- Spiral of memory -->
+    <path d="M200 200 C 230 205, 240 240, 210 255 C 180 268, 160 236, 180 220 C 196 206, 222 218, 220 236"
+          fill="none" stroke="#fff0c8" stroke-width="2" stroke-linecap="round" opacity="0.75"/>
+    <path d="M200 200 C 230 205, 240 240, 210 255 C 180 268, 160 236, 180 220 C 196 206, 222 218, 220 236"
+          fill="none" stroke="#ffe08a" stroke-width="6" stroke-linecap="round" opacity="0.25" filter="url(#soft)"/>
+
+    <!-- Drifting feathers / petals -->
+    <path d="M60 330 Q 75 312 92 322 Q 78 334 60 330 Z" fill="#ffd9e8" opacity="0.6"/>
+    <path d="M336 340 Q 352 324 366 336 Q 350 348 336 340 Z" fill="#dcc3ff" opacity="0.55"/>
+    <path d="M250 60 Q 262 46 276 56 Q 264 68 250 60 Z" fill="#ffe9c2" opacity="0.5"/>
+
+    <!-- Soft vignette -->
+    <rect width="400" height="400" fill="none" stroke="#1a1040" stroke-width="30" opacity="0.25" filter="url(#haze)"/>
+  </g>
+</svg>

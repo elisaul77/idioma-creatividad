@@ -1,0 +1,80 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="400" height="400" viewBox="0 0 400 400">
+  <defs>
+    <linearGradient id="cielo" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#8ED1FC"/>
+      <stop offset="1" stop-color="#D6F1FF"/>
+    </linearGradient>
+    <linearGradient id="casa" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#B388EB"/>
+      <stop offset="1" stop-color="#8E6BD1"/>
+    </linearGradient>
+  </defs>
+
+  <!-- Cielo -->
+  <rect width="400" height="400" fill="url(#cielo)"/>
+
+  <!-- Sol -->
+  <circle cx="330" cy="70" r="90" fill="#FFE27A" opacity="0.5"/>
+  <circle cx="330" cy="70" r="90" fill="none" stroke="#FFD24D" stroke-width="6" opacity="0.4"/>
+
+  <!-- Nubes -->
+  <g fill="#FFFFFF" opacity="0.95">
+    <ellipse cx="90" cy="70" rx="40" ry="18"/>
+    <ellipse cx="115" cy="60" rx="30" ry="20"/>
+    <ellipse cx="65" cy="62" rx="22" ry="14"/>
+  </g>
+
+  <!-- Colina -->
+  <ellipse cx="200" cy="370" rx="260" ry="90" fill="#7BD389"/>
+  <ellipse cx="90" cy="390" rx="170" ry="70" fill="#5DBE70"/>
+
+  <!-- Cuerpo de la casa (monstruo) -->
+  <path d="M110 240 Q110 160 200 150 Q290 160 290 240 L290 330 Q290 345 275 345 L125 345 Q110 345 110 330 Z" fill="url(#casa)"/>
+
+  <!-- Cuernitos del tejado -->
+  <path d="M150 165 Q140 120 125 100 Q160 115 175 152 Z" fill="#FFD166"/>
+  <path d="M250 165 Q260 120 275 100 Q240 115 225 152 Z" fill="#FFD166"/>
+
+  <!-- Antena con bola -->
+  <line x1="200" y1="150" x2="200" y2="108" stroke="#5B4A7A" stroke-width="5" stroke-linecap="round"/>
+  <circle cx="200" cy="100" r="11" fill="#FF7EB6"/>
+
+  <!-- Ojos (ventanas) -->
+  <circle cx="160" cy="210" r="26" fill="#FFFFFF"/>
+  <circle cx="240" cy="210" r="26" fill="#FFFFFF"/>
+  <circle cx="165" cy="214" r="12" fill="#2E2A4F"/>
+  <circle cx="235" cy="214" r="12" fill="#2E2A4F"/>
+  <circle cx="169" cy="209" r="4" fill="#FFFFFF"/>
+  <circle cx="239" cy="209" r="4" fill="#FFFFFF"/>
+
+  <!-- Mejillas -->
+  <ellipse cx="135" cy="252" rx="13" ry="8" fill="#FF9EC7" opacity="0.8"/>
+  <ellipse cx="265" cy="252" rx="13" ry="8" fill="#FF9EC7" opacity="0.8"/>
+
+  <!-- Sonrisa -->
+  <path d="M170 265 Q200 292 230 265" fill="none" stroke="#2E2A4F" stroke-width="6" stroke-linecap="round"/>
+
+  <!-- Puerta (boca abierta sonriente) -->
+  <path d="M182 345 L182 318 Q200 300 218 318 L218 345 Z" fill="#3E2C5E"/>
+  <path d="M190 335 Q200 330 210 335" fill="none" stroke="#FF7EB6" stroke-width="3" stroke-linecap="round"/>
+
+  <!-- Dientecitos -->
+  <path d="M180 265 L186 277 L192 265 Z" fill="#FFFFFF"/>
+  <path d="M208 265 L214 277 L220 265 Z" fill="#FFFFFF"/>
+
+  <!-- Árboles -->
+  <g>
+    <rect x="48" y="300" width="14" height="50" fill="#8B5E3C"/>
+    <circle cx="55" cy="290" r="28" fill="#3FA65A"/>
+    <rect x="330" y="310" width="14" height="40" fill="#8B5E3C"/>
+    <circle cx="337" cy="300" r="24" fill="#3FA65A"/>
+  </g>
+
+  <!-- Flores -->
+  <g>
+    <circle cx="80" cy="365" r="6" fill="#FF7EB6"/>
+    <circle cx="95" cy="378" r="6" fill="#FFD166"/>
+    <circle cx="310" cy="372" r="6" fill="#FF7EB6"/>
+    <circle cx="370" cy="360" r="5" fill="#FFD166"/>
+  </g>
+</svg>

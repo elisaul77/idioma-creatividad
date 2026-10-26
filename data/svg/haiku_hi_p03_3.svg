@@ -1,0 +1,98 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 400" width="400" height="400">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#1b1036"/>
+      <stop offset="0.55" stop-color="#3a0d4d"/>
+      <stop offset="1" stop-color="#0d2b3e"/>
+    </linearGradient>
+    <radialGradient id="glow" cx="50%" cy="50%" r="50%">
+      <stop offset="0" stop-color="#ffd166" stop-opacity="0.85"/>
+      <stop offset="0.6" stop-color="#ef476f" stop-opacity="0.25"/>
+      <stop offset="1" stop-color="#ef476f" stop-opacity="0"/>
+    </radialGradient>
+    <linearGradient id="wave" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#ef476f"/>
+      <stop offset="0.5" stop-color="#ffd166"/>
+      <stop offset="1" stop-color="#06d6a0"/>
+    </linearGradient>
+    <filter id="blur" x="-50%" y="-50%" width="200%" height="200%">
+      <feGaussianBlur stdDeviation="4"/>
+    </filter>
+    <filter id="soft" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="1.2"/>
+    </filter>
+  </defs>
+
+  <!-- background -->
+  <rect width="400" height="400" fill="url(#bg)"/>
+  <circle cx="200" cy="200" r="170" fill="url(#glow)"/>
+
+  <!-- brush washes -->
+  <g fill="#ef476f" opacity="0.12" filter="url(#blur)">
+    <ellipse cx="80" cy="90" rx="70" ry="22" transform="rotate(-18 80 90)"/>
+  </g>
+  <g fill="#06d6a0" opacity="0.12" filter="url(#blur)">
+    <ellipse cx="330" cy="320" rx="80" ry="26" transform="rotate(14 330 320)"/>
+  </g>
+  <g fill="#118ab2" opacity="0.15" filter="url(#blur)">
+    <ellipse cx="300" cy="70" rx="50" ry="18" transform="rotate(-30 300 70)"/>
+  </g>
+
+  <!-- staff lines as flowing brush strokes -->
+  <g fill="none" stroke="url(#wave)" stroke-linecap="round">
+    <path d="M0 130 C100 102 150 168 200 136 S300 100 400 132" stroke-width="2.5" opacity="0.85"/>
+    <path d="M0 152 C100 124 150 190 200 158 S300 122 400 154" stroke-width="2.5" opacity="0.8"/>
+    <path d="M0 174 C100 146 150 212 200 180 S300 144 400 176" stroke-width="2.5" opacity="0.75"/>
+    <path d="M0 196 C100 168 150 234 200 202 S300 166 400 198" stroke-width="2.5" opacity="0.7"/>
+    <path d="M0 218 C100 190 150 256 200 224 S300 188 400 220" stroke-width="2.5" opacity="0.65"/>
+  </g>
+
+  <!-- painted notes: halo, body, stem -->
+  <g>
+    <circle cx="70" cy="184" r="18" fill="#ef476f" opacity="0.55" filter="url(#blur)"/>
+    <line x1="80" y1="184" x2="80" y2="112" stroke="#ef476f" stroke-width="3" stroke-linecap="round"/>
+    <ellipse cx="70" cy="184" rx="11" ry="8" transform="rotate(-20 70 184)" fill="#ef476f"/>
+
+    <circle cx="130" cy="166" r="18" fill="#ffd166" opacity="0.55" filter="url(#blur)"/>
+    <line x1="140" y1="166" x2="140" y2="94" stroke="#ffd166" stroke-width="3" stroke-linecap="round"/>
+    <ellipse cx="130" cy="166" rx="11" ry="8" transform="rotate(-20 130 166)" fill="#ffd166"/>
+
+    <circle cx="200" cy="206" r="20" fill="#06d6a0" opacity="0.5" filter="url(#blur)"/>
+    <line x1="210" y1="206" x2="210" y2="134" stroke="#06d6a0" stroke-width="3" stroke-linecap="round"/>
+    <ellipse cx="200" cy="206" rx="11" ry="8" transform="rotate(-20 200 206)" fill="#06d6a0"/>
+
+    <circle cx="268" cy="190" r="18" fill="#118ab2" opacity="0.55" filter="url(#blur)"/>
+    <line x1="278" y1="190" x2="278" y2="118" stroke="#118ab2" stroke-width="3" stroke-linecap="round"/>
+    <ellipse cx="268" cy="190" rx="11" ry="8" transform="rotate(-20 268 190)" fill="#118ab2"/>
+
+    <circle cx="330" cy="150" r="18" fill="#c77dff" opacity="0.55" filter="url(#blur)"/>
+    <line x1="340" y1="150" x2="340" y2="78" stroke="#c77dff" stroke-width="3" stroke-linecap="round"/>
+    <ellipse cx="330" cy="150" rx="11" ry="8" transform="rotate(-20 330 150)" fill="#c77dff"/>
+  </g>
+
+  <!-- flowing ribbon connecting the notes -->
+  <path d="M70 184 Q130 150 200 206 T330 150" fill="none" stroke="#ffd166" stroke-width="1.5" stroke-dasharray="4 6" opacity="0.6" filter="url(#soft)"/>
+
+  <!-- paint droplets / splatters -->
+  <g fill="#ffd166" opacity="0.7">
+    <circle cx="48" cy="262" r="3"/>
+    <circle cx="112" cy="290" r="2.2"/>
+    <circle cx="165" cy="72" r="2.6"/>
+    <circle cx="245" cy="262" r="3.4"/>
+    <circle cx="312" cy="300" r="2"/>
+    <circle cx="360" cy="236" r="2.8"/>
+  </g>
+  <g fill="#ef476f" opacity="0.6">
+    <circle cx="28" cy="110" r="2"/>
+    <circle cx="222" cy="330" r="2.6"/>
+    <circle cx="372" cy="60" r="1.8"/>
+  </g>
+  <g fill="#06d6a0" opacity="0.6">
+    <circle cx="150" cy="330" r="2.4"/>
+    <circle cx="286" cy="36" r="2"/>
+    <circle cx="96" cy="46" r="1.6"/>
+  </g>
+
+  <!-- bottom brush arc -->
+  <path d="M40 360 Q200 320 360 350" fill="none" stroke="url(#wave)" stroke-width="6" stroke-linecap="round" opacity="0.35" filter="url(#soft)"/>
+</svg>

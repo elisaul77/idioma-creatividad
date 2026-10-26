@@ -1,0 +1,105 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="400" height="400" viewBox="0 0 400 400">
+  <defs>
+    <radialGradient id="sky" cx="50%" cy="40%" r="75%">
+      <stop offset="0%" stop-color="#3b2a6e"/>
+      <stop offset="55%" stop-color="#1d1846"/>
+      <stop offset="100%" stop-color="#0b0a22"/>
+    </radialGradient>
+    <radialGradient id="moonGlow" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#fff6d5" stop-opacity="0.9"/>
+      <stop offset="60%" stop-color="#ffe9a8" stop-opacity="0.25"/>
+      <stop offset="100%" stop-color="#ffe9a8" stop-opacity="0"/>
+    </radialGradient>
+    <radialGradient id="moon" cx="40%" cy="40%" r="60%">
+      <stop offset="0%" stop-color="#fffbea"/>
+      <stop offset="100%" stop-color="#f0d98a"/>
+    </radialGradient>
+    <radialGradient id="nebula1" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#ff7ad9" stop-opacity="0.45"/>
+      <stop offset="100%" stop-color="#ff7ad9" stop-opacity="0"/>
+    </radialGradient>
+    <radialGradient id="nebula2" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#5ee7ff" stop-opacity="0.4"/>
+      <stop offset="100%" stop-color="#5ee7ff" stop-opacity="0"/>
+    </radialGradient>
+    <linearGradient id="cloud" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#8f7fd6" stop-opacity="0.7"/>
+      <stop offset="100%" stop-color="#2b2360" stop-opacity="0.9"/>
+    </linearGradient>
+    <filter id="blur" x="-50%" y="-50%" width="200%" height="200%">
+      <feGaussianBlur stdDeviation="8"/>
+    </filter>
+    <filter id="softBlur" x="-50%" y="-50%" width="200%" height="200%">
+      <feGaussianBlur stdDeviation="2"/>
+    </filter>
+    <clipPath id="frame">
+      <rect width="400" height="400" rx="28"/>
+    </clipPath>
+  </defs>
+
+  <g clip-path="url(#frame)">
+    <!-- Sky -->
+    <rect width="400" height="400" fill="url(#sky)"/>
+
+    <!-- Dreamy nebula swirls -->
+    <circle cx="90" cy="120" r="90" fill="url(#nebula1)" filter="url(#blur)"/>
+    <circle cx="320" cy="270" r="110" fill="url(#nebula2)" filter="url(#blur)"/>
+    <circle cx="260" cy="70" r="70" fill="url(#nebula2)" filter="url(#blur)" opacity="0.6"/>
+
+    <!-- Stars -->
+    <g fill="#ffffff" filter="url(#softBlur)">
+      <circle cx="42" cy="48" r="1.6"/>
+      <circle cx="110" cy="30" r="1.2"/>
+      <circle cx="170" cy="70" r="1.8"/>
+      <circle cx="360" cy="46" r="1.5"/>
+      <circle cx="300" cy="150" r="1.3"/>
+      <circle cx="28" cy="200" r="1.4"/>
+      <circle cx="75" cy="250" r="1.1"/>
+      <circle cx="140" cy="180" r="1.6"/>
+      <circle cx="210" cy="30" r="1.2"/>
+      <circle cx="350" cy="200" r="1.7"/>
+      <circle cx="385" cy="320" r="1.2"/>
+      <circle cx="20" cy="360" r="1.5"/>
+      <circle cx="240" cy="210" r="1.1"/>
+      <circle cx="120" cy="320" r="1.4"/>
+      <circle cx="330" cy="370" r="1.3"/>
+    </g>
+    <!-- Sparkle stars -->
+    <g fill="#fff8dc">
+      <path d="M 170 70 l 2 -8 l 2 8 l 8 2 l -8 2 l -2 8 l -2 -8 l -8 -2 z" opacity="0.9"/>
+      <path d="M 360 46 l 1.5 -6 l 1.5 6 l 6 1.5 l -6 1.5 l -1.5 6 l -1.5 -6 l -6 -1.5 z" opacity="0.8"/>
+      <path d="M 75 250 l 1.2 -5 l 1.2 5 l 5 1.2 l -5 1.2 l -1.2 5 l -1.2 -5 l -5 -1.2 z" opacity="0.7"/>
+    </g>
+
+    <!-- Moon glow and moon -->
+    <circle cx="200" cy="190" r="110" fill="url(#moonGlow)"/>
+    <circle cx="200" cy="190" r="62" fill="url(#moon)"/>
+    <!-- Soft craters -->
+    <circle cx="180" cy="175" r="9" fill="#e8c86a" opacity="0.35"/>
+    <circle cx="215" cy="205" r="13" fill="#e8c86a" opacity="0.3"/>
+    <circle cx="192" cy="216" r="6" fill="#e8c86a" opacity="0.35"/>
+    <circle cx="222" cy="170" r="5" fill="#e8c86a" opacity="0.3"/>
+
+    <!-- Floating dream clouds -->
+    <g fill="url(#cloud)" filter="url(#softBlur)">
+      <ellipse cx="90" cy="300" rx="70" ry="18"/>
+      <ellipse cx="130" cy="292" rx="40" ry="16"/>
+      <ellipse cx="300" cy="320" rx="80" ry="20"/>
+      <ellipse cx="260" cy="312" rx="40" ry="14"/>
+    </g>
+
+    <!-- Dream drifting ribbons -->
+    <g fill="none" stroke-linecap="round">
+      <path d="M 20 260 Q 110 220 200 260 T 390 240" stroke="#ff9ee6" stroke-width="2" opacity="0.5"/>
+      <path d="M 10 280 Q 110 240 200 280 T 395 265" stroke="#8ef0ff" stroke-width="1.5" opacity="0.4"/>
+    </g>
+
+    <!-- Tiny floating motes -->
+    <g fill="#ffe9a8" opacity="0.8">
+      <circle cx="150" cy="130" r="2"/>
+      <circle cx="270" cy="235" r="2.4"/>
+      <circle cx="95" cy="165" r="1.8"/>
+      <circle cx="330" cy="110" r="2"/>
+    </g>
+  </g>
+</svg>

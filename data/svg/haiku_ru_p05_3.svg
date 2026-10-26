@@ -1,0 +1,95 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="400" height="400" viewBox="0 0 400 400">
+  <defs>
+    <radialGradient id="bg" cx="50%" cy="50%" r="75%">
+      <stop offset="0" stop-color="#1d2148"/>
+      <stop offset="1" stop-color="#04050c"/>
+    </radialGradient>
+    <radialGradient id="glow" cx="50%" cy="50%" r="50%">
+      <stop offset="0" stop-color="#fff9d6"/>
+      <stop offset="0.45" stop-color="#ffb347"/>
+      <stop offset="1" stop-color="#ff5e00" stop-opacity="0"/>
+    </radialGradient>
+    <radialGradient id="crust" cx="40%" cy="35%" r="70%">
+      <stop offset="0" stop-color="#8b5a3c"/>
+      <stop offset="1" stop-color="#3d2415"/>
+    </radialGradient>
+    <linearGradient id="brass" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#ffe49a"/>
+      <stop offset="0.5" stop-color="#c58a2e"/>
+      <stop offset="1" stop-color="#6b4416"/>
+    </linearGradient>
+    <radialGradient id="porthole" cx="35%" cy="35%" r="65%">
+      <stop offset="0" stop-color="#ffffff"/>
+      <stop offset="0.4" stop-color="#7fe7ff"/>
+      <stop offset="1" stop-color="#1c6e8c"/>
+    </radialGradient>
+    <linearGradient id="beam" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#ffffff" stop-opacity="0.55"/>
+      <stop offset="1" stop-color="#ffffff" stop-opacity="0"/>
+    </linearGradient>
+  </defs>
+
+  <!-- Фон и звезды -->
+  <rect width="400" height="400" fill="url(#bg)"/>
+  <g fill="#ffffff">
+    <circle cx="40" cy="45" r="1.5" opacity="0.8"/>
+    <circle cx="82" cy="20" r="1" opacity="0.6"/>
+    <circle cx="330" cy="38" r="1.8" opacity="0.9"/>
+    <circle cx="368" cy="92" r="1" opacity="0.6"/>
+    <circle cx="28" cy="150" r="1.2" opacity="0.7"/>
+    <circle cx="372" cy="210" r="1.4" opacity="0.7"/>
+    <circle cx="55" cy="320" r="1" opacity="0.6"/>
+    <circle cx="345" cy="345" r="1.6" opacity="0.8"/>
+    <circle cx="120" cy="372" r="1" opacity="0.5"/>
+    <circle cx="290" cy="385" r="1.2" opacity="0.6"/>
+  </g>
+
+  <!-- Земля в разрезе -->
+  <circle cx="200" cy="210" r="168" fill="#ffb347" opacity="0.12"/>
+  <circle cx="200" cy="210" r="150" fill="url(#crust)"/>
+  <circle cx="200" cy="210" r="150" fill="none" stroke="#ffb347" stroke-width="2" opacity="0.6"/>
+
+  <!-- Слои: мантия, внешнее ядро, внутреннее ядро -->
+  <circle cx="200" cy="210" r="118" fill="#b8492a"/>
+  <circle cx="200" cy="210" r="118" fill="none" stroke="#e8763a" stroke-width="6" stroke-dasharray="20 10" opacity="0.5"/>
+  <circle cx="200" cy="210" r="86" fill="#e8822e"/>
+  <circle cx="200" cy="210" r="86" fill="none" stroke="#ffc266" stroke-width="4" stroke-dasharray="12 8" opacity="0.6"/>
+  <circle cx="200" cy="210" r="48" fill="#ffd45e"/>
+  <circle cx="200" cy="210" r="60" fill="url(#glow)"/>
+
+  <!-- Туннель -->
+  <path d="M200 60 L200 186" stroke="#1a0d05" stroke-width="18" stroke-linecap="round" opacity="0.85"/>
+  <path d="M200 60 L200 130" stroke="#ffb347" stroke-width="2" stroke-dasharray="4 6" opacity="0.7"/>
+
+  <!-- Луч света под капсулой -->
+  <path d="M200 196 L182 258 L218 258 Z" fill="url(#beam)"/>
+
+  <!-- Искры -->
+  <g fill="#ffe08a">
+    <circle cx="192" cy="112" r="1.8" opacity="0.9"/>
+    <circle cx="209" cy="104" r="1.4" opacity="0.8"/>
+    <circle cx="196" cy="92" r="1.2" opacity="0.7"/>
+    <circle cx="206" cy="78" r="1" opacity="0.6"/>
+  </g>
+
+  <!-- Капсула-батискаф -->
+  <g>
+    <!-- Плавники -->
+    <path d="M186 138 L174 128 L178 146 Z" fill="#8a5a1c"/>
+    <path d="M214 138 L226 128 L222 146 Z" fill="#8a5a1c"/>
+    <!-- Корпус -->
+    <ellipse cx="200" cy="150" rx="15" ry="24" fill="url(#brass)" stroke="#4a2e0e" stroke-width="2"/>
+    <!-- Кольца корпуса -->
+    <path d="M186 142 Q200 146 214 142" fill="none" stroke="#4a2e0e" stroke-width="1.5" opacity="0.6"/>
+    <path d="M186 158 Q200 162 214 158" fill="none" stroke="#4a2e0e" stroke-width="1.5" opacity="0.6"/>
+    <!-- Иллюминатор -->
+    <circle cx="200" cy="144" r="6.5" fill="url(#porthole)" stroke="#4a2e0e" stroke-width="1.5"/>
+    <!-- Бур -->
+    <path d="M186 172 L200 204 L214 172 Z" fill="#a8a8b4" stroke="#3a3a46" stroke-width="1.5"/>
+    <path d="M191 180 L209 180 M194 187 L206 187 M197 194 L203 194" stroke="#3a3a46" stroke-width="1.5" fill="none"/>
+    <path d="M186 172 L214 172" stroke="#e0e0ea" stroke-width="2"/>
+  </g>
+
+  <!-- Контур атмосферы -->
+  <circle cx="200" cy="210" r="150" fill="none" stroke="#7fd4ff" stroke-width="1" opacity="0.25"/>
+</svg>

@@ -1,0 +1,138 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 400" width="400" height="400">
+  <defs>
+    <linearGradient id="sky" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#1b1f4b"/>
+      <stop offset="1" stop-color="#5b4a8a"/>
+    </linearGradient>
+    <linearGradient id="ground" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#2e5a46"/>
+      <stop offset="1" stop-color="#1c3a2e"/>
+    </linearGradient>
+    <linearGradient id="monster" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#8fd3c4"/>
+      <stop offset="1" stop-color="#4fa3a0"/>
+    </linearGradient>
+    <radialGradient id="glow" cx="0.5" cy="0.5" r="0.5">
+      <stop offset="0" stop-color="#ffd27a" stop-opacity="0.8"/>
+      <stop offset="1" stop-color="#ffd27a" stop-opacity="0"/>
+    </radialGradient>
+  </defs>
+
+  <!-- Sky -->
+  <rect width="400" height="400" fill="url(#sky)"/>
+
+  <!-- Stars -->
+  <g fill="#fff8e1">
+    <circle cx="40" cy="50" r="2"/>
+    <circle cx="95" cy="30" r="1.5"/>
+    <circle cx="160" cy="55" r="2"/>
+    <circle cx="330" cy="40" r="2"/>
+    <circle cx="365" cy="90" r="1.5"/>
+    <circle cx="300" cy="115" r="1.5"/>
+    <circle cx="70" cy="110" r="1.5"/>
+    <circle cx="210" cy="25" r="1.5"/>
+  </g>
+
+  <!-- Moon -->
+  <circle cx="330" cy="90" r="90" fill="url(#glow)" opacity="0.5"/>
+  <circle cx="330" cy="90" r="28" fill="#fff3c4"/>
+  <circle cx="340" cy="82" r="24" fill="#5b4a8a" opacity="0.25"/>
+
+  <!-- Hill / ground -->
+  <path d="M0 290 Q120 250 230 285 T400 275 L400 400 L0 400 Z" fill="url(#ground)"/>
+
+  <!-- Path to door -->
+  <path d="M180 400 Q190 340 200 318 Q210 340 225 400 Z" fill="#7a6a58" opacity="0.8"/>
+
+  <!-- House body -->
+  <rect x="110" y="200" width="150" height="110" rx="4" fill="#f2d7b0"/>
+  <rect x="110" y="200" width="150" height="12" fill="#e2b98a"/>
+
+  <!-- Roof -->
+  <path d="M95 205 L185 130 L275 205 Z" fill="#b5533c"/>
+  <path d="M185 130 L275 205 L185 205 Z" fill="#9a4330" opacity="0.6"/>
+  <!-- Chimney -->
+  <rect x="220" y="140" width="18" height="40" fill="#8a4a3a"/>
+  <rect x="216" y="136" width="26" height="8" rx="2" fill="#6e3a2e"/>
+  <!-- Chimney smoke -->
+  <g fill="#d8d0ec" opacity="0.6">
+    <circle cx="232" cy="118" r="7"/>
+    <circle cx="240" cy="104" r="9"/>
+    <circle cx="232" cy="88" r="6"/>
+  </g>
+
+  <!-- Round attic window -->
+  <circle cx="185" cy="170" r="12" fill="#ffd27a"/>
+  <circle cx="185" cy="170" r="12" fill="none" stroke="#8a4a3a" stroke-width="3"/>
+  <line x1="173" y1="170" x2="197" y2="170" stroke="#8a4a3a" stroke-width="2"/>
+  <line x1="185" y1="158" x2="185" y2="182" stroke="#8a4a3a" stroke-width="2"/>
+
+  <!-- Windows with warm light -->
+  <rect x="124" y="232" width="34" height="34" rx="3" fill="#ffd27a"/>
+  <line x1="141" y1="232" x2="141" y2="266" stroke="#8a4a3a" stroke-width="3"/>
+  <line x1="124" y1="249" x2="158" y2="249" stroke="#8a4a3a" stroke-width="3"/>
+  <rect x="222" y="232" width="34" height="34" rx="3" fill="#ffd27a"/>
+  <line x1="239" y1="232" x2="239" y2="266" stroke="#8a4a3a" stroke-width="3"/>
+  <line x1="222" y1="249" x2="256" y2="249" stroke="#8a4a3a" stroke-width="3"/>
+
+  <!-- Door -->
+  <path d="M172 310 L172 262 Q185 248 198 262 L198 310 Z" fill="#7a4a2e"/>
+  <circle cx="193" cy="288" r="2.5" fill="#ffd27a"/>
+  <!-- Door light spill -->
+  <path d="M172 310 L162 400 L208 400 L198 310 Z" fill="#ffd27a" opacity="0.15"/>
+
+  <!-- Lantern by door -->
+  <line x1="150" y1="290" x2="150" y2="250" stroke="#3a2a20" stroke-width="3"/>
+  <path d="M142 250 Q150 238 158 250 L158 264 L142 264 Z" fill="#ffd27a"/>
+  <circle cx="150" cy="256" r="20" fill="url(#glow)"/>
+
+  <!-- Friendly monster peeking from behind the house -->
+  <g>
+    <!-- Body -->
+    <ellipse cx="310" cy="300" rx="42" ry="46" fill="url(#monster)"/>
+    <!-- Fur tufts -->
+    <path d="M276 292 l-6 6 l6 2 M344 292 l6 6 l-6 2 M292 340 l-3 7 l7 -2 M328 340 l3 7 l-7 -2" stroke="#4fa3a0" stroke-width="3" fill="none" stroke-linecap="round"/>
+    <!-- Horns -->
+    <path d="M286 264 Q280 244 292 238 Q292 254 298 262 Z" fill="#f4e3b0"/>
+    <path d="M334 264 Q340 244 328 238 Q328 254 322 262 Z" fill="#f4e3b0"/>
+    <!-- Ears -->
+    <ellipse cx="268" cy="272" rx="7" ry="11" fill="#4fa3a0" transform="rotate(-25 268 272)"/>
+    <ellipse cx="352" cy="272" rx="7" ry="11" fill="#4fa3a0" transform="rotate(25 352 272)"/>
+    <!-- Eyes -->
+    <circle cx="296" cy="290" r="9" fill="#fff8e1"/>
+    <circle cx="324" cy="290" r="9" fill="#fff8e1"/>
+    <circle cx="298" cy="291" r="5" fill="#2b2250"/>
+    <circle cx="326" cy="291" r="5" fill="#2b2250"/>
+    <circle cx="300" cy="289" r="1.5" fill="#fff"/>
+    <circle cx="328" cy="289" r="1.5" fill="#fff"/>
+    <!-- Blush -->
+    <ellipse cx="284" cy="310" rx="6" ry="3.5" fill="#f58ba0" opacity="0.6"/>
+    <ellipse cx="336" cy="310" rx="6" ry="3.5" fill="#f58ba0" opacity="0.6"/>
+    <!-- Smile -->
+    <path d="M298 314 Q310 326 322 314" stroke="#2b2250" stroke-width="3" fill="none" stroke-linecap="round"/>
+    <!-- Little teeth -->
+    <path d="M306 318 l4 5 l4 -5" fill="#fff8e1"/>
+    <!-- Arm waving -->
+    <path d="M268 318 Q252 310 256 296" stroke="url(#monster)" stroke-width="10" fill="none" stroke-linecap="round"/>
+    <circle cx="256" cy="292" r="6" fill="#8fd3c4"/>
+    <!-- Flower in other hand -->
+    <path d="M352 320 Q360 340 356 360" stroke="#3f8f5a" stroke-width="3" fill="none"/>
+    <g transform="translate(356 318)">
+      <circle cx="0" cy="-7" r="5" fill="#f58ba0"/>
+      <circle cx="7" cy="0" r="5" fill="#f58ba0"/>
+      <circle cx="0" cy="7" r="5" fill="#f58ba0"/>
+      <circle cx="-7" cy="0" r="5" fill="#f58ba0"/>
+      <circle cx="0" cy="0" r="3.5" fill="#ffd27a"/>
+    </g>
+  </g>
+
+  <!-- Fireflies -->
+  <g fill="#ffe98a">
+    <circle cx="90" cy="300" r="2.5" opacity="0.9"/>
+    <circle cx="70" cy="340" r="2" opacity="0.7"/>
+    <circle cx="120" cy="365" r="2.5" opacity="0.8"/>
+    <circle cx="260" cy="365" r="2" opacity="0.9"/>
+    <circle cx="380" cy="230" r="2" opacity="0.7"/>
+    <circle cx="60" cy="230" r="2" opacity="0.6"/>
+  </g>
+</svg>

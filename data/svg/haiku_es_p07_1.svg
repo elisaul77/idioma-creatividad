@@ -1,0 +1,123 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="400" height="400" viewBox="0 0 400 400">
+  <defs>
+    <linearGradient id="cielo" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#0b1026"/>
+      <stop offset="60%" stop-color="#1d2b64"/>
+      <stop offset="100%" stop-color="#3a1c71"/>
+    </linearGradient>
+    <linearGradient id="tronco" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#22d3ee"/>
+      <stop offset="50%" stop-color="#a78bfa"/>
+      <stop offset="100%" stop-color="#22d3ee"/>
+    </linearGradient>
+    <radialGradient id="sol" cx="0.5" cy="0.5" r="0.5">
+      <stop offset="0%" stop-color="#fef3c7"/>
+      <stop offset="60%" stop-color="#f472b6"/>
+      <stop offset="100%" stop-color="#f472b6" stop-opacity="0"/>
+    </radialGradient>
+    <radialGradient id="suelo" cx="0.5" cy="0.5" r="0.5">
+      <stop offset="0%" stop-color="#22d3ee" stop-opacity="0.6"/>
+      <stop offset="100%" stop-color="#22d3ee" stop-opacity="0"/>
+    </radialGradient>
+    <radialGradient id="orbe" cx="0.4" cy="0.4" r="0.6">
+      <stop offset="0%" stop-color="#ffffff"/>
+      <stop offset="100%" stop-color="#67e8f9" stop-opacity="0.2"/>
+    </radialGradient>
+    <filter id="brillo" x="-50%" y="-50%" width="200%" height="200%">
+      <feGaussianBlur stdDeviation="3" result="b"/>
+      <feMerge>
+        <feMergeNode in="b"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+  </defs>
+
+  <!-- Fondo -->
+  <rect width="400" height="400" fill="url(#cielo)"/>
+
+  <!-- Estrellas -->
+  <g fill="#e0f2fe">
+    <circle cx="40" cy="50" r="1.5"/>
+    <circle cx="90" cy="30" r="1"/>
+    <circle cx="330" cy="40" r="1.5"/>
+    <circle cx="370" cy="90" r="1"/>
+    <circle cx="60" cy="130" r="1"/>
+    <circle cx="350" cy="150" r="1.2"/>
+    <circle cx="200" cy="25" r="1"/>
+    <circle cx="150" cy="70" r="1.2"/>
+  </g>
+
+  <!-- Sol futurista -->
+  <circle cx="200" cy="160" r="110" fill="url(#sol)" opacity="0.5"/>
+  <circle cx="200" cy="160" r="70" fill="none" stroke="#f9a8d4" stroke-width="1.5" stroke-dasharray="4 6" opacity="0.7"/>
+  <circle cx="200" cy="160" r="50" fill="#fbcfe8" opacity="0.25"/>
+
+  <!-- Suelo luminoso -->
+  <ellipse cx="200" cy="350" rx="170" ry="30" fill="url(#suelo)"/>
+  <ellipse cx="200" cy="350" rx="120" ry="16" fill="none" stroke="#22d3ee" stroke-width="1" opacity="0.5"/>
+  <ellipse cx="200" cy="350" rx="80" ry="10" fill="none" stroke="#a78bfa" stroke-width="1" opacity="0.6"/>
+
+  <!-- Tronco -->
+  <path d="M192 350 L196 250 Q198 215 200 200 Q202 215 204 250 L208 350 Z" fill="url(#tronco)" filter="url(#brillo)"/>
+
+  <!-- Ramas principales -->
+  <g fill="none" stroke="url(#tronco)" stroke-linecap="round" filter="url(#brillo)">
+    <path d="M200 200 Q180 170 150 160" stroke-width="5"/>
+    <path d="M200 200 Q220 170 250 160" stroke-width="5"/>
+    <path d="M200 230 Q175 215 130 220" stroke-width="4"/>
+    <path d="M200 230 Q225 215 270 220" stroke-width="4"/>
+    <path d="M150 160 Q135 140 110 135" stroke-width="3"/>
+    <path d="M250 160 Q265 140 290 135" stroke-width="3"/>
+    <path d="M150 160 Q150 130 165 110" stroke-width="2.5"/>
+    <path d="M250 160 Q250 130 235 110" stroke-width="2.5"/>
+    <path d="M130 220 Q110 200 95 205" stroke-width="2.5"/>
+    <path d="M270 220 Q290 200 305 205" stroke-width="2.5"/>
+    <path d="M200 200 Q200 160 200 120" stroke-width="3"/>
+    <path d="M200 120 Q185 100 170 95" stroke-width="2"/>
+    <path d="M200 120 Q215 100 230 95" stroke-width="2"/>
+  </g>
+
+  <!-- Circuitos de hojas/nodos -->
+  <g fill="#67e8f9" filter="url(#brillo)">
+    <circle cx="150" cy="160" r="4"/>
+    <circle cx="250" cy="160" r="4"/>
+    <circle cx="130" cy="220" r="3.5"/>
+    <circle cx="270" cy="220" r="3.5"/>
+    <circle cx="200" cy="120" r="4"/>
+    <circle cx="110" cy="135" r="3"/>
+    <circle cx="290" cy="135" r="3"/>
+    <circle cx="165" cy="110" r="3"/>
+    <circle cx="235" cy="110" r="3"/>
+    <circle cx="95" cy="205" r="3"/>
+    <circle cx="305" cy="205" r="3"/>
+    <circle cx="170" cy="95" r="2.5"/>
+    <circle cx="230" cy="95" r="2.5"/>
+  </g>
+
+  <!-- Copa: orbes de energía -->
+  <g filter="url(#brillo)">
+    <circle cx="200" cy="80" r="14" fill="url(#orbe)" opacity="0.9"/>
+    <circle cx="160" cy="70" r="10" fill="url(#orbe)" opacity="0.8"/>
+    <circle cx="240" cy="70" r="10" fill="url(#orbe)" opacity="0.8"/>
+    <circle cx="120" cy="115" r="8" fill="url(#orbe)" opacity="0.7"/>
+    <circle cx="280" cy="115" r="8" fill="url(#orbe)" opacity="0.7"/>
+    <circle cx="90" cy="195" r="6" fill="url(#orbe)" opacity="0.6"/>
+    <circle cx="310" cy="195" r="6" fill="url(#orbe)" opacity="0.6"/>
+  </g>
+
+  <!-- Partículas flotantes -->
+  <g fill="#f0abfc" filter="url(#brillo)">
+    <circle cx="70" cy="260" r="2.5"/>
+    <circle cx="330" cy="250" r="2.5"/>
+    <circle cx="100" cy="300" r="2"/>
+    <circle cx="300" cy="305" r="2"/>
+    <circle cx="150" cy="40" r="2"/>
+    <circle cx="260" cy="45" r="2"/>
+  </g>
+  <g fill="#67e8f9" opacity="0.8">
+    <circle cx="55" cy="180" r="1.5"/>
+    <circle cx="345" cy="175" r="1.5"/>
+    <circle cx="180" cy="260" r="1.5"/>
+    <circle cx="225" cy="280" r="1.5"/>
+  </g>
+</svg>

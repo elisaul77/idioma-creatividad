@@ -1,0 +1,119 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="400" height="400" viewBox="0 0 400 400">
+  <defs>
+    <linearGradient id="sky" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#1b1442"/>
+      <stop offset="45%" stop-color="#5b2a86"/>
+      <stop offset="75%" stop-color="#d0628f"/>
+      <stop offset="100%" stop-color="#ffb38a"/>
+    </linearGradient>
+    <radialGradient id="moonGlow" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#fff6d6" stop-opacity="0.95"/>
+      <stop offset="40%" stop-color="#ffe6a8" stop-opacity="0.35"/>
+      <stop offset="100%" stop-color="#ffe6a8" stop-opacity="0"/>
+    </radialGradient>
+    <radialGradient id="moon" cx="40%" cy="35%" r="65%">
+      <stop offset="0%" stop-color="#fffdf2"/>
+      <stop offset="100%" stop-color="#f3d9a4"/>
+    </radialGradient>
+    <linearGradient id="island" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#8fd3c8"/>
+      <stop offset="100%" stop-color="#3f6e8c"/>
+    </linearGradient>
+    <linearGradient id="bubble" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#ffffff" stop-opacity="0.7"/>
+      <stop offset="50%" stop-color="#c9b8ff" stop-opacity="0.25"/>
+      <stop offset="100%" stop-color="#ffb3e6" stop-opacity="0.55"/>
+    </linearGradient>
+    <linearGradient id="aurora" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#6ff7d0" stop-opacity="0"/>
+      <stop offset="50%" stop-color="#6ff7d0" stop-opacity="0.55"/>
+      <stop offset="100%" stop-color="#b98cff" stop-opacity="0"/>
+    </linearGradient>
+    <linearGradient id="stairs" x1="0" y1="1" x2="1" y2="0">
+      <stop offset="0%" stop-color="#fff3c4" stop-opacity="0.1"/>
+      <stop offset="100%" stop-color="#fff3c4" stop-opacity="0.9"/>
+    </linearGradient>
+    <filter id="blur" x="-50%" y="-50%" width="200%" height="200%">
+      <feGaussianBlur stdDeviation="2.5"/>
+    </filter>
+    <filter id="softBlur" x="-50%" y="-50%" width="200%" height="200%">
+      <feGaussianBlur stdDeviation="8"/>
+    </filter>
+  </defs>
+
+  <!-- Sky -->
+  <rect width="400" height="400" fill="url(#sky)"/>
+
+  <!-- Stars -->
+  <g fill="#ffffff">
+    <circle cx="40" cy="50" r="1.4" opacity="0.9"/>
+    <circle cx="95" cy="28" r="1" opacity="0.7"/>
+    <circle cx="150" cy="70" r="1.6" opacity="0.95"/>
+    <circle cx="210" cy="36" r="1.1" opacity="0.8"/>
+    <circle cx="275" cy="62" r="1.3" opacity="0.9"/>
+    <circle cx="340" cy="30" r="1.5" opacity="0.85"/>
+    <circle cx="368" cy="110" r="1" opacity="0.7"/>
+    <circle cx="22" cy="140" r="1" opacity="0.6"/>
+    <circle cx="70" cy="180" r="1.2" opacity="0.7"/>
+    <circle cx="330" cy="190" r="1.1" opacity="0.6"/>
+    <circle cx="120" cy="120" r="0.9" opacity="0.6"/>
+    <circle cx="255" cy="130" r="1" opacity="0.7"/>
+  </g>
+
+  <!-- Aurora ribbons -->
+  <path d="M0 150 Q100 110 200 150 T400 130 L400 170 Q300 190 200 170 T0 185 Z" fill="url(#aurora)" opacity="0.6"/>
+  <path d="M0 175 Q120 140 220 178 T400 160 L400 185 Q300 205 200 192 T0 205 Z" fill="url(#aurora)" opacity="0.35"/>
+
+  <!-- Moon with glow -->
+  <circle cx="290" cy="110" r="85" fill="url(#moonGlow)"/>
+  <circle cx="290" cy="110" r="40" fill="url(#moon)"/>
+  <circle cx="276" cy="100" r="6" fill="#ecd7a0" opacity="0.5"/>
+  <circle cx="302" cy="122" r="4" fill="#ecd7a0" opacity="0.45"/>
+
+  <!-- Staircase of light climbing toward the moon -->
+  <path d="M120 300 L150 292 L152 282 L182 274 L184 264 L214 256 L216 246 L246 238 L248 228 L270 222" fill="none" stroke="url(#stairs)" stroke-width="5" stroke-linecap="round" stroke-linejoin="round" filter="url(#blur)"/>
+
+  <!-- Floating island -->
+  <g>
+    <ellipse cx="200" cy="262" rx="95" ry="14" fill="#2c2350" opacity="0.35" filter="url(#blur)"/>
+    <path d="M118 250 Q200 238 282 250 Q262 292 220 300 Q200 304 182 300 Q138 292 118 250 Z" fill="url(#island)"/>
+    <path d="M140 262 Q160 270 180 266 M230 268 Q252 264 266 256" fill="none" stroke="#dff8f2" stroke-width="2" stroke-linecap="round" opacity="0.4"/>
+    <!-- Dream tree -->
+    <path d="M196 250 Q194 232 200 216" fill="none" stroke="#6b4a7a" stroke-width="4" stroke-linecap="round"/>
+    <circle cx="200" cy="208" r="18" fill="#ff9ec7" opacity="0.9"/>
+    <circle cx="186" cy="214" r="12" fill="#ffc2de" opacity="0.9"/>
+    <circle cx="214" cy="214" r="12" fill="#ffb0d4" opacity="0.9"/>
+    <circle cx="200" cy="198" r="10" fill="#ffd6ea" opacity="0.8"/>
+  </g>
+
+  <!-- Waterfall of stars falling from island -->
+  <g fill="#fff3c4">
+    <circle cx="170" cy="318" r="2" opacity="0.8"/>
+    <circle cx="160" cy="336" r="1.5" opacity="0.6"/>
+    <circle cx="178" cy="352" r="1.8" opacity="0.7"/>
+    <circle cx="228" cy="322" r="1.6" opacity="0.7"/>
+    <circle cx="240" cy="344" r="1.3" opacity="0.5"/>
+  </g>
+
+  <!-- Drifting bubbles -->
+  <g>
+    <circle cx="60" cy="230" r="22" fill="url(#bubble)" stroke="#ffffff" stroke-opacity="0.5" stroke-width="1"/>
+    <ellipse cx="52" cy="222" rx="6" ry="3" fill="#ffffff" opacity="0.7" transform="rotate(-25 52 222)"/>
+    <circle cx="340" cy="250" r="14" fill="url(#bubble)" stroke="#ffffff" stroke-opacity="0.5" stroke-width="1"/>
+    <circle cx="90" cy="320" r="9" fill="url(#bubble)" stroke="#ffffff" stroke-opacity="0.4" stroke-width="1"/>
+    <circle cx="318" cy="330" r="18" fill="url(#bubble)" stroke="#ffffff" stroke-opacity="0.5" stroke-width="1"/>
+    <circle cx="350" cy="190" r="6" fill="url(#bubble)" stroke="#ffffff" stroke-opacity="0.4" stroke-width="1"/>
+  </g>
+
+  <!-- Dreamy floating whales/fish silhouettes -->
+  <g fill="#2c1f55" opacity="0.55">
+    <path d="M40 90 Q60 74 84 88 Q98 96 84 104 Q60 114 40 90 Z"/>
+    <path d="M78 88 L96 76 L94 98 Z"/>
+    <path d="M300 190 Q316 180 334 190 Q344 198 334 204 Q316 212 300 190 Z"/>
+    <path d="M330 190 L346 180 L344 200 Z"/>
+  </g>
+
+  <!-- Soft haze at the bottom -->
+  <rect x="0" y="330" width="400" height="70" fill="#ffb38a" opacity="0.25" filter="url(#softBlur)"/>
+  <rect x="0" y="360" width="400" height="40" fill="#ffd1a8" opacity="0.25" filter="url(#softBlur)"/>
+</svg>

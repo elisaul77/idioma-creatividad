@@ -1,0 +1,127 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="400" height="400" viewBox="0 0 400 400">
+  <defs>
+    <linearGradient id="sky" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#2d2f63"/>
+      <stop offset="0.6" stop-color="#7a5c9e"/>
+      <stop offset="1" stop-color="#f6b38a"/>
+    </linearGradient>
+    <linearGradient id="walls" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#ffe08a"/>
+      <stop offset="1" stop-color="#f7c463"/>
+    </linearGradient>
+    <clipPath id="winClip">
+      <rect x="218" y="214" width="56" height="42" rx="6"/>
+    </clipPath>
+  </defs>
+
+  <!-- Небо -->
+  <rect width="400" height="400" fill="url(#sky)"/>
+
+  <!-- Звёзды -->
+  <g fill="#fff8d6">
+    <circle cx="48" cy="46" r="1.8"/>
+    <circle cx="92" cy="88" r="1.2"/>
+    <circle cx="150" cy="38" r="1.5"/>
+    <circle cx="330" cy="56" r="1.8"/>
+    <circle cx="368" cy="110" r="1.2"/>
+    <circle cx="28" cy="140" r="1.3"/>
+    <circle cx="300" cy="150" r="1.1"/>
+    <circle cx="210" cy="60" r="1.2"/>
+  </g>
+
+  <!-- Луна -->
+  <circle cx="64" cy="92" r="26" fill="#fff3c4" opacity="0.95"/>
+  <circle cx="74" cy="84" r="22" fill="#2d2f63" opacity="0.18"/>
+
+  <!-- Дальние холмы -->
+  <path d="M0 300 Q90 250 190 290 T400 280 L400 400 L0 400 Z" fill="#4e7a6e"/>
+
+  <!-- Дымок из трубы -->
+  <g fill="#ffffff" opacity="0.45">
+    <circle cx="268" cy="108" r="9"/>
+    <circle cx="279" cy="92" r="11"/>
+    <circle cx="265" cy="76" r="8"/>
+    <circle cx="282" cy="62" r="6"/>
+  </g>
+
+  <!-- Труба -->
+  <rect x="250" y="122" width="26" height="62" fill="#8d5a4a"/>
+  <rect x="246" y="116" width="34" height="10" rx="3" fill="#6e4439"/>
+
+  <!-- Стены дома -->
+  <rect x="106" y="190" width="188" height="142" rx="8" fill="url(#walls)"/>
+
+  <!-- Крыша -->
+  <path d="M90 200 L200 108 L310 200 Z" fill="#e76f51" stroke="#c4502f" stroke-width="4" stroke-linejoin="round"/>
+  <circle cx="200" cy="150" r="10" fill="#fff3c4" stroke="#c4502f" stroke-width="3"/>
+
+  <!-- Окно с монстром -->
+  <rect x="214" y="210" width="64" height="50" rx="9" fill="#9be7ff" stroke="#5a3825" stroke-width="5"/>
+  <g clip-path="url(#winClip)">
+    <!-- Рожки -->
+    <path d="M226 236 L222 214 L236 230 Z" fill="#c9b8ff"/>
+    <path d="M266 236 L270 214 L256 230 Z" fill="#c9b8ff"/>
+    <!-- Голова -->
+    <circle cx="246" cy="252" r="22" fill="#8fd694"/>
+    <!-- Глаза -->
+    <circle cx="237" cy="240" r="7.5" fill="#fff"/>
+    <circle cx="255" cy="240" r="7.5" fill="#fff"/>
+    <circle cx="238.5" cy="241" r="3.8" fill="#2d2f63"/>
+    <circle cx="256.5" cy="241" r="3.8" fill="#2d2f63"/>
+    <!-- Улыбка и румянец -->
+    <path d="M236 256 Q246 264 256 256" stroke="#2d2f63" stroke-width="2.5" fill="none" stroke-linecap="round"/>
+    <circle cx="232" cy="253" r="3" fill="#ff8fab" opacity="0.7"/>
+    <circle cx="260" cy="253" r="3" fill="#ff8fab" opacity="0.7"/>
+  </g>
+  <!-- Лапки на подоконнике -->
+  <ellipse cx="226" cy="258" rx="7" ry="5" fill="#8fd694" stroke="#5a3825" stroke-width="2"/>
+  <ellipse cx="266" cy="258" rx="7" ry="5" fill="#8fd694" stroke="#5a3825" stroke-width="2"/>
+  <line x1="222" y1="256" x2="222" y2="260" stroke="#5a3825" stroke-width="1.5"/>
+  <line x1="226" y1="256" x2="226" y2="260" stroke="#5a3825" stroke-width="1.5"/>
+  <line x1="262" y1="256" x2="262" y2="260" stroke="#5a3825" stroke-width="1.5"/>
+  <line x1="266" y1="256" x2="266" y2="260" stroke="#5a3825" stroke-width="1.5"/>
+
+  <!-- Дверь -->
+  <path d="M176 332 L176 288 Q176 262 200 262 Q224 262 224 288 L224 332 Z" fill="#6b3e26"/>
+  <circle cx="216" cy="306" r="3.5" fill="#ffd166"/>
+  <!-- Фонарь у двери -->
+  <rect x="164" y="282" width="6" height="12" fill="#5a3825"/>
+  <path d="M158 282 L176 282 L173 272 L161 272 Z" fill="#ffd166" stroke="#5a3825" stroke-width="2"/>
+  <circle cx="167" cy="276" r="12" fill="#ffd166" opacity="0.25"/>
+
+  <!-- Ступеньки -->
+  <rect x="166" y="332" width="68" height="6" rx="2" fill="#a8745a"/>
+
+  <!-- Земля -->
+  <path d="M0 330 Q120 318 220 332 T400 326 L400 400 L0 400 Z" fill="#5fbf6a"/>
+
+  <!-- Дорожка -->
+  <path d="M184 338 L216 338 L240 400 L160 400 Z" fill="#e8c28a"/>
+
+  <!-- Цветы -->
+  <g stroke="#3f8f4d" stroke-width="2.5" fill="none">
+    <path d="M70 360 L70 390"/>
+    <path d="M92 366 L92 392"/>
+    <path d="M320 352 L320 384"/>
+    <path d="M342 360 L342 390"/>
+  </g>
+  <g>
+    <circle cx="70" cy="354" r="7" fill="#ff8fab"/>
+    <circle cx="92" cy="360" r="6" fill="#ffd166"/>
+    <circle cx="320" cy="346" r="7" fill="#c9b8ff"/>
+    <circle cx="342" cy="354" r="6" fill="#ff8fab"/>
+  </g>
+  <g fill="#fff3c4">
+    <circle cx="70" cy="354" r="2"/>
+    <circle cx="92" cy="360" r="2"/>
+    <circle cx="320" cy="346" r="2"/>
+    <circle cx="342" cy="354" r="2"/>
+  </g>
+
+  <!-- Светлячки -->
+  <g fill="#fff3a0">
+    <circle cx="130" cy="300" r="2.5" opacity="0.9"/>
+    <circle cx="350" cy="290" r="2.5" opacity="0.9"/>
+    <circle cx="40" cy="300" r="2" opacity="0.8"/>
+  </g>
+</svg>

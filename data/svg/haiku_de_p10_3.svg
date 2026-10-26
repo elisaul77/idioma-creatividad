@@ -1,0 +1,52 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="400" height="400" viewBox="0 0 400 400">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#fdf6ec"/>
+      <stop offset="100%" stop-color="#f3e3cf"/>
+    </linearGradient>
+    <radialGradient id="drop" cx="0.35" cy="0.3" r="0.8">
+      <stop offset="0%" stop-color="#8fd3ff"/>
+      <stop offset="45%" stop-color="#2f6fe0"/>
+      <stop offset="100%" stop-color="#14286b"/>
+    </radialGradient>
+    <radialGradient id="glow" cx="0.5" cy="0.5" r="0.5">
+      <stop offset="0%" stop-color="#7fb8ff" stop-opacity="0.45"/>
+      <stop offset="100%" stop-color="#7fb8ff" stop-opacity="0"/>
+    </radialGradient>
+    <linearGradient id="tongue" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#ff8fa3"/>
+      <stop offset="100%" stop-color="#e0536d"/>
+    </linearGradient>
+  </defs>
+
+  <rect width="400" height="400" fill="url(#bg)"/>
+
+  <!-- Zunge als Bühne des Geschmacks -->
+  <path d="M90 270 C90 230, 150 215, 200 215 C250 215, 310 230, 310 270 C310 330, 270 360, 200 360 C130 360, 90 330, 90 270 Z" fill="url(#tongue)"/>
+  <path d="M200 232 L200 300" stroke="#c2405a" stroke-width="3" stroke-linecap="round" opacity="0.5"/>
+  <path d="M160 262 Q200 282 240 262" stroke="#c2405a" stroke-width="3" fill="none" stroke-linecap="round" opacity="0.4"/>
+
+  <!-- Leuchtender Hof um den Tropfen -->
+  <circle cx="200" cy="130" r="120" fill="url(#glow)"/>
+
+  <!-- Wellen der Empfindung -->
+  <g fill="none" stroke="#2f6fe0" stroke-linecap="round">
+    <path d="M120 80 Q200 55 280 80" stroke-width="4" opacity="0.25"/>
+    <path d="M135 100 Q200 78 265 100" stroke-width="4" opacity="0.4"/>
+    <path d="M150 120 Q200 102 250 120" stroke-width="4" opacity="0.6"/>
+  </g>
+
+  <!-- Blauer Tropfen -->
+  <path d="M200 60 C235 105, 255 135, 255 165 C255 200, 230 222, 200 222 C170 222, 145 200, 145 165 C145 135, 165 105, 200 60 Z" fill="url(#drop)"/>
+  <ellipse cx="180" cy="150" rx="12" ry="20" fill="#ffffff" opacity="0.55" transform="rotate(20 180 150)"/>
+  <circle cx="186" cy="130" r="4" fill="#ffffff" opacity="0.8"/>
+
+  <!-- Funken: kühl, süß, flüchtig -->
+  <g fill="#2f6fe0">
+    <path d="M300 150 L304 160 L314 164 L304 168 L300 178 L296 168 L286 164 L296 160 Z" opacity="0.8"/>
+    <path d="M100 170 L103 177 L110 180 L103 183 L100 190 L97 183 L90 180 L97 177 Z" opacity="0.6"/>
+    <circle cx="330" cy="200" r="4" opacity="0.5"/>
+    <circle cx="70" cy="140" r="3" opacity="0.5"/>
+    <circle cx="320" cy="110" r="2.5" opacity="0.4"/>
+  </g>
+</svg>

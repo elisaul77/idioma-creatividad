@@ -1,0 +1,127 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="400" height="400" viewBox="0 0 400 400">
+  <defs>
+    <radialGradient id="sky" cx="50%" cy="40%" r="75%">
+      <stop offset="0%" stop-color="#2b1d5c"/>
+      <stop offset="55%" stop-color="#11174a"/>
+      <stop offset="100%" stop-color="#050a1f"/>
+    </radialGradient>
+    <radialGradient id="glow" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#ffd27a" stop-opacity="0.55"/>
+      <stop offset="100%" stop-color="#ffd27a" stop-opacity="0"/>
+    </radialGradient>
+    <linearGradient id="body" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#7fe3c4"/>
+      <stop offset="50%" stop-color="#3fa8b8"/>
+      <stop offset="100%" stop-color="#2a5a9e"/>
+    </linearGradient>
+    <linearGradient id="wing" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#ff8fb1" stop-opacity="0.85"/>
+      <stop offset="100%" stop-color="#b57bff" stop-opacity="0.55"/>
+    </linearGradient>
+    <linearGradient id="tail" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#ffd27a"/>
+      <stop offset="100%" stop-color="#ff6fa3"/>
+    </linearGradient>
+    <linearGradient id="horn" x1="0" y1="1" x2="0" y2="0">
+      <stop offset="0%" stop-color="#3a7a4a"/>
+      <stop offset="100%" stop-color="#b9f5a0"/>
+    </linearGradient>
+  </defs>
+
+  <!-- Фон -->
+  <rect width="400" height="400" fill="url(#sky)"/>
+
+  <!-- Звёзды -->
+  <g fill="#ffffff">
+    <circle cx="40" cy="50" r="1.5" opacity="0.9"/>
+    <circle cx="92" cy="28" r="1" opacity="0.7"/>
+    <circle cx="350" cy="60" r="1.8" opacity="0.9"/>
+    <circle cx="320" cy="130" r="1" opacity="0.6"/>
+    <circle cx="60" cy="150" r="1.2" opacity="0.7"/>
+    <circle cx="370" cy="210" r="1.4" opacity="0.8"/>
+    <circle cx="28" cy="300" r="1" opacity="0.6"/>
+    <circle cx="210" cy="30" r="1.1" opacity="0.8"/>
+    <circle cx="150" cy="370" r="1.3" opacity="0.7"/>
+    <circle cx="340" cy="340" r="1" opacity="0.6"/>
+  </g>
+
+  <!-- Луна-свечение -->
+  <circle cx="200" cy="215" r="190" fill="url(#glow)"/>
+
+  <!-- Хвост-спираль из колец кометы -->
+  <path d="M250 240 C300 260 330 300 300 330 C270 360 230 330 255 305 C275 285 310 300 335 280"
+        fill="none" stroke="url(#tail)" stroke-width="7" stroke-linecap="round" opacity="0.95"/>
+  <path d="M250 240 C300 260 330 300 300 330 C270 360 230 330 255 305 C275 285 310 300 335 280"
+        fill="none" stroke="#ffffff" stroke-width="1.5" stroke-linecap="round" opacity="0.6"/>
+  <circle cx="338" cy="276" r="6" fill="#ffe9b0"/>
+
+  <!-- Крылья-мотыльки (левое и правое) -->
+  <path d="M168 205 C120 150 60 140 40 175 C25 205 70 245 168 230 Z" fill="url(#wing)" opacity="0.9"/>
+  <path d="M232 205 C280 150 340 140 360 175 C375 205 330 245 232 230 Z" fill="url(#wing)" opacity="0.9"/>
+  <path d="M168 232 C120 260 85 290 110 310 C130 325 160 260 168 240 Z" fill="url(#wing)" opacity="0.75"/>
+  <path d="M232 232 C280 260 315 290 290 310 C270 325 240 260 232 240 Z" fill="url(#wing)" opacity="0.75"/>
+  <!-- Глазки на крыльях -->
+  <g fill="#fff4d6">
+    <circle cx="80" cy="190" r="13" opacity="0.9"/>
+    <circle cx="320" cy="190" r="13" opacity="0.9"/>
+    <circle cx="112" cy="290" r="7" opacity="0.8"/>
+    <circle cx="288" cy="290" r="7" opacity="0.8"/>
+  </g>
+  <g fill="#2a1d4a">
+    <circle cx="80" cy="190" r="5"/>
+    <circle cx="320" cy="190" r="5"/>
+    <circle cx="112" cy="290" r="3"/>
+    <circle cx="288" cy="290" r="3"/>
+  </g>
+
+  <!-- Ноги-корни -->
+  <g fill="none" stroke="#3a7a4a" stroke-width="5" stroke-linecap="round">
+    <path d="M170 260 C160 285 150 300 135 320"/>
+    <path d="M150 262 C140 282 130 292 112 305"/>
+    <path d="M225 262 C235 285 245 300 262 318"/>
+    <path d="M245 258 C255 275 268 285 288 292"/>
+  </g>
+  <g fill="none" stroke="#3a7a4a" stroke-width="2.5" stroke-linecap="round">
+    <path d="M135 320 L125 335 M135 320 L142 336"/>
+    <path d="M262 318 L254 334 M262 318 L272 332"/>
+  </g>
+
+  <!-- Туловище -->
+  <ellipse cx="200" cy="220" rx="72" ry="44" fill="url(#body)" transform="rotate(-12 200 220)"/>
+
+  <!-- Чешуя / узоры на туловище -->
+  <g fill="none" stroke="#c9fff0" stroke-width="1.6" opacity="0.5">
+    <path d="M160 215 q8 -10 16 0"/>
+    <path d="M182 205 q8 -10 16 0"/>
+    <path d="M204 196 q8 -10 16 0"/>
+    <path d="M170 235 q8 -10 16 0"/>
+    <path d="M192 226 q8 -10 16 0"/>
+    <path d="M214 217 q8 -10 16 0"/>
+    <path d="M226 240 q8 -10 16 0"/>
+  </g>
+
+  <!-- Шея -->
+  <path d="M165 200 C150 180 145 160 148 140 L178 142 C176 165 185 185 196 200 Z" fill="url(#body)"/>
+
+  <!-- Рога-листья -->
+  <path d="M142 118 C120 90 105 60 90 40 C118 52 130 80 146 112 Z" fill="url(#horn)"/>
+  <path d="M158 116 C170 86 185 60 210 46 C200 76 190 100 170 122 Z" fill="url(#horn)"/>
+  <circle cx="90" cy="40" r="5" fill="#ff8fb1"/>
+  <circle cx="210" cy="46" r="5" fill="#ff8fb1"/>
+
+  <!-- Голова -->
+  <ellipse cx="150" cy="132" rx="30" ry="22" fill="url(#body)" transform="rotate(-20 150 132)"/>
+  <!-- Морда / клюв-полумесяц -->
+  <path d="M122 140 C108 146 104 156 112 160 C122 158 130 150 134 144 Z" fill="#ffd27a"/>
+
+  <!-- Глаз -->
+  <ellipse cx="156" cy="124" rx="8" ry="7" fill="#fff4d6"/>
+  <ellipse cx="157" cy="124" rx="3" ry="6" fill="#1a0f33"/>
+  <circle cx="159" cy="122" r="1.2" fill="#ffffff"/>
+
+  <!-- Ухо-плавник -->
+  <path d="M168 110 C182 96 190 98 196 108 C186 112 178 118 172 124 Z" fill="#ff8fb1" opacity="0.9"/>
+
+  <!-- Блики -->
+  <ellipse cx="178" cy="200" rx="14" ry="6" fill="#ffffff" opacity="0.18" transform="rotate(-20 178 200)"/>
+</svg>

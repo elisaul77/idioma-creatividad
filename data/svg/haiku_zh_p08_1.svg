@@ -1,0 +1,157 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 400" width="400" height="400">
+  <defs>
+    <linearGradient id="sky" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#0b1433"/>
+      <stop offset="1" stop-color="#2a1b4d"/>
+    </linearGradient>
+    <radialGradient id="glow" cx="0.5" cy="0.5" r="0.5">
+      <stop offset="0" stop-color="#ffe08a" stop-opacity="0.9"/>
+      <stop offset="1" stop-color="#ffe08a" stop-opacity="0"/>
+    </radialGradient>
+    <radialGradient id="moonGrad" cx="0.4" cy="0.4" r="0.6">
+      <stop offset="0" stop-color="#fffbe6"/>
+      <stop offset="1" stop-color="#f0deb0"/>
+    </radialGradient>
+    <mask id="crescent">
+      <rect width="400" height="400" fill="#fff"/>
+      <circle cx="342" cy="62" r="26" fill="#000"/>
+    </mask>
+  </defs>
+
+  <!-- Sky -->
+  <rect width="400" height="400" fill="url(#sky)"/>
+
+  <!-- Stars -->
+  <g fill="#ffffff">
+    <circle cx="40" cy="40" r="1.6" opacity="0.9"/>
+    <circle cx="95" cy="25" r="1.2" opacity="0.7"/>
+    <circle cx="160" cy="48" r="1.8" opacity="0.95"/>
+    <circle cx="210" cy="22" r="1.1" opacity="0.6"/>
+    <circle cx="265" cy="45" r="1.4" opacity="0.8"/>
+    <circle cx="20" cy="110" r="1.2" opacity="0.6"/>
+    <circle cx="130" cy="95" r="1" opacity="0.5"/>
+    <circle cx="240" cy="110" r="1.5" opacity="0.8"/>
+    <circle cx="375" cy="150" r="1.2" opacity="0.7"/>
+    <circle cx="300" cy="175" r="1" opacity="0.5"/>
+    <circle cx="70" cy="170" r="1.3" opacity="0.6"/>
+    <circle cx="185" cy="150" r="1" opacity="0.5"/>
+  </g>
+
+  <!-- Moon -->
+  <circle cx="342" cy="62" r="30" fill="url(#moonGrad)" mask="url(#crescent)"/>
+  <circle cx="342" cy="62" r="30" fill="#ffffff" opacity="0.08"/>
+
+  <!-- Window frame -->
+  <rect x="20" y="60" width="90" height="110" rx="4" fill="#1a1140" stroke="#5b4a8a" stroke-width="4"/>
+  <line x1="65" y1="60" x2="65" y2="170" stroke="#5b4a8a" stroke-width="3"/>
+  <line x1="20" y1="115" x2="110" y2="115" stroke="#5b4a8a" stroke-width="3"/>
+  <circle cx="82" cy="92" r="9" fill="#fffbe6" opacity="0.8"/>
+
+  <!-- Shelf with toys -->
+  <rect x="130" y="200" width="150" height="8" rx="2" fill="#6b4a2e"/>
+  <rect x="145" y="172" width="18" height="28" rx="3" fill="#e0524a"/>
+  <rect x="168" y="180" width="14" height="20" rx="3" fill="#4a9ee0"/>
+  <circle cx="250" cy="186" r="12" fill="#f5c542"/>
+  <circle cx="250" cy="186" r="4" fill="#c98a1a"/>
+
+  <!-- Floor -->
+  <rect x="0" y="330" width="400" height="70" fill="#3d2b1f"/>
+  <rect x="0" y="328" width="400" height="4" fill="#2a1d14"/>
+
+  <!-- Reading lamp glow and lamp -->
+  <circle cx="72" cy="262" r="70" fill="url(#glow)"/>
+  <rect x="68" y="262" width="8" height="48" fill="#8a6a4a"/>
+  <rect x="50" y="308" width="44" height="8" rx="3" fill="#8a6a4a"/>
+  <path d="M46 262 L98 262 L88 236 L56 236 Z" fill="#ffd166"/>
+
+  <!-- Teddy bear reading (left) -->
+  <g>
+    <ellipse cx="128" cy="300" rx="26" ry="30" fill="#a86b3c"/>
+    <ellipse cx="128" cy="310" rx="14" ry="16" fill="#d8a06a"/>
+    <circle cx="128" cy="262" r="20" fill="#a86b3c"/>
+    <circle cx="112" cy="248" r="7" fill="#a86b3c"/>
+    <circle cx="144" cy="248" r="7" fill="#a86b3c"/>
+    <circle cx="112" cy="248" r="3.5" fill="#d8a06a"/>
+    <circle cx="144" cy="248" r="3.5" fill="#d8a06a"/>
+    <circle cx="121" cy="260" r="2.2" fill="#2a1a10"/>
+    <circle cx="135" cy="260" r="2.2" fill="#2a1a10"/>
+    <ellipse cx="128" cy="268" rx="4" ry="3" fill="#2a1a10"/>
+    <!-- Book -->
+    <rect x="104" y="284" width="48" height="30" rx="2" fill="#e0524a" transform="rotate(-6 128 299)"/>
+    <line x1="128" y1="284" x2="128" y2="314" stroke="#f5e6c8" stroke-width="2" transform="rotate(-6 128 299)"/>
+    <ellipse cx="108" cy="318" rx="8" ry="6" fill="#a86b3c"/>
+    <ellipse cx="150" cy="318" rx="8" ry="6" fill="#a86b3c"/>
+  </g>
+
+  <!-- Dancing robot (center) -->
+  <g>
+    <rect x="186" y="262" width="34" height="50" rx="5" fill="#9aa8c4"/>
+    <rect x="192" y="272" width="22" height="12" rx="2" fill="#4a9ee0"/>
+    <rect x="182" y="232" width="42" height="32" rx="6" fill="#c3cde0"/>
+    <circle cx="194" cy="246" r="5" fill="#ffe08a"/>
+    <circle cx="212" cy="246" r="5" fill="#ffe08a"/>
+    <rect x="195" y="256" width="14" height="3" rx="1" fill="#4a5470"/>
+    <line x1="203" y1="232" x2="203" y2="218" stroke="#c3cde0" stroke-width="3"/>
+    <circle cx="203" cy="214" r="4" fill="#e0524a"/>
+    <!-- arms raised -->
+    <line x1="186" y1="270" x2="166" y2="244" stroke="#9aa8c4" stroke-width="7" stroke-linecap="round"/>
+    <line x1="220" y1="270" x2="242" y2="246" stroke="#9aa8c4" stroke-width="7" stroke-linecap="round"/>
+    <circle cx="164" cy="242" r="5" fill="#ffe08a"/>
+    <circle cx="244" cy="244" r="5" fill="#ffe08a"/>
+    <line x1="194" y1="312" x2="188" y2="326" stroke="#9aa8c4" stroke-width="7" stroke-linecap="round"/>
+    <line x1="212" y1="312" x2="218" y2="326" stroke="#9aa8c4" stroke-width="7" stroke-linecap="round"/>
+  </g>
+  <!-- Music notes -->
+  <g fill="#ffe08a" opacity="0.85">
+    <circle cx="170" cy="200" r="4"/>
+    <line x1="174" y1="200" x2="174" y2="180" stroke="#ffe08a" stroke-width="2"/>
+    <circle cx="240" cy="190" r="3.5"/>
+    <line x1="243" y1="190" x2="243" y2="172" stroke="#ffe08a" stroke-width="2"/>
+  </g>
+
+  <!-- Rocking horse (right) -->
+  <g>
+    <path d="M300 352 Q330 362 362 352" fill="none" stroke="#6b4a2e" stroke-width="5" stroke-linecap="round"/>
+    <path d="M318 320 Q322 292 336 284 L346 262 L358 262 L354 292 Q360 310 350 326 Z" fill="#c98a4a"/>
+    <path d="M346 262 L352 246 L362 250 L358 262 Z" fill="#c98a4a"/>
+    <ellipse cx="326" cy="318" rx="26" ry="14" fill="#c98a4a" transform="rotate(-8 326 318)"/>
+    <path d="M330 320 Q334 336 326 346" fill="none" stroke="#6b4a2e" stroke-width="4" stroke-linecap="round"/>
+    <path d="M300 318 Q292 310 296 300" fill="none" stroke="#6b4a2e" stroke-width="4" stroke-linecap="round"/>
+    <circle cx="358" cy="252" r="2" fill="#2a1a10"/>
+    <path d="M364 246 L370 240" stroke="#e0524a" stroke-width="4" stroke-linecap="round"/>
+    <path d="M356 246 L350 240" stroke="#e0524a" stroke-width="4" stroke-linecap="round"/>
+  </g>
+
+  <!-- Toy train on the floor -->
+  <g>
+    <line x1="0" y1="370" x2="400" y2="370" stroke="#7a5a3a" stroke-width="3"/>
+    <line x1="0" y1="376" x2="400" y2="376" stroke="#7a5a3a" stroke-width="3"/>
+    <g transform="translate(20 0)">
+      <rect x="0" y="338" width="54" height="26" rx="3" fill="#2f9e6b"/>
+      <rect x="40" y="326" width="16" height="38" rx="2" fill="#2f9e6b"/>
+      <rect x="6" y="326" width="18" height="12" rx="2" fill="#ffd166"/>
+      <rect x="62" y="342" width="46" height="22" rx="3" fill="#e0524a"/>
+      <rect x="116" y="342" width="46" height="22" rx="3" fill="#4a9ee0"/>
+      <circle cx="12" cy="370" r="6" fill="#2a1d14"/>
+      <circle cx="44" cy="370" r="6" fill="#2a1d14"/>
+      <circle cx="78" cy="370" r="6" fill="#2a1d14"/>
+      <circle cx="98" cy="370" r="6" fill="#2a1d14"/>
+      <circle cx="132" cy="370" r="6" fill="#2a1d14"/>
+      <circle cx="152" cy="370" r="6" fill="#2a1d14"/>
+      <circle cx="48" cy="338" r="2" fill="#ffe08a"/>
+      <path d="M46 326 Q48 314 56 312" fill="none" stroke="#9aa8c4" stroke-width="3" stroke-linecap="round"/>
+      <circle cx="40" cy="322" r="4" fill="#ffffff" opacity="0.5"/>
+      <circle cx="46" cy="312" r="6" fill="#ffffff" opacity="0.3"/>
+    </g>
+  </g>
+
+  <!-- Sleepy cat plushie (small) -->
+  <g>
+    <ellipse cx="380" cy="352" rx="14" ry="10" fill="#8a8aa0"/>
+    <circle cx="372" cy="342" r="8" fill="#8a8aa0"/>
+    <path d="M365 338 L366 330 L370 336 Z" fill="#8a8aa0"/>
+    <path d="M378 336 L380 328 L384 334 Z" fill="#8a8aa0"/>
+    <path d="M368 342 Q370 344 372 342" fill="none" stroke="#2a1a10" stroke-width="1.5" stroke-linecap="round"/>
+    <path d="M386 352 Q398 344 394 332" fill="none" stroke="#8a8aa0" stroke-width="4" stroke-linecap="round"/>
+  </g>
+</svg>

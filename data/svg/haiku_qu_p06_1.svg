@@ -1,0 +1,81 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="400" height="400" viewBox="0 0 400 400">
+  <defs>
+    <linearGradient id="cielo" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#8fd3ff"/>
+      <stop offset="100%" stop-color="#fff3c4"/>
+    </linearGradient>
+    <radialGradient id="sol" cx="50%" cy="45%" r="55%">
+      <stop offset="0%" stop-color="#fff7a1"/>
+      <stop offset="70%" stop-color="#ffd23f"/>
+      <stop offset="100%" stop-color="#ffb000"/>
+    </radialGradient>
+    <linearGradient id="suelo" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#7ed957"/>
+      <stop offset="100%" stop-color="#3f9e3a"/>
+    </linearGradient>
+  </defs>
+
+  <!-- Cielo y suelo -->
+  <rect width="400" height="400" fill="url(#cielo)"/>
+  <path d="M0 300 Q100 270 200 295 T400 290 L400 400 L0 400 Z" fill="url(#suelo)"/>
+
+  <!-- Rayos del sol -->
+  <g stroke="#ffb000" stroke-width="8" stroke-linecap="round" opacity="0.8">
+    <line x1="200" y1="70" x2="200" y2="30"/>
+    <line x1="200" y1="170" x2="200" y2="210" opacity="0"/>
+    <line x1="120" y1="95" x2="95" y2="70"/>
+    <line x1="280" y1="95" x2="305" y2="70"/>
+    <line x1="75" y1="150" x2="40" y2="140"/>
+    <line x1="325" y1="150" x2="360" y2="140"/>
+    <line x1="75" y1="200" x2="45" y2="215"/>
+    <line x1="325" y1="200" x2="355" y2="215"/>
+  </g>
+
+  <!-- Sol -->
+  <circle cx="200" cy="150" r="75" fill="url(#sol)"/>
+
+  <!-- Mejillas -->
+  <circle cx="170" cy="168" r="10" fill="#ff8fa3" opacity="0.7"/>
+  <circle cx="230" cy="168" r="10" fill="#ff8fa3" opacity="0.7"/>
+
+  <!-- Ojos felices -->
+  <path d="M258 0" fill="none"/>
+  <path d="M245 0" fill="none"/>
+  <path d="M220 0" fill="none"/>
+  <path d="M170 140 Q178 128 186 140" fill="none" stroke="#5a3200" stroke-width="5" stroke-linecap="round"/>
+  <path d="M214 140 Q222 128 230 140" fill="none" stroke="#5a3200" stroke-width="5" stroke-linecap="round"/>
+
+  <!-- Sonrisa -->
+  <path d="M172 160 Q200 190 228 160" fill="none" stroke="#5a3200" stroke-width="5" stroke-linecap="round"/>
+
+  <!-- Corazones -->
+  <path d="M90 250 C90 238 75 235 75 247 C75 255 90 265 90 265 C90 265 105 255 105 247 C105 235 90 238 90 250 Z" fill="#ff4d6d"/>
+  <path d="M320 230 C320 218 305 215 305 227 C305 235 320 245 320 245 C320 245 335 235 335 227 C335 215 320 218 320 230 Z" fill="#ff4d6d"/>
+  <path d="M290 275 C290 266 279 264 279 272 C279 278 290 285 290 285 C290 285 301 278 301 272 C301 264 290 266 290 275 Z" fill="#ff8fa3"/>
+
+  <!-- Flores -->
+  <g transform="translate(60 330)">
+    <circle r="8" fill="#ffd23f"/>
+    <circle cx="0" cy="-14" r="9" fill="#ff6b9a"/>
+    <circle cx="13" cy="-4" r="9" fill="#ff6b9a"/>
+    <circle cx="8" cy="11" r="9" fill="#ff6b9a"/>
+    <circle cx="-8" cy="11" r="9" fill="#ff6b9a"/>
+    <circle cx="-13" cy="-4" r="9" fill="#ff6b9a"/>
+  </g>
+  <g transform="translate(340 340)">
+    <circle r="8" fill="#ffd23f"/>
+    <circle cx="0" cy="-14" r="9" fill="#b388ff"/>
+    <circle cx="13" cy="-4" r="9" fill="#b388ff"/>
+    <circle cx="8" cy="11" r="9" fill="#b388ff"/>
+    <circle cx="-8" cy="11" r="9" fill="#b388ff"/>
+    <circle cx="-13" cy="-4" r="9" fill="#b388ff"/>
+  </g>
+
+  <!-- Pasto -->
+  <g stroke="#2e7d32" stroke-width="3" stroke-linecap="round">
+    <line x1="120" y1="390" x2="115" y2="372"/>
+    <line x1="130" y1="390" x2="136" y2="370"/>
+    <line x1="265" y1="390" x2="260" y2="372"/>
+    <line x1="275" y1="390" x2="281" y2="370"/>
+  </g>
+</svg>

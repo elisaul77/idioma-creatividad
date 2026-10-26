@@ -1,0 +1,118 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 400" width="400" height="400">
+  <defs>
+    <linearGradient id="sky" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#141a42"/>
+      <stop offset="1" stop-color="#3f3572"/>
+    </linearGradient>
+    <radialGradient id="glow" cx="0.5" cy="0.5" r="0.5">
+      <stop offset="0" stop-color="#fff2b8" stop-opacity="0.55"/>
+      <stop offset="1" stop-color="#fff2b8" stop-opacity="0"/>
+    </radialGradient>
+    <radialGradient id="lamp" cx="0.5" cy="0.5" r="0.5">
+      <stop offset="0" stop-color="#ffd27a" stop-opacity="0.35"/>
+      <stop offset="1" stop-color="#ffd27a" stop-opacity="0"/>
+    </radialGradient>
+  </defs>
+
+  <!-- Night sky -->
+  <rect width="400" height="400" fill="url(#sky)"/>
+
+  <!-- Moon -->
+  <circle cx="330" cy="80" r="90" fill="url(#glow)"/>
+  <circle cx="330" cy="80" r="38" fill="#fff4c7"/>
+  <circle cx="344" cy="70" r="8" fill="#eedb9a" opacity="0.7"/>
+  <circle cx="320" cy="92" r="5" fill="#eedb9a" opacity="0.7"/>
+
+  <!-- Stars -->
+  <g fill="#fffbe6">
+    <circle cx="40" cy="50" r="2"/>
+    <circle cx="95" cy="25" r="1.5"/>
+    <circle cx="180" cy="40" r="2"/>
+    <circle cx="230" cy="18" r="1.5"/>
+    <circle cx="60" cy="130" r="1.5"/>
+    <circle cx="210" cy="110" r="2"/>
+    <circle cx="370" cy="170" r="1.5"/>
+    <circle cx="25" cy="200" r="1.5"/>
+    <circle cx="150" cy="95" r="1"/>
+  </g>
+  <g fill="#fffbe6" opacity="0.9">
+    <path d="M120 60 l3 8 8 3 -8 3 -3 8 -3 -8 -8 -3 8 -3z"/>
+    <path d="M280 140 l2 6 6 2 -6 2 -2 6 -2 -6 -6 -2 6 -2z"/>
+  </g>
+
+  <!-- Floor and rug -->
+  <rect x="0" y="312" width="400" height="88" fill="#2a2150"/>
+  <ellipse cx="200" cy="335" rx="165" ry="30" fill="#5b3f8c" opacity="0.7"/>
+  <ellipse cx="200" cy="335" rx="130" ry="20" fill="none" stroke="#8a6cc4" stroke-width="2" opacity="0.6"/>
+
+  <!-- Night lamp light on the floor -->
+  <ellipse cx="60" cy="320" rx="90" ry="40" fill="url(#lamp)"/>
+
+  <!-- Teddy bear -->
+  <g>
+    <ellipse cx="150" cy="320" rx="38" ry="8" fill="#000" opacity="0.25"/>
+    <ellipse cx="118" cy="306" rx="16" ry="10" fill="#9c6436"/>
+    <ellipse cx="182" cy="306" rx="16" ry="10" fill="#9c6436"/>
+    <ellipse cx="150" cy="262" rx="45" ry="52" fill="#b57a4a"/>
+    <ellipse cx="150" cy="275" rx="26" ry="30" fill="#e8c39a"/>
+    <path d="M118 240 Q100 262 110 282" stroke="#9c6436" stroke-width="14" stroke-linecap="round" fill="none"/>
+    <path d="M182 240 Q200 258 190 270" stroke="#9c6436" stroke-width="14" stroke-linecap="round" fill="none"/>
+    <circle cx="112" cy="284" r="8" fill="#e8c39a"/>
+    <circle cx="190" cy="272" r="8" fill="#e8c39a"/>
+    <circle cx="122" cy="168" r="14" fill="#9c6436"/>
+    <circle cx="178" cy="168" r="14" fill="#9c6436"/>
+    <circle cx="122" cy="168" r="7" fill="#e0a878"/>
+    <circle cx="178" cy="168" r="7" fill="#e0a878"/>
+    <circle cx="150" cy="190" r="36" fill="#b57a4a"/>
+    <ellipse cx="150" cy="203" rx="15" ry="11" fill="#e8c39a"/>
+    <ellipse cx="150" cy="197" rx="5" ry="4" fill="#3a2418"/>
+    <circle cx="137" cy="184" r="4" fill="#2a1a10"/>
+    <circle cx="163" cy="184" r="4" fill="#2a1a10"/>
+    <circle cx="138" cy="183" r="1.3" fill="#fff"/>
+    <circle cx="164" cy="183" r="1.3" fill="#fff"/>
+    <path d="M143 209 Q150 215 157 209" stroke="#3a2418" stroke-width="2" fill="none" stroke-linecap="round"/>
+    <circle cx="124" cy="200" r="5" fill="#ff8fa3" opacity="0.5"/>
+    <circle cx="176" cy="200" r="5" fill="#ff8fa3" opacity="0.5"/>
+    <!-- Bear's tiny cup of warm milk -->
+    <rect x="190" y="246" width="18" height="20" rx="3" fill="#f4f1ea"/>
+    <path d="M208 252 q7 2 0 9" stroke="#f4f1ea" stroke-width="3" fill="none"/>
+    <ellipse cx="199" cy="248" rx="8" ry="2" fill="#ffe9c2"/>
+  </g>
+
+  <!-- Toy robot -->
+  <g>
+    <ellipse cx="300" cy="322" rx="36" ry="8" fill="#000" opacity="0.25"/>
+    <rect x="283" y="290" width="13" height="26" rx="4" fill="#5fb8cf"/>
+    <rect x="310" y="290" width="13" height="26" rx="4" fill="#5fb8cf"/>
+    <rect x="276" y="236" width="48" height="60" rx="10" fill="#7fd1e6"/>
+    <rect x="284" y="250" width="32" height="18" rx="5" fill="#1b1f4b"/>
+    <circle cx="292" cy="259" r="4" fill="#7fffd4"/>
+    <circle cx="308" cy="259" r="4" fill="#7fffd4"/>
+    <rect x="288" y="278" width="24" height="5" rx="2" fill="#2a5f6e"/>
+    <circle cx="300" cy="312" r="5" fill="#ffd23f"/>
+    <rect x="262" y="214" width="76" height="32" rx="9" fill="#a6e3f2"/>
+    <rect x="262" y="225" width="10" height="20" rx="4" fill="#5fb8cf"/>
+    <rect x="328" y="225" width="10" height="20" rx="4" fill="#5fb8cf"/>
+    <line x1="300" y1="214" x2="300" y2="192" stroke="#8fa3c7" stroke-width="3"/>
+    <circle cx="300" cy="188" r="6" fill="#ffd23f"/>
+    <!-- Robot arm raised, waving -->
+    <line x1="262" y1="236" x2="240" y2="206" stroke="#5fb8cf" stroke-width="8" stroke-linecap="round"/>
+    <circle cx="238" cy="202" r="7" fill="#a6e3f2"/>
+  </g>
+
+  <!-- Rolling ball with a trail -->
+  <g>
+    <circle cx="78" cy="352" r="17" fill="#ff6b6b"/>
+    <path d="M65 352 h26" stroke="#ffd23f" stroke-width="4"/>
+    <path d="M78 336 q-7 16 0 32" stroke="#ffd23f" stroke-width="4" fill="none"/>
+    <path d="M40 356 h14 M32 366 h10" stroke="#ff6b6b" stroke-width="3" stroke-linecap="round" opacity="0.5"/>
+  </g>
+
+  <!-- Little toy car -->
+  <g>
+    <rect x="335" y="330" width="40" height="14" rx="4" fill="#ffb347"/>
+    <path d="M343 330 l6 -9 h14 l6 9z" fill="#ffc96b"/>
+    <circle cx="345" cy="346" r="5" fill="#2a2150"/>
+    <circle cx="367" cy="346" r="5" fill="#2a2150"/>
+  </g>
+</svg>

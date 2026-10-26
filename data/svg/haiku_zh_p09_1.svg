@@ -1,0 +1,94 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="400" height="400" viewBox="0 0 400 400">
+  <defs>
+    <linearGradient id="sky" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#ffe9a8"/>
+      <stop offset="1" stop-color="#f6a663"/>
+    </linearGradient>
+    <linearGradient id="soil" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#8a5a2b"/>
+      <stop offset="1" stop-color="#4e2f14"/>
+    </linearGradient>
+    <pattern id="hex" width="16" height="14" patternUnits="userSpaceOnUse">
+      <path d="M8 0 L16 4.6 L16 9.2 L8 13.8 L0 9.2 L0 4.6 Z" fill="none" stroke="#7a4a00" stroke-width="1" opacity="0.5"/>
+    </pattern>
+  </defs>
+
+  <!-- Sky -->
+  <rect x="0" y="0" width="400" height="300" fill="url(#sky)"/>
+  <circle cx="330" cy="70" r="36" fill="#fff3c4" opacity="0.9"/>
+  <ellipse cx="120" cy="40" rx="30" ry="9" fill="#ffffff" opacity="0.5"/>
+  <ellipse cx="170" cy="30" rx="22" ry="7" fill="#ffffff" opacity="0.4"/>
+
+  <!-- Distant hills -->
+  <path d="M0 260 Q60 220 130 250 T270 240 T400 255 L400 300 L0 300 Z" fill="#e7a25a"/>
+
+  <!-- Honeycomb towers (left) -->
+  <rect x="40" y="150" width="60" height="150" fill="#e8a317" stroke="#7a4a00" stroke-width="2"/>
+  <rect x="40" y="150" width="60" height="150" fill="url(#hex)"/>
+  <polygon points="40,150 70,132 100,150" fill="#f2b632" stroke="#7a4a00" stroke-width="2"/>
+
+  <rect x="115" y="110" width="50" height="190" fill="#f0b43a" stroke="#7a4a00" stroke-width="2"/>
+  <rect x="115" y="110" width="50" height="190" fill="url(#hex)"/>
+  <polygon points="115,110 140,94 165,110" fill="#f7c24c" stroke="#7a4a00" stroke-width="2"/>
+
+  <rect x="180" y="170" width="45" height="130" fill="#e8a317" stroke="#7a4a00" stroke-width="2"/>
+  <rect x="180" y="170" width="45" height="130" fill="url(#hex)"/>
+  <polygon points="180,170 202,156 225,170" fill="#f2b632" stroke="#7a4a00" stroke-width="2"/>
+
+  <!-- Honeycomb towers (right) -->
+  <rect x="290" y="130" width="55" height="170" fill="#f0b43a" stroke="#7a4a00" stroke-width="2"/>
+  <rect x="290" y="130" width="55" height="170" fill="url(#hex)"/>
+  <polygon points="290,130 317,112 345,130" fill="#f7c24c" stroke="#7a4a00" stroke-width="2"/>
+
+  <rect x="350" y="180" width="40" height="120" fill="#e8a317" stroke="#7a4a00" stroke-width="2"/>
+  <rect x="350" y="180" width="40" height="120" fill="url(#hex)"/>
+  <polygon points="350,180 370,166 390,180" fill="#f2b632" stroke="#7a4a00" stroke-width="2"/>
+
+  <!-- Termite mound spire (center) -->
+  <path d="M150 300 L175 230 L190 200 L205 150 L215 110 L225 150 L240 200 L255 230 L280 300 Z" fill="#c98f4f" stroke="#6b3f1d" stroke-width="2"/>
+  <circle cx="215" cy="108" r="4" fill="#3b2110"/>
+  <circle cx="200" cy="200" r="3" fill="#3b2110"/>
+  <circle cx="230" cy="205" r="3" fill="#3b2110"/>
+  <circle cx="210" cy="250" r="4" fill="#3b2110"/>
+  <circle cx="190" cy="270" r="3" fill="#3b2110"/>
+  <circle cx="240" cy="265" r="3" fill="#3b2110"/>
+
+  <!-- Ant bridge with marching ants -->
+  <path d="M100 230 Q140 200 180 230" stroke="#6b3f1d" stroke-width="4" fill="none"/>
+  <circle cx="100" cy="230" r="2.5" fill="#2a1a0a"/>
+  <circle cx="120" cy="219" r="2.5" fill="#2a1a0a"/>
+  <circle cx="140" cy="215" r="2.5" fill="#2a1a0a"/>
+  <circle cx="160" cy="219" r="2.5" fill="#2a1a0a"/>
+  <circle cx="180" cy="230" r="2.5" fill="#2a1a0a"/>
+
+  <!-- Ground -->
+  <rect x="0" y="300" width="400" height="100" fill="url(#soil)"/>
+  <path d="M0 300 Q50 290 100 300 T200 300 T300 300 T400 300 L400 310 L0 310 Z" fill="#6fa33a"/>
+
+  <!-- Tunnel entrances -->
+  <path d="M30 340 A20 20 0 0 1 70 340 Z" fill="#2a1608"/>
+  <path d="M300 350 A22 22 0 0 1 344 350 Z" fill="#2a1608"/>
+  <path d="M160 362 A14 14 0 0 1 188 362 Z" fill="#2a1608"/>
+
+  <!-- Ant trail -->
+  <path d="M0 330 Q200 310 400 340" stroke="#2a1608" stroke-width="3" stroke-dasharray="3 6" fill="none"/>
+
+  <!-- Butterfly -->
+  <path d="M90 70 C70 40 50 50 60 75 C65 88 80 80 90 70 Z" fill="#7b3fa0" opacity="0.85"/>
+  <path d="M90 70 C110 40 130 50 120 75 C115 88 100 80 90 70 Z" fill="#7b3fa0" opacity="0.85"/>
+  <rect x="88" y="62" width="4" height="18" rx="2" fill="#222"/>
+
+  <!-- Bee -->
+  <ellipse cx="200" cy="60" rx="12" ry="9" fill="#ffd23f" stroke="#222" stroke-width="2"/>
+  <rect x="194" y="51" width="3" height="18" fill="#222"/>
+  <rect x="203" y="51" width="3" height="18" fill="#222"/>
+  <ellipse cx="198" cy="44" rx="6" ry="4" fill="#ffffff" opacity="0.8" stroke="#777" stroke-width="1"/>
+  <ellipse cx="208" cy="44" rx="6" ry="4" fill="#ffffff" opacity="0.8" stroke="#777" stroke-width="1"/>
+
+  <!-- Worker ants on ground -->
+  <circle cx="80" cy="318" r="2.5" fill="#2a1608"/>
+  <circle cx="92" cy="322" r="2.5" fill="#2a1608"/>
+  <circle cx="250" cy="325" r="2.5" fill="#2a1608"/>
+  <circle cx="262" cy="330" r="2.5" fill="#2a1608"/>
+  <circle cx="370" cy="326" r="2.5" fill="#2a1608"/>
+</svg>

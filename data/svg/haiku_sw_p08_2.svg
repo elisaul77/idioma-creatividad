@@ -1,0 +1,104 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="400" height="400" viewBox="0 0 400 400">
+  <defs>
+    <linearGradient id="sky" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#0b1d3a"/>
+      <stop offset="1" stop-color="#2d1f5e"/>
+    </linearGradient>
+    <radialGradient id="glow" cx="0.5" cy="0.5" r="0.5">
+      <stop offset="0" stop-color="#fff3b0" stop-opacity="0.6"/>
+      <stop offset="1" stop-color="#fff3b0" stop-opacity="0"/>
+    </radialGradient>
+    <radialGradient id="ball" cx="0.35" cy="0.35" r="0.7">
+      <stop offset="0" stop-color="#ffd166"/>
+      <stop offset="1" stop-color="#ef476f"/>
+    </radialGradient>
+  </defs>
+
+  <!-- Anga la usiku -->
+  <rect width="400" height="400" fill="url(#sky)"/>
+
+  <!-- Nyota -->
+  <g fill="#fff8e1">
+    <circle cx="40" cy="45" r="2"/>
+    <circle cx="90" cy="25" r="1.5"/>
+    <circle cx="160" cy="50" r="2"/>
+    <circle cx="210" cy="20" r="1.5"/>
+    <circle cx="25" cy="130" r="1.5"/>
+    <circle cx="140" cy="120" r="1"/>
+    <circle cx="200" cy="95" r="2"/>
+    <circle cx="370" cy="150" r="1.5"/>
+    <circle cx="60" cy="190" r="1"/>
+    <circle cx="380" cy="25" r="2"/>
+  </g>
+
+  <!-- Mwezi na mwangaza wake -->
+  <circle cx="320" cy="70" r="70" fill="url(#glow)"/>
+  <circle cx="320" cy="70" r="34" fill="#fff3b0"/>
+  <circle cx="333" cy="60" r="30" fill="#2d1f5e"/>
+
+  <!-- Sakafu -->
+  <rect x="0" y="330" width="400" height="70" fill="#3b2a4a"/>
+  <line x1="0" y1="330" x2="400" y2="330" stroke="#5a4478" stroke-width="2"/>
+
+  <!-- Njia ya gari dogo la kuchezea (nukta za mwanga) -->
+  <g fill="#ffd166" opacity="0.7">
+    <circle cx="20" cy="372" r="2"/>
+    <circle cx="45" cy="372" r="2"/>
+    <circle cx="70" cy="372" r="2"/>
+    <circle cx="95" cy="372" r="2"/>
+  </g>
+
+  <!-- Gari dogo la kuchezea -->
+  <g transform="translate(110,358)">
+    <rect x="0" y="-22" width="62" height="18" rx="3" fill="#06d6a0"/>
+    <rect x="44" y="-38" width="16" height="16" rx="2" fill="#06d6a0"/>
+    <rect x="8" y="-30" width="14" height="8" rx="1" fill="#118ab2"/>
+    <circle cx="12" cy="0" r="6" fill="#ffd166"/>
+    <circle cx="50" cy="0" r="6" fill="#ffd166"/>
+    <circle cx="12" cy="0" r="2" fill="#3b2a4a"/>
+    <circle cx="50" cy="0" r="2" fill="#3b2a4a"/>
+  </g>
+
+  <!-- Dubu la kuchezea akisoma kitabu kwa mwanga wa mwezi -->
+  <g transform="translate(70,200)">
+    <ellipse cx="0" cy="100" rx="34" ry="36" fill="#c58b5a"/>
+    <circle cx="-26" cy="50" r="10" fill="#c58b5a"/>
+    <circle cx="26" cy="50" r="10" fill="#c58b5a"/>
+    <circle cx="0" cy="40" r="30" fill="#d89e6b"/>
+    <circle cx="-20" cy="14" r="10" fill="#c58b5a"/>
+    <circle cx="20" cy="14" r="10" fill="#c58b5a"/>
+    <circle cx="-10" cy="36" r="3" fill="#2d1f5e"/>
+    <circle cx="10" cy="36" r="3" fill="#2d1f5e"/>
+    <ellipse cx="0" cy="46" rx="4" ry="3" fill="#7a4a2a"/>
+    <!-- Kitabu -->
+    <rect x="-22" y="82" width="44" height="30" rx="2" fill="#ef476f"/>
+    <rect x="-20" y="84" width="40" height="26" fill="#fff8e1"/>
+    <line x1="0" y1="84" x2="0" y2="110" stroke="#ccc" stroke-width="1"/>
+  </g>
+
+  <!-- Mpira unaodunda na njia yake -->
+  <path d="M 230 300 Q 260 170 300 260 Q 320 300 340 290" fill="none" stroke="#ffd166" stroke-width="1.5" stroke-dasharray="3 5" opacity="0.6"/>
+  <circle cx="300" cy="300" r="14" fill="url(#ball)"/>
+
+  <!-- Juu inayozunguka -->
+  <g transform="translate(220,320)">
+    <path d="M -18 0 L 0 -28 L 18 0 Z" fill="#ef476f"/>
+    <line x1="0" y1="-28" x2="0" y2="-34" stroke="#fff8e1" stroke-width="2"/>
+    <path d="M -26 -6 Q 0 -40 26 -6" fill="none" stroke="#ffd166" stroke-width="1.5" stroke-dasharray="2 4" opacity="0.8"/>
+  </g>
+
+  <!-- Roboti dogo anayepunga mkono -->
+  <g transform="translate(365,300)">
+    <rect x="-12" y="-6" width="24" height="30" rx="3" fill="#118ab2"/>
+    <rect x="-10" y="-28" width="20" height="20" rx="3" fill="#8ecae6"/>
+    <circle cx="-4" cy="-18" r="2.5" fill="#2d1f5e"/>
+    <circle cx="4" cy="-18" r="2.5" fill="#2d1f5e"/>
+    <line x1="0" y1="-28" x2="0" y2="-36" stroke="#ffd166" stroke-width="2"/>
+    <circle cx="0" cy="-37" r="2.5" fill="#ffd166"/>
+    <line x1="12" y1="0" x2="22" y2="-14" stroke="#118ab2" stroke-width="5" stroke-linecap="round"/>
+    <line x1="-12" y1="4" x2="-18" y2="18" stroke="#118ab2" stroke-width="5" stroke-linecap="round"/>
+    <!-- Mawimbi ya kupunga mkono -->
+    <path d="M 28 -22 Q 34 -28 30 -34" fill="none" stroke="#ffd166" stroke-width="1.5" opacity="0.7"/>
+    <path d="M 34 -18 Q 42 -26 38 -36" fill="none" stroke="#ffd166" stroke-width="1.5" opacity="0.5"/>
+  </g>
+</svg>

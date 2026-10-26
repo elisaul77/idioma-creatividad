@@ -1,0 +1,60 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="400" height="400" viewBox="0 0 400 400">
+  <defs>
+    <radialGradient id="bg" cx="50%" cy="45%" r="75%">
+      <stop offset="0%" stop-color="#fff6c2"/>
+      <stop offset="100%" stop-color="#ffd166"/>
+    </radialGradient>
+    <radialGradient id="sun" cx="40%" cy="35%" r="70%">
+      <stop offset="0%" stop-color="#fff9d6"/>
+      <stop offset="60%" stop-color="#ffc83d"/>
+      <stop offset="100%" stop-color="#f7a21b"/>
+    </radialGradient>
+  </defs>
+
+  <!-- Background -->
+  <rect width="400" height="400" fill="url(#bg)"/>
+
+  <!-- Rays -->
+  <g stroke="#ffb703" stroke-width="10" stroke-linecap="round" opacity="0.6">
+    <line x1="200" y1="40" x2="200" y2="72"/>
+    <line x1="200" y1="328" x2="200" y2="360"/>
+    <line x1="40" y1="200" x2="72" y2="200"/>
+    <line x1="328" y1="200" x2="360" y2="200"/>
+    <line x1="89" y1="89" x2="111" y2="111"/>
+    <line x1="289" y1="289" x2="311" y2="311"/>
+    <line x1="311" y1="89" x2="289" y2="111"/>
+    <line x1="89" y1="311" x2="111" y2="289"/>
+  </g>
+
+  <!-- Sun body -->
+  <circle cx="200" cy="200" r="98" fill="url(#sun)"/>
+
+  <!-- Cheeks -->
+  <circle cx="157" cy="226" r="14" fill="#ff8fa3" opacity="0.6"/>
+  <circle cx="243" cy="226" r="14" fill="#ff8fa3" opacity="0.6"/>
+
+  <!-- Happy closed eyes -->
+  <path d="M250 180 Q160 0 0 0" fill="none"/>
+  <path d="M220 182 Q232 160 244 182" fill="none" stroke="#7a3e00" stroke-width="7" stroke-linecap="round"/>
+  <path d="M156 182 Q168 160 180 182" fill="none" stroke="#7a3e00" stroke-width="7" stroke-linecap="round"/>
+
+  <!-- Big smile -->
+  <path d="M150 220 Q200 275 250 220 Q200 252 150 220 Z" fill="#7a3e00" stroke="#7a3e00" stroke-width="6" stroke-linejoin="round"/>
+  <path d="M168 232 Q200 250 232 232 Q200 262 168 232 Z" fill="#ff6b6b"/>
+
+  <!-- Confetti -->
+  <g>
+    <rect x="62" y="96" width="12" height="12" rx="3" fill="#ef476f" transform="rotate(20 68 102)"/>
+    <rect x="318" y="110" width="12" height="12" rx="3" fill="#06d6a0" transform="rotate(-15 324 116)"/>
+    <circle cx="90" cy="300" r="7" fill="#118ab2"/>
+    <circle cx="330" cy="300" r="8" fill="#ef476f"/>
+    <rect x="300" y="330" width="11" height="11" rx="2" fill="#8338ec" transform="rotate(35 305 335)"/>
+    <rect x="70" y="250" width="10" height="10" rx="2" fill="#06d6a0" transform="rotate(-30 75 255)"/>
+    <circle cx="120" cy="60" r="6" fill="#8338ec"/>
+    <circle cx="285" cy="54" r="6" fill="#118ab2"/>
+    <path d="M330 170 l8 16 l17 2 l-13 11 l4 17 l-16 -9 l-16 9 l4 -17 l-13 -11 l17 -2 z" fill="#ff7b00" transform="translate(-10 0) scale(0.6) translate(190 80)"/>
+  </g>
+
+  <!-- Ground hint -->
+  <ellipse cx="200" cy="372" rx="120" ry="10" fill="#f7a21b" opacity="0.35"/>
+</svg>

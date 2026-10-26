@@ -1,0 +1,98 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="400" height="400" viewBox="0 0 400 400">
+  <defs>
+    <linearGradient id="sky" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#1a0b3d"/>
+      <stop offset="50%" stop-color="#5b2a86"/>
+      <stop offset="100%" stop-color="#f09ab5"/>
+    </linearGradient>
+    <radialGradient id="moon" cx="0.4" cy="0.4" r="0.6">
+      <stop offset="0%" stop-color="#fff8e1"/>
+      <stop offset="100%" stop-color="#ffd27a"/>
+    </radialGradient>
+    <radialGradient id="orb" cx="0.35" cy="0.35" r="0.7">
+      <stop offset="0%" stop-color="#ffffff" stop-opacity="0.9"/>
+      <stop offset="100%" stop-color="#7ee8fa" stop-opacity="0.15"/>
+    </radialGradient>
+    <linearGradient id="sea" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#2e1a5c" stop-opacity="0.9"/>
+      <stop offset="100%" stop-color="#0d0624"/>
+    </linearGradient>
+    <filter id="blur" x="-50%" y="-50%" width="200%" height="200%">
+      <feGaussianBlur stdDeviation="3"/>
+    </filter>
+    <filter id="soft" x="-50%" y="-50%" width="200%" height="200%">
+      <feGaussianBlur stdDeviation="8"/>
+    </filter>
+  </defs>
+
+  <!-- sky -->
+  <rect width="400" height="400" fill="url(#sky)"/>
+
+  <!-- stars -->
+  <g fill="#ffffff">
+    <circle cx="40" cy="50" r="1.5" opacity="0.9"/>
+    <circle cx="95" cy="28" r="1" opacity="0.7"/>
+    <circle cx="160" cy="60" r="1.2" opacity="0.8"/>
+    <circle cx="330" cy="40" r="1.6" opacity="0.9"/>
+    <circle cx="365" cy="95" r="1" opacity="0.6"/>
+    <circle cx="260" cy="20" r="1" opacity="0.7"/>
+    <circle cx="20" cy="150" r="1" opacity="0.6"/>
+    <circle cx="375" cy="180" r="1.2" opacity="0.7"/>
+  </g>
+
+  <!-- moon -->
+  <circle cx="300" cy="110" r="46" fill="url(#moon)" opacity="0.35" filter="url(#soft)"/>
+  <circle cx="300" cy="110" r="32" fill="url(#moon)"/>
+  <circle cx="312" cy="100" r="28" fill="#2b1650" opacity="0.18"/>
+
+  <!-- floating orbs -->
+  <circle cx="110" cy="130" r="22" fill="url(#orb)" stroke="#bdf3ff" stroke-opacity="0.5"/>
+  <circle cx="150" cy="200" r="10" fill="url(#orb)" stroke="#ffd6f0" stroke-opacity="0.4"/>
+  <circle cx="75" cy="215" r="6" fill="url(#orb)"/>
+  <circle cx="240" cy="175" r="14" fill="url(#orb)" stroke="#fff3c4" stroke-opacity="0.4"/>
+
+  <!-- drifting dream-clouds -->
+  <g fill="#ffb8d9" opacity="0.5" filter="url(#blur)">
+    <ellipse cx="90" cy="250" rx="70" ry="14"/>
+    <ellipse cx="250" cy="265" rx="90" ry="16"/>
+  </g>
+  <g fill="#c9a8ff" opacity="0.35" filter="url(#blur)">
+    <ellipse cx="180" cy="235" rx="60" ry="10"/>
+  </g>
+
+  <!-- spiral staircase rising into the sky -->
+  <g fill="none" stroke="#ffe9a8" stroke-width="2" stroke-linecap="round" opacity="0.75">
+    <path d="M200 330 C 160 310, 240 290, 200 270 C 165 252, 230 236, 200 218 C 178 204, 215 190, 200 176"/>
+    <path d="M200 330 C 240 310, 160 290, 200 270 C 235 252, 170 236, 200 218 C 222 204, 185 190, 200 176" opacity="0.5"/>
+  </g>
+  <g fill="#ffe9a8" opacity="0.6">
+    <rect x="186" y="324" width="28" height="4" rx="2"/>
+    <rect x="188" y="266" width="24" height="4" rx="2"/>
+    <rect x="186" y="212" width="28" height="4" rx="2"/>
+  </g>
+
+  <!-- an eye within the dream -->
+  <g transform="translate(60 70)">
+    <path d="M-30 0 Q0 -24 30 0 Q0 24 -30 0 Z" fill="#fff4f8" opacity="0.85"/>
+    <circle cx="0" cy="0" r="10" fill="#4b2a8f"/>
+    <circle cx="0" cy="0" r="4" fill="#0d0624"/>
+    <circle cx="3" cy="-3" r="2" fill="#ffffff"/>
+  </g>
+
+  <!-- ocean of thought -->
+  <path d="M0 300 Q50 286 100 300 T200 300 T300 300 T400 300 L400 400 L0 400 Z" fill="url(#sea)" opacity="0.85"/>
+  <path d="M0 330 Q60 316 120 330 T240 330 T360 330 T400 330 L400 400 L0 400 Z" fill="#120830" opacity="0.9"/>
+
+  <!-- reflected light -->
+  <g stroke="#ffd27a" stroke-linecap="round" opacity="0.35">
+    <line x1="270" y1="310" x2="330" y2="310" stroke-width="2"/>
+    <line x1="285" y1="322" x2="315" y2="322" stroke-width="1.5"/>
+    <line x1="60" y1="345" x2="110" y2="345" stroke-width="2"/>
+  </g>
+
+  <!-- small wandering birds -->
+  <g fill="none" stroke="#2b1650" stroke-width="2" stroke-linecap="round" opacity="0.8">
+    <path d="M320 200 q6 -6 12 0 q6 -6 12 0"/>
+    <path d="M345 225 q4 -4 8 0 q4 -4 8 0"/>
+  </g>
+</svg>

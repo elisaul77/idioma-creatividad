@@ -1,0 +1,130 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="400" height="400" viewBox="0 0 400 400">
+  <defs>
+    <linearGradient id="sky" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#c9b8f0"/>
+      <stop offset="0.7" stop-color="#ffd9e8"/>
+      <stop offset="1" stop-color="#ffeedd"/>
+    </linearGradient>
+    <linearGradient id="wall" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#ffe6a8"/>
+      <stop offset="1" stop-color="#f9cf86"/>
+    </linearGradient>
+    <linearGradient id="roof" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#8fd3c4"/>
+      <stop offset="1" stop-color="#5fb8a8"/>
+    </linearGradient>
+    <linearGradient id="monster" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#b9a6ff"/>
+      <stop offset="1" stop-color="#8f7de0"/>
+    </linearGradient>
+  </defs>
+
+  <!-- Sky -->
+  <rect width="400" height="400" fill="url(#sky)"/>
+
+  <!-- Moon -->
+  <circle cx="330" cy="70" r="26" fill="#fff6cf"/>
+  <circle cx="340" cy="62" r="22" fill="#ffd9e8" opacity="0.55"/>
+
+  <!-- Stars -->
+  <g fill="#ffffff" opacity="0.9">
+    <path d="M70 60 l3 8 8 3 -8 3 -3 8 -3 -8 -8 -3 8 -3z"/>
+    <path d="M150 40 l2 5 5 2 -5 2 -2 5 -2 -5 -5 -2 5 -2z"/>
+    <path d="M250 110 l2 5 5 2 -5 2 -2 5 -2 -5 -5 -2 5 -2z"/>
+  </g>
+
+  <!-- Clouds -->
+  <g fill="#ffffff" opacity="0.8">
+    <ellipse cx="90" cy="130" rx="34" ry="14"/>
+    <ellipse cx="115" cy="122" rx="24" ry="16"/>
+    <ellipse cx="60" cy="124" rx="20" ry="11"/>
+  </g>
+
+  <!-- Ground -->
+  <path d="M0 330 Q100 310 200 325 T400 320 L400 400 L0 400 Z" fill="#a8e6a1"/>
+  <path d="M0 355 Q120 340 220 355 T400 350 L400 400 L0 400 Z" fill="#8fd68a"/>
+
+  <!-- Round tree -->
+  <rect x="40" y="250" width="14" height="80" rx="6" fill="#c08a65"/>
+  <circle cx="47" cy="236" r="34" fill="#7fcf9a"/>
+  <circle cx="30" cy="250" r="20" fill="#7fcf9a"/>
+  <circle cx="64" cy="252" r="20" fill="#7fcf9a"/>
+
+  <!-- House body -->
+  <rect x="120" y="190" width="170" height="140" rx="10" fill="url(#wall)"/>
+
+  <!-- Roof -->
+  <path d="M100 200 Q205 90 310 200 Z" fill="url(#roof)"/>
+  <path d="M100 200 Q205 90 310 200" fill="none" stroke="#4aa092" stroke-width="4" stroke-linecap="round"/>
+  <!-- Roof scallops -->
+  <g fill="#4aa092" opacity="0.35">
+    <circle cx="145" cy="184" r="8"/>
+    <circle cx="175" cy="162" r="8"/>
+    <circle cx="235" cy="162" r="8"/>
+    <circle cx="265" cy="184" r="8"/>
+  </g>
+
+  <!-- Chimney -->
+  <rect x="262" y="118" width="22" height="46" rx="4" fill="#e9a6a6"/>
+  <rect x="258" y="112" width="30" height="10" rx="4" fill="#d98b8b"/>
+  <!-- Chimney puffs -->
+  <circle cx="272" cy="98" r="9" fill="#ffffff" opacity="0.85"/>
+  <circle cx="285" cy="84" r="7" fill="#ffffff" opacity="0.75"/>
+
+  <!-- Door -->
+  <path d="M190 330 L190 270 Q190 248 212 248 Q234 248 234 270 L234 330 Z" fill="#c98a6b"/>
+  <circle cx="226" cy="296" r="3.5" fill="#ffe08a"/>
+
+  <!-- Window with friendly monster -->
+  <rect x="140" y="222" width="36" height="36" rx="8" fill="#bfe9ff"/>
+  <!-- Monster body peeking -->
+  <g>
+    <path d="M144 258 Q158 236 172 258 Z" fill="url(#monster)"/>
+    <circle cx="158" cy="242" r="13" fill="url(#monster)"/>
+    <!-- Horns -->
+    <path d="M149 232 Q146 222 152 220 Q152 228 155 231 Z" fill="#ffd27a"/>
+    <path d="M167 232 Q170 222 164 220 Q164 228 161 231 Z" fill="#ffd27a"/>
+    <!-- Eyes -->
+    <circle cx="153" cy="241" r="2.6" fill="#3d2f5c"/>
+    <circle cx="163" cy="241" r="2.6" fill="#3d2f5c"/>
+    <circle cx="154" cy="240" r="0.9" fill="#ffffff"/>
+    <circle cx="164" cy="240" r="0.9" fill="#ffffff"/>
+    <!-- Blush -->
+    <ellipse cx="149" cy="247" rx="3" ry="1.8" fill="#ff9ec4" opacity="0.8"/>
+    <ellipse cx="167" cy="247" rx="3" ry="1.8" fill="#ff9ec4" opacity="0.8"/>
+    <!-- Smile -->
+    <path d="M153 249 Q158 253 163 249" fill="none" stroke="#3d2f5c" stroke-width="1.6" stroke-linecap="round"/>
+  </g>
+  <!-- Window frame -->
+  <rect x="140" y="222" width="36" height="36" rx="8" fill="none" stroke="#ffffff" stroke-width="4"/>
+  <line x1="158" y1="222" x2="158" y2="258" stroke="#ffffff" stroke-width="3"/>
+
+  <!-- Second window -->
+  <rect x="250" y="220" width="30" height="30" rx="8" fill="#ffffff" opacity="0.9"/>
+  <rect x="254" y="224" width="22" height="22" rx="5" fill="#fff3b0"/>
+  <circle cx="265" cy="235" r="5" fill="#ffd27a" opacity="0.8"/>
+
+  <!-- Flower pots -->
+  <g>
+    <path d="M118 318 L128 318 L126 332 L120 332 Z" fill="#e88f8f"/>
+    <circle cx="123" cy="312" r="5" fill="#ff9ec4"/>
+    <circle cx="117" cy="308" r="4" fill="#ffc2de"/>
+    <circle cx="129" cy="308" r="4" fill="#ffc2de"/>
+  </g>
+  <g>
+    <path d="M292 318 L302 318 L300 332 L294 332 Z" fill="#e88f8f"/>
+    <circle cx="297" cy="312" r="5" fill="#ffe08a"/>
+    <circle cx="291" cy="308" r="4" fill="#fff0b8"/>
+    <circle cx="303" cy="308" r="4" fill="#fff0b8"/>
+  </g>
+
+  <!-- Small bushes -->
+  <circle cx="100" cy="332" r="12" fill="#6fc48c"/>
+  <circle cx="312" cy="334" r="12" fill="#6fc48c"/>
+
+  <!-- Little hearts floating -->
+  <g fill="#ff8fb8">
+    <path d="M340 180 c-3 -5 -10 -2 -6 4 l6 6 6 -6 c4 -6 -3 -9 -6 -4z"/>
+    <path d="M90 190 c-2 -4 -7 -1 -4 3 l4 4 4 -4 c3 -4 -2 -7 -4 -3z"/>
+  </g>
+</svg>

@@ -1,0 +1,103 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="400" height="400" viewBox="0 0 400 400">
+  <defs>
+    <linearGradient id="sky" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#2b1d4a"/>
+      <stop offset="0.6" stop-color="#e07a3f"/>
+      <stop offset="1" stop-color="#f4c26b"/>
+    </linearGradient>
+    <linearGradient id="mound" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#8a5a2b"/>
+      <stop offset="0.5" stop-color="#c08a4a"/>
+      <stop offset="1" stop-color="#6b4220"/>
+    </linearGradient>
+    <pattern id="hex" width="16" height="14" patternUnits="userSpaceOnUse">
+      <path d="M8 0 L16 4.6 L16 9.4 L8 14 L0 9.4 L0 4.6 Z" fill="none" stroke="#f2b33d" stroke-width="1" opacity="0.5"/>
+    </pattern>
+  </defs>
+
+  <!-- Sky -->
+  <rect width="400" height="400" fill="url(#sky)"/>
+  <circle cx="310" cy="85" r="30" fill="#ffe7a3" opacity="0.9"/>
+
+  <!-- Distant mounds -->
+  <path d="M190 320 Q200 270 240 255 Q270 262 280 320 Z" fill="#7a4e26" opacity="0.6"/>
+
+  <!-- Left small tower -->
+  <path d="M5 320 Q5 280 20 260 Q30 255 40 275 Q45 295 45 320 Z" fill="#9a6a34"/>
+
+  <!-- Tall left tower -->
+  <path d="M40 320 Q40 220 75 130 Q80 120 85 130 Q120 220 120 320 Z" fill="url(#mound)"/>
+  <path d="M40 320 Q40 220 75 130 Q80 120 85 130 Q120 220 120 320 Z" fill="url(#hex)"/>
+  <rect x="72" y="175" width="8" height="12" rx="4" fill="#2a160a"/>
+  <rect x="60" y="230" width="8" height="12" rx="4" fill="#2a160a"/>
+  <rect x="88" y="240" width="8" height="12" rx="4" fill="#2a160a"/>
+
+  <!-- Central tallest tower -->
+  <path d="M130 320 Q125 200 165 90 Q175 70 185 90 Q225 200 220 320 Z" fill="url(#mound)"/>
+  <path d="M130 320 Q125 200 165 90 Q175 70 185 90 Q225 200 220 320 Z" fill="url(#hex)"/>
+  <rect x="168" y="130" width="10" height="14" rx="5" fill="#2a160a"/>
+  <rect x="158" y="190" width="10" height="14" rx="5" fill="#2a160a"/>
+  <rect x="180" y="200" width="10" height="14" rx="5" fill="#2a160a"/>
+  <rect x="165" y="260" width="10" height="14" rx="5" fill="#2a160a"/>
+  <line x1="175" y1="72" x2="175" y2="50" stroke="#6b4220" stroke-width="3" stroke-linecap="round"/>
+
+  <!-- Right tower -->
+  <path d="M235 320 Q230 230 260 170 Q270 150 280 170 Q310 230 305 320 Z" fill="url(#mound)"/>
+  <path d="M235 320 Q230 230 260 170 Q270 150 280 170 Q310 230 305 320 Z" fill="url(#hex)"/>
+  <rect x="262" y="210" width="8" height="12" rx="4" fill="#2a160a"/>
+  <rect x="248" y="265" width="8" height="12" rx="4" fill="#2a160a"/>
+
+  <!-- Small right tower -->
+  <path d="M315 320 Q312 260 340 220 Q350 205 360 220 Q380 260 375 320 Z" fill="url(#mound)"/>
+  <path d="M315 320 Q312 260 340 220 Q350 205 360 220 Q380 260 375 320 Z" fill="url(#hex)"/>
+  <rect x="338" y="250" width="8" height="10" rx="4" fill="#2a160a"/>
+
+  <!-- Bridges between towers -->
+  <path d="M120 240 Q128 232 130 240" stroke="#8a5a2b" stroke-width="4" fill="none"/>
+  <path d="M220 230 Q228 222 235 230" stroke="#8a5a2b" stroke-width="4" fill="none"/>
+
+  <!-- Ground -->
+  <rect y="320" width="400" height="80" fill="#4a3018"/>
+  <path d="M0 320 Q50 312 100 320 T200 320 T300 318 T400 320 L400 326 L0 326 Z" fill="#5e8a3a"/>
+  <ellipse cx="100" cy="336" rx="8" ry="4" fill="#1a0e05"/>
+  <ellipse cx="260" cy="342" rx="7" ry="3.5" fill="#1a0e05"/>
+
+  <!-- Ant trail -->
+  <path d="M20 352 Q120 332 220 356 T390 346" stroke="#1f120a" stroke-width="2" stroke-dasharray="4 6" fill="none"/>
+  <g fill="#1f120a">
+    <circle cx="45" cy="346" r="2.5"/>
+    <circle cx="90" cy="344" r="2.5"/>
+    <circle cx="140" cy="350" r="2.5"/>
+    <circle cx="190" cy="352" r="2.5"/>
+    <circle cx="240" cy="352" r="2.5"/>
+    <circle cx="300" cy="349" r="2.5"/>
+    <circle cx="350" cy="347" r="2.5"/>
+  </g>
+
+  <!-- Beetle -->
+  <g transform="translate(60,374)">
+    <ellipse rx="10" ry="6" fill="#2d6b4f"/>
+    <line x1="0" y1="-6" x2="0" y2="6" stroke="#163a2a" stroke-width="1"/>
+    <circle cx="-10" cy="0" r="2" fill="#163a2a"/>
+  </g>
+
+  <!-- Bees -->
+  <g transform="translate(240,62)">
+    <ellipse cx="-3" cy="-7" rx="5" ry="3" fill="#ffffff" opacity="0.7"/>
+    <ellipse cx="0" cy="0" rx="9" ry="6" fill="#f7c530"/>
+    <rect x="-2" y="-6" width="3" height="12" fill="#2a1a08"/>
+    <rect x="4" y="-6" width="2" height="12" fill="#2a1a08"/>
+  </g>
+  <g transform="translate(150,48) rotate(-12)">
+    <ellipse cx="-3" cy="-7" rx="5" ry="3" fill="#ffffff" opacity="0.7"/>
+    <ellipse cx="0" cy="0" rx="9" ry="6" fill="#f7c530"/>
+    <rect x="-2" y="-6" width="3" height="12" fill="#2a1a08"/>
+    <rect x="4" y="-6" width="2" height="12" fill="#2a1a08"/>
+  </g>
+  <g transform="translate(320,120) rotate(15)">
+    <ellipse cx="-3" cy="-7" rx="5" ry="3" fill="#ffffff" opacity="0.7"/>
+    <ellipse cx="0" cy="0" rx="9" ry="6" fill="#f7c530"/>
+    <rect x="-2" y="-6" width="3" height="12" fill="#2a1a08"/>
+    <rect x="4" y="-6" width="2" height="12" fill="#2a1a08"/>
+  </g>
+</svg>

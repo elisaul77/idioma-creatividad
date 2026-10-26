@@ -1,0 +1,115 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 400" width="400" height="400">
+  <defs>
+    <linearGradient id="sky" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#0b1230"/>
+      <stop offset="1" stop-color="#2a1f4d"/>
+    </linearGradient>
+    <radialGradient id="glow" cx="0.5" cy="0.5" r="0.5">
+      <stop offset="0" stop-color="#ffd76a" stop-opacity="0.55"/>
+      <stop offset="1" stop-color="#ffd76a" stop-opacity="0"/>
+    </radialGradient>
+  </defs>
+
+  <!-- 夜空背景 -->
+  <rect width="400" height="400" fill="url(#sky)"/>
+
+  <!-- 窗户与月亮 -->
+  <rect x="250" y="30" width="120" height="130" rx="4" fill="#15204a" stroke="#6b5b95" stroke-width="6"/>
+  <line x1="310" y1="30" x2="310" y2="160" stroke="#6b5b95" stroke-width="4"/>
+  <line x1="250" y1="95" x2="370" y2="95" stroke="#6b5b95" stroke-width="4"/>
+  <circle cx="280" cy="65" r="28" fill="#fff4c2"/>
+  <circle cx="272" cy="58" r="5" fill="#f0dc9a"/>
+  <circle cx="287" cy="75" r="4" fill="#f0dc9a"/>
+  <circle cx="330" cy="130" r="0" fill="#fff"/>
+
+  <!-- 星星 -->
+  <g fill="#fff8d6">
+    <circle cx="30" cy="40" r="2"/>
+    <circle cx="90" cy="25" r="1.5"/>
+    <circle cx="150" cy="55" r="2"/>
+    <circle cx="200" cy="30" r="1.5"/>
+    <circle cx="60" cy="110" r="1.5"/>
+    <circle cx="170" cy="120" r="2"/>
+    <circle cx="390" cy="200" r="1.5"/>
+    <circle cx="20" cy="170" r="1.5"/>
+  </g>
+
+  <!-- 地板 -->
+  <rect x="0" y="300" width="400" height="100" fill="#3b2a4f"/>
+  <line x1="0" y1="300" x2="400" y2="300" stroke="#55406b" stroke-width="3"/>
+
+  <!-- 台灯光晕 -->
+  <circle cx="60" cy="230" r="95" fill="url(#glow)"/>
+  <!-- 台灯 -->
+  <rect x="56" y="262" width="8" height="38" fill="#8a7fa8"/>
+  <ellipse cx="60" cy="262" rx="10" ry="3" fill="#8a7fa8"/>
+  <polygon points="40,240 80,240 70,262 50,262" fill="#ffd76a"/>
+
+  <!-- 泰迪熊在看书 -->
+  <ellipse cx="115" cy="275" rx="30" ry="36" fill="#b07a4a"/>
+  <circle cx="115" cy="222" r="24" fill="#b07a4a"/>
+  <circle cx="95" cy="200" r="9" fill="#b07a4a"/>
+  <circle cx="135" cy="200" r="9" fill="#b07a4a"/>
+  <circle cx="95" cy="200" r="4" fill="#e2b98a"/>
+  <circle cx="135" cy="200" r="4" fill="#e2b98a"/>
+  <ellipse cx="115" cy="231" rx="11" ry="8" fill="#e2b98a"/>
+  <circle cx="108" cy="218" r="2.5" fill="#2a1a10"/>
+  <circle cx="122" cy="218" r="2.5" fill="#2a1a10"/>
+  <rect x="82" y="255" width="58" height="38" rx="3" fill="#e35d6a"/>
+  <rect x="86" y="259" width="26" height="30" fill="#fff4e0"/>
+  <rect x="115" y="259" width="26" height="30" fill="#f6e7cc"/>
+  <line x1="111" y1="259" x2="111" y2="289" stroke="#d9c7a8" stroke-width="1.5"/>
+  <ellipse cx="90" cy="300" rx="9" ry="6" fill="#8a5a33"/>
+  <ellipse cx="140" cy="300" rx="9" ry="6" fill="#8a5a33"/>
+
+  <!-- 跳舞的机器人 -->
+  <line x1="200" y1="200" x2="200" y2="188" stroke="#c7d9ec" stroke-width="3"/>
+  <circle cx="200" cy="184" r="4" fill="#ff8fab"/>
+  <rect x="186" y="200" width="28" height="26" rx="5" fill="#c7d9ec"/>
+  <circle cx="193" cy="212" r="3" fill="#3a6fb0"/>
+  <circle cx="207" cy="212" r="3" fill="#3a6fb0"/>
+  <rect x="180" y="229" width="40" height="50" rx="6" fill="#8fb8de"/>
+  <circle cx="200" cy="254" r="6" fill="#ffd76a"/>
+  <line x1="182" y1="238" x2="160" y2="216" stroke="#8fb8de" stroke-width="8" stroke-linecap="round"/>
+  <line x1="218" y1="238" x2="242" y2="214" stroke="#8fb8de" stroke-width="8" stroke-linecap="round"/>
+  <circle cx="158" cy="214" r="5" fill="#c7d9ec"/>
+  <circle cx="244" cy="212" r="5" fill="#c7d9ec"/>
+  <rect x="186" y="279" width="10" height="22" fill="#6d9cc9"/>
+  <rect x="204" y="279" width="10" height="22" fill="#6d9cc9"/>
+  <!-- 舞步光点 -->
+  <path d="M150 180 L153 188 L161 191 L153 194 L150 202 L147 194 L139 191 L147 188 Z" fill="#ffd76a"/>
+  <path d="M256 170 L258 176 L264 178 L258 180 L256 186 L254 180 L248 178 L254 176 Z" fill="#ffd76a"/>
+
+  <!-- 摇摇马 -->
+  <path d="M278 302 Q320 330 362 302" fill="none" stroke="#7a4a22" stroke-width="6" stroke-linecap="round"/>
+  <path d="M296 262 Q318 240 330 230 L340 214 L352 224 L346 240 Q356 250 350 270 L340 286 L300 286 Z" fill="#d9873f"/>
+  <path d="M330 230 L338 200 L346 214 Z" fill="#d9873f"/>
+  <path d="M300 262 Q284 250 280 230 Q292 238 304 248 Z" fill="#7a4a22"/>
+  <circle cx="346" cy="222" r="2.5" fill="#2a1a10"/>
+  <path d="M338 210 L332 196" stroke="#7a4a22" stroke-width="3" stroke-linecap="round"/>
+  <rect x="312" y="282" width="5" height="12" fill="#7a4a22"/>
+  <rect x="330" y="282" width="5" height="12" fill="#7a4a22"/>
+
+  <!-- 弹跳的小球与轨迹 -->
+  <circle cx="150" cy="150" r="12" fill="#ff8fab"/>
+  <circle cx="138" cy="164" r="6" fill="#ff8fab" opacity="0.4"/>
+  <circle cx="128" cy="174" r="3.5" fill="#ff8fab" opacity="0.2"/>
+
+  <!-- 小火车 -->
+  <rect x="30" y="338" width="340" height="4" fill="#6b5b95"/>
+  <rect x="50" y="330" width="58" height="20" rx="3" fill="#e0524a"/>
+  <rect x="68" y="318" width="26" height="14" rx="2" fill="#e0524a"/>
+  <rect x="60" y="312" width="12" height="8" fill="#ffd76a"/>
+  <rect x="112" y="332" width="30" height="18" rx="2" fill="#4aa3df"/>
+  <circle cx="62" cy="352" r="6" fill="#2a1a40"/>
+  <circle cx="96" cy="352" r="6" fill="#2a1a40"/>
+  <circle cx="126" cy="352" r="6" fill="#2a1a40"/>
+  <circle cx="72" cy="302" r="5" fill="#e6e0f0" opacity="0.5"/>
+  <circle cx="82" cy="294" r="7" fill="#e6e0f0" opacity="0.35"/>
+  <circle cx="96" cy="288" r="9" fill="#e6e0f0" opacity="0.2"/>
+
+  <!-- 地上的积木 -->
+  <rect x="330" y="320" width="22" height="22" fill="#ffd76a"/>
+  <rect x="356" y="326" width="20" height="16" fill="#7fd1ae"/>
+  <rect x="340" y="304" width="16" height="16" fill="#ff8fab"/>
+</svg>

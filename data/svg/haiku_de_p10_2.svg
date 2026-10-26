@@ -1,0 +1,50 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="400" height="400" viewBox="0 0 400 400">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#fdf6e3"/>
+      <stop offset="1" stop-color="#f3e6c8"/>
+    </linearGradient>
+    <linearGradient id="blue" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#4fa3ff"/>
+      <stop offset="0.55" stop-color="#1f4fd8"/>
+      <stop offset="1" stop-color="#0f2a8a"/>
+    </linearGradient>
+    <linearGradient id="drop" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#9fd8ff"/>
+      <stop offset="1" stop-color="#2b7be0"/>
+    </linearGradient>
+    <clipPath id="tongueClip">
+      <path d="M120 150 C120 108 158 96 200 96 C252 96 286 118 286 166 L286 248 C286 318 248 342 200 342 C150 342 118 314 118 262 Z"/>
+    </clipPath>
+  </defs>
+
+  <rect width="400" height="400" fill="url(#bg)"/>
+
+  <!-- Sonnenschein-Kreise als leise Hintergrundakzente -->
+  <circle cx="60" cy="60" r="34" fill="#ffffff" opacity="0.5"/>
+  <circle cx="352" cy="338" r="46" fill="#ffffff" opacity="0.35"/>
+
+  <!-- Zunge als Wellenform in Blau -->
+  <path d="M120 150 C120 108 158 96 200 96 C252 96 286 118 286 166 L286 248 C286 318 248 342 200 342 C150 342 118 314 118 262 Z" fill="url(#blue)"/>
+
+  <!-- Wellenmuster innerhalb der Zunge -->
+  <g clip-path="url(#tongueClip)" fill="none" stroke="#9fd8ff" stroke-width="5" stroke-linecap="round" opacity="0.7">
+    <path d="M100 190 Q125 172 150 190 T200 190 T250 190 T300 190"/>
+    <path d="M100 220 Q125 202 150 220 T200 220 T250 220 T300 220"/>
+    <path d="M100 250 Q125 232 150 250 T200 250 T250 250 T300 250"/>
+  </g>
+
+  <!-- Mittellinie -->
+  <path d="M200 120 C196 170 204 210 200 260" fill="none" stroke="#0f2a8a" stroke-width="3" stroke-linecap="round" opacity="0.35"/>
+
+  <!-- Tropfen, die vom Geschmack aufsteigen -->
+  <path d="M70 300 C70 282 88 266 88 266 C88 266 106 282 106 300 C106 311 98 320 88 320 C78 320 70 311 70 300 Z" fill="url(#drop)"/>
+  <path d="M328 120 C328 106 340 92 340 92 C340 92 352 106 352 120 C352 128 346 134 340 134 C334 134 328 128 328 120 Z" fill="url(#drop)"/>
+  <path d="M44 170 C44 160 52 150 52 150 C52 150 60 160 60 170 C60 175 56 179 52 179 C48 179 44 175 44 170 Z" fill="url(#drop)"/>
+  <path d="M312 300 C312 292 318 284 318 284 C318 284 324 292 324 300 C324 304 321 307 318 307 C315 307 312 304 312 300 Z" fill="url(#drop)"/>
+
+  <!-- Glanzlichter -->
+  <ellipse cx="170" cy="130" rx="14" ry="7" fill="#ffffff" opacity="0.6" transform="rotate(-18 170 130)"/>
+  <circle cx="82" cy="292" r="4" fill="#ffffff" opacity="0.8"/>
+  <circle cx="335" cy="126" r="3" fill="#ffffff" opacity="0.8"/>
+</svg>

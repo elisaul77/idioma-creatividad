@@ -1,0 +1,87 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="400" height="400" viewBox="0 0 400 400">
+  <defs>
+    <radialGradient id="bg" cx="50%" cy="50%" r="70%">
+      <stop offset="0%" stop-color="#1a1036"/>
+      <stop offset="100%" stop-color="#03040d"/>
+    </radialGradient>
+    <radialGradient id="crust" cx="50%" cy="50%" r="50%">
+      <stop offset="85%" stop-color="#3b2a1e"/>
+      <stop offset="100%" stop-color="#6b4a2f"/>
+    </radialGradient>
+    <radialGradient id="mantle" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#c2561c"/>
+      <stop offset="60%" stop-color="#8f2e14"/>
+      <stop offset="100%" stop-color="#5a1a0c"/>
+    </radialGradient>
+    <radialGradient id="outerCore" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#ffb347"/>
+      <stop offset="50%" stop-color="#e5561e"/>
+      <stop offset="100%" stop-color="#a0300f"/>
+    </radialGradient>
+    <radialGradient id="innerCore" cx="40%" cy="40%" r="60%">
+      <stop offset="0%" stop-color="#fff6c8"/>
+      <stop offset="60%" stop-color="#ffd166"/>
+      <stop offset="100%" stop-color="#f29e4c"/>
+    </radialGradient>
+    <radialGradient id="glow" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#ffd166" stop-opacity="0.9"/>
+      <stop offset="100%" stop-color="#ffd166" stop-opacity="0"/>
+    </radialGradient>
+    <linearGradient id="vessel" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#e8f1ff"/>
+      <stop offset="100%" stop-color="#6d8bb8"/>
+    </linearGradient>
+    <filter id="soft" x="-50%" y="-50%" width="200%" height="200%">
+      <feGaussianBlur stdDeviation="3"/>
+    </filter>
+  </defs>
+
+  <!-- Background -->
+  <rect width="400" height="400" fill="url(#bg)"/>
+
+  <!-- Stars -->
+  <g fill="#ffffff">
+    <circle cx="40" cy="50" r="1.2" opacity="0.8"/>
+    <circle cx="350" cy="60" r="1" opacity="0.7"/>
+    <circle cx="320" cy="150" r="1.4" opacity="0.9"/>
+    <circle cx="70" cy="180" r="1" opacity="0.6"/>
+    <circle cx="370" cy="290" r="1.2" opacity="0.8"/>
+    <circle cx="30" cy="330" r="1.3" opacity="0.7"/>
+    <circle cx="260" cy="40" r="1" opacity="0.6"/>
+    <circle cx="150" cy="30" r="1.1" opacity="0.8"/>
+  </g>
+
+  <!-- Earth layers -->
+  <circle cx="200" cy="200" r="170" fill="url(#crust)"/>
+  <circle cx="200" cy="200" r="140" fill="url(#mantle)"/>
+  <circle cx="200" cy="200" r="95" fill="url(#outerCore)"/>
+  <circle cx="200" cy="200" r="50" fill="url(#innerCore)"/>
+  <circle cx="200" cy="200" r="60" fill="url(#glow)" opacity="0.6"/>
+
+  <!-- Layer boundaries -->
+  <g fill="none" stroke="#ffffff" stroke-opacity="0.12" stroke-width="1">
+    <circle cx="200" cy="200" r="140"/>
+    <circle cx="200" cy="200" r="95"/>
+    <circle cx="200" cy="200" r="50"/>
+  </g>
+
+  <!-- Descent path -->
+  <path d="M 200 20 Q 260 120 200 200" fill="none" stroke="#7fdbff" stroke-width="2" stroke-dasharray="6 6" opacity="0.7"/>
+
+  <!-- Vessel glow -->
+  <circle cx="200" cy="200" r="22" fill="#7fdbff" opacity="0.35" filter="url(#soft)"/>
+
+  <!-- Vessel body -->
+  <g transform="translate(200 200) rotate(-18)">
+    <!-- Exhaust flame -->
+    <path d="M -6 16 Q 0 34 6 16 Z" fill="#ffb347" opacity="0.9"/>
+    <path d="M -3 16 Q 0 26 3 16 Z" fill="#fff6c8"/>
+    <!-- Capsule -->
+    <ellipse cx="0" cy="0" rx="11" ry="18" fill="url(#vessel)" stroke="#dbe8ff" stroke-width="1"/>
+    <!-- Window -->
+    <circle cx="0" cy="-4" r="4" fill="#1a2b4c" stroke="#7fdbff" stroke-width="1"/>
+    <!-- Fins -->
+    <path d="M -11 6 L -18 16 L -11 14 Z" fill="#6d8bb8"/>
+    <path d="M 11 6 L 18 16 L 11 14 Z" fill="#6d8bb8"/>
+  </g>
+</svg>

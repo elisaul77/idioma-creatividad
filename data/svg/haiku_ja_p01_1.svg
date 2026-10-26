@@ -1,0 +1,111 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 400" width="400" height="400">
+  <defs>
+    <radialGradient id="sky" cx="50%" cy="40%" r="75%">
+      <stop offset="0%" stop-color="#1b1442"/>
+      <stop offset="60%" stop-color="#0b0a22"/>
+      <stop offset="100%" stop-color="#03030c"/>
+    </radialGradient>
+    <linearGradient id="bodyG" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#2ec4b6"/>
+      <stop offset="55%" stop-color="#5a4bd1"/>
+      <stop offset="100%" stop-color="#7b2ff7"/>
+    </linearGradient>
+    <radialGradient id="wingG" cx="30%" cy="50%" r="70%">
+      <stop offset="0%" stop-color="#ffd6ff" stop-opacity="0.85"/>
+      <stop offset="60%" stop-color="#5ef2ff" stop-opacity="0.45"/>
+      <stop offset="100%" stop-color="#5ef2ff" stop-opacity="0"/>
+    </radialGradient>
+    <radialGradient id="core" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#ffffff" stop-opacity="0.95"/>
+      <stop offset="100%" stop-color="#7ff5e0" stop-opacity="0"/>
+    </radialGradient>
+    <filter id="glow" x="-50%" y="-50%" width="200%" height="200%">
+      <feGaussianBlur stdDeviation="4" result="b"/>
+      <feMerge>
+        <feMergeNode in="b"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+  </defs>
+
+  <!-- Background -->
+  <rect width="400" height="400" fill="url(#sky)"/>
+  <g fill="#ffffff">
+    <circle cx="40" cy="50" r="1.5" opacity="0.8"/>
+    <circle cx="95" cy="28" r="1" opacity="0.6"/>
+    <circle cx="330" cy="40" r="1.8" opacity="0.9"/>
+    <circle cx="370" cy="95" r="1" opacity="0.5"/>
+    <circle cx="20" cy="150" r="1.2" opacity="0.7"/>
+    <circle cx="210" cy="30" r="1" opacity="0.6"/>
+    <circle cx="260" cy="368" r="1.4" opacity="0.7"/>
+    <circle cx="60" cy="370" r="1" opacity="0.5"/>
+    <circle cx="380" cy="300" r="1.3" opacity="0.8"/>
+    <circle cx="25" cy="260" r="1" opacity="0.6"/>
+  </g>
+
+  <!-- Soft aura -->
+  <ellipse cx="200" cy="215" rx="150" ry="120" fill="#7b2ff7" opacity="0.12" filter="url(#glow)"/>
+
+  <!-- Lower wings -->
+  <g opacity="0.8">
+    <path d="M150,230 C100,260 60,300 50,340 C90,320 120,290 150,255 Z" fill="url(#wingG)" stroke="#8ff7ff" stroke-width="1" stroke-opacity="0.6"/>
+    <path d="M255,230 C305,260 345,300 352,340 C312,322 282,290 252,255 Z" fill="url(#wingG)" stroke="#8ff7ff" stroke-width="1" stroke-opacity="0.6"/>
+  </g>
+
+  <!-- Upper wings -->
+  <path d="M140,190 C90,120 40,130 30,170 C60,165 90,190 120,215 Z" fill="url(#wingG)" stroke="#ffd6ff" stroke-width="1" stroke-opacity="0.7"/>
+  <path d="M265,190 C320,110 370,120 378,160 C350,160 310,185 280,215 Z" fill="url(#wingG)" stroke="#ffd6ff" stroke-width="1" stroke-opacity="0.7"/>
+
+  <!-- Tail -->
+  <path d="M285,225 C330,235 350,200 335,175 C322,155 300,170 312,186 C320,198 340,190 336,176" fill="none" stroke="#7ff5e0" stroke-width="5" stroke-linecap="round" filter="url(#glow)"/>
+
+  <!-- Legs -->
+  <g stroke="url(#bodyG)" stroke-width="7" stroke-linecap="round" fill="none">
+    <path d="M150,265 C140,300 130,320 118,350"/>
+    <path d="M175,275 C172,310 176,330 170,360"/>
+    <path d="M225,275 C228,310 224,330 232,360"/>
+    <path d="M250,265 C260,300 270,320 282,350"/>
+  </g>
+  <g fill="#7ff5e0" filter="url(#glow)">
+    <circle cx="118" cy="352" r="6"/>
+    <circle cx="170" cy="362" r="6"/>
+    <circle cx="232" cy="362" r="6"/>
+    <circle cx="282" cy="352" r="6"/>
+  </g>
+
+  <!-- Horns -->
+  <path d="M105,142 C90,110 70,105 62,88 C86,96 100,112 112,138 Z" fill="#ffd6ff" opacity="0.9"/>
+  <path d="M128,138 C128,112 140,96 158,86 C152,108 146,124 138,142 Z" fill="#ffd6ff" opacity="0.9"/>
+
+  <!-- Body -->
+  <path d="M120,220 C120,160 170,150 200,160 C240,150 285,170 285,220 C285,265 250,280 200,278 C150,280 120,265 120,220 Z" fill="url(#bodyG)"/>
+  <!-- Head -->
+  <circle cx="118" cy="168" r="34" fill="url(#bodyG)"/>
+
+  <!-- Body markings -->
+  <g fill="#ffffff" opacity="0.25">
+    <circle cx="170" cy="200" r="10"/>
+    <circle cx="205" cy="186" r="7"/>
+    <circle cx="240" cy="205" r="11"/>
+    <circle cx="190" cy="240" r="8"/>
+    <circle cx="232" cy="248" r="6"/>
+  </g>
+
+  <!-- Chest core -->
+  <circle cx="200" cy="220" r="20" fill="url(#core)" filter="url(#glow)"/>
+
+  <!-- Eyes -->
+  <circle cx="108" cy="162" r="6" fill="#fff7b0" filter="url(#glow)"/>
+  <circle cx="108" cy="162" r="3" fill="#1b1442"/>
+  <circle cx="124" cy="152" r="3.5" fill="#fff7b0"/>
+  <circle cx="126" cy="174" r="2.5" fill="#fff7b0"/>
+
+  <!-- Floating particles -->
+  <g fill="#ffd6ff" filter="url(#glow)">
+    <circle cx="60" cy="210" r="2.5" opacity="0.8"/>
+    <circle cx="350" cy="250" r="3" opacity="0.8"/>
+    <circle cx="90" cy="320" r="2" opacity="0.7"/>
+    <circle cx="320" cy="320" r="2.2" opacity="0.7"/>
+    <circle cx="200" cy="340" r="2.5" opacity="0.6"/>
+  </g>
+</svg>

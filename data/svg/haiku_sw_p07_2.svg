@@ -1,0 +1,116 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="400" height="400" viewBox="0 0 400 400">
+  <defs>
+    <linearGradient id="sky" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#05030f"/>
+      <stop offset="55%" stop-color="#1a0b3d"/>
+      <stop offset="100%" stop-color="#3b1a5c"/>
+    </linearGradient>
+    <radialGradient id="sun" cx="0.5" cy="0.5" r="0.5">
+      <stop offset="0%" stop-color="#fff6c2" stop-opacity="1"/>
+      <stop offset="40%" stop-color="#ffb3e6" stop-opacity="0.8"/>
+      <stop offset="100%" stop-color="#ff4fd8" stop-opacity="0"/>
+    </radialGradient>
+    <linearGradient id="trunk" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#1b1f3a"/>
+      <stop offset="50%" stop-color="#3a4a7a"/>
+      <stop offset="100%" stop-color="#16192e"/>
+    </linearGradient>
+    <radialGradient id="orb" cx="0.35" cy="0.35" r="0.65">
+      <stop offset="0%" stop-color="#ffffff"/>
+      <stop offset="40%" stop-color="#5ff7ff"/>
+      <stop offset="100%" stop-color="#0a6b8a" stop-opacity="0.6"/>
+    </radialGradient>
+    <radialGradient id="ground" cx="0.5" cy="0.5" r="0.5">
+      <stop offset="0%" stop-color="#2a1450"/>
+      <stop offset="100%" stop-color="#05030f" stop-opacity="0"/>
+    </radialGradient>
+    <filter id="glow" x="-50%" y="-50%" width="200%" height="200%">
+      <feGaussianBlur stdDeviation="3" result="blur"/>
+      <feMerge>
+        <feMergeNode in="blur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+    <filter id="bigGlow" x="-100%" y="-100%" width="300%" height="300%">
+      <feGaussianBlur stdDeviation="10"/>
+    </filter>
+  </defs>
+
+  <!-- Sky -->
+  <rect width="400" height="400" fill="url(#sky)"/>
+
+  <!-- Stars -->
+  <g fill="#ffffff">
+    <circle cx="30" cy="40" r="1.2" opacity="0.9"/>
+    <circle cx="90" cy="25" r="0.9" opacity="0.7"/>
+    <circle cx="150" cy="60" r="1.4" opacity="0.8"/>
+    <circle cx="210" cy="30" r="1" opacity="0.6"/>
+    <circle cx="275" cy="55" r="1.3" opacity="0.9"/>
+    <circle cx="345" cy="35" r="1" opacity="0.7"/>
+    <circle cx="370" cy="110" r="1.2" opacity="0.8"/>
+    <circle cx="50" cy="130" r="1" opacity="0.6"/>
+    <circle cx="320" cy="160" r="0.9" opacity="0.7"/>
+    <circle cx="20" cy="200" r="1.1" opacity="0.5"/>
+    <circle cx="385" cy="230" r="1" opacity="0.6"/>
+  </g>
+
+  <!-- Future sun / moon -->
+  <circle cx="310" cy="95" r="70" fill="url(#sun)" opacity="0.9"/>
+  <circle cx="310" cy="95" r="34" fill="#fff3d6" opacity="0.95"/>
+
+  <!-- Floating platform island -->
+  <ellipse cx="200" cy="330" rx="150" ry="40" fill="url(#ground)"/>
+  <path d="M90 300 Q200 280 310 300 Q290 335 200 345 Q110 335 90 300 Z" fill="#14102b" stroke="#5ff7ff" stroke-width="1" opacity="0.9"/>
+  <path d="M120 310 Q200 298 280 310" fill="none" stroke="#ff4fd8" stroke-width="1" opacity="0.7" filter="url(#glow)"/>
+
+  <!-- Tree glow aura -->
+  <ellipse cx="200" cy="170" rx="130" ry="120" fill="#5ff7ff" opacity="0.08" filter="url(#bigGlow)"/>
+
+  <!-- Trunk -->
+  <path d="M188 300 C185 260 192 230 190 200 C188 175 196 150 200 130 C204 150 212 175 210 200 C208 230 215 260 212 300 Z" fill="url(#trunk)"/>
+
+  <!-- Branches (glowing circuit-like) -->
+  <g fill="none" stroke="#5ff7ff" stroke-linecap="round" stroke-width="2.2" filter="url(#glow)">
+    <path d="M200 150 Q170 130 140 120 Q120 115 105 95"/>
+    <path d="M200 150 Q230 128 262 118 Q285 112 300 90"/>
+    <path d="M198 200 Q165 195 135 180 Q115 170 95 175"/>
+    <path d="M202 195 Q235 185 265 170 Q290 160 310 165"/>
+    <path d="M200 130 Q198 105 205 80 Q210 65 200 45"/>
+    <path d="M140 120 Q130 100 120 92"/>
+    <path d="M262 118 Q272 100 282 96"/>
+    <path d="M135 180 Q125 160 110 152"/>
+    <path d="M265 170 Q275 150 292 145"/>
+  </g>
+
+  <!-- Thin secondary lines -->
+  <g fill="none" stroke="#ff4fd8" stroke-width="0.8" opacity="0.7">
+    <path d="M200 150 Q175 145 160 135"/>
+    <path d="M200 150 Q225 140 240 128"/>
+    <path d="M200 200 Q180 210 160 215"/>
+    <path d="M200 200 Q220 205 240 210"/>
+  </g>
+
+  <!-- Glowing fruit / orbs -->
+  <g filter="url(#glow)">
+    <circle cx="105" cy="95" r="7" fill="url(#orb)"/>
+    <circle cx="300" cy="90" r="6" fill="url(#orb)"/>
+    <circle cx="95" cy="175" r="6" fill="url(#orb)"/>
+    <circle cx="310" cy="165" r="8" fill="url(#orb)"/>
+    <circle cx="200" cy="45" r="5" fill="url(#orb)"/>
+    <circle cx="120" cy="92" r="4" fill="#ff4fd8"/>
+    <circle cx="282" cy="96" r="4" fill="#ff4fd8"/>
+    <circle cx="110" cy="152" r="4" fill="#ff4fd8"/>
+    <circle cx="292" cy="145" r="4.5" fill="#ff4fd8"/>
+    <circle cx="160" cy="135" r="3" fill="#fff6c2"/>
+    <circle cx="240" cy="128" r="3" fill="#fff6c2"/>
+  </g>
+
+  <!-- Floating particles -->
+  <g fill="#5ff7ff" filter="url(#glow)">
+    <circle cx="70" cy="240" r="1.8" opacity="0.8"/>
+    <circle cx="335" cy="250" r="1.5" opacity="0.7"/>
+    <circle cx="150" cy="260" r="1.2" opacity="0.6"/>
+    <circle cx="260" cy="225" r="1.6" opacity="0.8"/>
+    <circle cx="55" cy="290" r="1.3" opacity="0.5"/>
+  </g>
+</svg>

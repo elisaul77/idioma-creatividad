@@ -1,0 +1,129 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="400" height="400" viewBox="0 0 400 400">
+  <defs>
+    <linearGradient id="sky" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#2b2f6b"/>
+      <stop offset="0.6" stop-color="#6b5ca5"/>
+      <stop offset="1" stop-color="#f2a generic" stop-color="#f4a7b9"/>
+    </linearGradient>
+    <linearGradient id="ground" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#7fbf7a"/>
+      <stop offset="1" stop-color="#4f9a5a"/>
+    </linearGradient>
+    <linearGradient id="monster" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#8fd3e8"/>
+      <stop offset="1" stop-color="#5aa9d6"/>
+    </linearGradient>
+    <radialGradient id="glow" cx="0.5" cy="0.5" r="0.5">
+      <stop offset="0" stop-color="#ffe9a8" stop-opacity="0.9"/>
+      <stop offset="1" stop-color="#ffe9a8" stop-opacity="0"/>
+    </radialGradient>
+  </defs>
+
+  <!-- sky -->
+  <rect x="0" y="0" width="400" height="400" fill="url(#sky)"/>
+
+  <!-- stars -->
+  <g fill="#fff8d6">
+    <circle cx="50" cy="45" r="2"/>
+    <circle cx="120" cy="30" r="1.5"/>
+    <circle cx="180" cy="70" r="2"/>
+    <circle cx="330" cy="50" r="2.5"/>
+    <circle cx="290" cy="95" r="1.5"/>
+    <circle cx="370" cy="120" r="2"/>
+    <circle cx="90" cy="110" r="1.5"/>
+  </g>
+
+  <!-- moon -->
+  <circle cx="320" cy="120" r="34" fill="#fff3c4"/>
+  <circle cx="332" cy="112" r="30" fill="#2f3370" opacity="0.18"/>
+
+  <!-- distant hills -->
+  <path d="M0 250 Q80 205 160 240 T320 230 T400 245 L400 400 L0 400 Z" fill="#8a7fc2" opacity="0.7"/>
+
+  <!-- ground -->
+  <path d="M0 290 Q120 265 220 285 T400 280 L400 400 L0 400 Z" fill="url(#ground)"/>
+
+  <!-- path -->
+  <path d="M250 400 Q265 340 230 310 Q215 298 250 290 L270 290 Q240 305 262 340 Q280 370 282 400 Z" fill="#e8d4a2"/>
+
+  <!-- house body -->
+  <rect x="90" y="200" width="150" height="110" rx="6" fill="#ffd9a8"/>
+  <rect x="90" y="200" width="150" height="14" fill="#f2b97a"/>
+
+  <!-- roof -->
+  <path d="M75 205 L165 135 L255 205 Z" fill="#e0785a"/>
+  <path d="M165 135 L255 205 L240 205 L165 147 Z" fill="#c35f45" opacity="0.6"/>
+
+  <!-- chimney with smoke -->
+  <rect x="200" y="150" width="18" height="40" fill="#b5654f"/>
+  <g fill="#ffffff" opacity="0.7">
+    <circle cx="210" cy="140" r="6"/>
+    <circle cx="218" cy="128" r="8"/>
+    <circle cx="208" cy="116" r="5"/>
+  </g>
+
+  <!-- window glow -->
+  <circle cx="125" cy="250" r="34" fill="url(#glow)"/>
+  <!-- window -->
+  <rect x="108" y="232" width="34" height="34" rx="4" fill="#ffe27a"/>
+  <path d="M125 232 V266 M108 249 H142" stroke="#c98a4b" stroke-width="3"/>
+
+  <!-- door -->
+  <path d="M190 310 V250 Q190 232 208 232 Q226 232 226 250 V310 Z" fill="#8c5a3c"/>
+  <circle cx="218" cy="284" r="2.5" fill="#ffd36b"/>
+  <!-- door-step flowers -->
+  <g>
+    <circle cx="180" cy="312" r="4" fill="#ff8fb1"/>
+    <circle cx="236" cy="312" r="4" fill="#ffd166"/>
+    <circle cx="150" cy="314" r="3.5" fill="#ff8fb1"/>
+  </g>
+
+  <!-- tree -->
+  <rect x="55" y="250" width="12" height="52" fill="#8a5a3b"/>
+  <circle cx="61" cy="235" r="26" fill="#6cc27a"/>
+  <circle cx="45" cy="246" r="18" fill="#58b06a"/>
+  <circle cx="78" cy="246" r="18" fill="#58b06a"/>
+
+  <!-- friendly monster -->
+  <g>
+    <!-- shadow -->
+    <ellipse cx="312" cy="338" rx="42" ry="8" fill="#2f5f3a" opacity="0.3"/>
+    <!-- arms -->
+    <path d="M272 318 Q258 300 268 288" stroke="#5aa9d6" stroke-width="12" stroke-linecap="round" fill="none"/>
+    <path d="M352 318 Q366 300 356 290" stroke="#5aa9d6" stroke-width="12" stroke-linecap="round" fill="none"/>
+    <!-- horns -->
+    <path d="M292 268 Q288 250 298 246 Q296 258 302 268 Z" fill="#ffd166"/>
+    <path d="M332 268 Q336 250 326 246 Q328 258 322 268 Z" fill="#ffd166"/>
+    <!-- body -->
+    <ellipse cx="312" cy="308" rx="44" ry="40" fill="url(#monster)"/>
+    <!-- belly -->
+    <ellipse cx="312" cy="318" rx="24" ry="20" fill="#c9eef8"/>
+    <!-- feet -->
+    <ellipse cx="296" cy="344" rx="10" ry="6" fill="#3d7fb0"/>
+    <ellipse cx="328" cy="344" rx="10" ry="6" fill="#3d7fb0"/>
+    <!-- spots -->
+    <circle cx="290" cy="296" r="4" fill="#7cc3e0"/>
+    <circle cx="334" cy="300" r="3" fill="#7cc3e0"/>
+    <!-- eyes -->
+    <circle cx="300" cy="298" r="8" fill="#ffffff"/>
+    <circle cx="324" cy="298" r="8" fill="#ffffff"/>
+    <circle cx="302" cy="299" r="4" fill="#2b2f6b"/>
+    <circle cx="326" cy="299" r="4" fill="#2b2f6b"/>
+    <circle cx="303" cy="297" r="1.3" fill="#ffffff"/>
+    <circle cx="327" cy="297" r="1.3" fill="#ffffff"/>
+    <!-- blush -->
+    <circle cx="289" cy="312" r="5" fill="#ff8fb1" opacity="0.6"/>
+    <circle cx="335" cy="312" r="5" fill="#ff8fb1" opacity="0.6"/>
+    <!-- smile -->
+    <path d="M300 316 Q312 328 324 316" stroke="#2b2f6b" stroke-width="3" fill="none" stroke-linecap="round"/>
+  </g>
+
+  <!-- fireflies -->
+  <g fill="#fff27a">
+    <circle cx="150" cy="180" r="2.5" opacity="0.9"/>
+    <circle cx="200" cy="210" r="2" opacity="0.8"/>
+    <circle cx="40" cy="200" r="2.5" opacity="0.9"/>
+    <circle cx="360" cy="200" r="2" opacity="0.8"/>
+    <circle cx="260" cy="170" r="2" opacity="0.7"/>
+  </g>
+</svg>

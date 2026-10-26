@@ -1,0 +1,143 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 400" width="400" height="400">
+  <defs>
+    <radialGradient id="sky" cx="50%" cy="40%" r="75%">
+      <stop offset="0%" stop-color="#2b1c5a"/>
+      <stop offset="55%" stop-color="#14183d"/>
+      <stop offset="100%" stop-color="#070a1c"/>
+    </radialGradient>
+    <linearGradient id="body" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#7fe0d0"/>
+      <stop offset="50%" stop-color="#3fa7c9"/>
+      <stop offset="100%" stop-color="#5a4bb5"/>
+    </linearGradient>
+    <linearGradient id="wing1" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#ff9ad5" stop-opacity="0.85"/>
+      <stop offset="100%" stop-color="#8f5cff" stop-opacity="0.35"/>
+    </linearGradient>
+    <linearGradient id="wing2" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#ffe27a" stop-opacity="0.8"/>
+      <stop offset="100%" stop-color="#ff7a59" stop-opacity="0.3"/>
+    </linearGradient>
+    <linearGradient id="horn" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#fff6d6"/>
+      <stop offset="100%" stop-color="#b9a4ff"/>
+    </linearGradient>
+    <radialGradient id="glow" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#fffbe8" stop-opacity="1"/>
+      <stop offset="100%" stop-color="#fffbe8" stop-opacity="0"/>
+    </radialGradient>
+    <filter id="soft" x="-30%" y="-30%" width="160%" height="160%">
+      <feGaussianBlur stdDeviation="3"/>
+    </filter>
+  </defs>
+
+  <!-- Sky -->
+  <rect width="400" height="400" fill="url(#sky)"/>
+
+  <!-- Stars -->
+  <g fill="#ffffff">
+    <circle cx="40" cy="50" r="1.5" opacity="0.9"/>
+    <circle cx="95" cy="28" r="1" opacity="0.7"/>
+    <circle cx="150" cy="60" r="1.6" opacity="0.8"/>
+    <circle cx="330" cy="40" r="1.4" opacity="0.9"/>
+    <circle cx="365" cy="95" r="1" opacity="0.6"/>
+    <circle cx="20" cy="150" r="1.2" opacity="0.7"/>
+    <circle cx="380" cy="200" r="1.3" opacity="0.6"/>
+    <circle cx="60" cy="330" r="1" opacity="0.6"/>
+    <circle cx="350" cy="350" r="1.5" opacity="0.8"/>
+    <circle cx="260" cy="25" r="1" opacity="0.7"/>
+  </g>
+
+  <!-- Floating light motes -->
+  <g fill="#ffe9a8" opacity="0.8">
+    <circle cx="80" cy="120" r="2.5"/>
+    <circle cx="120" cy="330" r="2"/>
+    <circle cx="320" cy="310" r="2.5"/>
+    <circle cx="350" cy="260" r="1.8"/>
+    <circle cx="55" cy="260" r="1.8"/>
+  </g>
+
+  <!-- Back wings (behind body) -->
+  <path d="M170 200 C120 110, 60 90, 30 130 C60 140, 80 165, 95 200 C70 190, 50 200, 40 230 C75 225, 110 225, 150 225 Z"
+        fill="url(#wing1)" stroke="#ffd1f0" stroke-width="1" stroke-opacity="0.6"/>
+  <path d="M190 195 C200 120, 260 80, 300 95 C285 120, 270 150, 255 195 Z"
+        fill="url(#wing2)" stroke="#fff2b0" stroke-width="1" stroke-opacity="0.6"/>
+
+  <!-- Tail: flowing ribbon ending in orb -->
+  <path d="M120 250 C80 270, 60 300, 40 290 C25 282, 40 265, 60 268 C90 272, 100 300, 80 330"
+        fill="none" stroke="#7fe0d0" stroke-width="8" stroke-linecap="round" opacity="0.85"/>
+  <path d="M120 250 C80 270, 60 300, 40 290 C25 282, 40 265, 60 268 C90 272, 100 300, 80 330"
+        fill="none" stroke="#ffffff" stroke-width="2" stroke-linecap="round" opacity="0.6"/>
+  <circle cx="80" cy="330" r="10" fill="url(#glow)"/>
+  <circle cx="80" cy="330" r="5" fill="#fffbe8"/>
+
+  <!-- Legs -->
+  <g stroke="#3a7fa8" stroke-width="10" stroke-linecap="round" fill="none">
+    <path d="M160 270 L150 320 L140 345"/>
+    <path d="M185 275 L185 325 L178 352"/>
+    <path d="M225 275 L235 322 L245 348"/>
+    <path d="M250 265 L265 310 L275 338"/>
+  </g>
+  <g fill="#c9fff4">
+    <ellipse cx="136" cy="348" rx="8" ry="4"/>
+    <ellipse cx="174" cy="355" rx="8" ry="4"/>
+    <ellipse cx="250" cy="351" rx="8" ry="4"/>
+    <ellipse cx="280" cy="341" rx="8" ry="4"/>
+  </g>
+
+  <!-- Neck -->
+  <path d="M235 190 C255 175, 262 160, 270 150 L300 165 C292 185, 280 205, 265 225 Z"
+        fill="url(#body)"/>
+
+  <!-- Body -->
+  <ellipse cx="195" cy="230" rx="78" ry="48" fill="url(#body)"/>
+  <!-- Body shading and spots -->
+  <ellipse cx="190" cy="255" rx="60" ry="18" fill="#2d6f9a" opacity="0.35"/>
+  <g fill="#c9fff4" opacity="0.55">
+    <circle cx="160" cy="220" r="5"/>
+    <circle cx="180" cy="205" r="4"/>
+    <circle cx="205" cy="212" r="6"/>
+    <circle cx="225" cy="232" r="4"/>
+    <circle cx="170" cy="240" r="3.5"/>
+    <circle cx="200" cy="242" r="4.5"/>
+  </g>
+
+  <!-- Dorsal fins -->
+  <g fill="#ffb3e6" opacity="0.85">
+    <path d="M150 190 L158 160 L168 188 Z"/>
+    <path d="M175 183 L185 150 L195 181 Z"/>
+    <path d="M202 183 L212 152 L222 184 Z"/>
+    <path d="M228 190 L238 165 L244 196 Z"/>
+  </g>
+
+  <!-- Head -->
+  <ellipse cx="290" cy="150" rx="34" ry="26" fill="url(#body)"/>
+  <!-- Snout -->
+  <path d="M312 150 C332 146, 342 156, 336 164 C330 170, 316 168, 310 162 Z" fill="#5fc4d9"/>
+  <circle cx="336" cy="157" r="2.5" fill="#fffbe8"/>
+  <!-- Cheek ruff -->
+  <path d="M270 162 C265 178, 275 186, 285 178 C292 186, 305 182, 306 170 Z" fill="#ffd1f0" opacity="0.7"/>
+
+  <!-- Spiral horn -->
+  <path d="M285 128 C282 105, 296 92, 310 98 C322 104, 314 118, 304 114 C296 110, 298 100, 306 102"
+        fill="none" stroke="url(#horn)" stroke-width="7" stroke-linecap="round"/>
+  <path d="M285 128 C282 105, 296 92, 310 98 C322 104, 314 118, 304 114 C296 110, 298 100, 306 102"
+        fill="none" stroke="#ffffff" stroke-width="1.5" stroke-linecap="round" opacity="0.7"/>
+
+  <!-- Eye -->
+  <circle cx="296" cy="142" r="9" fill="#fffbe8" opacity="0.35" filter="url(#soft)"/>
+  <ellipse cx="296" cy="142" rx="5.5" ry="6.5" fill="#1b1044"/>
+  <circle cx="294" cy="139.5" r="1.8" fill="#ffffff"/>
+
+  <!-- Front wing (over body, on top) -->
+  <path d="M215 200 C240 150, 300 130, 340 150 C320 165, 305 185, 296 210 C275 215, 245 212, 215 200 Z"
+        fill="url(#wing1)" opacity="0.75" stroke="#ffd1f0" stroke-width="1" stroke-opacity="0.5"/>
+
+  <!-- Floating crystal shards around creature -->
+  <g fill="#fff6d6" opacity="0.85">
+    <path d="M90 90 L96 104 L90 118 L84 104 Z"/>
+    <path d="M330 280 L335 292 L330 304 L325 292 Z"/>
+    <path d="M60 200 L63 208 L60 216 L57 208 Z"/>
+    <path d="M350 60 L353 67 L350 74 L347 67 Z"/>
+  </g>
+</svg>

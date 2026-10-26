@@ -1,0 +1,103 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="400" height="400" viewBox="0 0 400 400">
+  <defs>
+    <linearGradient id="himmel" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#141a42"/>
+      <stop offset="1" stop-color="#3a2f6e"/>
+    </linearGradient>
+    <radialGradient id="mond" cx="0.4" cy="0.4" r="0.7">
+      <stop offset="0" stop-color="#fff9dc"/>
+      <stop offset="1" stop-color="#f2d978"/>
+    </radialGradient>
+  </defs>
+
+  <!-- Nachthimmel -->
+  <rect width="400" height="400" fill="url(#himmel)"/>
+
+  <!-- Sterne -->
+  <g fill="#ffffff">
+    <circle cx="40" cy="45" r="2"/>
+    <circle cx="95" cy="25" r="1.5" opacity="0.8"/>
+    <circle cx="160" cy="48" r="2"/>
+    <circle cx="210" cy="22" r="1.5"/>
+    <circle cx="260" cy="110" r="1.8" opacity="0.8"/>
+    <circle cx="55" cy="120" r="1.5"/>
+    <circle cx="140" cy="95" r="1.2" opacity="0.7"/>
+    <circle cx="375" cy="180" r="1.8"/>
+    <circle cx="20" cy="200" r="1.4" opacity="0.8"/>
+    <circle cx="300" cy="25" r="1.6"/>
+  </g>
+
+  <!-- Mond als Sichel -->
+  <circle cx="335" cy="72" r="34" fill="url(#mond)"/>
+  <circle cx="348" cy="62" r="30" fill="#1f2757"/>
+
+  <!-- Teppich -->
+  <ellipse cx="200" cy="335" rx="175" ry="42" fill="#c94f6d"/>
+  <ellipse cx="200" cy="335" rx="150" ry="32" fill="none" stroke="#f4b6c2" stroke-width="2" stroke-dasharray="6 5"/>
+
+  <!-- Springender Ball mit Bahn -->
+  <path d="M 200 178 Q 205 210 215 250" fill="none" stroke="#ffd23f" stroke-width="2" stroke-dasharray="3 5" opacity="0.6"/>
+  <circle cx="200" cy="160" r="18" fill="#ffd23f"/>
+  <path d="M 184 160 Q 200 146 216 160" fill="none" stroke="#e8a317" stroke-width="2"/>
+  <path d="M 200 142 L 200 178" stroke="#e8a317" stroke-width="2"/>
+
+  <!-- Teddybär -->
+  <g>
+    <ellipse cx="110" cy="272" rx="38" ry="44" fill="#b07a4a"/>
+    <ellipse cx="82" cy="282" rx="12" ry="20" fill="#9c6a3d" transform="rotate(20 82 282)"/>
+    <ellipse cx="138" cy="282" rx="12" ry="20" fill="#9c6a3d" transform="rotate(-20 138 282)"/>
+    <ellipse cx="110" cy="290" rx="20" ry="22" fill="#e8c3a0"/>
+    <circle cx="110" cy="205" r="32" fill="#b07a4a"/>
+    <circle cx="84" cy="180" r="12" fill="#b07a4a"/>
+    <circle cx="136" cy="180" r="12" fill="#b07a4a"/>
+    <circle cx="84" cy="180" r="6" fill="#e8c3a0"/>
+    <circle cx="136" cy="180" r="6" fill="#e8c3a0"/>
+    <ellipse cx="110" cy="216" rx="12" ry="9" fill="#e8c3a0"/>
+    <circle cx="100" cy="201" r="4" fill="#2b1d12"/>
+    <circle cx="120" cy="201" r="4" fill="#2b1d12"/>
+    <circle cx="110" cy="211" r="4" fill="#2b1d12"/>
+    <!-- Schlafmütze -->
+    <path d="M 84 178 Q 110 150 136 178 Z" fill="#6fa8dc"/>
+    <circle cx="110" cy="150" r="6" fill="#ffffff"/>
+    <rect x="80" y="176" width="60" height="6" rx="3" fill="#4a86c0"/>
+  </g>
+
+  <!-- Spielzeugroboter -->
+  <g>
+    <rect x="260" y="290" width="14" height="20" fill="#5c6f8a"/>
+    <rect x="286" y="290" width="14" height="20" fill="#5c6f8a"/>
+    <rect x="255" y="230" width="50" height="62" rx="8" fill="#9fb8d6"/>
+    <rect x="263" y="244" width="34" height="14" rx="3" fill="#5c6f8a"/>
+    <rect x="260" y="190" width="40" height="38" rx="6" fill="#c7d9ee"/>
+    <line x1="280" y1="190" x2="280" y2="172" stroke="#5c6f8a" stroke-width="3"/>
+    <circle cx="280" cy="168" r="5" fill="#ffcc33"/>
+    <circle cx="270" cy="206" r="5" fill="#2a7fff"/>
+    <circle cx="290" cy="206" r="5" fill="#2a7fff"/>
+    <path d="M 270 216 Q 280 222 290 216" fill="none" stroke="#5c6f8a" stroke-width="2"/>
+  </g>
+
+  <!-- Spielzeugeisenbahn -->
+  <g>
+    <line x1="40" y1="382" x2="360" y2="382" stroke="#6b4a2f" stroke-width="4"/>
+    <g fill="#6b4a2f">
+      <rect x="60" y="378" width="6" height="10"/>
+      <rect x="110" y="378" width="6" height="10"/>
+      <rect x="260" y="378" width="6" height="10"/>
+      <rect x="310" y="378" width="6" height="10"/>
+    </g>
+    <rect x="160" y="346" width="70" height="36" rx="4" fill="#e03c31"/>
+    <rect x="210" y="332" width="10" height="16" fill="#222"/>
+    <rect x="148" y="338" width="14" height="44" rx="3" fill="#c4302a"/>
+    <circle cx="175" cy="380" r="8" fill="#222"/>
+    <circle cx="215" cy="380" r="8" fill="#222"/>
+    <circle cx="175" cy="380" r="3" fill="#aaa"/>
+    <circle cx="215" cy="380" r="3" fill="#aaa"/>
+    <rect x="168" y="354" width="18" height="12" fill="#ffe9a8"/>
+    <!-- Rauchwölkchen -->
+    <g fill="#ffffff" opacity="0.5">
+      <circle cx="222" cy="320" r="7"/>
+      <circle cx="234" cy="306" r="5"/>
+      <circle cx="244" cy="294" r="3.5"/>
+    </g>
+  </g>
+</svg>

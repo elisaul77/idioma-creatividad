@@ -1,0 +1,145 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="400" height="400" viewBox="0 0 400 400">
+  <defs>
+    <radialGradient id="bg" cx="50%" cy="45%" r="75%">
+      <stop offset="0%" stop-color="#2a1450"/>
+      <stop offset="60%" stop-color="#0d0624"/>
+      <stop offset="100%" stop-color="#03010a"/>
+    </radialGradient>
+    <linearGradient id="body" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#ff9a6b"/>
+      <stop offset="55%" stop-color="#c2407f"/>
+      <stop offset="100%" stop-color="#5b1f7a"/>
+    </linearGradient>
+    <linearGradient id="wing" x1="0" y1="1" x2="1" y2="0">
+      <stop offset="0%" stop-color="#7a5cff" stop-opacity="0.25"/>
+      <stop offset="50%" stop-color="#4fe3ff" stop-opacity="0.55"/>
+      <stop offset="100%" stop-color="#e0fbff" stop-opacity="0.35"/>
+    </linearGradient>
+    <linearGradient id="horn" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#fff3c4"/>
+      <stop offset="100%" stop-color="#ffb347"/>
+    </linearGradient>
+    <radialGradient id="orb" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#ffffff"/>
+      <stop offset="40%" stop-color="#7ef9ff"/>
+      <stop offset="100%" stop-color="#7ef9ff" stop-opacity="0"/>
+    </radialGradient>
+    <filter id="glow" x="-50%" y="-50%" width="200%" height="200%">
+      <feGaussianBlur stdDeviation="3" result="b"/>
+      <feMerge>
+        <feMergeNode in="b"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+    <filter id="soft" x="-50%" y="-50%" width="200%" height="200%">
+      <feGaussianBlur stdDeviation="6"/>
+    </filter>
+  </defs>
+
+  <!-- Background -->
+  <rect width="400" height="400" fill="url(#bg)"/>
+
+  <!-- Distant particles -->
+  <g fill="#ffffff">
+    <circle cx="40" cy="60" r="1.5" opacity="0.8"/>
+    <circle cx="330" cy="40" r="1.2" opacity="0.7"/>
+    <circle cx="360" cy="300" r="1.8" opacity="0.6"/>
+    <circle cx="60" cy="330" r="1.4" opacity="0.7"/>
+    <circle cx="200" cy="30" r="1" opacity="0.6"/>
+    <circle cx="280" cy="370" r="1.5" opacity="0.5"/>
+    <circle cx="20" cy="200" r="1.2" opacity="0.5"/>
+    <circle cx="150" cy="380" r="1" opacity="0.6"/>
+  </g>
+
+  <!-- Aura -->
+  <ellipse cx="210" cy="220" rx="150" ry="110" fill="#8a3cff" opacity="0.12" filter="url(#soft)"/>
+
+  <!-- Wings (back) -->
+  <g filter="url(#glow)">
+    <path d="M205,200 C198,140 240,84 322,70 C302,98 300,128 302,150 C332,128 352,120 372,126 C344,152 322,176 302,202 Z"
+          fill="url(#wing)" stroke="#bff6ff" stroke-width="1" stroke-opacity="0.6"/>
+    <path d="M205,200 C220,160 250,120 300,100" fill="none" stroke="#e0fbff" stroke-opacity="0.5" stroke-width="1"/>
+    <path d="M205,200 C235,170 270,150 320,140" fill="none" stroke="#e0fbff" stroke-opacity="0.4" stroke-width="1"/>
+    <path d="M205,200 C240,190 280,185 340,170" fill="none" stroke="#e0fbff" stroke-opacity="0.35" stroke-width="1"/>
+  </g>
+
+  <!-- Far legs -->
+  <g stroke="#7a2c63" stroke-width="7" stroke-linecap="round" fill="none" opacity="0.8">
+    <path d="M168,272 L160,318 L152,338"/>
+    <path d="M226,280 L236,324 L230,344"/>
+  </g>
+
+  <!-- Tail -->
+  <g filter="url(#glow)">
+    <path d="M286,246 C336,252 360,218 352,192 C346,176 360,160 376,170" fill="none" stroke="url(#body)" stroke-width="14" stroke-linecap="round"/>
+    <circle cx="378" cy="168" r="26" fill="url(#orb)" opacity="0.7"/>
+    <circle cx="378" cy="168" r="18" fill="none" stroke="#7ef9ff" stroke-opacity="0.5" stroke-width="1"/>
+    <circle cx="378" cy="168" r="10" fill="none" stroke="#ffffff" stroke-opacity="0.7" stroke-width="1"/>
+    <circle cx="378" cy="168" r="4" fill="#ffffff"/>
+  </g>
+
+  <!-- Torso -->
+  <path d="M120,230 C130,190 200,180 250,195 C290,205 300,240 285,265 C270,290 200,292 160,280 C130,272 112,255 120,230 Z"
+        fill="url(#body)"/>
+
+  <!-- Dorsal spines -->
+  <g fill="#ffb3c7" opacity="0.85">
+    <polygon points="150,196 158,178 162,198"/>
+    <polygon points="168,190 178,170 182,192"/>
+    <polygon points="188,188 198,168 202,190"/>
+    <polygon points="208,190 218,172 222,192"/>
+    <polygon points="228,194 238,178 242,198"/>
+    <polygon points="248,200 258,186 262,204"/>
+  </g>
+
+  <!-- Body markings -->
+  <g fill="#ffd1e0" opacity="0.3">
+    <circle cx="190" cy="236" r="6"/>
+    <circle cx="220" cy="252" r="5"/>
+    <circle cx="250" cy="230" r="4"/>
+    <circle cx="176" cy="258" r="3.5"/>
+  </g>
+
+  <!-- Near legs -->
+  <g stroke="#a33a74" stroke-width="9" stroke-linecap="round" fill="none">
+    <path d="M150,270 L140,318 L132,340"/>
+    <path d="M240,280 L255,324 L248,346"/>
+  </g>
+  <g stroke="#ffd1e0" stroke-width="2.5" stroke-linecap="round" fill="none" opacity="0.8">
+    <path d="M132,340 l-8,12 M132,340 l0,14 M132,340 l8,12"/>
+    <path d="M248,346 l-8,12 M248,346 l0,14 M248,346 l8,12"/>
+  </g>
+
+  <!-- Head -->
+  <ellipse cx="108" cy="172" rx="36" ry="30" transform="rotate(-20 108 172)" fill="url(#body)"/>
+
+  <!-- Ears -->
+  <path d="M96,146 L86,110 L114,138 Z" fill="#c2407f"/>
+  <path d="M120,142 L126,104 L136,146 Z" fill="#c2407f"/>
+
+  <!-- Split beak -->
+  <path d="M78,172 Q55,160 40,180 Q62,178 78,184 Z" fill="#ffb347"/>
+  <path d="M78,186 Q60,198 48,200 Q64,204 80,194 Z" fill="#ff9a6b"/>
+
+  <!-- Spiral horn -->
+  <path d="M104,142 C100,110 120,85 150,80 C170,76 176,95 160,100 C146,104 140,90 150,86"
+        fill="none" stroke="url(#horn)" stroke-width="5" stroke-linecap="round" filter="url(#glow)"/>
+
+  <!-- Eyes -->
+  <g filter="url(#glow)">
+    <circle cx="100" cy="166" r="4.5" fill="#ffe066"/>
+    <circle cx="118" cy="160" r="3.8" fill="#ffe066"/>
+    <circle cx="116" cy="180" r="3.2" fill="#ffe066"/>
+    <circle cx="100" cy="166" r="1.6" fill="#0d0624"/>
+    <circle cx="118" cy="160" r="1.4" fill="#0d0624"/>
+    <circle cx="116" cy="180" r="1.2" fill="#0d0624"/>
+  </g>
+
+  <!-- Bioluminescent sparks -->
+  <g fill="#7ef9ff" filter="url(#glow)">
+    <circle cx="170" cy="120" r="2" opacity="0.9"/>
+    <circle cx="260" cy="130" r="1.6" opacity="0.8"/>
+    <circle cx="300" cy="260" r="2" opacity="0.7"/>
+    <circle cx="80" cy="260" r="1.5" opacity="0.7"/>
+  </g>
+</svg>

@@ -1,0 +1,50 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="400" height="400" viewBox="0 0 400 400">
+  <defs>
+    <linearGradient id="cielo" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#8fd3f4"/>
+      <stop offset="1" stop-color="#ffe9b0"/>
+    </linearGradient>
+    <path id="hoja" d="M0 0 Q25 -18 55 0 Q25 8 0 0 Z" fill="#3f9d4a"/>
+    <g id="palma">
+      <path d="M0 0 Q10 -60 6 -120" fill="none" stroke="#8b5a2b" stroke-width="8" stroke-linecap="round"/>
+      <use href="#hoja" transform="translate(6 -120) rotate(-160)"/>
+      <use href="#hoja" transform="translate(6 -120) rotate(-120)"/>
+      <use href="#hoja" transform="translate(6 -120) rotate(-80)"/>
+      <use href="#hoja" transform="translate(6 -120) rotate(-40)"/>
+      <use href="#hoja" transform="translate(6 -120) rotate(0)"/>
+      <use href="#hoja" transform="translate(6 -120) rotate(40)"/>
+      <use href="#hoja" transform="translate(6 -120) rotate(80)"/>
+    </g>
+  </defs>
+
+  <!-- Cielo y sol -->
+  <rect width="400" height="400" fill="url(#cielo)"/>
+  <circle cx="320" cy="70" r="30" fill="#ffd23f"/>
+
+  <!-- Cerros lejanos -->
+  <path d="M0 220 Q80 160 160 210 T320 200 T400 215 L400 300 L0 300 Z" fill="#6fbf73"/>
+
+  <!-- Río -->
+  <path d="M0 300 Q100 280 200 310 T400 300 L400 340 Q300 330 200 350 T0 340 Z" fill="#4fa3d9"/>
+
+  <!-- Suelo -->
+  <path d="M0 340 L400 340 L400 400 L0 400 Z" fill="#7cb342"/>
+
+  <!-- Casa 1 -->
+  <rect x="50" y="285" width="50" height="40" fill="#d7a76b"/>
+  <polygon points="45,285 75,255 105,285" fill="#8d5a2b"/>
+  <rect x="68" y="300" width="14" height="25" fill="#5d3a1a"/>
+
+  <!-- Casa 2 sobre pilotes en el río -->
+  <line x1="245" y1="296" x2="245" y2="330" stroke="#6d4c2a" stroke-width="4"/>
+  <line x1="285" y1="296" x2="285" y2="330" stroke="#6d4c2a" stroke-width="4"/>
+  <rect x="240" y="260" width="50" height="36" fill="#e8b97a"/>
+  <polygon points="235,260 265,232 295,260" fill="#a0522d"/>
+  <rect x="258" y="275" width="14" height="21" fill="#5d3a1a"/>
+
+  <!-- Palmeras -->
+  <use href="#palma" transform="translate(30 350) scale(0.9)"/>
+  <use href="#palma" transform="translate(120 360) scale(1.2)"/>
+  <use href="#palma" transform="translate(350 350) scale(1.1)"/>
+  <use href="#palma" transform="translate(385 365) scale(0.8)"/>
+</svg>

@@ -1,0 +1,138 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 400" width="400" height="400">
+  <defs>
+    <linearGradient id="sky" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#050b1f"/>
+      <stop offset="55%" stop-color="#1b2f5e"/>
+      <stop offset="100%" stop-color="#e9a86b"/>
+    </linearGradient>
+    <radialGradient id="sun" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#fff6d5"/>
+      <stop offset="60%" stop-color="#ffc857" stop-opacity="0.95"/>
+      <stop offset="100%" stop-color="#ff9f43" stop-opacity="0"/>
+    </radialGradient>
+    <linearGradient id="trunk" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#2b2d42"/>
+      <stop offset="50%" stop-color="#4a4e69"/>
+      <stop offset="100%" stop-color="#22223b"/>
+    </linearGradient>
+    <radialGradient id="leaf" cx="50%" cy="40%" r="60%">
+      <stop offset="0%" stop-color="#e0fbfc"/>
+      <stop offset="50%" stop-color="#4cc9f0"/>
+      <stop offset="100%" stop-color="#3a0ca3" stop-opacity="0.6"/>
+    </radialGradient>
+    <linearGradient id="ground" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#14213d"/>
+      <stop offset="100%" stop-color="#000814"/>
+    </linearGradient>
+    <filter id="glow" x="-50%" y="-50%" width="200%" height="200%">
+      <feGaussianBlur stdDeviation="3" result="blur"/>
+      <feMerge>
+        <feMergeNode in="blur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+    <filter id="softglow" x="-100%" y="-100%" width="300%" height="300%">
+      <feGaussianBlur stdDeviation="8"/>
+    </filter>
+  </defs>
+
+  <!-- Sky -->
+  <rect width="400" height="400" fill="url(#sky)"/>
+
+  <!-- Stars -->
+  <g fill="#ffffff">
+    <circle cx="40" cy="50" r="1.2" opacity="0.9"/>
+    <circle cx="90" cy="28" r="0.9" opacity="0.7"/>
+    <circle cx="150" cy="60" r="1.4" opacity="0.8"/>
+    <circle cx="320" cy="40" r="1.2" opacity="0.9"/>
+    <circle cx="360" cy="90" r="0.8" opacity="0.6"/>
+    <circle cx="260" cy="20" r="1" opacity="0.7"/>
+    <circle cx="70" cy="110" r="0.9" opacity="0.6"/>
+    <circle cx="350" cy="150" r="1" opacity="0.5"/>
+    <circle cx="25" cy="170" r="0.8" opacity="0.5"/>
+  </g>
+
+  <!-- Rising sun / future light -->
+  <circle cx="200" cy="170" r="110" fill="url(#sun)" opacity="0.6"/>
+  <circle cx="200" cy="170" r="48" fill="url(#sun)"/>
+  <circle cx="200" cy="170" r="22" fill="#fff6d5"/>
+
+  <!-- Orbit rings -->
+  <g fill="none" stroke="#4cc9f0" stroke-width="0.8" opacity="0.35">
+    <ellipse cx="200" cy="200" rx="170" ry="40" transform="rotate(-12 200 200)"/>
+    <ellipse cx="200" cy="200" rx="150" ry="28" transform="rotate(8 200 200)"/>
+  </g>
+
+  <!-- Ground -->
+  <path d="M0 330 Q200 300 400 330 L400 400 L0 400 Z" fill="url(#ground)"/>
+  <ellipse cx="200" cy="340" rx="120" ry="14" fill="#4cc9f0" opacity="0.15" filter="url(#softglow)"/>
+
+  <!-- Roots -->
+  <g fill="none" stroke="#22223b" stroke-width="5" stroke-linecap="round">
+    <path d="M200 335 Q175 342 150 350"/>
+    <path d="M200 335 Q225 342 252 348"/>
+    <path d="M200 335 Q200 348 200 360"/>
+  </g>
+
+  <!-- Trunk -->
+  <path d="M190 335 Q192 280 196 240 Q198 200 200 175 Q202 200 204 240 Q208 280 210 335 Z" fill="url(#trunk)"/>
+
+  <!-- Branches -->
+  <g fill="none" stroke="url(#trunk)" stroke-linecap="round">
+    <path d="M200 230 Q170 215 140 190" stroke-width="7"/>
+    <path d="M200 230 Q230 215 260 190" stroke-width="7"/>
+    <path d="M200 200 Q180 180 165 150" stroke-width="5"/>
+    <path d="M200 200 Q220 180 235 150" stroke-width="5"/>
+    <path d="M200 175 Q190 150 200 115" stroke-width="4"/>
+    <path d="M140 190 Q125 175 115 160" stroke-width="3.5"/>
+    <path d="M260 190 Q275 175 285 160" stroke-width="3.5"/>
+    <path d="M165 150 Q150 135 140 125" stroke-width="3"/>
+    <path d="M235 150 Q250 135 260 125" stroke-width="3"/>
+  </g>
+
+  <!-- Circuit-like connections (digital growth) -->
+  <g fill="none" stroke="#4cc9f0" stroke-width="1" opacity="0.7" filter="url(#glow)">
+    <path d="M140 190 L115 160 L100 160"/>
+    <path d="M260 190 L285 160 L300 160"/>
+    <path d="M165 150 L140 125 L125 125"/>
+    <path d="M235 150 L260 125 L275 125"/>
+    <path d="M200 115 L200 85 L185 70"/>
+    <path d="M200 115 L215 85 L230 70"/>
+  </g>
+
+  <!-- Glowing crown nodes -->
+  <g filter="url(#glow)">
+    <circle cx="200" cy="115" r="4" fill="#ffc857"/>
+    <circle cx="185" cy="70" r="3.5" fill="#4cc9f0"/>
+    <circle cx="230" cy="70" r="3.5" fill="#4cc9f0"/>
+    <circle cx="100" cy="160" r="3" fill="#f72585"/>
+    <circle cx="300" cy="160" r="3" fill="#f72585"/>
+    <circle cx="125" cy="125" r="3" fill="#7bf1a8"/>
+    <circle cx="275" cy="125" r="3" fill="#7bf1a8"/>
+  </g>
+
+  <!-- Leaves (floating light orbs) -->
+  <g>
+    <circle cx="115" cy="160" r="14" fill="url(#leaf)" opacity="0.85"/>
+    <circle cx="285" cy="160" r="14" fill="url(#leaf)" opacity="0.85"/>
+    <circle cx="140" cy="125" r="13" fill="url(#leaf)" opacity="0.8"/>
+    <circle cx="260" cy="125" r="13" fill="url(#leaf)" opacity="0.8"/>
+    <circle cx="185" cy="70" r="16" fill="url(#leaf)" opacity="0.9"/>
+    <circle cx="230" cy="70" r="16" fill="url(#leaf)" opacity="0.9"/>
+    <circle cx="200" cy="95" r="18" fill="url(#leaf)" opacity="0.75"/>
+    <circle cx="150" cy="100" r="10" fill="url(#leaf)" opacity="0.6"/>
+    <circle cx="250" cy="100" r="10" fill="url(#leaf)" opacity="0.6"/>
+    <circle cx="100" cy="185" r="9" fill="url(#leaf)" opacity="0.6"/>
+    <circle cx="300" cy="185" r="9" fill="url(#leaf)" opacity="0.6"/>
+  </g>
+
+  <!-- Floating seeds of the future -->
+  <g fill="#ffc857" filter="url(#glow)">
+    <circle cx="80" cy="240" r="2"/>
+    <circle cx="120" cy="265" r="1.5"/>
+    <circle cx="320" cy="250" r="2"/>
+    <circle cx="290" cy="280" r="1.5"/>
+    <circle cx="55" cy="300" r="1.5"/>
+    <circle cx="345" cy="310" r="1.8"/>
+  </g>
+</svg>

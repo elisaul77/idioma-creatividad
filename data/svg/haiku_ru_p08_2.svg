@@ -1,0 +1,119 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="400" height="400" viewBox="0 0 400 400">
+  <defs>
+    <linearGradient id="sky" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#0b1433"/>
+      <stop offset="1" stop-color="#2a1b4d"/>
+    </linearGradient>
+    <radialGradient id="moonGlow" cx="0.5" cy="0.5" r="0.5">
+      <stop offset="0" stop-color="#fff3b0" stop-opacity="0.6"/>
+      <stop offset="1" stop-color="#fff3b0" stop-opacity="0"/>
+    </radialGradient>
+    <linearGradient id="floor" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#3b2a4f"/>
+      <stop offset="1" stop-color="#241936"/>
+    </linearGradient>
+  </defs>
+
+  <!-- Небо и пол -->
+  <rect width="400" height="400" fill="url(#sky)"/>
+  <rect y="300" width="400" height="100" fill="url(#floor)"/>
+
+  <!-- Звёзды -->
+  <g fill="#ffffff">
+    <circle cx="30" cy="40" r="1.5" opacity="0.9"/>
+    <circle cx="70" cy="90" r="1" opacity="0.7"/>
+    <circle cx="150" cy="30" r="1.8" opacity="0.9"/>
+    <circle cx="190" cy="80" r="1" opacity="0.6"/>
+    <circle cx="215" cy="25" r="1.4" opacity="0.8"/>
+    <circle cx="370" cy="30" r="1.6" opacity="0.9"/>
+    <circle cx="20" cy="160" r="1" opacity="0.5"/>
+    <circle cx="185" cy="170" r="1.2" opacity="0.6"/>
+    <circle cx="360" cy="190" r="1" opacity="0.7"/>
+    <circle cx="120" cy="120" r="1" opacity="0.6"/>
+  </g>
+
+  <!-- Окно и луна -->
+  <circle cx="305" cy="100" r="70" fill="url(#moonGlow)"/>
+  <rect x="250" y="40" width="110" height="120" rx="6" fill="#1c2a5a" stroke="#6b5b95" stroke-width="6"/>
+  <line x1="305" y1="40" x2="305" y2="160" stroke="#6b5b95" stroke-width="4"/>
+  <line x1="250" y1="100" x2="360" y2="100" stroke="#6b5b95" stroke-width="4"/>
+  <circle cx="305" cy="90" r="22" fill="#fff3b0"/>
+  <circle cx="298" cy="84" r="4" fill="#e8d98a" opacity="0.6"/>
+  <circle cx="312" cy="96" r="3" fill="#e8d98a" opacity="0.6"/>
+
+  <!-- Ковёр -->
+  <ellipse cx="200" cy="332" rx="160" ry="30" fill="#5a3d6e"/>
+  <ellipse cx="200" cy="332" rx="140" ry="22" fill="none" stroke="#7a5a92" stroke-width="3" stroke-dasharray="8 6"/>
+
+  <!-- Ноты (танцуют) -->
+  <g fill="#ffd23f">
+    <ellipse cx="165" cy="150" rx="7" ry="5.5" transform="rotate(-20 165 150)"/>
+    <rect x="170" y="112" width="3" height="40"/>
+    <ellipse cx="205" cy="135" rx="7" ry="5.5" transform="rotate(-20 205 135)"/>
+    <rect x="210" y="97" width="3" height="40"/>
+    <path d="M170 112 L213 97 L213 103 L170 118 Z"/>
+  </g>
+
+  <!-- Плюшевый мишка с поднятыми лапами -->
+  <g>
+    <line x1="92" y1="250" x2="66" y2="222" stroke="#c08552" stroke-width="13" stroke-linecap="round"/>
+    <line x1="128" y1="250" x2="154" y2="218" stroke="#c08552" stroke-width="13" stroke-linecap="round"/>
+    <ellipse cx="110" cy="262" rx="36" ry="42" fill="#c08552"/>
+    <ellipse cx="90" cy="300" rx="13" ry="14" fill="#a8703f"/>
+    <ellipse cx="130" cy="300" rx="13" ry="14" fill="#a8703f"/>
+    <circle cx="85" cy="178" r="11" fill="#c08552"/>
+    <circle cx="135" cy="178" r="11" fill="#c08552"/>
+    <circle cx="85" cy="178" r="5" fill="#e8b48a"/>
+    <circle cx="135" cy="178" r="5" fill="#e8b48a"/>
+    <circle cx="110" cy="200" r="30" fill="#c08552"/>
+    <ellipse cx="110" cy="213" rx="14" ry="10" fill="#e8b48a"/>
+    <circle cx="100" cy="195" r="3.5" fill="#222"/>
+    <circle cx="120" cy="195" r="3.5" fill="#222"/>
+    <ellipse cx="110" cy="208" rx="4" ry="3" fill="#222"/>
+    <path d="M106 216 Q110 220 114 216" stroke="#222" stroke-width="1.5" fill="none"/>
+  </g>
+
+  <!-- Робот -->
+  <g>
+    <rect x="253" y="240" width="12" height="28" rx="6" fill="#6e87a8" transform="rotate(20 259 240)"/>
+    <rect x="333" y="240" width="12" height="28" rx="6" fill="#6e87a8" transform="rotate(-20 339 240)"/>
+    <rect x="265" y="230" width="50" height="62" rx="8" fill="#8fa8c8"/>
+    <rect x="275" y="242" width="30" height="14" rx="3" fill="#4a5f80"/>
+    <circle cx="283" cy="249" r="3" fill="#ffd23f"/>
+    <circle cx="297" cy="249" r="3" fill="#ffd23f"/>
+    <rect x="268" y="290" width="14" height="18" rx="3" fill="#6e87a8"/>
+    <rect x="298" y="290" width="14" height="18" rx="3" fill="#6e87a8"/>
+    <rect x="270" y="195" width="40" height="35" rx="6" fill="#b8c9e0"/>
+    <circle cx="282" cy="210" r="4" fill="#ffd23f"/>
+    <circle cx="298" cy="210" r="4" fill="#ffd23f"/>
+    <rect x="279" y="220" width="22" height="4" rx="2" fill="#4a5f80"/>
+    <line x1="290" y1="195" x2="290" y2="178" stroke="#444" stroke-width="2.5"/>
+    <circle cx="290" cy="175" r="5" fill="#ff5a5a"/>
+  </g>
+
+  <!-- Резиновая уточка -->
+  <g>
+    <ellipse cx="205" cy="322" rx="28" ry="18" fill="#ffd23f"/>
+    <circle cx="225" cy="300" r="14" fill="#ffd23f"/>
+    <path d="M237 298 L252 304 L237 310 Z" fill="#ff8c1a"/>
+    <circle cx="229" cy="296" r="2.5" fill="#222"/>
+    <path d="M190 326 Q205 336 220 326" stroke="#e0b52a" stroke-width="2" fill="none"/>
+  </g>
+
+  <!-- Прыгающий мячик со следом -->
+  <g>
+    <ellipse cx="345" cy="290" rx="18" ry="4" fill="#ff6b8b" opacity="0.15"/>
+    <ellipse cx="345" cy="272" rx="18" ry="4" fill="#ff6b8b" opacity="0.3"/>
+    <circle cx="345" cy="252" r="18" fill="#ff6b8b"/>
+    <path d="M327 252 Q345 240 363 252" stroke="#ffd0dc" stroke-width="3" fill="none"/>
+    <path d="M345 234 Q355 252 345 270" stroke="#ffd0dc" stroke-width="3" fill="none"/>
+  </g>
+
+  <!-- Маленький волчок с линиями движения -->
+  <g>
+    <path d="M40 300 L60 318 L40 336 Z" fill="#7bd3c4" transform="translate(0 0)"/>
+    <path d="M40 300 L80 300 L60 318 Z" fill="#7bd3c4" opacity="0"/>
+    <path d="M26 318 Q40 312 54 318" stroke="#7bd3c4" stroke-width="2" fill="none" opacity="0.7"/>
+    <path d="M22 326 Q40 320 58 326" stroke="#7bd3c4" stroke-width="2" fill="none" opacity="0.4"/>
+  </g>
+</svg>
