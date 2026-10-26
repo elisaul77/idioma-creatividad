@@ -1,6 +1,6 @@
 {
- "votos_totales": 806,
- "votos_validos": 781,
+ "votos_totales": 877,
+ "votos_validos": 852,
  "min_ms": 500,
  "evaluadores": [
   {
@@ -16,138 +16,138 @@
   {
    "id": "E3",
    "edad": 36,
-   "votos": 152
+   "votos": 223
   }
  ],
  "grupos": {
   "todos": [
    {
-    "lang": "en",
-    "nombre": "Inglés",
-    "fuerza": 1.162,
+    "lang": "hi",
+    "nombre": "Hindi",
+    "fuerza": 1.167,
     "ic": [
-     0.857,
-     1.573
+     0.879,
+     1.545
     ],
-    "victorias": 82,
-    "duelos": 152,
-    "pct": 53.9,
+    "victorias": 93,
+    "duelos": 171,
+    "pct": 54.4,
     "significativo": false
    },
    {
     "lang": "qu",
     "nombre": "Quechua",
-    "fuerza": 1.159,
+    "fuerza": 1.1,
     "ic": [
-     0.883,
-     1.553
+     0.851,
+     1.424
     ],
-    "victorias": 87,
-    "duelos": 161,
-    "pct": 54.0,
+    "victorias": 92,
+    "duelos": 175,
+    "pct": 52.6,
     "significativo": false
    },
    {
-    "lang": "hi",
-    "nombre": "Hindi",
-    "fuerza": 1.143,
+    "lang": "en",
+    "nombre": "Inglés",
+    "fuerza": 1.048,
     "ic": [
-     0.839,
-     1.53
+     0.795,
+     1.379
     ],
-    "victorias": 85,
-    "duelos": 158,
-    "pct": 53.8,
-    "significativo": false
-   },
-   {
-    "lang": "ar",
-    "nombre": "Árabe",
-    "fuerza": 1.041,
-    "ic": [
-     0.789,
-     1.377
-    ],
-    "victorias": 80,
-    "duelos": 157,
-    "pct": 51.0,
+    "victorias": 86,
+    "duelos": 168,
+    "pct": 51.2,
     "significativo": false
    },
    {
     "lang": "de",
     "nombre": "Alemán",
+    "fuerza": 1.026,
+    "ic": [
+     0.786,
+     1.357
+    ],
+    "victorias": 86,
+    "duelos": 170,
+    "pct": 50.6,
+    "significativo": false
+   },
+   {
+    "lang": "ar",
+    "nombre": "Árabe",
     "fuerza": 0.999,
     "ic": [
-     0.746,
-     1.321
+     0.763,
+     1.34
     ],
-    "victorias": 76,
-    "duelos": 153,
-    "pct": 49.7,
+    "victorias": 85,
+    "duelos": 170,
+    "pct": 50.0,
     "significativo": false
    },
    {
     "lang": "zh",
     "nombre": "Chino",
-    "fuerza": 0.95,
+    "fuerza": 0.986,
     "ic": [
-     0.717,
-     1.246
+     0.746,
+     1.28
     ],
-    "victorias": 78,
-    "duelos": 160,
-    "pct": 48.8,
+    "victorias": 87,
+    "duelos": 175,
+    "pct": 49.7,
     "significativo": false
    },
    {
     "lang": "sw",
     "nombre": "Suajili",
-    "fuerza": 0.927,
+    "fuerza": 0.975,
     "ic": [
-     0.697,
-     1.211
+     0.74,
+     1.271
     ],
-    "victorias": 75,
-    "duelos": 157,
-    "pct": 47.8,
-    "significativo": false
-   },
-   {
-    "lang": "ru",
-    "nombre": "Ruso",
-    "fuerza": 0.916,
-    "ic": [
-     0.692,
-     1.21
-    ],
-    "victorias": 73,
-    "duelos": 153,
-    "pct": 47.7,
+    "victorias": 82,
+    "duelos": 167,
+    "pct": 49.1,
     "significativo": false
    },
    {
     "lang": "ja",
     "nombre": "Japonés",
-    "fuerza": 0.893,
+    "fuerza": 0.957,
     "ic": [
-     0.655,
-     1.18
+     0.718,
+     1.252
     ],
-    "victorias": 72,
-    "duelos": 153,
-    "pct": 47.1,
+    "victorias": 83,
+    "duelos": 170,
+    "pct": 48.8,
+    "significativo": false
+   },
+   {
+    "lang": "ru",
+    "nombre": "Ruso",
+    "fuerza": 0.904,
+    "ic": [
+     0.664,
+     1.193
+    ],
+    "victorias": 79,
+    "duelos": 167,
+    "pct": 47.3,
     "significativo": false
    },
    {
     "lang": "es",
     "nombre": "Español",
-    "fuerza": 0.868,
+    "fuerza": 0.872,
     "ic": [
-     0.663,
-     1.148
+     0.657,
+     1.128
     ],
-    "victorias": 73,
-    "duelos": 158,
+    "victorias": 79,
+    "duelos": 171,
     "pct": 46.2,
     "significativo": false
    }
@@ -286,133 +286,133 @@
   ],
   "adultos": [
    {
-    "lang": "de",
-    "nombre": "Alemán",
-    "fuerza": 1.584,
+    "lang": "hi",
+    "nombre": "Hindi",
+    "fuerza": 1.51,
     "ic": [
-     0.782,
-     3.878
+     0.845,
+     2.76
     ],
-    "victorias": 17,
-    "duelos": 27,
-    "pct": 63.0,
+    "victorias": 28,
+    "duelos": 46,
+    "pct": 60.9,
     "significativo": false
    },
    {
     "lang": "zh",
     "nombre": "Chino",
-    "fuerza": 1.469,
+    "fuerza": 1.445,
     "ic": [
-     0.7,
-     3.31
+     0.81,
+     2.634
     ],
-    "victorias": 16,
-    "duelos": 27,
-    "pct": 59.3,
+    "victorias": 25,
+    "duelos": 42,
+    "pct": 59.5,
     "significativo": false
    },
    {
-    "lang": "ru",
-    "nombre": "Ruso",
-    "fuerza": 1.417,
+    "lang": "de",
+    "nombre": "Alemán",
+    "fuerza": 1.394,
     "ic": [
-     0.713,
-     2.902
+     0.781,
+     2.823
     ],
-    "victorias": 17,
-    "duelos": 29,
-    "pct": 58.6,
-    "significativo": false
-   },
-   {
-    "lang": "hi",
-    "nombre": "Hindi",
-    "fuerza": 1.361,
-    "ic": [
-     0.685,
-     3.025
-    ],
-    "victorias": 20,
-    "duelos": 33,
-    "pct": 60.6,
+    "victorias": 27,
+    "duelos": 44,
+    "pct": 61.4,
     "significativo": false
    },
    {
     "lang": "ja",
     "nombre": "Japonés",
-    "fuerza": 1.134,
+    "fuerza": 1.321,
     "ic": [
-     0.565,
-     2.534
+     0.768,
+     2.426
     ],
-    "victorias": 15,
-    "duelos": 28,
-    "pct": 53.6,
+    "victorias": 26,
+    "duelos": 45,
+    "pct": 57.8,
+    "significativo": false
+   },
+   {
+    "lang": "ru",
+    "nombre": "Ruso",
+    "fuerza": 1.17,
+    "ic": [
+     0.662,
+     2.175
+    ],
+    "victorias": 23,
+    "duelos": 43,
+    "pct": 53.5,
     "significativo": false
    },
    {
     "lang": "sw",
     "nombre": "Suajili",
-    "fuerza": 0.91,
+    "fuerza": 1.167,
     "ic": [
-     0.498,
-     1.714
+     0.677,
+     1.963
     ],
-    "victorias": 16,
-    "duelos": 32,
-    "pct": 50.0,
-    "significativo": false
-   },
-   {
-    "lang": "en",
-    "nombre": "Inglés",
-    "fuerza": 0.902,
-    "ic": [
-     0.414,
-     1.724
-    ],
-    "victorias": 14,
-    "duelos": 30,
-    "pct": 46.7,
+    "victorias": 23,
+    "duelos": 42,
+    "pct": 54.8,
     "significativo": false
    },
    {
     "lang": "es",
     "nombre": "Español",
-    "fuerza": 0.705,
+    "fuerza": 0.743,
     "ic": [
-     0.339,
-     1.338
+     0.41,
+     1.28
     ],
-    "victorias": 13,
-    "duelos": 32,
-    "pct": 40.6,
+    "victorias": 19,
+    "duelos": 45,
+    "pct": 42.2,
+    "significativo": false
+   },
+   {
+    "lang": "en",
+    "nombre": "Inglés",
+    "fuerza": 0.703,
+    "ic": [
+     0.38,
+     1.186
+    ],
+    "victorias": 18,
+    "duelos": 46,
+    "pct": 39.1,
     "significativo": false
    },
    {
     "lang": "qu",
     "nombre": "Quechua",
-    "fuerza": 0.675,
+    "fuerza": 0.642,
     "ic": [
-     0.329,
-     1.348
+     0.358,
+     1.056
     ],
-    "victorias": 14,
-    "duelos": 35,
-    "pct": 40.0,
+    "victorias": 19,
+    "duelos": 49,
+    "pct": 38.8,
     "significativo": false
    },
    {
     "lang": "ar",
     "nombre": "Árabe",
-    "fuerza": 0.503,
+    "fuerza": 0.543,
     "ic": [
-     0.221,
-     0.979
+     0.278,
+     0.919
     ],
-    "victorias": 10,
-    "duelos": 31,
-    "pct": 32.3,
+    "victorias": 15,
+    "duelos": 44,
+    "pct": 34.1,
     "significativo": true
    }
   ]
@@ -684,200 +684,200 @@
   ],
   "E3": [
    {
-    "lang": "de",
-    "nombre": "Alemán",
-    "fuerza": 1.584,
+    "lang": "hi",
+    "nombre": "Hindi",
+    "fuerza": 1.51,
     "ic": [
-     0.782,
-     3.878
+     0.845,
+     2.76
     ],
-    "victorias": 17,
-    "duelos": 27,
-    "pct": 63.0,
+    "victorias": 28,
+    "duelos": 46,
+    "pct": 60.9,
     "significativo": false
    },
    {
     "lang": "zh",
     "nombre": "Chino",
-    "fuerza": 1.469,
+    "fuerza": 1.445,
     "ic": [
-     0.7,
-     3.31
+     0.81,
+     2.634
     ],
-    "victorias": 16,
-    "duelos": 27,
-    "pct": 59.3,
+    "victorias": 25,
+    "duelos": 42,
+    "pct": 59.5,
     "significativo": false
    },
    {
-    "lang": "ru",
-    "nombre": "Ruso",
-    "fuerza": 1.417,
+    "lang": "de",
+    "nombre": "Alemán",
+    "fuerza": 1.394,
     "ic": [
-     0.713,
-     2.902
+     0.781,
+     2.823
     ],
-    "victorias": 17,
-    "duelos": 29,
-    "pct": 58.6,
-    "significativo": false
-   },
-   {
-    "lang": "hi",
-    "nombre": "Hindi",
-    "fuerza": 1.361,
-    "ic": [
-     0.685,
-     3.025
-    ],
-    "victorias": 20,
-    "duelos": 33,
-    "pct": 60.6,
+    "victorias": 27,
+    "duelos": 44,
+    "pct": 61.4,
     "significativo": false
    },
    {
     "lang": "ja",
     "nombre": "Japonés",
-    "fuerza": 1.134,
+    "fuerza": 1.321,
     "ic": [
-     0.565,
-     2.534
+     0.768,
+     2.426
     ],
-    "victorias": 15,
-    "duelos": 28,
-    "pct": 53.6,
+    "victorias": 26,
+    "duelos": 45,
+    "pct": 57.8,
+    "significativo": false
+   },
+   {
+    "lang": "ru",
+    "nombre": "Ruso",
+    "fuerza": 1.17,
+    "ic": [
+     0.662,
+     2.175
+    ],
+    "victorias": 23,
+    "duelos": 43,
+    "pct": 53.5,
     "significativo": false
    },
    {
     "lang": "sw",
     "nombre": "Suajili",
-    "fuerza": 0.91,
+    "fuerza": 1.167,
     "ic": [
-     0.498,
-     1.714
+     0.677,
+     1.963
     ],
-    "victorias": 16,
-    "duelos": 32,
-    "pct": 50.0,
-    "significativo": false
-   },
-   {
-    "lang": "en",
-    "nombre": "Inglés",
-    "fuerza": 0.902,
-    "ic": [
-     0.414,
-     1.724
-    ],
-    "victorias": 14,
-    "duelos": 30,
-    "pct": 46.7,
+    "victorias": 23,
+    "duelos": 42,
+    "pct": 54.8,
     "significativo": false
    },
    {
     "lang": "es",
     "nombre": "Español",
-    "fuerza": 0.705,
+    "fuerza": 0.743,
     "ic": [
-     0.339,
-     1.338
+     0.41,
+     1.28
     ],
-    "victorias": 13,
-    "duelos": 32,
-    "pct": 40.6,
+    "victorias": 19,
+    "duelos": 45,
+    "pct": 42.2,
+    "significativo": false
+   },
+   {
+    "lang": "en",
+    "nombre": "Inglés",
+    "fuerza": 0.703,
+    "ic": [
+     0.38,
+     1.186
+    ],
+    "victorias": 18,
+    "duelos": 46,
+    "pct": 39.1,
     "significativo": false
    },
    {
     "lang": "qu",
     "nombre": "Quechua",
-    "fuerza": 0.675,
+    "fuerza": 0.642,
     "ic": [
-     0.329,
-     1.348
+     0.358,
+     1.056
     ],
-    "victorias": 14,
-    "duelos": 35,
-    "pct": 40.0,
+    "victorias": 19,
+    "duelos": 49,
+    "pct": 38.8,
     "significativo": false
    },
    {
     "lang": "ar",
     "nombre": "Árabe",
-    "fuerza": 0.503,
+    "fuerza": 0.543,
     "ic": [
-     0.221,
-     0.979
+     0.278,
+     0.919
     ],
-    "victorias": 10,
-    "duelos": 31,
-    "pct": 32.3,
+    "victorias": 15,
+    "duelos": 44,
+    "pct": 34.1,
     "significativo": true
    }
   ]
  },
  "acuerdo_spearman": {
   "E1-E2": 0.01,
-  "E1-E3": -0.33,
-  "E2-E3": -0.58
+  "E1-E3": -0.53,
+  "E2-E3": -0.33
  },
  "por_prompt": {
   "p01": {
-   "mejor": "en",
+   "mejor": "hi",
    "pct_mejor": 71,
    "peor": "qu",
-   "pct_peor": 27
+   "pct_peor": 28
   },
   "p02": {
    "mejor": "sw",
    "pct_mejor": 76,
    "peor": "en",
-   "pct_peor": 33
+   "pct_peor": 31
   },
   "p03": {
    "mejor": "zh",
-   "pct_mejor": 87,
+   "pct_mejor": 83,
    "peor": "en",
-   "pct_peor": 25
+   "pct_peor": 22
   },
   "p04": {
    "mejor": "ja",
-   "pct_mejor": 73,
-   "peor": "zh",
-   "pct_peor": 31
+   "pct_mejor": 76,
+   "peor": "de",
+   "pct_peor": 29
   },
   "p05": {
-   "mejor": "qu",
+   "mejor": "ru",
    "pct_mejor": 71,
    "peor": "ja",
-   "pct_peor": 0
+   "pct_peor": 6
   },
   "p06": {
-   "mejor": "en",
-   "pct_mejor": 71,
+   "mejor": "de",
+   "pct_mejor": 67,
    "peor": "es",
-   "pct_peor": 31
+   "pct_peor": 28
   },
   "p07": {
    "mejor": "qu",
-   "pct_mejor": 65,
+   "pct_mejor": 67,
    "peor": "ru",
-   "pct_peor": 31
+   "pct_peor": 29
   },
   "p08": {
    "mejor": "hi",
-   "pct_mejor": 76,
+   "pct_mejor": 72,
    "peor": "de",
    "pct_peor": 29
   },
   "p09": {
    "mejor": "de",
    "pct_mejor": 81,
-   "peor": "sw",
-   "pct_peor": 29
+   "peor": "es",
+   "pct_peor": 28
   },
   "p10": {
    "mejor": "ar",
-   "pct_mejor": 75,
+   "pct_mejor": 72,
    "peor": "ru",
    "pct_peor": 29
   }
@@ -897,12 +897,12 @@
  "pct_gana_el_mas_complejo": {
   "E1": 49.8,
   "E2": 48.4,
-  "E3": 61.5
+  "E3": 59.0
  },
  "spearman_complejidad_vs_fuerza": {
   "E1": -0.49,
   "E2": -0.37,
-  "E3": 0.78
+  "E3": 0.85
  },
  "generacion": {
   "svg": 300,

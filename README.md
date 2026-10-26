@@ -5,7 +5,7 @@
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 [![Claude](https://img.shields.io/badge/Claude-Haiku-d97757.svg)](https://www.anthropic.com/claude)
 [![Dibujos](https://img.shields.io/badge/dibujos-300%20SVG-3ad1a8.svg)](data/svg/)
-[![Votos](https://img.shields.io/badge/votos-781%20ciegos-9b7bff.svg)](data/votos.csv)
+[![Votos](https://img.shields.io/badge/votos-877%20ciegos-9b7bff.svg)](data/votos.csv)
 [![Docker](https://img.shields.io/badge/plataforma-Docker-2496ED.svg?logo=docker&logoColor=white)](docker-compose.yml)
 [![Datos abiertos](https://img.shields.io/badge/datos-abiertos-3fb950.svg)](data/)
 
@@ -32,12 +32,12 @@ Una niña de 7 años eligió la llama. Su padre, de 36, la descartó. Ese contra
 
 ## ✨ Hallazgos
 
-- ⚖️ **Ningún idioma gana en el total.** Con los 781 votos juntos, los diez idiomas quedan entre el 46 % y el 54 % de duelos ganados, y todos los intervalos de confianza cruzan el 1.
+- ⚖️ **Ningún idioma gana en el total.** Con los 852 votos válidos juntos, los diez idiomas quedan entre el 46 % y el 54 % de duelos ganados, y todos los intervalos de confianza cruzan el 1.
 - 🧩 **El idioma cambia la complejidad del dibujo.** En quechua Haiku pone de media **35 elementos SVG**; en chino, **59**. Árabe y suajili también salen simples. En quechua además escribe un 40 % menos (2528 tokens frente a 4204 en japonés).
-- 🧑 **El adulto premia lo complejo.** Elige el dibujo con más elementos en el **62 %** de los duelos, y su ranking de idiomas sigue casi exacto el de complejidad (**ρ = +0,78**).
+- 🧑 **El adulto premia lo complejo.** Elige el dibujo con más elementos en el **59 %** de los duelos, y su ranking de idiomas sigue casi exacto el de complejidad (**ρ = +0,85**).
 - 👧 **Los niños no.** A ellos la complejidad les da igual (49 % y 48 %), y por idioma van en sentido contrario (ρ = −0,49 y −0,37).
-- 🔀 **Por eso los gustos se cancelan.** El ranking de la niña de 7 años y el del adulto están en contra (ρ = −0,58). Lo que uno sube, el otro lo baja.
-- 🎯 **Solo dos efectos son significativos, y cada uno es de una sola persona.** A la votante de 7 años le gusta el **quechua** (71 % de duelos ganados). Al adulto **no** le gusta el **árabe** (32 %).
+- 🔀 **Por eso los gustos se cancelan.** El ranking del niño de 11 años y el del adulto están en contra (ρ = −0,53), y el de la niña de 7 también (ρ = −0,33). Lo que uno sube, el otro lo baja.
+- 🎯 **Solo dos efectos son significativos, y cada uno es de una sola persona.** A la votante de 7 años le gusta el **quechua** (71 % de duelos ganados). Al adulto **no** le gusta el **árabe** (34 %).
 - 🎲 **El ganador cambia en cada idea.** «La música dibujada» la gana el chino (87 %), «el sueño» el suajili, «la alegría» el inglés. Pesa más cada dibujo que el idioma.
 
 ## 📊 Resultados
@@ -46,18 +46,18 @@ Una niña de 7 años eligió la llama. Su padre, de 36, la descartó. Ese contra
 
 | Idioma | Todos | Niños (7 y 11) | Adulto (36) | Elementos por dibujo |
 |---|:---:|:---:|:---:|:---:|
-| Inglés | 54 % | 56 % | 47 % | 52 |
-| Quechua | 54 % | **58 %** | 40 % | **35** |
 | Hindi | 54 % | 52 % | 61 % | 58 |
-| Árabe | 51 % | 56 % | **32 %** ⬇ | 41 |
-| Alemán | 50 % | 47 % | **63 %** | 53 |
-| Chino | 49 % | 47 % | 59 % | **59** |
-| Suajili | 48 % | 47 % | 50 % | 43 |
-| Ruso | 48 % | 45 % | 59 % | 54 |
-| Japonés | 47 % | 46 % | 54 % | 58 |
-| Español | 46 % | 48 % | 41 % | 48 |
+| Quechua | 53 % | **58 %** | 39 % | **35** |
+| Inglés | 51 % | 56 % | 39 % | 52 |
+| Alemán | 51 % | 47 % | **61 %** | 53 |
+| Árabe | 50 % | 56 % | **34 %** ⬇ | 41 |
+| Chino | 50 % | 47 % | 60 % | **59** |
+| Suajili | 49 % | 47 % | 55 % | 43 |
+| Japonés | 49 % | 46 % | 58 % | 58 |
+| Ruso | 47 % | 45 % | 54 % | 54 |
+| Español | 46 % | 48 % | 42 % | 48 |
 
-> % de duelos ganados. ⬇ = significativo (intervalo del 95 % por bootstrap, 1000 remuestreos, sin tocar el 1). Se descartaron los votos de menos de 500 ms (25 de 806).
+> % de duelos ganados. ⬇ = significativo (intervalo del 95 % por bootstrap, 1000 remuestreos, sin tocar el 1). Se descartaron los votos de menos de 500 ms (25 de 877).
 
 ### Lo que de verdad cambia: cuánto dibuja
 
@@ -81,7 +81,7 @@ Una niña de 7 años eligió la llama. Su padre, de 36, la descartó. Ese contra
 | Idiomas | es · en · zh · ja · ar · ru · de · hi · sw · qu | mezcla de idiomas con muchos y con pocos datos de entrenamiento |
 | Generación | `claude -p --model haiku` | sin herramientas, sin configuración, system prompt «SVG», una sesión por dibujo; toda la instrucción en el idioma de prueba, pidiendo pensar en él |
 | Votación | web propia en Docker | apodo + edad; duelos del **mismo prompt** en dos idiomas, sin decir cuáles; primero los dibujos con menos votos |
-| Votantes | 3 personas de una familia | 7 años (288 votos), 11 años (341), 36 años (152) |
+| Votantes | 3 personas de una familia | 7 años (288 votos), 11 años (341), 36 años (223) |
 | Estadística | Bradley-Terry + bootstrap | prior suave (rival virtual de fuerza 1), Spearman entre votantes |
 
 - 🙈 **Evaluación ciega.** Nadie veía de qué idioma venía cada dibujo.
@@ -124,7 +124,7 @@ docs/           imágenes de este README
 
 - **Es un piloto.** Tres votantes de la misma familia sirven para formular hipótesis, no para probarlas.
 - **Un solo adulto.** «Los adultos premian la complejidad» necesita más adultos para confirmarse.
-- **Votantes desiguales.** El de 11 años votó 341 veces y el adulto 152. Por eso el total se parece más al gusto de los niños.
+- **Votantes desiguales.** El de 11 años votó 341 veces y el adulto 223. Por eso el total se parece más al gusto de los niños.
 - **Traducciones.** Las hizo Claude. En quechua el modelo pudo entender mal la idea (la llama), y eso se mezcla con el efecto del idioma.
 - **Un solo modelo.** Haiku. Puede que un modelo más capaz no simplifique en los idiomas con pocos datos.
 

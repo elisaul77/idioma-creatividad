@@ -189,7 +189,7 @@ y, por idioma, van en sentido contrario (ρ = {cs['E1']:+.2f} y {cs['E2']:+.2f})
 <div class="card"><ul>
 <li><b>Tres votantes de la misma familia.</b> Es un estudio piloto: sirve para formular hipótesis, no para probarlas.</li>
 <li><b>Un solo adulto.</b> El patrón «adultos premian la complejidad» necesita más adultos para confirmarse.</li>
-<li><b>Votantes desiguales:</b> el de 11 años hizo 341 votos, el adulto 152.</li>
+<li><b>Votantes desiguales:</b> el de 11 años hizo 341 votos, el adulto 223.</li>
 <li><b>Calidad de la traducción:</b> en quechua el modelo pudo entender mal la idea; eso se mezcla con el efecto del idioma.</li>
 <li><b>Un solo modelo:</b> Haiku. Sonnet y Opus vienen en la siguiente ronda.</li></ul></div>
 <p class="mut" style="margin-top:40px">Datos y código: data/votos.csv · data/stats.json · analisis/</p>
